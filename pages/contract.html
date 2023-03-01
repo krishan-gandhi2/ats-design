@@ -29,8 +29,7 @@
     <link href="../vendors/flatpickr/flatpickr.min.css" rel="stylesheet">
 
     <link href="vendors/dropzone/dropzone.min.css" rel="stylesheet" />
-
-
+   
     <script src="../../../assets/js/config.js"></script>
 
     <!-- ===============================================-->
@@ -46,10 +45,9 @@
     <link href="../../assets/css/theme.min.css" type="text/css" rel="stylesheet" id="style-default">
     <link href="../../assets/css/user-rtl.min.css" type="text/css" rel="stylesheet" id="user-style-rtl">
     <link href="../../assets/css/user.min.css" type="text/css" rel="stylesheet" id="user-style-default">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script>
       var phoenixIsRTL = window.config.config.phoenixIsRTL;
       if (phoenixIsRTL) {
@@ -67,6 +65,8 @@
     </script>
 
     <style>
+         @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+        @import url('//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css');
     .padding-zero{padding: 0px !important;}
     .collapsible1 {
         background-color: #4599BB;
@@ -137,6 +137,83 @@
     }
     .dropdown a:hover {background-color: #ddd;}
     .show {display: block;}
+   
+        
+        .sidebar-toggle {
+        margin-left: -240px;
+        }
+        .sidebar {
+        width: 240px;
+        height: 100%;
+        background: #f1f3f6;
+        position: absolute;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+        z-index: 100;
+        }
+        .nano-content{
+            margin: -2px 0 0;
+             padding: 0;
+        }
+        .list-head{
+            color: #080808;
+          text-decoration: none;
+          display: block;
+          padding: 18px 0 18px 25px;
+          font-size: 12px;
+          font-weight: 400;
+          outline: 0;
+          -webkit-transition: all 200ms ease-in;
+          -moz-transition: all 200ms ease-in;
+          -o-transition: all 200ms ease-in;
+          -ms-transition: all 200ms ease-in;
+          transition: all 200ms ease-in;
+        }
+        .list-head:hover{
+            color: #1abc9c;
+        }
+        .sub-menu{
+            list-style-type: none;
+             border-bottom: 1px solid rgba(243, 239, 239, 0.05);
+        }
+        .sub-menu:active{
+            color: #1abc9c;
+        }
+        li.list-style{
+            list-style-type: none;
+             border-bottom: 1px solid rgba(243, 239, 239, 0.05);
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-right: 0;
+        border-bottom: none;
+        }
+        .list {
+            color: #232425;
+          text-decoration: none;
+          display: block;
+          padding: 18px 0 18px 25px;
+          font-size: 12px;
+          outline: 0;
+          -webkit-transition: all 200ms ease-in;
+          -moz-transition: all 200ms ease-in;
+          -o-transition: all 200ms ease-in;
+          -ms-transition: all 200ms ease-in;
+          transition: all 200ms ease-in;
+          font-size: 12px;
+          padding-top: 13px;
+          padding-bottom: 13px;
+          
+        }
+        .list:hover{
+            color: #1abc9c;
+        }
+        .arrow{
+            display: inline-block;
+            padding: 10px;
+        }
       </style>
       
   </head>
@@ -178,7 +255,7 @@
                                       <div class="d-flex align-items-center"><span class="nav-link-text">Client</span></div>
                                     </a>
                                   </li>
-                                <li class="nav-item"><a class="nav-link" href="../pages/contract.html" data-bs-toggle="" aria-expanded="false">
+                                <li class="nav-item"><a class="nav-link" href="../pages/contact-card.html" data-bs-toggle="" aria-expanded="false">
                                     <div class="d-flex align-items-center"><span class="nav-link-text">Contact</span></div>
                                   </a><!-- more inner pages-->
                                 </li>
@@ -4512,7 +4589,7 @@
         <div class="content contract-content-class">
 
             <div class="row g-3 needs-validation">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-top: 4.5rem; background-color: #fff;">
                     <!-- <a class="navbar-brand" href="#">Navbar</a> -->
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
@@ -4578,7 +4655,84 @@
                     </div>
                   </nav>
                 <div class="col-md-2 position-relative ">   
-                    <div></div>
+                    <div>
+                        <aside class="sidebar">
+                            <div id="leftside-navigation" class="nano">
+                              <ul class="nano-content">
+                                <li class="sub-menu" id="sub-menu">
+                                  <a class="list-head" href="javascript:void(0);"><span>UI Elements</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+                                  <ul>
+                          
+                                    <li class="list-style"><a class="list" href="ui-alerts-notifications.html">Alerts &amp; Notifications</a>
+                                    </li>
+                                    <li class="list-style"><a class="list"  href="ui-panels.html">Panels</a>
+                                    </li>
+                                    <li class="list-style"><a class="list" href="ui-buttons.html">Buttons</a>
+                                    </li>
+                                    <li class="list-style"><a class="list" href="ui-slider-progress.html">Sliders &amp; Progress</a>
+                                    </li>
+                                    <li class="list-style"><a class="list" href="ui-modals-popups.html">Modals &amp; Popups</a>
+                                    </li>
+                                    <li class="list-style"><a class="list" href="ui-icons.html">Icons</a>
+                                    </li>
+                                    <li class="list-style"><a class="list" href="ui-grid.html">Grid</a>
+                                    </li>
+                                    <li class="list-style"><a class="list" href="ui-tabs-accordions.html">Tabs &amp; Accordions</a>
+                                    </li>
+                                    <li class="list-style"><a class="list" href="ui-nestable-list.html">Nestable Lists</a>
+                                    </li>
+                                  </ul>
+                                </li>
+                                <li class="sub-menu">
+                                  <a  class="list-head" href="javascript:void(0);"><span>Tables</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+                                  <ul>
+                                    <li class="list-style" class="list-style"><a class="list" href="tables-basic.html">Basic Tables</a>
+                                    </li>
+                          
+                                    <li class="list-style" class="list-style"><a class="list" href="tables-data.html">Data Tables</a>
+                                    </li>
+                                  </ul>
+                                </li>
+                                <li class="sub-menu">
+                                  <a  class="list-head" href="javascript:void(0);"><span>Forms</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+                                  <ul>
+                                    <li class="list-style"><a class="list" href="forms-components.html">Components</a>
+                                    </li>
+                                    <li class="list-style"><a class="list" href="forms-validation.html">Validation</a>
+                                    </li>
+                                    <li class="list-style"><a class="list" href="forms-mask.html">Mask</a>
+                                    </li>
+                                    <li class="list-style"><a class="list" href="forms-wizard.html">Wizard</a>
+                                    </li>
+                                    <li class="list-style"><a class="list" href="forms-multiple-file.html">Multiple File Upload</a>
+                                    </li>
+                                    <li class="list-style"><a class="list" href="forms-wysiwyg.html">WYSIWYG Editor</a>
+                                    </li>
+                                  </ul>
+                                </li>
+                                <li class="sub-menu">
+                                    <a  class="list-head" href="javascript:void(0);"><span>Technical</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+                                    <ul>
+                                      <li class="list-style"><a class="list" href="forms-components.html">Components</a>
+                                      </li>
+                                      <li class="list-style"><a class="list" href="forms-validation.html">Validation</a>
+                                      </li>
+                                      <li class="list-style"><a class="list" href="forms-mask.html">Mask</a>
+                                      </li>
+                                      <li class="list-style"><a class="list" href="forms-wizard.html">Wizard</a>
+                                      </li>
+                                      <li class="list-style"><a class="list" href="forms-multiple-file.html">Multiple File Upload</a>
+                                      </li>
+                                      <li class="list-style"><a class="list" href="forms-wysiwyg.html">WYSIWYG Editor</a>
+                                      </li>
+                                    </ul>
+                                  </li>
+                                
+                                
+                              </ul>
+                            </div>
+                          </aside>
+                    </div>
                 </div>
                 <div class="col-md-10 position-relative ">
                     <div class="row">
@@ -4606,7 +4760,7 @@
                                             <p class="card-text"><i class="fa fa-phone" aria-hidden="true"></i> +91-9876543210</p>
                                             <p class="card-text"><i class="fa fa-envelope" aria-hidden="true"></i> venugopalaiyer@theglove.com</p>
                                         </div>
-                                        <div class="row mt-4 col-md-12 reserve-card-content padding-zero">
+                                        <div class="row mt-3 col-md-12 reserve-card-content padding-zero">
                                             <div class="row col-md-4">
                                                 <div class="text-left row" style="width: auto;">
                                                     <label>Qualification :</label>
@@ -4620,7 +4774,7 @@
                                                     <label>Collage :</label>
                                                 </div>
                                                 <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">Lorem ipsum University</p>
+                                                    <p class="card-title">Lorem University</p>
                                                 </div>
                                             </div>
                                             <div class="row col-md-4">
@@ -4694,7 +4848,7 @@
                                               <p class="card-text"><i class="fa fa-phone" aria-hidden="true"></i> +91-9876543210</p>
                                               <p class="card-text"><i class="fa fa-envelope" aria-hidden="true"></i> venugopalaiyer@theglove.com</p>
                                           </div>
-                                          <div class="row mt-4 col-md-12 reserve-card-content padding-zero">
+                                          <div class="row mt-3 col-md-12 reserve-card-content padding-zero">
                                               <div class="row col-md-4">
                                                   <div class="text-left row" style="width: auto;">
                                                       <label>Qualification :</label>
@@ -4708,7 +4862,7 @@
                                                       <label>Collage :</label>
                                                   </div>
                                                   <div class="text-left row" style="width: auto;">
-                                                      <p class="card-title">Lorem ipsum University</p>
+                                                      <p class="card-title">Lorem University</p>
                                                   </div>
                                               </div>
                                               <div class="row col-md-4">
@@ -4782,7 +4936,7 @@
                                               <p class="card-text"><i class="fa fa-phone" aria-hidden="true"></i> +91-9876543210</p>
                                               <p class="card-text"><i class="fa fa-envelope" aria-hidden="true"></i> venugopalaiyer@theglove.com</p>
                                           </div>
-                                          <div class="row mt-4 col-md-12 reserve-card-content padding-zero">
+                                          <div class="row mt-3 col-md-12 reserve-card-content padding-zero">
                                               <div class="row col-md-4">
                                                   <div class="text-left row" style="width: auto;">
                                                       <label>Qualification :</label>
@@ -4796,7 +4950,7 @@
                                                       <label>Collage :</label>
                                                   </div>
                                                   <div class="text-left row" style="width: auto;">
-                                                      <p class="card-title">Lorem ipsum University</p>
+                                                      <p class="card-title">Lorem University</p>
                                                   </div>
                                               </div>
                                               <div class="row col-md-4">
@@ -4946,5 +5100,13 @@
     <script src="../../vendors/prism/prism.js"></script>
     <script src="../../assets/js/phoenix.js"></script>
   </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script>
+    $("#leftside-navigation .sub-menu > a").click(function(e) {
+    $("#leftside-navigation ul ul").slideUp(), $(this).next().is(":visible") || $(this).next().slideDown(),
+    e.stopPropagation()
+    })
+</script>
 <!-- Mirrored from prium.github.io/phoenix/v1.9.0/modules/forms/validation.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 09 Feb 2023 11:06:33 GMT -->
 </html> 
