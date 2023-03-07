@@ -82,6 +82,17 @@
         overflow: hidden;
         background-color: white;
       }
+      .coll1 {
+        margin-top: -10px;
+        padding: 10px !important;
+      }
+      .tpm {
+        margin-top: 79px;
+      }
+      .accor1 {
+        margin-top: 6px;
+        margin-bottom: 6px;
+      }
       </style>
       
   </head>
@@ -263,220 +274,231 @@
                         </ul>
                       </div>
                     </div> -->
-                    <!-- parent pages-->
-                    <div class="nav-item-wrapper"><a class="nav-link label-1" href="#" role="button" data-bs-toggle="" aria-expanded="false">
-                      <div class="d-flex align-items-center">
-                        <span class="nav-link-icon">
-                          <span data-feather="plus-square"></span>
-                        </span>
-                        <span class="nav-link-text-wrapper">
-                          <span class="nav-link-text">Requirement</span>
-                        </span>
+                              <!-- parent pages-->
+                              <div class="nav-item-wrapper"><a class="nav-link label-1" href="#" role="button" data-bs-toggle="" aria-expanded="false">
+                                <div class="d-flex align-items-center">
+                                  <span class="nav-link-icon">
+                                    <span data-feather="plus-square"></span>
+                                  </span>
+                                  <span class="nav-link-text-wrapper">
+                                    <span class="nav-link-text">Requirement</span>
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+                              <div class="nav-item-wrapper"><a class="nav-link dropdown-indicator label-1" href="#project-management" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="project-management">
+                                  <div class="d-flex align-items-center">
+                                    <div class="dropdown-indicator-icon"><span class="fas fa-caret-right"></span></div><span class="nav-link-icon"><span data-feather="users"></span></span><span class="nav-link-text">Candidate</span>
+                                  </div>
+                                </a>
+                                <div class="parent-wrapper label-1">
+                                  <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="project-management">
+                                    <li class="collapsed-nav-item-title d-none">Candidate</li>
+                                    <li class="nav-item"><a class="nav-link" href="../pages/candidate.html" data-bs-toggle="" aria-expanded="false">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">Create</span></div>
+                                      </a><!-- more inner pages-->
+                                    </li>
+                                    <li class="nav-item"><a class="nav-link" href="../pages/candidatelist.html" data-bs-toggle="" aria-expanded="false">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">Candidate-list</span></div>
+                                      </a><!-- more inner pages-->
+                                    </li>
+                                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                                      <div class="d-flex align-items-center"><span class="nav-link-text">Parse profile</span></div>
+                                    </a><!-- more inner pages-->
+                                  </li>
+                                  <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                                    <div class="d-flex align-items-center"><span class="nav-link-text">Parsing Report</span></div>
+                                  </a><!-- more inner pages-->
+                                </li>
+                                    <!-- <li class="nav-item"><a class="nav-link" href="../apps/project-management/project-card-view.html" data-bs-toggle="" aria-expanded="false">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">Search Consultant</span></div>
+                                      </a>
+                                    </li> -->
+                                    <!-- <li class="nav-item"><a class="nav-link" href="../apps/project-management/project-board-view.html" data-bs-toggle="" aria-expanded="false">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">Project board view</span></div>
+                                      </a>
+                                    </li>
+                                    <li class="nav-item"><a class="nav-link" href="../apps/project-management/todo-list.html" data-bs-toggle="" aria-expanded="false">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">Todo list</span></div>
+                                      </a>
+                                    </li>
+                                    <li class="nav-item"><a class="nav-link" href="../apps/project-management/project-details.html" data-bs-toggle="" aria-expanded="false">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">Project details</span></div>
+                                      </a>
+                                    </li> -->
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="nav-item-wrapper"><a class="nav-link label-1" href="#" role="button" data-bs-toggle="" aria-expanded="false">
+                                <div class="d-flex align-items-center">
+                                  <span class="nav-link-icon">
+                                    <span data-feather="columns"></span>
+                                  </span>
+                                  <span class="nav-link-text-wrapper">
+                                    <span class="nav-link-text">Closure</span>
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="nav-item-wrapper"><a class="nav-link label-1" href="#" role="button" data-bs-toggle="" aria-expanded="false">
+                              <div class="d-flex align-items-center">
+                                <span class="nav-link-icon">
+                                  <span data-feather="clipboard"></span>
+                                </span>
+                                <span class="nav-link-text-wrapper">
+                                  <span class="nav-link-text">Assignment</span>
+                                </span>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="nav-item-wrapper"><a class="nav-link label-1" href="#" role="button" data-bs-toggle="" aria-expanded="false">
+                            <div class="d-flex align-items-center">
+                              <span class="nav-link-icon">
+                                <span data-feather="user-check"></span>
+                              </span>
+                              <span class="nav-link-text-wrapper">
+                                <span class="nav-link-text">Assigned</span>
+                              </span>
+                            </div>
+                          </a>
+                        </div>
+                          <div class="nav-item-wrapper"><a class="nav-link label-1" href="#" role="button" data-bs-toggle="" aria-expanded="false">
+                            <div class="d-flex align-items-center">
+                              <span class="nav-link-icon">
+                                <span data-feather="briefcase"></span>
+                              </span>
+                              <span class="nav-link-text-wrapper">
+                                <span class="nav-link-text">Job Codes</span>
+                              </span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="nav-item-wrapper"><a class="nav-link label-1" href="#" role="button" data-bs-toggle="" aria-expanded="false">
+                          <div class="d-flex align-items-center">
+                            <span class="nav-link-icon">
+                              <span data-feather="life-buoy"></span>
+                            </span>
+                            <span class="nav-link-text-wrapper">
+                              <span class="nav-link-text">Role</span>
+                            </span>
+                          </div>
+                        </a>
                       </div>
-                    </a>
-                  </div>
-                    <div class="nav-item-wrapper"><a class="nav-link dropdown-indicator label-1" href="#project-management" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="project-management">
+                      <div class="nav-item-wrapper"><a class="nav-link label-1" href="#" role="button" data-bs-toggle="" aria-expanded="false">
                         <div class="d-flex align-items-center">
-                          <div class="dropdown-indicator-icon"><span class="fas fa-caret-right"></span></div><span class="nav-link-icon"><span data-feather="users"></span></span><span class="nav-link-text">Candidate</span>
+                          <span class="nav-link-icon">
+                            <span data-feather="user"></span>
+                          </span>
+                          <span class="nav-link-text-wrapper">
+                            <span class="nav-link-text">Employee</span>
+                          </span>
                         </div>
                       </a>
-                      <div class="parent-wrapper label-1">
-                        <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="project-management">
-                          <li class="collapsed-nav-item-title d-none">Candidate</li>
-                          <li class="nav-item"><a class="nav-link" href="../pages/candidate.html" data-bs-toggle="" aria-expanded="false">
-                              <div class="d-flex align-items-center"><span class="nav-link-text">Create</span></div>
-                            </a><!-- more inner pages-->
-                          </li>
-                          <li class="nav-item"><a class="nav-link" href="../pages/candidatelist.html" data-bs-toggle="" aria-expanded="false">
-                              <div class="d-flex align-items-center"><span class="nav-link-text">Candidate-list</span></div>
-                            </a><!-- more inner pages-->
-                          </li>
-                          <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                            <div class="d-flex align-items-center"><span class="nav-link-text">Parse profile</span></div>
-                          </a><!-- more inner pages-->
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                          <div class="d-flex align-items-center"><span class="nav-link-text">Parsing Report</span></div>
-                        </a><!-- more inner pages-->
-                      </li>
-                          <!-- <li class="nav-item"><a class="nav-link" href="../apps/project-management/project-card-view.html" data-bs-toggle="" aria-expanded="false">
-                              <div class="d-flex align-items-center"><span class="nav-link-text">Search Consultant</span></div>
-                            </a>
-                          </li> -->
-                          <!-- <li class="nav-item"><a class="nav-link" href="../apps/project-management/project-board-view.html" data-bs-toggle="" aria-expanded="false">
-                              <div class="d-flex align-items-center"><span class="nav-link-text">Project board view</span></div>
-                            </a>
-                          </li>
-                          <li class="nav-item"><a class="nav-link" href="../apps/project-management/todo-list.html" data-bs-toggle="" aria-expanded="false">
-                              <div class="d-flex align-items-center"><span class="nav-link-text">Todo list</span></div>
-                            </a>
-                          </li>
-                          <li class="nav-item"><a class="nav-link" href="../apps/project-management/project-details.html" data-bs-toggle="" aria-expanded="false">
-                              <div class="d-flex align-items-center"><span class="nav-link-text">Project details</span></div>
-                            </a>
-                          </li> -->
-                        </ul>
-                      </div>
                     </div>
                     <div class="nav-item-wrapper"><a class="nav-link label-1" href="#" role="button" data-bs-toggle="" aria-expanded="false">
                       <div class="d-flex align-items-center">
                         <span class="nav-link-icon">
-                          <span data-feather="plus-square"></span>
+                          <span data-feather="clipboard"></span>
                         </span>
                         <span class="nav-link-text-wrapper">
-                          <span class="nav-link-text">Closure</span>
+                          <span class="nav-link-text">Parsing</span>
                         </span>
                       </div>
                     </a>
                   </div>
-                  <div class="nav-item-wrapper"><a class="nav-link label-1" href="#" role="button" data-bs-toggle="" aria-expanded="false">
-                    <div class="d-flex align-items-center">
-                      <span class="nav-link-icon">
-                        <span data-feather="clipboard"></span>
-                      </span>
-                      <span class="nav-link-text-wrapper">
-                        <span class="nav-link-text">Assignment</span>
-                      </span>
-                    </div>
-                  </a>
-                </div>
-                <div class="nav-item-wrapper"><a class="nav-link label-1" href="#" role="button" data-bs-toggle="" aria-expanded="false">
-                  <div class="d-flex align-items-center">
-                    <span class="nav-link-icon">
-                      <span data-feather="briefcase"></span>
-                    </span>
-                    <span class="nav-link-text-wrapper">
-                      <span class="nav-link-text">Job Codes</span>
-                    </span>
-                  </div>
-                </a>
-              </div>
-              <div class="nav-item-wrapper"><a class="nav-link label-1" href="#" role="button" data-bs-toggle="" aria-expanded="false">
-                <div class="d-flex align-items-center">
-                  <span class="nav-link-icon">
-                    <span data-feather="life-buoy"></span>
-                  </span>
-                  <span class="nav-link-text-wrapper">
-                    <span class="nav-link-text">Role</span>
-                  </span>
-                </div>
-              </a>
-            </div>
-            <div class="nav-item-wrapper"><a class="nav-link label-1" href="#" role="button" data-bs-toggle="" aria-expanded="false">
-              <div class="d-flex align-items-center">
-                <span class="nav-link-icon">
-                  <span data-feather="user"></span>
-                </span>
-                <span class="nav-link-text-wrapper">
-                  <span class="nav-link-text">Employee</span>
-                </span>
-              </div>
-            </a>
-          </div>
-          <div class="nav-item-wrapper"><a class="nav-link label-1" href="#" role="button" data-bs-toggle="" aria-expanded="false">
-            <div class="d-flex align-items-center">
-              <span class="nav-link-icon">
-                <span data-feather="plus-square"></span>
-              </span>
-              <span class="nav-link-text-wrapper">
-                <span class="nav-link-text">Parsing</span>
-              </span>
-            </div>
-          </a>
-        </div>
-                  
-                    <!-- <div class="nav-item-wrapper"><a class="nav-link dropdown-indicator label-1" href="#email" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="email">
-                        <div class="d-flex align-items-center">
-                          <div class="dropdown-indicator-icon"><span class="fas fa-caret-right"></span></div><span class="nav-link-icon"><span data-feather="mail"></span></span><span class="nav-link-text">Email</span>
-                        </div>
-                      </a>
-                      <div class="parent-wrapper label-1">
-                        <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="email">
-                          <li class="collapsed-nav-item-title d-none">Email</li>
-                          <li class="nav-item"><a class="nav-link" href="../apps/email/inbox.html" data-bs-toggle="" aria-expanded="false">
-                              <div class="d-flex align-items-center"><span class="nav-link-text">Inbox</span></div>
-                            </a>
-                          </li>
-                          <li class="nav-item"><a class="nav-link" href="../apps/email/email-detail.html" data-bs-toggle="" aria-expanded="false">
-                              <div class="d-flex align-items-center"><span class="nav-link-text">Email detail</span></div>
-                            </a>
-                          </li>
-                          <li class="nav-item"><a class="nav-link" href="../apps/email/compose.html" data-bs-toggle="" aria-expanded="false">
-                              <div class="d-flex align-items-center"><span class="nav-link-text">Compose</span></div>
-                            </a>
-                          </li>
-                        </ul>
-                      </div> -->
-                    <!-- </div> -->
-                    <!-- parent pages-->
-                    <div class="nav-item-wrapper"><a class="nav-link dropdown-indicator label-1" href="#events" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="events">
-                        <div class="d-flex align-items-center">
-                          <div class="dropdown-indicator-icon"><span class="fas fa-caret-right"></span></div>
-                          <span class="nav-link-icon"><span data-feather="bookmark"></span></span>
-                          <span class="nav-link-text">Master Data</span>
-                        </div>
-                      </a>
-                      <div class="parent-wrapper label-1">
-                        <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="events">
-                          <!-- <li class="collapsed-nav-item-title d-none">Administrator</li> -->
-                          <li class="nav-item"><a class="nav-link"  href="#" data-bs-toggle="" aria-expanded="false">
-                              <div class="d-flex align-items-center"><span class="nav-link-text">Labels</span></div>
-                            </a><!-- more inner pages-->
-                          </li>
-                          <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                              <div class="d-flex align-items-center"><span class="nav-link-text">Country</span></div>
-                            </a><!-- more inner pages-->
-                          </li>
-                          <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                              <div class="d-flex align-items-center"><span class="nav-link-text">State</span></div>
-                            </a><!-- more inner pages-->
-                          </li>
-                          <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false" >
-                              <div class="d-flex align-items-center"><span class="nav-link-text">City</span></div>
-                            </a><!-- more inner pages-->
-                          </li>
-                          <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false" >
-                            <div class="d-flex align-items-center"><span class="nav-link-text">Industries</span></div>
-                          </a><!-- more inner pages-->
-                          </li>
-                          <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false" >
-                            <div class="d-flex align-items-center"><span class="nav-link-text">Qualification</span></div>
-                          </a><!-- more inner pages-->
-                          </li>
-                          <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false" >
-                            <div class="d-flex align-items-center"><span class="nav-link-text">Institute</span></div>
-                          </a><!-- more inner pages-->
-                          </li>
-                          <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false" >
-                            <div class="d-flex align-items-center"><span class="nav-link-text">Certifications</span></div>
-                          </a><!-- more inner pages-->
-                          </li>
-                          <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false" >
-                            <div class="d-flex align-items-center"><span class="nav-link-text">Interview Type</span></div>
-                          </a><!-- more inner pages-->
-                          </li>
-                        </ul>
-                      </div>
-                    </div><!-- parent pages-->
-                    <div class="nav-item-wrapper"><a class="nav-link dropdown-indicator label-1" href="#social" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="social">
-                        <div class="d-flex align-items-center">
-                          <div class="dropdown-indicator-icon"><span class="fas fa-caret-right"></span></div><span class="nav-link-icon"><span data-feather="edit-3"></span></span><span class="nav-link-text">Report</span>
-                        </div>
-                      </a>
-                      <div class="parent-wrapper label-1">
-                        <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="social">
-                          <li class="collapsed-nav-item-title d-none">Social</li>
-                          <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                              <div class="d-flex align-items-center"><span class="nav-link-text">R1</span></div>
-                            </a>
-                          </li>
-                          <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                              <div class="d-flex align-items-center"><span class="nav-link-text">R2</span></div>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
+                            
+                              <!-- <div class="nav-item-wrapper"><a class="nav-link dropdown-indicator label-1" href="#email" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="email">
+                                  <div class="d-flex align-items-center">
+                                    <div class="dropdown-indicator-icon"><span class="fas fa-caret-right"></span></div><span class="nav-link-icon"><span data-feather="mail"></span></span><span class="nav-link-text">Email</span>
+                                  </div>
+                                </a>
+                                <div class="parent-wrapper label-1">
+                                  <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="email">
+                                    <li class="collapsed-nav-item-title d-none">Email</li>
+                                    <li class="nav-item"><a class="nav-link" href="../apps/email/inbox.html" data-bs-toggle="" aria-expanded="false">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">Inbox</span></div>
+                                      </a>
+                                    </li>
+                                    <li class="nav-item"><a class="nav-link" href="../apps/email/email-detail.html" data-bs-toggle="" aria-expanded="false">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">Email detail</span></div>
+                                      </a>
+                                    </li>
+                                    <li class="nav-item"><a class="nav-link" href="../apps/email/compose.html" data-bs-toggle="" aria-expanded="false">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">Compose</span></div>
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div> -->
+                              <!-- </div> -->
+                              <!-- parent pages-->
+                              <div class="nav-item-wrapper"><a class="nav-link dropdown-indicator label-1" href="#events" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="events">
+                                  <div class="d-flex align-items-center">
+                                    <div class="dropdown-indicator-icon"><span class="fas fa-caret-right"></span></div>
+                                    <span class="nav-link-icon"><span data-feather="bookmark"></span></span>
+                                    <span class="nav-link-text">Master Data</span>
+                                  </div>
+                                </a>
+                                <div class="parent-wrapper label-1">
+                                  <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="events">
+                                    <!-- <li class="collapsed-nav-item-title d-none">Administrator</li> -->
+                                    <li class="nav-item"><a class="nav-link"  href="#" data-bs-toggle="" aria-expanded="false">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">Labels</span></div>
+                                      </a><!-- more inner pages-->
+                                    </li>
+                                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">Country</span></div>
+                                      </a><!-- more inner pages-->
+                                    </li>
+                                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">State</span></div>
+                                      </a><!-- more inner pages-->
+                                    </li>
+                                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false" >
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">City</span></div>
+                                      </a><!-- more inner pages-->
+                                    </li>
+                                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false" >
+                                      <div class="d-flex align-items-center"><span class="nav-link-text">Industries</span></div>
+                                    </a><!-- more inner pages-->
+                                    </li>
+                                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false" >
+                                      <div class="d-flex align-items-center"><span class="nav-link-text">Qualification</span></div>
+                                    </a><!-- more inner pages-->
+                                    </li>
+                                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false" >
+                                      <div class="d-flex align-items-center"><span class="nav-link-text">Institute</span></div>
+                                    </a><!-- more inner pages-->
+                                    </li>
+                                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false" >
+                                      <div class="d-flex align-items-center"><span class="nav-link-text">Certifications</span></div>
+                                    </a><!-- more inner pages-->
+                                    </li>
+                                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false" >
+                                      <div class="d-flex align-items-center"><span class="nav-link-text">Interview Type</span></div>
+                                    </a><!-- more inner pages-->
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div><!-- parent pages-->
+                              <div class="nav-item-wrapper"><a class="nav-link dropdown-indicator label-1" href="#social" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="social">
+                                  <div class="d-flex align-items-center">
+                                    <div class="dropdown-indicator-icon"><span class="fas fa-caret-right"></span></div><span class="nav-link-icon"><span data-feather="edit-3"></span></span><span class="nav-link-text">Report</span>
+                                  </div>
+                                </a>
+                                <div class="parent-wrapper label-1">
+                                  <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="social">
+                                    <li class="collapsed-nav-item-title d-none">Social</li>
+                                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">R1</span></div>
+                                      </a>
+                                    </li>
+                                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">R2</span></div>
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
                     <!-- <div class="nav-item-wrapper"><a class="nav-link label-1" href="../apps/calendar.html" role="button" data-bs-toggle="" aria-expanded="false">
                         <div class="d-flex align-items-center"><span class="nav-link-icon"><span data-feather="calendar"></span></span><span class="nav-link-text-wrapper"><span class="nav-link-text">Calendar</span></span></div>
                       </a></div> -->
@@ -1258,10 +1280,10 @@
               </a>
             </div>
             <div class="search-box navbar-top-search-box d-none d-lg-block" data-list='{"valueNames":["title"]}' style="width:25rem;">
-              <form class="position-relative" data-bs-toggle="search" data-bs-display="static"><input class="form-control search-input fuzzy-search rounded-pill form-control-sm" type="search" placeholder="Search..." aria-label="Search" />
+              <!-- <form class="position-relative" data-bs-toggle="search" data-bs-display="static"><input class="form-control search-input fuzzy-search rounded-pill form-control-sm" type="search" placeholder="Search..." aria-label="Search" />
                 <span class="fas fa-search search-box-icon"></span>
               </form>
-              <div class="btn-close position-absolute end-0 top-50 translate-middle cursor-pointer shadow-none" data-bs-dismiss="search"><button class="btn btn-link btn-close-falcon p-0" aria-label="Close"></button></div>
+              <div class="btn-close position-absolute end-0 top-50 translate-middle cursor-pointer shadow-none" data-bs-dismiss="search"><button class="btn btn-link btn-close-falcon p-0" aria-label="Close"></button></div> -->
               <div class="dropdown-menu border border-300 font-base start-0 py-0 overflow-hidden w-100">
                 <div class="scrollbar-overlay" style="max-height: 30rem;">
                   <div class="list pb-3">
@@ -4825,9 +4847,14 @@
                         <div class="col-md-4 position-relative gy-2" style="margin-bottom: -33px;">
                             <label class="form-label" for="validationTooltip01">Company Logo</label>
                            
-                        <div class="form-label"><input class="d-none" id="upload-avatar" type="file" /><label class="bg-400 rounded-circle cursor-pointer d-flex flex-center mb-xxl-4" for="upload-avatar" style="height:90px !important; width:90px;">
-                            <div class="avatar hoverbox"><img class="rounded-circle" src="../../assets/img/brand2/hp.png" alt="" />
-                              <div class="hoverbox-content bg-black rounded-circle d-flex flex-center" style="--phoenix-bg-opacity: .70;"><span class="fa-solid fa-camera fs-2+-+ text-100"></span></div>
+                        <div class="form-label">
+                          <input class="d-none" id="upload-avatar" type="file" />
+                          <label class="bg-400 rounded-circle cursor-pointer d-flex flex-center mb-xxl-4" for="upload-avatar" style="height:90px !important; width:90px;">
+                            <div class="avatar hoverbox">
+                              <img class="rounded-circle" src="../../assets/img/brand2/hp.png" alt="" />
+                              <div class="hoverbox-content bg-black rounded-circle d-flex flex-center" style="--phoenix-bg-opacity: .70;">
+                                <span class="fa-solid fa-camera fs-2+-+ text-100"></span>
+                              </div>
                             </div>
                           </label>
                         </div>
@@ -4837,15 +4864,23 @@
                             <input class="form-control" id="validationTooltip01" type="text" value="" required="" />
                             <div class="valid-tooltip">Looks good!</div>
                           </div> -->
-                          <div class="col-md-4 position-relative" style="margin-top: 65px;">
+                          <div class="col-md-4 position-relative tpm" >
                             <div class="form-icon-container">
-                              <div class="form-floating"><input class="form-control form-icon-input" id="Company" type="text" placeholder="Company" /><label class="text-700 form-icon-label" for="firstName">Company</label></div><span class="fa-solid fa-building text-900 fs--1 form-icon"></span>
+                              <div class="form-floating">
+                                <input class="form-control form-icon-input" id="Company" type="text" placeholder="Company" />
+                                <label class="text-700 form-icon-label" for="firstName">Company</label>
+                              </div>
+                              <span class="fa-solid fa-building text-900 fs--1 form-icon"></span>
                             </div>
                           </div>
 
-                          <div class="col-md-4 position-relative" style="margin-top: 65px;">
+                          <div class="col-md-4 position-relative tpm">
                             <div class="form-icon-container">
-                              <div class="form-floating"><input class="form-control form-icon-input" id="Website" type="text" placeholder="Website" /><label class="text-700 form-icon-label" for="Website">Website</label></div><span class="fa-solid fa-globe text-900 fs--1 form-icon"></span>
+                              <div class="form-floating">
+                                <input class="form-control form-icon-input" id="Website" type="text" placeholder="Website" />
+                                <label class="text-700 form-icon-label" for="Website">Website</label>
+                              </div>
+                              <span class="fa-solid fa-globe text-900 fs--1 form-icon"></span>
                             </div>
                           </div>
                           <!-- <div class="col-md-4 position-relative gy-2"  style="margin-top: 65px;">
@@ -4856,14 +4891,14 @@
                                 <div class="invalid-tooltip">Please choose a unique and valid Link.</div>
                             </div>
                         </div> -->
-                        <div class="col-md-4 position-relative gy-2">
+                        <div class="col-md-3 position-relative ">
                           <div class="form-icon-container">
-                            <div class="form-floating"><input class="form-control form-icon-input" id="firstName" type="text" placeholder="First Name" /><label class="text-700 form-icon-label" for="firstName">FIRST NAME</label></div><span class="fa-solid fa-user text-900 fs--1 form-icon"></span>
+                            <div class="form-floating"><input class="form-control form-icon-input" id="firstName" type="text" placeholder="First Name" /><label class="text-700 form-icon-label" for="firstName">First Name</label></div><span class="fa-solid fa-user text-900 fs--1 form-icon"></span>
                           </div>
                         </div>
-                        <div class="col-md-4 position-relative gy-2">
+                        <div class="col-md-3 position-relative ">
                           <div class="form-icon-container">
-                            <div class="form-floating"><input class="form-control form-icon-input" id="lastName" type="text" placeholder="Last Name" /><label class="text-700 form-icon-label" for="lastName">LAST NAME</label></div><span class="fa-solid fa-user text-900 fs--1 form-icon"></span>
+                            <div class="form-floating"><input class="form-control form-icon-input" id="lastName" type="text" placeholder="Last Name" /><label class="text-700 form-icon-label" for="lastName">Last Name</label></div><span class="fa-solid fa-user text-900 fs--1 form-icon"></span>
                           </div>
                         </div>
                         <!-- <div class="col-md-4 position-relative">
@@ -4879,12 +4914,17 @@
                             <div class="invalid-tooltip">Please choose a unique and valid email.</div>
                           </div>
                         </div> -->
-                        <div class="col-md-4 position-relative gy-2">
+                        <div class="col-md-3 position-relative ">
                           <div class="form-icon-container">
-                            <div class="form-floating"><input class="form-control form-icon-input" id="emailSocial" type="email" placeholder="Email" /><label class="text-700 form-icon-label" for="emailSocial">EMAIL</label></div><span class="fa-solid fa-envelope text-900 fs--1 form-icon"></span>
+                            <div class="form-floating"><input class="form-control form-icon-input" id="emailSocial" type="email" placeholder="Email" /><label class="text-700 form-icon-label" for="emailSocial">Email</label></div><span class="fa-solid fa-envelope text-900 fs--1 form-icon"></span>
                           </div>
                         </div>
-                        <div class="col-sm-6 col-md-4">
+                        <div class="col-md-3 position-relative ">
+                          <div class="form-icon-container">
+                            <div class="form-floating"><input class="form-control form-icon-input" id="phone" type="text" placeholder="Phone" /><label class="text-700 form-icon-label" for="phone">Phone</label></div><span class="fa-solid fa-phone text-900 fs--1 form-icon"></span>
+                          </div>
+                        </div>
+                        <div class="col-md-3 position-relative">
                             <div class="form-floating"><select class="form-select" id="floatingSelectCountry">
                                 <option value="">Select country</option>
                                     <option value="Afghanistan">Afghanistan</option>
@@ -5128,7 +5168,7 @@
                                     <option value="Zimbabwe">Zimbabwe</option>
                               </select></div>
                           </div>
-                          <div class="col-sm-6 col-md-4">
+                          <div class="col-md-3 position-relative ">
                             <div class="form-floating"><select class="form-select" id="floatingSelectState">
                                 <option selected="selected">Select State </option>
                                 <option value="1">Delhi</option>
@@ -5141,7 +5181,7 @@
                                 <option value="3">New York</option>
                               </select></div>
                           </div>
-                          <div class="col-sm-6 col-md-4">
+                          <div class="col-md-3 position-relative">
                             <div class="form-floating"><select class="form-select" id="floatingSelectCity">
                                 <option selected="selected">Select city</option>
                                 <option value="1">Delhi</option>
@@ -5162,7 +5202,7 @@
                               <div class="form-floating"><input class="form-control datetimepicker" id="floatingInputStartDate" type="text" placeholder="Date" data-options='{"disableMobile":true}' style="height: 40px !Important; padding-top: 14px;" /><span class="uil uil-calendar-alt flatpickr-icon text-700"></span></div>
                             </div>
                           </div> -->
-                          <div class="col-md-4 position-relative">
+                          <div class="col-md-3 position-relative">
                             <div class="form-icon-container">
                               <div class="form-floating"><input class="form-control form-icon-input" id="hqaddress" type="text" placeholder="H.Q Address" /><label class="text-700 form-icon-label" for="hqaddress">H.Q. Address</label></div><span class="fa-solid fa-location-pin text-900 fs--1 form-icon"></span>
                             </div>
@@ -5172,7 +5212,7 @@
                           <input class="form-control" id="validationTooltip01" type="text" value="" required="" />
                           <div class="valid-tooltip">Looks good!</div>
                         </div> -->
-                        <div class="col-md-4 position-relative">
+                        <div class="col-md-3 position-relative">
                           <div class="form-icon-container">
                             <div class="form-floating"><input class="form-control form-icon-input" id="pincode" type="text" placeholder="Pin code" /><label class="text-700 form-icon-label" for="pincode">Pin Code</label></div><span class="fa-solid fa-map-pin text-900 fs--1 form-icon"></span>
                           </div>
@@ -5182,7 +5222,7 @@
                             <input class="form-control" id="validationTooltip01" type="text" value="" required="" />
                             <div class="valid-tooltip">Looks good!</div>
                         </div> -->
-                        <div class="col-sm-6 col-md-4">
+                        <div class="col-md-3 position-relative">
                           <div class="form-floating"><select class="form-select" id="floatingSelectCity">
                               <option selected="selected">Select Industry</option>
                               <option value="1">IT Industry</option>
@@ -5199,11 +5239,6 @@
                           <option value="">Education</option>
                         </select>
                       </div> -->
-                      <div class="col-md-4 position-relative">
-                        <div class="form-icon-container">
-                          <div class="form-floating"><input class="form-control form-icon-input" id="phone" type="text" placeholder="Phone" /><label class="text-700 form-icon-label" for="phone">phone</label></div><span class="fa-solid fa-phone text-900 fs--1 form-icon"></span>
-                        </div>
-                      </div>
                         <!-- <div class="col-md-4 position-relative gy-2">
                           <label class="form-label" for="validationTooltip05">Moblie No.</label>
                           <div class="input-group">
@@ -5212,7 +5247,7 @@
                             <div class="invalid-tooltip">Please choose a unique and valid Link.</div>
                            </div>
                         </div> -->
-                        <div class="col-sm-6 col-md-4">
+                        <div class="col-md-3 position-relative">
                           <div class="form-floating"><select class="form-select" id="floatingSelectCity">
                               <option selected="selected">Select Type</option>
                               <option value="1">Tech</option>
@@ -5583,9 +5618,9 @@
                                 </code>
                               </pre>
                             </div>
-                            <div class="p-4 code-to-copy">
+                            <div class="p-4 code-to-copy coll1">
                               <div class="accordion" id="accordionExample">
-                                <div class="accordion-item border-top border-300">
+                                <div class="accordion-item border-top border-300 ">
                                   <!-- <h2 class="accordion-header" id="headingOne">
                                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                                       Add location
@@ -5597,11 +5632,11 @@
                                         Add Location
                                       </button>
                                     </h2>
-                                    <div class="accordion-collapse collapse show" id="collapseTwo" aria-labelledby="headingTwo" data-bs-parent="#accordionExample" style="margin-top: 15px;">
+                                    <div class="accordion-collapse collapse show accor1" id="collapseTwo" aria-labelledby="headingTwo" data-bs-parent="#accordionExample" >
                                     <div class="accordion-body pt-0">
                                       <!-- <strong>This is the first item&apos;s accordion body.</strong> -->
                                       <div class="row g-3 needs-validation">
-                                        <div class="col-sm-6 col-md-4">
+                                        <div class="col-sm-6 col-md-3">
                                           <div class="form-floating"><select class="form-select" id="floatingSelectCountry">
                                               <option value="">Select country</option>
                                                   <option value="Afghanistan">Afghanistan</option>
@@ -5845,7 +5880,7 @@
                                                   <option value="Zimbabwe">Zimbabwe</option>
                                             </select></div>
                                         </div>
-                                        <div class="col-sm-6 col-md-4">
+                                        <div class="col-sm-6 col-md-3">
                                           <div class="form-floating"><select class="form-select" id="floatingSelectState">
                                               <option selected="selected">Select State </option>
                                               <option value="1">Delhi</option>
@@ -5858,7 +5893,7 @@
                                               <option value="3">New York</option>
                                             </select></div>
                                         </div>
-                                        <div class="col-sm-6 col-md-4">
+                                        <div class="col-sm-6 col-md-3">
                                           <div class="form-floating"><select class="form-select" id="floatingSelectCity">
                                               <option selected="selected">Select city</option>
                                               <option value="1">Delhi</option>
@@ -5883,21 +5918,26 @@
                                       Point of contact
                                     </button>
                                   </h2>
-                                  <div class="accordion-collapse collapse show" id="collapseThree" aria-labelledby="headingThree" data-bs-parent="#accordionExample" style="margin-top: 15px;">
+                                  <div class="accordion-collapse collapse show accor1" id="collapseThree" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                     <div class="accordion-body pt-0">
                                       <!-- <strong>This is the second item&apos;s accordion body.</strong> -->
                                       <div class="row g-3 needs-validation">
-                                        <div class="col-sm-6 col-md-4">
+                                        <div class="col-sm-6 col-md-2">
                                           <div class="form-icon-container">
                                             <div class="form-floating"><input class="form-control form-icon-input" id="title" type="text" placeholder="title" /><label class="text-700 form-icon-label" for="title">Title</label></div><span class="fa-solid fa-pencil text-900 fs--1 form-icon"></span>
                                           </div>
                                         </div>
-                                        <div class="col-sm-6 col-md-4">
-                                          <div class="form-icon-container">
-                                            <div class="form-floating"><input class="form-control form-icon-input" id="Name" type="text" placeholder="Name" /><label class="text-700 form-icon-label" for="Name">NAME</label></div><span class="fa-solid fa-user text-900 fs--1 form-icon"></span>
+                                        <div class="col-sm-6 col-md-2">
+                                            <div class="form-icon-container">
+                                              <div class="form-floating"><input class="form-control form-icon-input" id="Name" type="text" placeholder="Name" /><label class="text-700 form-icon-label" for="Name">NAME</label></div><span class="fa-solid fa-user text-900 fs--1 form-icon"></span>
+                                            </div>
                                           </div>
+                                          <div class="col-sm-6 col-md-2">
+                                            <div class="form-icon-container">
+                                              <div class="form-floating"><input class="form-control form-icon-input" id="phone" type="text" placeholder="Phone" /><label class="text-700 form-icon-label" for="phone">phone</label></div><span class="fa-solid fa-phone text-900 fs--1 form-icon"></span>
+                                            </div>
                                           </div>
-                                          <div class="col-sm-6 col-md-4">
+                                          <div class="col-sm-6 col-md-2">
                                           <div class="form-floating"><select class="form-select" id="floatingSelectCity">
                                               <option selected="selected">Select Type</option>
                                               <option value="1">Tech</option>
@@ -5905,17 +5945,11 @@
                                             </select>
                                           </div>
                                         </div>
-                                        <div class="col-sm-6 col-md-4">
+                                        <div class="col-sm-6 col-md-2">
                                           <div class="form-icon-container">
-                                            <div class="form-floating"><input class="form-control form-icon-input" id="emailSocial" type="email" placeholder="Email" /><label class="text-700 form-icon-label" for="emailSocial">EMAIL</label></div><span class="fa-solid fa-envelope text-900 fs--1 form-icon"></span>
+                                            <div class="form-floating"><input class="form-control form-icon-input" id="emailSocial" type="email" placeholder="Email" /><label class="text-700 form-icon-label" for="emailSocial">Email</label></div><span class="fa-solid fa-envelope text-900 fs--1 form-icon"></span>
                                           </div>
                                         </div>
-                                        <div class="col-sm-6 col-md-4">
-                                          <div class="form-icon-container">
-                                            <div class="form-floating"><input class="form-control form-icon-input" id="phone" type="text" placeholder="Phone" /><label class="text-700 form-icon-label" for="phone">phone</label></div><span class="fa-solid fa-phone text-900 fs--1 form-icon"></span>
-                                          </div>
-                                        </div>
-                                        
                                         <!-- <button class="btn btn-primary" type="submit">Submit</button> -->
                                       </div>
                                     </div>

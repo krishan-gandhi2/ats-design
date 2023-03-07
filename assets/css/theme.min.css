@@ -4304,8 +4304,8 @@ textarea.form-control-lg {
     width: 100%;
     padding: .5rem 2.5rem .5rem 1rem;
     -moz-padding-start: calc(1rem - 3px);
-    font-size: 0.8rem;
-    font-weight: 600;
+    font-size: 0.7rem;
+    font-weight: 700;
     line-height: 1.49;
     color: var(--phoenix-900);
     background-color: var(--phoenix-input-bg);
@@ -28633,7 +28633,7 @@ h3,
     color: var(--phoenix-gray-800);
     font-weight: 700;
     font-size: .64rem;
-    text-transform: uppercase
+    text-transform: capitalize;
 }
 
 .form-floating .form-control {

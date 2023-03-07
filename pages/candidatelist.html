@@ -94,6 +94,12 @@
     .container-of-all-filter-list{margin-top: 0.5rem;}
     .ul-of-all-filter-list img {float: right; padding: 6px 0px 0px 0px;}
     .scroll-on-cards{overflow-y: scroll;}
+    .card-first-line label, p{
+      font-size: 15px;
+    }
+    .card-second-line label, p{
+      font-size: 15px;
+    }
     .ul-of-all-filter-list{
       /* border-bottom: 1px solid lightgrey; */
       padding:0px;
@@ -113,12 +119,14 @@
       border:1px solid lightgrey;
       border-radius:5px 5px;
       padding: 0px 0px 10px 0px;
+      margin: 0px;
     }
     .save-filter-btn{
+      width: 80%;
       color: #fff;
       border: none;
       font-size: 15px;
-      font-weight: 700;
+      font-weight: 800;
       padding: 5px 7px;
       background-color: #459abc;
       border-radius: 25px;
@@ -254,6 +262,9 @@
         }
         .sub-menu:active{
             color: #1abc9c;
+        }
+        .menu{
+          width: 100%;
         }
         li.list-style{
             list-style-type: none;
@@ -468,68 +479,79 @@
                         </ul>
                       </div>
                     </div> -->
-                    <!-- parent pages-->
-                    <div class="nav-item-wrapper"><a class="nav-link label-1" href="#" role="button" data-bs-toggle="" aria-expanded="false">
-                      <div class="d-flex align-items-center">
-                        <span class="nav-link-icon">
-                          <span data-feather="plus-square"></span>
-                        </span>
-                        <span class="nav-link-text-wrapper">
-                          <span class="nav-link-text">Requirement</span>
-                        </span>
-                      </div>
-                    </a>
-                  </div>
-                    <div class="nav-item-wrapper"><a class="nav-link dropdown-indicator label-1" href="#project-management" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="project-management">
+                       <!-- parent pages-->
+                       <div class="nav-item-wrapper"><a class="nav-link label-1" href="#" role="button" data-bs-toggle="" aria-expanded="false">
                         <div class="d-flex align-items-center">
-                          <div class="dropdown-indicator-icon"><span class="fas fa-caret-right"></span></div><span class="nav-link-icon"><span data-feather="users"></span></span><span class="nav-link-text">Candidate</span>
+                          <span class="nav-link-icon">
+                            <span data-feather="plus-square"></span>
+                          </span>
+                          <span class="nav-link-text-wrapper">
+                            <span class="nav-link-text">Requirement</span>
+                          </span>
                         </div>
                       </a>
-                      <div class="parent-wrapper label-1">
-                        <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="project-management">
-                          <li class="collapsed-nav-item-title d-none">Candidate</li>
-                          <li class="nav-item"><a class="nav-link" href="../pages/candidate.html" data-bs-toggle="" aria-expanded="false">
-                              <div class="d-flex align-items-center"><span class="nav-link-text">Create</span></div>
-                            </a><!-- more inner pages-->
-                          </li>
-                          <li class="nav-item"><a class="nav-link" href="../pages/candidatelist.html" data-bs-toggle="" aria-expanded="false">
-                              <div class="d-flex align-items-center"><span class="nav-link-text">Candidate-list</span></div>
+                    </div>
+                      <div class="nav-item-wrapper"><a class="nav-link dropdown-indicator label-1" href="#project-management" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="project-management">
+                          <div class="d-flex align-items-center">
+                            <div class="dropdown-indicator-icon"><span class="fas fa-caret-right"></span></div><span class="nav-link-icon"><span data-feather="users"></span></span><span class="nav-link-text">Candidate</span>
+                          </div>
+                        </a>
+                        <div class="parent-wrapper label-1">
+                          <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="project-management">
+                            <li class="collapsed-nav-item-title d-none">Candidate</li>
+                            <li class="nav-item"><a class="nav-link" href="../pages/candidate.html" data-bs-toggle="" aria-expanded="false">
+                                <div class="d-flex align-items-center"><span class="nav-link-text">Create</span></div>
+                              </a><!-- more inner pages-->
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="../pages/candidatelist.html" data-bs-toggle="" aria-expanded="false">
+                                <div class="d-flex align-items-center"><span class="nav-link-text">Candidate-list</span></div>
+                              </a><!-- more inner pages-->
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                              <div class="d-flex align-items-center"><span class="nav-link-text">Parse profile</span></div>
                             </a><!-- more inner pages-->
                           </li>
                           <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                            <div class="d-flex align-items-center"><span class="nav-link-text">Parse profile</span></div>
+                            <div class="d-flex align-items-center"><span class="nav-link-text">Parsing Report</span></div>
                           </a><!-- more inner pages-->
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                          <div class="d-flex align-items-center"><span class="nav-link-text">Parsing Report</span></div>
-                        </a><!-- more inner pages-->
-                      </li>
-                          <!-- <li class="nav-item"><a class="nav-link" href="../apps/project-management/project-card-view.html" data-bs-toggle="" aria-expanded="false">
-                              <div class="d-flex align-items-center"><span class="nav-link-text">Search Consultant</span></div>
-                            </a>
-                          </li> -->
-                          <!-- <li class="nav-item"><a class="nav-link" href="../apps/project-management/project-board-view.html" data-bs-toggle="" aria-expanded="false">
-                              <div class="d-flex align-items-center"><span class="nav-link-text">Project board view</span></div>
-                            </a>
-                          </li>
-                          <li class="nav-item"><a class="nav-link" href="../apps/project-management/todo-list.html" data-bs-toggle="" aria-expanded="false">
-                              <div class="d-flex align-items-center"><span class="nav-link-text">Todo list</span></div>
-                            </a>
-                          </li>
-                          <li class="nav-item"><a class="nav-link" href="../apps/project-management/project-details.html" data-bs-toggle="" aria-expanded="false">
-                              <div class="d-flex align-items-center"><span class="nav-link-text">Project details</span></div>
-                            </a>
-                          </li> -->
-                        </ul>
+                            <!-- <li class="nav-item"><a class="nav-link" href="../apps/project-management/project-card-view.html" data-bs-toggle="" aria-expanded="false">
+                                <div class="d-flex align-items-center"><span class="nav-link-text">Search Consultant</span></div>
+                              </a>
+                            </li> -->
+                            <!-- <li class="nav-item"><a class="nav-link" href="../apps/project-management/project-board-view.html" data-bs-toggle="" aria-expanded="false">
+                                <div class="d-flex align-items-center"><span class="nav-link-text">Project board view</span></div>
+                              </a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="../apps/project-management/todo-list.html" data-bs-toggle="" aria-expanded="false">
+                                <div class="d-flex align-items-center"><span class="nav-link-text">Todo list</span></div>
+                              </a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="../apps/project-management/project-details.html" data-bs-toggle="" aria-expanded="false">
+                                <div class="d-flex align-items-center"><span class="nav-link-text">Project details</span></div>
+                              </a>
+                            </li> -->
+                          </ul>
+                        </div>
                       </div>
+                      <div class="nav-item-wrapper"><a class="nav-link label-1" href="#" role="button" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center">
+                          <span class="nav-link-icon">
+                            <span data-feather="columns"></span>
+                          </span>
+                          <span class="nav-link-text-wrapper">
+                            <span class="nav-link-text">Closure</span>
+                          </span>
+                        </div>
+                      </a>
                     </div>
                     <div class="nav-item-wrapper"><a class="nav-link label-1" href="#" role="button" data-bs-toggle="" aria-expanded="false">
                       <div class="d-flex align-items-center">
                         <span class="nav-link-icon">
-                          <span data-feather="plus-square"></span>
+                          <span data-feather="clipboard"></span>
                         </span>
                         <span class="nav-link-text-wrapper">
-                          <span class="nav-link-text">Closure</span>
+                          <span class="nav-link-text">Assignment</span>
                         </span>
                       </div>
                     </a>
@@ -537,10 +559,21 @@
                   <div class="nav-item-wrapper"><a class="nav-link label-1" href="#" role="button" data-bs-toggle="" aria-expanded="false">
                     <div class="d-flex align-items-center">
                       <span class="nav-link-icon">
-                        <span data-feather="clipboard"></span>
+                        <span data-feather="user-check"></span>
                       </span>
                       <span class="nav-link-text-wrapper">
-                        <span class="nav-link-text">Assignment</span>
+                        <span class="nav-link-text">Assigned</span>
+                      </span>
+                    </div>
+                  </a>
+                </div>
+                  <div class="nav-item-wrapper"><a class="nav-link label-1" href="#" role="button" data-bs-toggle="" aria-expanded="false">
+                    <div class="d-flex align-items-center">
+                      <span class="nav-link-icon">
+                        <span data-feather="briefcase"></span>
+                      </span>
+                      <span class="nav-link-text-wrapper">
+                        <span class="nav-link-text">Job Codes</span>
                       </span>
                     </div>
                   </a>
@@ -548,10 +581,10 @@
                 <div class="nav-item-wrapper"><a class="nav-link label-1" href="#" role="button" data-bs-toggle="" aria-expanded="false">
                   <div class="d-flex align-items-center">
                     <span class="nav-link-icon">
-                      <span data-feather="briefcase"></span>
+                      <span data-feather="life-buoy"></span>
                     </span>
                     <span class="nav-link-text-wrapper">
-                      <span class="nav-link-text">Job Codes</span>
+                      <span class="nav-link-text">Role</span>
                     </span>
                   </div>
                 </a>
@@ -559,10 +592,10 @@
               <div class="nav-item-wrapper"><a class="nav-link label-1" href="#" role="button" data-bs-toggle="" aria-expanded="false">
                 <div class="d-flex align-items-center">
                   <span class="nav-link-icon">
-                    <span data-feather="life-buoy"></span>
+                    <span data-feather="user"></span>
                   </span>
                   <span class="nav-link-text-wrapper">
-                    <span class="nav-link-text">Role</span>
+                    <span class="nav-link-text">Employee</span>
                   </span>
                 </div>
               </a>
@@ -570,118 +603,107 @@
             <div class="nav-item-wrapper"><a class="nav-link label-1" href="#" role="button" data-bs-toggle="" aria-expanded="false">
               <div class="d-flex align-items-center">
                 <span class="nav-link-icon">
-                  <span data-feather="user"></span>
+                  <span data-feather="clipboard"></span>
                 </span>
                 <span class="nav-link-text-wrapper">
-                  <span class="nav-link-text">Employee</span>
+                  <span class="nav-link-text">Parsing</span>
                 </span>
               </div>
             </a>
           </div>
-          <div class="nav-item-wrapper"><a class="nav-link label-1" href="#" role="button" data-bs-toggle="" aria-expanded="false">
-            <div class="d-flex align-items-center">
-              <span class="nav-link-icon">
-                <span data-feather="plus-square"></span>
-              </span>
-              <span class="nav-link-text-wrapper">
-                <span class="nav-link-text">Parsing</span>
-              </span>
-            </div>
-          </a>
-        </div>
-                  
-                    <!-- <div class="nav-item-wrapper"><a class="nav-link dropdown-indicator label-1" href="#email" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="email">
-                        <div class="d-flex align-items-center">
-                          <div class="dropdown-indicator-icon"><span class="fas fa-caret-right"></span></div><span class="nav-link-icon"><span data-feather="mail"></span></span><span class="nav-link-text">Email</span>
+                    
+                      <!-- <div class="nav-item-wrapper"><a class="nav-link dropdown-indicator label-1" href="#email" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="email">
+                          <div class="d-flex align-items-center">
+                            <div class="dropdown-indicator-icon"><span class="fas fa-caret-right"></span></div><span class="nav-link-icon"><span data-feather="mail"></span></span><span class="nav-link-text">Email</span>
+                          </div>
+                        </a>
+                        <div class="parent-wrapper label-1">
+                          <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="email">
+                            <li class="collapsed-nav-item-title d-none">Email</li>
+                            <li class="nav-item"><a class="nav-link" href="../apps/email/inbox.html" data-bs-toggle="" aria-expanded="false">
+                                <div class="d-flex align-items-center"><span class="nav-link-text">Inbox</span></div>
+                              </a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="../apps/email/email-detail.html" data-bs-toggle="" aria-expanded="false">
+                                <div class="d-flex align-items-center"><span class="nav-link-text">Email detail</span></div>
+                              </a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="../apps/email/compose.html" data-bs-toggle="" aria-expanded="false">
+                                <div class="d-flex align-items-center"><span class="nav-link-text">Compose</span></div>
+                              </a>
+                            </li>
+                          </ul>
+                        </div> -->
+                      <!-- </div> -->
+                      <!-- parent pages-->
+                      <div class="nav-item-wrapper"><a class="nav-link dropdown-indicator label-1" href="#events" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="events">
+                          <div class="d-flex align-items-center">
+                            <div class="dropdown-indicator-icon"><span class="fas fa-caret-right"></span></div>
+                            <span class="nav-link-icon"><span data-feather="bookmark"></span></span>
+                            <span class="nav-link-text">Master Data</span>
+                          </div>
+                        </a>
+                        <div class="parent-wrapper label-1">
+                          <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="events">
+                            <!-- <li class="collapsed-nav-item-title d-none">Administrator</li> -->
+                            <li class="nav-item"><a class="nav-link"  href="#" data-bs-toggle="" aria-expanded="false">
+                                <div class="d-flex align-items-center"><span class="nav-link-text">Labels</span></div>
+                              </a><!-- more inner pages-->
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                                <div class="d-flex align-items-center"><span class="nav-link-text">Country</span></div>
+                              </a><!-- more inner pages-->
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                                <div class="d-flex align-items-center"><span class="nav-link-text">State</span></div>
+                              </a><!-- more inner pages-->
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false" >
+                                <div class="d-flex align-items-center"><span class="nav-link-text">City</span></div>
+                              </a><!-- more inner pages-->
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false" >
+                              <div class="d-flex align-items-center"><span class="nav-link-text">Industries</span></div>
+                            </a><!-- more inner pages-->
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false" >
+                              <div class="d-flex align-items-center"><span class="nav-link-text">Qualification</span></div>
+                            </a><!-- more inner pages-->
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false" >
+                              <div class="d-flex align-items-center"><span class="nav-link-text">Institute</span></div>
+                            </a><!-- more inner pages-->
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false" >
+                              <div class="d-flex align-items-center"><span class="nav-link-text">Certifications</span></div>
+                            </a><!-- more inner pages-->
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false" >
+                              <div class="d-flex align-items-center"><span class="nav-link-text">Interview Type</span></div>
+                            </a><!-- more inner pages-->
+                            </li>
+                          </ul>
                         </div>
-                      </a>
-                      <div class="parent-wrapper label-1">
-                        <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="email">
-                          <li class="collapsed-nav-item-title d-none">Email</li>
-                          <li class="nav-item"><a class="nav-link" href="../apps/email/inbox.html" data-bs-toggle="" aria-expanded="false">
-                              <div class="d-flex align-items-center"><span class="nav-link-text">Inbox</span></div>
-                            </a>
-                          </li>
-                          <li class="nav-item"><a class="nav-link" href="../apps/email/email-detail.html" data-bs-toggle="" aria-expanded="false">
-                              <div class="d-flex align-items-center"><span class="nav-link-text">Email detail</span></div>
-                            </a>
-                          </li>
-                          <li class="nav-item"><a class="nav-link" href="../apps/email/compose.html" data-bs-toggle="" aria-expanded="false">
-                              <div class="d-flex align-items-center"><span class="nav-link-text">Compose</span></div>
-                            </a>
-                          </li>
-                        </ul>
-                      </div> -->
-                    <!-- </div> -->
-                    <!-- parent pages-->
-                    <div class="nav-item-wrapper"><a class="nav-link dropdown-indicator label-1" href="#events" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="events">
-                        <div class="d-flex align-items-center">
-                          <div class="dropdown-indicator-icon"><span class="fas fa-caret-right"></span></div>
-                          <span class="nav-link-icon"><span data-feather="bookmark"></span></span>
-                          <span class="nav-link-text">Master Data</span>
+                      </div><!-- parent pages-->
+                      <div class="nav-item-wrapper"><a class="nav-link dropdown-indicator label-1" href="#social" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="social">
+                          <div class="d-flex align-items-center">
+                            <div class="dropdown-indicator-icon"><span class="fas fa-caret-right"></span></div><span class="nav-link-icon"><span data-feather="edit-3"></span></span><span class="nav-link-text">Report</span>
+                          </div>
+                        </a>
+                        <div class="parent-wrapper label-1">
+                          <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="social">
+                            <li class="collapsed-nav-item-title d-none">Social</li>
+                            <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                                <div class="d-flex align-items-center"><span class="nav-link-text">R1</span></div>
+                              </a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                                <div class="d-flex align-items-center"><span class="nav-link-text">R2</span></div>
+                              </a>
+                            </li>
+                          </ul>
                         </div>
-                      </a>
-                      <div class="parent-wrapper label-1">
-                        <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="events">
-                          <!-- <li class="collapsed-nav-item-title d-none">Administrator</li> -->
-                          <li class="nav-item"><a class="nav-link"  href="#" data-bs-toggle="" aria-expanded="false">
-                              <div class="d-flex align-items-center"><span class="nav-link-text">Labels</span></div>
-                            </a><!-- more inner pages-->
-                          </li>
-                          <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                              <div class="d-flex align-items-center"><span class="nav-link-text">Country</span></div>
-                            </a><!-- more inner pages-->
-                          </li>
-                          <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                              <div class="d-flex align-items-center"><span class="nav-link-text">State</span></div>
-                            </a><!-- more inner pages-->
-                          </li>
-                          <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false" >
-                              <div class="d-flex align-items-center"><span class="nav-link-text">City</span></div>
-                            </a><!-- more inner pages-->
-                          </li>
-                          <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false" >
-                            <div class="d-flex align-items-center"><span class="nav-link-text">Industries</span></div>
-                          </a><!-- more inner pages-->
-                          </li>
-                          <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false" >
-                            <div class="d-flex align-items-center"><span class="nav-link-text">Qualification</span></div>
-                          </a><!-- more inner pages-->
-                          </li>
-                          <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false" >
-                            <div class="d-flex align-items-center"><span class="nav-link-text">Institute</span></div>
-                          </a><!-- more inner pages-->
-                          </li>
-                          <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false" >
-                            <div class="d-flex align-items-center"><span class="nav-link-text">Certifications</span></div>
-                          </a><!-- more inner pages-->
-                          </li>
-                          <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false" >
-                            <div class="d-flex align-items-center"><span class="nav-link-text">Interview Type</span></div>
-                          </a><!-- more inner pages-->
-                          </li>
-                        </ul>
                       </div>
-                    </div><!-- parent pages-->
-                    <div class="nav-item-wrapper"><a class="nav-link dropdown-indicator label-1" href="#social" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="social">
-                        <div class="d-flex align-items-center">
-                          <div class="dropdown-indicator-icon"><span class="fas fa-caret-right"></span></div><span class="nav-link-icon"><span data-feather="edit-3"></span></span><span class="nav-link-text">Report</span>
-                        </div>
-                      </a>
-                      <div class="parent-wrapper label-1">
-                        <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="social">
-                          <li class="collapsed-nav-item-title d-none">Social</li>
-                          <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                              <div class="d-flex align-items-center"><span class="nav-link-text">R1</span></div>
-                            </a>
-                          </li>
-                          <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                              <div class="d-flex align-items-center"><span class="nav-link-text">R2</span></div>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
                     <!-- <div class="nav-item-wrapper"><a class="nav-link label-1" href="../apps/calendar.html" role="button" data-bs-toggle="" aria-expanded="false">
                         <div class="d-flex align-items-center"><span class="nav-link-icon"><span data-feather="calendar"></span></span><span class="nav-link-text-wrapper"><span class="nav-link-text">Calendar</span></span></div>
                       </a></div> -->
@@ -1463,10 +1485,10 @@
               </a>
             </div>
             <div class="search-box navbar-top-search-box d-none d-lg-block" data-list='{"valueNames":["title"]}' style="width:25rem;">
-              <form class="position-relative" data-bs-toggle="search" data-bs-display="static"><input class="form-control search-input fuzzy-search rounded-pill form-control-sm" type="search" placeholder="Search..." aria-label="Search" />
+              <!-- <form class="position-relative" data-bs-toggle="search" data-bs-display="static"><input class="form-control search-input fuzzy-search rounded-pill form-control-sm" type="search" placeholder="Search..." aria-label="Search" />
                 <span class="fas fa-search search-box-icon"></span>
               </form>
-              <div class="btn-close position-absolute end-0 top-50 translate-middle cursor-pointer shadow-none" data-bs-dismiss="search"><button class="btn btn-link btn-close-falcon p-0" aria-label="Close"></button></div>
+              <div class="btn-close position-absolute end-0 top-50 translate-middle cursor-pointer shadow-none" data-bs-dismiss="search"><button class="btn btn-link btn-close-falcon p-0" aria-label="Close"></button></div> -->
               <div class="dropdown-menu border border-300 font-base start-0 py-0 overflow-hidden w-100">
                 <div class="scrollbar-overlay" style="max-height: 30rem;">
                   <div class="list pb-3">
@@ -4798,61 +4820,6 @@
                   
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <div class="row text-left col-md-12 col-lg-12">
-                          <div class="col-md-2 col-lg-2">
-                              <!-- <div class="dropdown" style="display: inline-block">
-                                <button class="dropbtn" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  Limit
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                  <button class="dropdown-item" type="button">10</button>
-                                  <button class="dropdown-item" type="button">20</button>
-                                  <button class="dropdown-item" type="button">50</button>
-                                  <button class="dropdown-item" type="button">70</button>
-                                  <button class="dropdown-item" type="button">100</button>
-                                  <button class="dropdown-item" type="button">200</button>
-                                </div>
-                              </div> -->
-                            </div>
-                            <div class="col-md-1 col-lg-1">
-                                <!-- <div class="dropdown">
-                                  <button onclick="myNameSearchFunction()" class="dropbtn">Name Search</button>
-                                  <div id="myNameSearchFunction1" class="dropdown-content">
-                                    <input type="text" placeholder="Search.." class="myInput" id="myInput1" onkeyup="filterFunction1()">
-                                    <a href="#blog">David Tomar</a>
-                                    <a href="#custom">Jatin Chauhan</a>
-                                    <a href="#about">Gaurav Kumar</a>
-                                    <a href="#tools">Manoj Sharma</a>
-                                    <a href="#contact">Abhinav Singh</a>
-                                    <a href="#base">Ashish Kumar Yadav</a>
-                                    <a href="#support">Shivam Garg</a>
-                                  </div>
-                                </div>
-                                <div class="dropdown">
-                                    <button onclick="myLocationSearchFunction()" class="dropbtn">Location</button>
-                                    <div id="myLocationSearchFunction1" class="dropdown-content">
-                                      <input type="text" placeholder="Search.." class="myInput" id="myInput2" onkeyup="filterFunction2()">
-                                      <a href="#about">New York</a>
-                                      <a href="#base">Delhi</a>
-                                      <a href="#blog">Wellington</a>
-                                      <a href="#contact">Berlin</a>
-                                      <a href="#custom">Moscow</a>
-                                      <a href="#support">Gurugram</a>
-                                      <a href="#tools">Florida</a>
-                                    </div>
-                                </div>
-                                <div class="dropdown" style="display: inline-block">
-                                  <button class="dropbtn" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Search Year
-                                  </button>
-                                  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                    <button class="dropdown-item" type="button">2000-2005</button>
-                                    <button class="dropdown-item" type="button">2006-2010</button>
-                                    <button class="dropdown-item" type="button">2011-2015</button>
-                                    <button class="dropdown-item" type="button">2016-2020</button>
-                                    <button class="dropdown-item" type="button">2021-2023</button>
-                                  </div>
-                                </div> -->
-                            </div>
                             <div class="col-md-5 col-lg-5">
                                 <form class="position-relative" data-bs-toggle="search" data-bs-display="static"><input class="form-control search-input fuzzy-search rounded-pill form-control-sm" type="search" placeholder="Search here..." aria-label="Search" />
                                 </form>
@@ -4860,33 +4827,26 @@
                             <div class="col-md-2 col-lg-2">
                                 <button class="dropbtn" type="submit">Search</button>
                             </div>
+                            <div class="col-md-2 col-lg-2"></div>
                             <div class="col-md-2 col-lg-2">
-                              <div class="dropdown" style="display: inline-block">
-                                <button class="dropbtn" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  Sort By
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                  <button class="dropdown-item" type="button">CTC: High to Low</button>
-                                  <button class="dropdown-item" type="button">CTC: Low to High</button>
-                                  <button class="dropdown-item" type="button">Exp.: High to Low</button>
-                                  <button class="dropdown-item" type="button">Exp.: Low to High</button>
-                                  <button class="dropdown-item" type="button">Freshness</button>
-                                  <button class="dropdown-item" type="button">Last Active Date</button>
-                                </div>
-                              </div>
-                              <div class="dropdown" style="display: inline-block">
-                                <button class="dropbtn" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  Page Limit
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                  <button class="dropdown-item" type="button">10</button>
-                                  <button class="dropdown-item" type="button">20</button>
-                                  <button class="dropdown-item" type="button">50</button>
-                                  <button class="dropdown-item" type="button">70</button>
-                                  <button class="dropdown-item" type="button">100</button>
-                                  <button class="dropdown-item" type="button">200</button>
-                                </div>
-                              </div>
+                              <select class="form-select" aria-label="Default select example">
+                                <option selected>Freshness</option>
+                                <option value="">CTC: High to Low</option>
+                                <option value="">CTC: Low to High</option>
+                                <option value="">Exp.: High to Low</option>
+                                <option value="">Exp.: Low to High</option>
+                                <option value="">Last Active Date</option>
+                              </select>
+                            </div>
+                            <div class="col-md-1 col-lg-1">
+                              <select class="form-select" aria-label="Default select example">
+                                <option selected>10</option>
+                                <option value="">20</option>
+                                <option value="">50</option>
+                                <option value="">70</option>
+                                <option value="">100</option>
+                                <option value="">200</option>
+                              </select>
                             </div>
                         </div>
 
@@ -4920,7 +4880,7 @@
                         <aside class="sidebar sidebar-menu-filters">
                             <div id="leftside-navigation" class="nano">
                               <div>
-                                <div class="text-center mt-2">
+                                <div class="text-left mt-2" style="margin-left: 1.6rem; padding: 1rem;">
                                   <button type="button" class="save-filter-btn" data-toggle="modal" data-target="#filterSaveModal">Save Filter</button>
                                 </div>
                                 <h4 class="p-3">Selected Filters :-</h4>
@@ -4933,7 +4893,70 @@
                               </div>
                               <div class="container d-flex">
                                 <div class="menu">
-                                  
+                                  <div class="accordion-item mt-2 mb-3">
+                                    <h2 class="accordion-header" id="headingThree" >
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" >
+                                        Location Search
+                                      </button>
+                                    </h2>
+                                    <div class="accordion-collapse collapse" id="collapseFive" aria-labelledby="headingFive" data-bs-parent="#accordionExample" style="margin-top: 15px;">
+                                      <div class="accordion-body pt-0">
+                                        <div class="row g-3 needs-validation options-of-filter-container">
+                                          <div class="container container-of-all-filter-list" id="filter-submenu">
+                                            <ul class="hidden-menu clearfix ul-of-all-filter-list" id="results1">
+                                                
+                                            </ul>
+                                            <!-- <a id="clear-all-btn" class=" btn clear-all">ClearAll</a> -->
+                                          </div>
+                                          <!-- <li class="button-dropdown"> -->
+                                            <!-- <a href="javascript:void(0)" class="mode-sec dropdown-toggle">Learning Modes</a> -->
+                                            <div id="myNameSearchFunction1">
+                                              <input type="text" placeholder="Search.." class="form-control search-input fuzzy-search rounded-pill form-control-sm" id="myInput1" onkeyup="filterFunction1()">
+                                              <a href="#about">
+                                                <div>
+                                                    <input type="checkbox" class="mainlist" value="Palwal" data-set="leaningModes" data-ref="1"> Palwal<span class="checkmark"></span>
+                                                </div>
+                                              </a>
+                                              <a href="#base">
+                                                <div>
+                                                    <input type="checkbox" class="mainlist" value="delhi" data-set="leaningModes" data-ref="1"> Delhi<span class="checkmark"></span>
+                                                </div>
+                                              </a>
+                                              <a href="#blog">
+                                                <div>
+                                                    <input type="checkbox" class="mainlist" value="delhi" data-set="leaningModes" data-ref="1"> Wellingston<span class="checkmark"></span>
+                                                </div>
+                                              </a>
+                                              <a href="#contact">
+                                                <div>
+                                                    <input type="checkbox" class="mainlist" value="delhi" data-set="leaningModes" data-ref="1"> Berlin<span class="checkmark"></span>
+                                                </div>
+                                              </a>
+                                              <a href="#custom">
+                                                <div>
+                                                    <input type="checkbox" class="mainlist" value="delhi" data-set="leaningModes" data-ref="1"> Moscow<span class="checkmark"></span>
+                                                </div>
+                                              </a>
+                                              <a href="#support">
+                                                <div>
+                                                    <input type="checkbox" class="mainlist" value="delhi" data-set="leaningModes" data-ref="1"> Gurugram<span class="checkmark"></span>
+                                                </div>
+                                              </a>
+                                              <a href="#tools">
+                                                <div>
+                                                    <input type="checkbox" class="mainlist" value="delhi" data-set="leaningModes" data-ref="1"> Florida<span class="checkmark"></span>
+                                                </div>
+                                              </a>
+                                                <div class="apply-button-of-filter-dropdown text-center">
+                                                    <button class="applybtn"  id="show-hidden-menu">Apply</button>
+                                                </div>
+                                            </div>
+                                        <!-- </li> -->
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
                                   <div class="accordion-item mt-2 mb-3">
                                     <h2 class="accordion-header" id="headingThree" >
                                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" >
@@ -4985,7 +5008,7 @@
                                   </div>
                                   <div class="accordion-item mt-2 mb-3">
                                     <h2 class="accordion-header" id="headingThree" >
-                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseThree" >
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" >
                                         Experience (Years)
                                       </button>
                                     </h2>
@@ -5030,7 +5053,7 @@
                                   </div>
                                   <div class="accordion-item mt-2 mb-3">
                                     <h2 class="accordion-header" id="headingThree" >
-                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseThree" >
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" >
                                         Salary (INR-Lacs)
                                       </button>
                                     </h2>
@@ -5075,8 +5098,8 @@
                                   </div>
                                   <div class="accordion-item mt-2 mb-3">
                                     <h2 class="accordion-header" id="headingThree" >
-                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree" >
-                                        Department
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" >
+                                        Qualification
                                       </button>
                                     </h2>
                                     <div class="accordion-collapse collapse" id="collapseFour" aria-labelledby="headingThree" data-bs-parent="#accordionExample" style="margin-top: 15px;">
@@ -5088,26 +5111,30 @@
                                             </ul>
                                             <!-- <a id="clear-all-btn" class=" btn clear-all">ClearAll</a> -->
                                           </div>
+                                          <div class="">
+                                            <form class="position-relative" data-bs-toggle="search" data-bs-display="static"><input class="form-control search-input fuzzy-search rounded-pill form-control-sm" type="search" placeholder="Search here..." aria-label="Search" />
+                                            </form>
+                                          </div>
                                           <!-- <li class="button-dropdown"> -->
                                             <!-- <a href="javascript:void(0)" class="mode-sec dropdown-toggle">Creating Modes</a> -->
                                             <!-- <div class="dropdown-menu filter-menu-list-select"> -->
                                               <div>
-                                                  <label><input type="checkbox" class="mainlist" value="test19" data-set="implementingModes" data-ref="19"> IT<span class="checkmark"></span></label>
+                                                  <label><input type="checkbox" class="mainlist" value="test19" data-set="implementingModes" data-ref="19"> B.Sc(C.S.)<span class="checkmark"></span></label>
                                               </div>
                                               <div>
-                                                  <label><input type="checkbox" class="mainlist" value="test20" data-set="implementingModes" data-ref="20"> Managing<span class="checkmark"></span></label>
+                                                  <label><input type="checkbox" class="mainlist" value="test20" data-set="implementingModes" data-ref="20"> B.com(Math)<span class="checkmark"></span></label>
                                               </div>
                                               <div>
-                                                  <label><input type="checkbox" class="mainlist" value="test21" data-set="implementingModes" data-ref="21"> Business<span class="checkmark"></span></label>
+                                                  <label><input type="checkbox" class="mainlist" value="test21" data-set="implementingModes" data-ref="21"> MCA<span class="checkmark"></span></label>
                                               </div>
                                               <div>
-                                                  <label><input type="checkbox" class="mainlist" value="test22" data-set="implementingModes" data-ref="22"> Tester<span class="checkmark"></span></label>
+                                                  <label><input type="checkbox" class="mainlist" value="test22" data-set="implementingModes" data-ref="22"> M.Ba(Geo)<span class="checkmark"></span></label>
                                               </div>
                                               <div>
-                                                  <label><input type="checkbox" class="mainlist" value="test23" data-set="implementingModes" data-ref="23"> Marketing<span class="checkmark"></span></label>
+                                                  <label><input type="checkbox" class="mainlist" value="test23" data-set="implementingModes" data-ref="23"> M.com(Math)<span class="checkmark"></span></label>
                                               </div>
                                               <div>
-                                                  <label><input type="checkbox" class="mainlist" value="test24" data-set="implementingModes" data-ref="24"> Staff<span class="checkmark"></span></label>
+                                                  <label><input type="checkbox" class="mainlist" value="test24" data-set="implementingModes" data-ref="24"> M.Sc(Chem)<span class="checkmark"></span></label>
                                               </div>
                                               <div class="apply-button-of-filter-dropdown text-center">
                                                   <button class="applybtn" id="show-hidden-menu3">Apply</button>
@@ -5135,10 +5162,38 @@
                                         <img class="" width="100%" src="https://new-dm1-recruiter.getglobalgroup.com/assets/images/avatars/profile.jpg" style="border-radius: 35%;"> 
                                     </div> -->
                                     <div class="col-md-12">
-                                        <div class="row">
-                                            <div class="text-left row" style="width: 55%; color: #124B82;">
-                                                <h4 class="card-title" style="color: #124B82;">Aashish Kumar Yadav</h4>
+                                        <div class="row card-first-line">
+                                          <!-- <div>
+                                          </div> -->
+                                          <div class="row col-md-3">
+                                            <p class="card-title" style="color: #124B82;font-size:22px; font-weight: bolder;">Aashish Kumar Yadav</p>
+                                          </div>   
+                                          <div class="row col-md-3">
+                                              <div class="text-left row" style="width: auto;">
+                                                  <label><i class="fa fa-map-marker" aria-hidden="true"></i></label>
+                                              </div>
+                                              <div class="text-left row" style="width: auto;">
+                                                  <p class="card-title">Rajiv Chowk, New Delhi</p>
+                                              </div>
+                                          </div>
+                                          <div class="row col-md-3">
+                                              <div class="text-left row" style="width: auto;">
+                                                  <label><i class="fa fa-phone" aria-hidden="true"></i></label>
+                                              </div>
+                                              <div class="text-left row" style="width: auto;">
+                                                  <p class="card-title">+91-9876543210</p>
+                                              </div>
+                                          </div>
+                                          <div class="row col-md-3">
+                                            <div class="text-left row" style="width: auto;">
+                                                <label><i class="fa fa-envelope" aria-hidden="true"></i></label>
                                             </div>
+                                            <div class="text-left row" style="width: auto;">
+                                                <p class="card-title">aashish@theglove.in</p>
+                                            </div>
+                                          </div>
+                                            <!-- <div class="text-left row" style="width: 55%; color: #124B82;">
+                                            </div> -->
                                             <!-- <div class="text-center row" style="width: 45%;">
                                                 <div class="col-md-3 card-top"></div>
                                                 <div class="col-md-3 card-top"><span class="resrv-crd-optn1">11</span><br><span>Subjects</span></div>
@@ -5146,7 +5201,15 @@
                                                 <div class="col-md-3 card-top"><span class="resrv-crd-optn3">95</span><br><span>Percentage</span></div>
                                             </div> -->
                                         </div>
-                                        <div class="card-text-cls row col-md-12">
+                                        <div class="row col-md-12 card-second-line reserve-card-content">
+                                            <div class="row col-md-4">
+                                                <div class="text-left row" style="width: auto;">
+                                                    <label>Qualification :</label>
+                                                </div>
+                                                <div class="text-left row" style="width: auto;">
+                                                    <p class="card-title">M.Sc(Maths)</p>
+                                                </div>
+                                            </div>
                                             <div class="row col-md-2">
                                                 <div class="text-left row" style="width: auto;">
                                                     <label><i class="fa-sharp fa-solid fa-bag-shopping"></i></label>
@@ -5155,43 +5218,6 @@
                                                     <p class="card-title">16Y, 12M</p>
                                                 </div>
                                             </div>
-                                            <div class="row col-md-2">
-                                                <div class="text-left row" style="width: auto;">
-                                                    <label><i class="fa-solid fa-wallet"></i></label>
-                                                </div>
-                                                <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">$80,000,000</p>
-                                                </div>
-                                            </div>
-                                            <div class="row col-md-3">
-                                                <div class="text-left row" style="width: auto;">
-                                                    <label><i class="fa fa-map-marker" aria-hidden="true"></i></label>
-                                                </div>
-                                                <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">Rajiv Chowk, New Delhi</p>
-                                                </div>
-                                            </div>
-                                            <div class="row col-md-3">
-                                                <div class="text-left row" style="width: auto;">
-                                                    <label><i class="fa fa-phone" aria-hidden="true"></i></label>
-                                                </div>
-                                                <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">+91-9876543210</p>
-                                                </div>
-                                            </div>
-                                            <div class="row col-md-3">
-                                              <div class="text-left row" style="width: auto;">
-                                                  <label><i class="fa fa-envelope" aria-hidden="true"></i></label>
-                                              </div>
-                                              <div class="text-left row" style="width: auto;">
-                                                  <p class="card-title">venugopala@theglove.in</p>
-                                              </div>
-                                            </div>
-                                            <!-- <p class="card-text"><i class="fa fa-map-marker" aria-hidden="true"></i> New Delhi</p>
-                                            <p class="card-text"><i class="fa fa-phone" aria-hidden="true"></i> +91-9876543210</p>
-                                            <p class="card-text"><i class="fa fa-envelope" aria-hidden="true"></i> venugopalaiyer@theglove.com</p> -->
-                                        </div>
-                                        <div class="row mt-3 col-md-12 reserve-card-content">
                                             <div class="row col-md-4">
                                                 <div class="text-left row" style="width: auto;">
                                                     <label>Current Company :</label>
@@ -5200,28 +5226,20 @@
                                                     <p class="card-title">Lorem LTD.</p>
                                                 </div>
                                             </div>
-                                            <div class="row col-md-4">
-                                                <div class="text-left row" style="width: auto;">
-                                                    <label>Qualification :</label>
+                                            <div class="row col-md-2">
+                                                <div class="text-left row" style="width: auto; padding:0;">
+                                                    <label><i class="fa-solid fa-wallet"></i></label>
                                                 </div>
                                                 <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">MS/M.Sc(Science)</p>
-                                                </div>
-                                            </div>
-                                            <div class="row col-md-4">
-                                                <div class="text-left row" style="width: auto;">
-                                                    <label>Pref. Location :</label>
-                                                </div>
-                                                <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">Gurugram, Delhi</p>
+                                                    <p class="card-title">Inr 250,000</p>
                                                 </div>
                                             </div>
                                             <div class="row col-md-4">
                                                 <div class="text-left row" style="width: auto;">
-                                                    <label>Type :</label>
+                                                    <label>Skills :</label>
                                                 </div>
                                                 <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">Non-Tech</p>
+                                                    <p class="card-title">Problem Solver</p>
                                                 </div>
                                             </div>
                                             <div class="row col-md-4">
@@ -5232,15 +5250,6 @@
                                                     <p class="card-title">SaleForce, Techincal Support</p>
                                                 </div>
                                             </div>
-                                            <!-- <div class="row col-md-12">
-                                                <div class="text-left row" style="width: auto;">
-                                                    <label>Deatils :-</label>
-                                                </div>
-                                                <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis consequuntur dolorum beatae praesentium nam voluptatibus laudantium odit, ratione consequatur ad ullam corporis dignissimos ducimus ut, hic accusamus alias impedit esse?
-                                                    Doloribus saepe placeat ad sunt pariatur veritatis sit ex natus ullam excepturi quaerat quibusdam, iste, quae, asperiores rem voluptatibus architecto quia consequuntur ea! Ab corrupti voluptatibus sed, consectetur libero magnam!</p>
-                                                </div>
-                                            </div> -->
                                         </div>
                                     </div>
                                 </div>
@@ -5251,97 +5260,75 @@
                           <div class="card card-of-candidate-section">
                             <div class="card-body">
                                 <div class="row">
-                                    <!-- <div class="col-md-2">
-                                        <img class="" width="100%" src="https://new-dm1-recruiter.getglobalgroup.com/assets/images/avatars/profile.jpg" style="border-radius: 35%;"> 
-                                    </div> -->
                                     <div class="col-md-12">
-                                        <div class="row">
-                                            <div class="text-left row" style="width: 55%; color: #124B82;">
-                                                <h4 class="card-title" style="color: #124B82;">Aashish Kumar Yadav</h4>
-                                            </div>
-                                            <!-- <div class="text-center row" style="width: 45%;">
-                                                <div class="col-md-3 card-top"></div>
-                                                <div class="col-md-3 card-top"><span class="resrv-crd-optn1">11</span><br><span>Subjects</span></div>
-                                                <div class="col-md-3 card-top"><span class="resrv-crd-optn2">51</span><br><span>Total Marks</span></div>
-                                                <div class="col-md-3 card-top"><span class="resrv-crd-optn3">95</span><br><span>Percentage</span></div>
-                                            </div> -->
-                                        </div>
-                                        <div class="card-text-cls row col-md-12">
-                                            <div class="row col-md-2">
-                                                <div class="text-left row" style="width: auto;">
-                                                    <label><i class="fa-sharp fa-solid fa-bag-shopping"></i></label>
-                                                </div>
-                                                <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">16Y, 12M</p>
-                                                </div>
-                                            </div>
-                                            <div class="row col-md-2">
-                                                <div class="text-left row" style="width: auto;">
-                                                    <label><i class="fa-solid fa-wallet"></i></label>
-                                                </div>
-                                                <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">$80,000,000</p>
-                                                </div>
-                                            </div>
-                                            <div class="row col-md-3">
-                                                <div class="text-left row" style="width: auto;">
-                                                    <label><i class="fa fa-map-marker" aria-hidden="true"></i></label>
-                                                </div>
-                                                <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">Rajiv Chowk, New Delhi</p>
-                                                </div>
-                                            </div>
-                                            <div class="row col-md-3">
-                                                <div class="text-left row" style="width: auto;">
-                                                    <label><i class="fa fa-phone" aria-hidden="true"></i></label>
-                                                </div>
-                                                <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">+91-9876543210</p>
-                                                </div>
-                                            </div>
-                                            <div class="row col-md-3">
+                                        <div class="row card-first-line">
+                                          <div class="row col-md-3">
+                                            <p class="card-title" style="color: #124B82;font-size:22px; font-weight: bolder;">Gaurav Kumar</p>
+                                          </div>   
+                                          <div class="row col-md-3">
                                               <div class="text-left row" style="width: auto;">
-                                                  <label><i class="fa fa-envelope" aria-hidden="true"></i></label>
+                                                  <label><i class="fa fa-map-marker" aria-hidden="true"></i></label>
                                               </div>
                                               <div class="text-left row" style="width: auto;">
-                                                  <p class="card-title">venugopala@theglove.in</p>
+                                                  <p class="card-title">Sector-7, Gurugram</p>
                                               </div>
+                                          </div>
+                                          <div class="row col-md-3">
+                                              <div class="text-left row" style="width: auto;">
+                                                  <label><i class="fa fa-phone" aria-hidden="true"></i></label>
+                                              </div>
+                                              <div class="text-left row" style="width: auto;">
+                                                  <p class="card-title">+91-9123543210</p>
+                                              </div>
+                                          </div>
+                                          <div class="row col-md-3">
+                                            <div class="text-left row" style="width: auto;">
+                                                <label><i class="fa fa-envelope" aria-hidden="true"></i></label>
                                             </div>
-                                            <!-- <p class="card-text"><i class="fa fa-map-marker" aria-hidden="true"></i> New Delhi</p>
-                                            <p class="card-text"><i class="fa fa-phone" aria-hidden="true"></i> +91-9876543210</p>
-                                            <p class="card-text"><i class="fa fa-envelope" aria-hidden="true"></i> venugopalaiyer@theglove.com</p> -->
+                                            <div class="text-left row" style="width: auto;">
+                                                <p class="card-title">gaurav@theglove.in</p>
+                                            </div>
+                                          </div>
                                         </div>
-                                        <div class="row mt-3 col-md-12 reserve-card-content">
-                                            <div class="row col-md-4">
-                                                <div class="text-left row" style="width: auto;">
-                                                    <label>Current Company :</label>
-                                                </div>
-                                                <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">Lorem LTD.</p>
-                                                </div>
-                                            </div>
+                                        <div class="row col-md-12 card-second-line reserve-card-content">
                                             <div class="row col-md-4">
                                                 <div class="text-left row" style="width: auto;">
                                                     <label>Qualification :</label>
                                                 </div>
                                                 <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">MS/M.Sc(Science)</p>
+                                                    <p class="card-title">B.Tech(C.S.)</p>
+                                                </div>
+                                            </div>
+                                            <div class="row col-md-2">
+                                                <div class="text-left row" style="width: auto;">
+                                                    <label><i class="fa-sharp fa-solid fa-bag-shopping"></i></label>
+                                                </div>
+                                                <div class="text-left row" style="width: auto;">
+                                                    <p class="card-title">4Y, 8M</p>
                                                 </div>
                                             </div>
                                             <div class="row col-md-4">
                                                 <div class="text-left row" style="width: auto;">
-                                                    <label>Pref. Location :</label>
+                                                    <label>Current Company :</label>
                                                 </div>
                                                 <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">Gurugram, Delhi</p>
+                                                    <p class="card-title">KsTech LTD.</p>
+                                                </div>
+                                            </div>
+                                            <div class="row col-md-2">
+                                                <div class="text-left row" style="width: auto; padding:0;">
+                                                    <label><i class="fa-solid fa-wallet"></i></label>
+                                                </div>
+                                                <div class="text-left row" style="width: auto;">
+                                                    <p class="card-title">Inr 360,000</p>
                                                 </div>
                                             </div>
                                             <div class="row col-md-4">
                                                 <div class="text-left row" style="width: auto;">
-                                                    <label>Type :</label>
+                                                    <label>Skills :</label>
                                                 </div>
                                                 <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">Non-Tech</p>
+                                                    <p class="card-title">Php, JS</p>
                                                 </div>
                                             </div>
                                             <div class="row col-md-4">
@@ -5349,18 +5336,9 @@
                                                     <label>Label :</label>
                                                 </div>
                                                 <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">SaleForce, Techincal Support</p>
+                                                    <p class="card-title">Web Developer</p>
                                                 </div>
                                             </div>
-                                            <!-- <div class="row col-md-12">
-                                                <div class="text-left row" style="width: auto;">
-                                                    <label>Deatils :-</label>
-                                                </div>
-                                                <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis consequuntur dolorum beatae praesentium nam voluptatibus laudantium odit, ratione consequatur ad ullam corporis dignissimos ducimus ut, hic accusamus alias impedit esse?
-                                                    Doloribus saepe placeat ad sunt pariatur veritatis sit ex natus ullam excepturi quaerat quibusdam, iste, quae, asperiores rem voluptatibus architecto quia consequuntur ea! Ab corrupti voluptatibus sed, consectetur libero magnam!</p>
-                                                </div>
-                                            </div> -->
                                         </div>
                                     </div>
                                 </div>
@@ -5371,97 +5349,75 @@
                           <div class="card card-of-candidate-section">
                             <div class="card-body">
                                 <div class="row">
-                                    <!-- <div class="col-md-2">
-                                        <img class="" width="100%" src="https://new-dm1-recruiter.getglobalgroup.com/assets/images/avatars/profile.jpg" style="border-radius: 35%;"> 
-                                    </div> -->
                                     <div class="col-md-12">
-                                        <div class="row">
-                                            <div class="text-left row" style="width: 55%; color: #124B82;">
-                                                <h4 class="card-title" style="color: #124B82;">Aashish Kumar Yadav</h4>
-                                            </div>
-                                            <!-- <div class="text-center row" style="width: 45%;">
-                                                <div class="col-md-3 card-top"></div>
-                                                <div class="col-md-3 card-top"><span class="resrv-crd-optn1">11</span><br><span>Subjects</span></div>
-                                                <div class="col-md-3 card-top"><span class="resrv-crd-optn2">51</span><br><span>Total Marks</span></div>
-                                                <div class="col-md-3 card-top"><span class="resrv-crd-optn3">95</span><br><span>Percentage</span></div>
-                                            </div> -->
-                                        </div>
-                                        <div class="card-text-cls row col-md-12">
-                                            <div class="row col-md-2">
-                                                <div class="text-left row" style="width: auto;">
-                                                    <label><i class="fa-sharp fa-solid fa-bag-shopping"></i></label>
-                                                </div>
-                                                <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">16Y, 12M</p>
-                                                </div>
-                                            </div>
-                                            <div class="row col-md-2">
-                                                <div class="text-left row" style="width: auto;">
-                                                    <label><i class="fa-solid fa-wallet"></i></label>
-                                                </div>
-                                                <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">$80,000,000</p>
-                                                </div>
-                                            </div>
-                                            <div class="row col-md-3">
-                                                <div class="text-left row" style="width: auto;">
-                                                    <label><i class="fa fa-map-marker" aria-hidden="true"></i></label>
-                                                </div>
-                                                <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">Rajiv Chowk, New Delhi</p>
-                                                </div>
-                                            </div>
-                                            <div class="row col-md-3">
-                                                <div class="text-left row" style="width: auto;">
-                                                    <label><i class="fa fa-phone" aria-hidden="true"></i></label>
-                                                </div>
-                                                <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">+91-9876543210</p>
-                                                </div>
-                                            </div>
-                                            <div class="row col-md-3">
+                                        <div class="row card-first-line">
+                                          <div class="row col-md-3">
+                                            <p class="card-title" style="color: #124B82;font-size:22px; font-weight: bolder;">Jatin Chauhan</p>
+                                          </div>   
+                                          <div class="row col-md-3">
                                               <div class="text-left row" style="width: auto;">
-                                                  <label><i class="fa fa-envelope" aria-hidden="true"></i></label>
+                                                  <label><i class="fa fa-map-marker" aria-hidden="true"></i></label>
                                               </div>
                                               <div class="text-left row" style="width: auto;">
-                                                  <p class="card-title">venugopala@theglove.in</p>
+                                                  <p class="card-title">Faridabad</p>
                                               </div>
+                                          </div>
+                                          <div class="row col-md-3">
+                                              <div class="text-left row" style="width: auto;">
+                                                  <label><i class="fa fa-phone" aria-hidden="true"></i></label>
+                                              </div>
+                                              <div class="text-left row" style="width: auto;">
+                                                  <p class="card-title">+91-9877353210</p>
+                                              </div>
+                                          </div>
+                                          <div class="row col-md-3">
+                                            <div class="text-left row" style="width: auto;">
+                                                <label><i class="fa fa-envelope" aria-hidden="true"></i></label>
                                             </div>
-                                            <!-- <p class="card-text"><i class="fa fa-map-marker" aria-hidden="true"></i> New Delhi</p>
-                                            <p class="card-text"><i class="fa fa-phone" aria-hidden="true"></i> +91-9876543210</p>
-                                            <p class="card-text"><i class="fa fa-envelope" aria-hidden="true"></i> venugopalaiyer@theglove.com</p> -->
+                                            <div class="text-left row" style="width: auto;">
+                                                <p class="card-title">jatin67@theglove.in</p>
+                                            </div>
+                                          </div>
                                         </div>
-                                        <div class="row mt-3 col-md-12 reserve-card-content">
-                                            <div class="row col-md-4">
-                                                <div class="text-left row" style="width: auto;">
-                                                    <label>Current Company :</label>
-                                                </div>
-                                                <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">Lorem LTD.</p>
-                                                </div>
-                                            </div>
+                                        <div class="row col-md-12 card-second-line reserve-card-content">
                                             <div class="row col-md-4">
                                                 <div class="text-left row" style="width: auto;">
                                                     <label>Qualification :</label>
                                                 </div>
                                                 <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">MS/M.Sc(Science)</p>
+                                                    <p class="card-title">B.Sc(C.S.)</p>
+                                                </div>
+                                            </div>
+                                            <div class="row col-md-2">
+                                                <div class="text-left row" style="width: auto;">
+                                                    <label><i class="fa-sharp fa-solid fa-bag-shopping"></i></label>
+                                                </div>
+                                                <div class="text-left row" style="width: auto;">
+                                                    <p class="card-title">6Y, 2M</p>
                                                 </div>
                                             </div>
                                             <div class="row col-md-4">
                                                 <div class="text-left row" style="width: auto;">
-                                                    <label>Pref. Location :</label>
+                                                    <label>Current Company :</label>
                                                 </div>
                                                 <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">Gurugram, Delhi</p>
+                                                    <p class="card-title">Ipsum LTD.</p>
+                                                </div>
+                                            </div>
+                                            <div class="row col-md-2">
+                                                <div class="text-left row" style="width: auto; padding:0;">
+                                                    <label><i class="fa-solid fa-wallet"></i></label>
+                                                </div>
+                                                <div class="text-left row" style="width: auto;">
+                                                    <p class="card-title">Inr 500,000</p>
                                                 </div>
                                             </div>
                                             <div class="row col-md-4">
                                                 <div class="text-left row" style="width: auto;">
-                                                    <label>Type :</label>
+                                                    <label>Skills :</label>
                                                 </div>
                                                 <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">Non-Tech</p>
+                                                    <p class="card-title">Php core</p>
                                                 </div>
                                             </div>
                                             <div class="row col-md-4">
@@ -5469,18 +5425,9 @@
                                                     <label>Label :</label>
                                                 </div>
                                                 <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">SaleForce, Techincal Support</p>
+                                                    <p class="card-title">Web Designer</p>
                                                 </div>
                                             </div>
-                                            <!-- <div class="row col-md-12">
-                                                <div class="text-left row" style="width: auto;">
-                                                    <label>Deatils :-</label>
-                                                </div>
-                                                <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis consequuntur dolorum beatae praesentium nam voluptatibus laudantium odit, ratione consequatur ad ullam corporis dignissimos ducimus ut, hic accusamus alias impedit esse?
-                                                    Doloribus saepe placeat ad sunt pariatur veritatis sit ex natus ullam excepturi quaerat quibusdam, iste, quae, asperiores rem voluptatibus architecto quia consequuntur ea! Ab corrupti voluptatibus sed, consectetur libero magnam!</p>
-                                                </div>
-                                            </div> -->
                                         </div>
                                     </div>
                                 </div>
@@ -5491,14 +5438,37 @@
                           <div class="card card-of-candidate-section">
                             <div class="card-body">
                                 <div class="row">
-                                    <!-- <div class="col-md-2">
-                                        <img class="" width="100%" src="https://new-dm1-recruiter.getglobalgroup.com/assets/images/avatars/profile.jpg" style="border-radius: 35%;"> 
-                                    </div> -->
                                     <div class="col-md-12">
-                                        <div class="row">
-                                            <div class="text-left row" style="width: 55%; color: #124B82;">
-                                                <h4 class="card-title" style="color: #124B82;">Aashish Kumar Yadav</h4>
+                                        <div class="row card-first-line">
+                                          <div class="row col-md-3">
+                                            <p class="card-title" style="color: #124B82;font-size:22px; font-weight: bolder;">David Tomar</p>
+                                          </div>   
+                                          <div class="row col-md-3">
+                                              <div class="text-left row" style="width: auto;">
+                                                  <label><i class="fa fa-map-marker" aria-hidden="true"></i></label>
+                                              </div>
+                                              <div class="text-left row" style="width: auto;">
+                                                  <p class="card-title">Krishna Colony, Palwal</p>
+                                              </div>
+                                          </div>
+                                          <div class="row col-md-3">
+                                              <div class="text-left row" style="width: auto;">
+                                                  <label><i class="fa fa-phone" aria-hidden="true"></i></label>
+                                              </div>
+                                              <div class="text-left row" style="width: auto;">
+                                                  <p class="card-title">+91-8701410807</p>
+                                              </div>
+                                          </div>
+                                          <div class="row col-md-3">
+                                            <div class="text-left row" style="width: auto;">
+                                                <label><i class="fa fa-envelope" aria-hidden="true"></i></label>
                                             </div>
+                                            <div class="text-left row" style="width: auto;">
+                                                <p class="card-title">dtomar@theglove.in</p>
+                                            </div>
+                                          </div>
+                                            <!-- <div class="text-left row" style="width: 55%; color: #124B82;">
+                                            </div> -->
                                             <!-- <div class="text-center row" style="width: 45%;">
                                                 <div class="col-md-3 card-top"></div>
                                                 <div class="col-md-3 card-top"><span class="resrv-crd-optn1">11</span><br><span>Subjects</span></div>
@@ -5506,52 +5476,23 @@
                                                 <div class="col-md-3 card-top"><span class="resrv-crd-optn3">95</span><br><span>Percentage</span></div>
                                             </div> -->
                                         </div>
-                                        <div class="card-text-cls row col-md-12">
+                                        <div class="row col-md-12 card-second-line reserve-card-content">
+                                            <div class="row col-md-4">
+                                                <div class="text-left row" style="width: auto;">
+                                                    <label>Qualification :</label>
+                                                </div>
+                                                <div class="text-left row" style="width: auto;">
+                                                    <p class="card-title">MCA</p>
+                                                </div>
+                                            </div>
                                             <div class="row col-md-2">
                                                 <div class="text-left row" style="width: auto;">
                                                     <label><i class="fa-sharp fa-solid fa-bag-shopping"></i></label>
                                                 </div>
                                                 <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">16Y, 12M</p>
+                                                    <p class="card-title">3Y, 02M</p>
                                                 </div>
                                             </div>
-                                            <div class="row col-md-2">
-                                                <div class="text-left row" style="width: auto;">
-                                                    <label><i class="fa-solid fa-wallet"></i></label>
-                                                </div>
-                                                <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">$80,000,000</p>
-                                                </div>
-                                            </div>
-                                            <div class="row col-md-3">
-                                                <div class="text-left row" style="width: auto;">
-                                                    <label><i class="fa fa-map-marker" aria-hidden="true"></i></label>
-                                                </div>
-                                                <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">Rajiv Chowk, New Delhi</p>
-                                                </div>
-                                            </div>
-                                            <div class="row col-md-3">
-                                                <div class="text-left row" style="width: auto;">
-                                                    <label><i class="fa fa-phone" aria-hidden="true"></i></label>
-                                                </div>
-                                                <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">+91-9876543210</p>
-                                                </div>
-                                            </div>
-                                            <div class="row col-md-3">
-                                              <div class="text-left row" style="width: auto;">
-                                                  <label><i class="fa fa-envelope" aria-hidden="true"></i></label>
-                                              </div>
-                                              <div class="text-left row" style="width: auto;">
-                                                  <p class="card-title">venugopala@theglove.in</p>
-                                              </div>
-                                            </div>
-                                            <!-- <p class="card-text"><i class="fa fa-map-marker" aria-hidden="true"></i> New Delhi</p>
-                                            <p class="card-text"><i class="fa fa-phone" aria-hidden="true"></i> +91-9876543210</p>
-                                            <p class="card-text"><i class="fa fa-envelope" aria-hidden="true"></i> venugopalaiyer@theglove.com</p> -->
-                                        </div>
-                                        <div class="row mt-3 col-md-12 reserve-card-content">
                                             <div class="row col-md-4">
                                                 <div class="text-left row" style="width: auto;">
                                                     <label>Current Company :</label>
@@ -5560,28 +5501,20 @@
                                                     <p class="card-title">Lorem LTD.</p>
                                                 </div>
                                             </div>
-                                            <div class="row col-md-4">
-                                                <div class="text-left row" style="width: auto;">
-                                                    <label>Qualification :</label>
+                                            <div class="row col-md-2">
+                                                <div class="text-left row" style="width: auto; padding:0;">
+                                                    <label><i class="fa-solid fa-wallet"></i></label>
                                                 </div>
                                                 <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">MS/M.Sc(Science)</p>
-                                                </div>
-                                            </div>
-                                            <div class="row col-md-4">
-                                                <div class="text-left row" style="width: auto;">
-                                                    <label>Pref. Location :</label>
-                                                </div>
-                                                <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">Gurugram, Delhi</p>
+                                                    <p class="card-title">Inr 200,000</p>
                                                 </div>
                                             </div>
                                             <div class="row col-md-4">
                                                 <div class="text-left row" style="width: auto;">
-                                                    <label>Type :</label>
+                                                    <label>Skills :</label>
                                                 </div>
                                                 <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">Non-Tech</p>
+                                                    <p class="card-title">Angular, Php</p>
                                                 </div>
                                             </div>
                                             <div class="row col-md-4">
@@ -5589,18 +5522,98 @@
                                                     <label>Label :</label>
                                                 </div>
                                                 <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">SaleForce, Techincal Support</p>
+                                                    <p class="card-title">Web Developer</p>
                                                 </div>
                                             </div>
-                                            <!-- <div class="row col-md-12">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-12 mb-3">
+                          <div class="card card-of-candidate-section">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="row card-first-line">
+                                          <div class="row col-md-3">
+                                            <p class="card-title" style="color: #124B82;font-size:22px; font-weight: bolder;">Manoj Sharma</p>
+                                          </div>   
+                                          <div class="row col-md-3">
+                                              <div class="text-left row" style="width: auto;">
+                                                  <label><i class="fa fa-map-marker" aria-hidden="true"></i></label>
+                                              </div>
+                                              <div class="text-left row" style="width: auto;">
+                                                  <p class="card-title">Badarpur, Delhi</p>
+                                              </div>
+                                          </div>
+                                          <div class="row col-md-3">
+                                              <div class="text-left row" style="width: auto;">
+                                                  <label><i class="fa fa-phone" aria-hidden="true"></i></label>
+                                              </div>
+                                              <div class="text-left row" style="width: auto;">
+                                                  <p class="card-title">+91-7891236546</p>
+                                              </div>
+                                          </div>
+                                          <div class="row col-md-3">
+                                            <div class="text-left row" style="width: auto;">
+                                                <label><i class="fa fa-envelope" aria-hidden="true"></i></label>
+                                            </div>
+                                            <div class="text-left row" style="width: auto;">
+                                                <p class="card-title">sharmaM@theglove.in</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="row col-md-12 card-second-line reserve-card-content">
+                                            <div class="row col-md-4">
                                                 <div class="text-left row" style="width: auto;">
-                                                    <label>Deatils :-</label>
+                                                    <label>Qualification :</label>
                                                 </div>
                                                 <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis consequuntur dolorum beatae praesentium nam voluptatibus laudantium odit, ratione consequatur ad ullam corporis dignissimos ducimus ut, hic accusamus alias impedit esse?
-                                                    Doloribus saepe placeat ad sunt pariatur veritatis sit ex natus ullam excepturi quaerat quibusdam, iste, quae, asperiores rem voluptatibus architecto quia consequuntur ea! Ab corrupti voluptatibus sed, consectetur libero magnam!</p>
+                                                    <p class="card-title">M.Sc(Maths)</p>
                                                 </div>
-                                            </div> -->
+                                            </div>
+                                            <div class="row col-md-2">
+                                                <div class="text-left row" style="width: auto;">
+                                                    <label><i class="fa-sharp fa-solid fa-bag-shopping"></i></label>
+                                                </div>
+                                                <div class="text-left row" style="width: auto;">
+                                                    <p class="card-title">6Y, 11M</p>
+                                                </div>
+                                            </div>
+                                            <div class="row col-md-4">
+                                                <div class="text-left row" style="width: auto;">
+                                                    <label>Current Company :</label>
+                                                </div>
+                                                <div class="text-left row" style="width: auto;">
+                                                    <p class="card-title">HCL LTD.</p>
+                                                </div>
+                                            </div>
+                                            <div class="row col-md-2">
+                                                <div class="text-left row" style="width: auto; padding:0;">
+                                                    <label><i class="fa-solid fa-wallet"></i></label>
+                                                </div>
+                                                <div class="text-left row" style="width: auto;">
+                                                    <p class="card-title">Inr 360,000</p>
+                                                </div>
+                                            </div>
+                                            <div class="row col-md-4">
+                                                <div class="text-left row" style="width: auto;">
+                                                    <label>Skills :</label>
+                                                </div>
+                                                <div class="text-left row" style="width: auto;">
+                                                    <p class="card-title">Andriod Swift</p>
+                                                </div>
+                                            </div>
+                                            <div class="row col-md-4">
+                                                <div class="text-left row" style="width: auto;">
+                                                    <label>Label :</label>
+                                                </div>
+                                                <div class="text-left row" style="width: auto;">
+                                                    <p class="card-title">Mobile apps</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
