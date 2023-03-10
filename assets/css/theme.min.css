@@ -4298,14 +4298,19 @@ textarea.form-control-lg {
 .form-control-color.form-control-lg {
     height: calc(1.49em + 1.5rem + 2px)
 }
-
+.f-600{
+    font-weight: 600 !important;
+}
+.f-500{
+    font-weight: 500 !important;
+}
 .form-select {
     display: block;
     width: 100%;
     padding: .5rem 2.5rem .5rem 1rem;
     -moz-padding-start: calc(1rem - 3px);
     font-size: 0.7rem;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1.49;
     color: var(--phoenix-900);
     background-color: var(--phoenix-input-bg);
@@ -28598,7 +28603,7 @@ h3,
 .form-label {
     padding-left: 1rem;
     line-height: 1.2;
-    text-transform: uppercase;
+    text-transform: capitalize !important;
     margin-bottom: 0
 }
 
