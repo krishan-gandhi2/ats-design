@@ -65,8 +65,9 @@
     </script>
 
     <style>
-         @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
         @import url('//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css');
+        .row{--phoenix-gutter-x: 1rem !important;}
     .padding-zero{padding: 0px !important;}
     .collapsible1 {
         background-color: #4599BB;
@@ -86,7 +87,7 @@
     .resrv-crd-optn3{background-color: #c19300; color: white; border-radius: 50%; padding: 7px 9px;}
     .card-text-cls p{margin-bottom: 0.2rem !important;padding:0;}
     .reserve-card-content label{font-weight: 700;}
-    .contract-content-class{padding: 1rem 1.5rem 6.375rem 1.5rem !important;}
+    .contract-content-class{padding: 1rem 1.5rem 3rem 1.5rem !important;}
     .sidebar-menu-filters{overflow-x: scroll;}
     .sidebar-menu-filters::-webkit-scrollbar {width: 5px;}
     .sidebar-menu-filters::-webkit-scrollbar-thumb {background: lightgrey;}
@@ -94,7 +95,22 @@
     .container-of-all-filter-list{margin-top: 0.5rem;}
     .ul-of-all-filter-list img {float: right; padding: 6px 0px 0px 0px;}
     .scroll-on-cards{overflow-y: scroll;}
-    .card-menu-option{background-color: white;border: none;}
+    .scroll-on-cards i{font-size: 10px !important;}
+    .card-menu-option{background-color: white;border: none;margin-left: 5px;}
+    .card-action-buttons{padding: 0;margin: 0;background-color: white;border: none;}
+    .fnt-size{font-size: 0.7rem !important; margin-left: 13px;}
+    .experience-filter-data-values{margin-top: 0;}
+    .experience-filter-data-values label{font-size: 0.8rem;}
+    .salary-filter-data-values{margin-top: 0;}
+    .salary-filter-data-values label{font-size: 0.8rem;}
+    .qualification-filter-data-values{margin-top: 0;}
+    .qualification-filter-data-values label{font-size: 0.8rem;}
+    .min-max-filter{gap: 15px;margin: auto;}
+    .min-max-filter label{font-size: 0.7rem;}
+    .min-max-filter input{padding-right: 0;font-size: 0.6rem;}
+    .min-max-filter input:focus{border: none !important;outline: 1px solid grey;font-size: 0.6rem;}
+    .textarea-save-search-cls{width: 100%; height: 100px; border: 1px solid lightgrey;}
+    .textarea-save-search-cls:focus{outline: 2px solid lightgrey; border: 2px solid lightgrey;}
     .category-drpdwn-of-search{
       border: 1px solid lightgrey;
       border-radius: 7px 0px 0px 7px;
@@ -123,7 +139,8 @@
       margin: 1px 0px;
       padding: 3px 5px;
       list-style-type: none;
-      max-height: 30px;
+      max-height: 23px;
+      font-size: 0.7rem;
     }
     .options-of-filter-container{
       border:1px solid lightgrey;
@@ -199,12 +216,13 @@
         background-image: url('searchicon.png');
         background-position: 14px 12px;
         background-repeat: no-repeat;
-        font-size: 16px;
-        padding: 14px 20px 12px 45px;
+        font-size: 10px;
+        padding: 0px 20px 2px 5px;
         border: none;
         border-bottom: 1px solid #ddd;
     }
-    .myInput:focus {outline: 3px solid #ddd;}
+    .myInput:focus {outline: 1px solid white;}
+    #myNameSearchFunction1 a{color: #080808; text-decoration: none;line-height: 1.5rem;font-size: 0.8rem;}
     .dropdown {
         position: relative;
         display: inline-block;
@@ -1480,7 +1498,7 @@
               </ul>
             </div>
           </div>
-          <div class="navbar-vertical-footer"><button class="btn navbar-vertical-toggle border-0 fw-semi-bold w-100 white-space-nowrap d-flex align-items-center"><span class="uil uil-left-arrow-to-left fs-0"></span><span class="uil uil-arrow-from-right fs-0"></span><span class="navbar-vertical-footer-text ms-2">Collapsed View</span></button></div>
+          <div class="navbar-vertical-footer"><button class="btn navbar-vertical-toggle border-0 fw-semi-bold w-100 white-space-nowrap d-flex align-items-center"><span class="uil uil-left-arrow-to-left fas fa-arrow-left fs-0"></span><span class="uil uil-arrow-from-right fas fa-arrow-right fs-0"></span><span class="navbar-vertical-footer-text ms-2">Collapsed View</span></button></div>
         </nav>
         <nav class="navbar navbar-top navbar-expand" id="navbarDefault" style="display:none;">
           <div class="collapse navbar-collapse justify-content-between">
@@ -1801,12 +1819,12 @@
                         </div>
                         <h6 class="mt-2 text-black">Jerry Seinfield</h6>
                       </div>
-                      <!-- <div class="mb-3 mx-3"><input class="form-control form-control-sm" id="statusUpdateInput" type="text" placeholder=" Change Password  your status" /></div> -->
+                      <!-- <div class="mb-3 mx-3"><input class="form-control form-control-sm" id="statusUpdateInput" type="text" placeholder="Update your status" /></div> -->
                     </div>
                     <div class="overflow-auto scrollbar" style="height: 4rem;">
                       <ul class="nav d-flex flex-column mb-2 pb-1">
                         <li class="nav-item"><a class="nav-link px-3" href="#!"> <span class="me-2 text-900" data-feather="user"></span><span> My Profile</span></a></li>
-                        <li class="nav-item"><a class="nav-link px-3" href="#!"><span class="me-2 text-900" data-feather="edit"></span> Change Password </a></li>
+                        <li class="nav-item"><a class="nav-link px-3" href="#!"><span class="me-2 text-900" data-feather="edit"></span>Update</a></li>
                         <!-- <li class="nav-item"><a class="nav-link px-3" href="#!"> <span class="me-2 text-900" data-feather="lock"></span>Posts &amp; Activity</a></li>
                         <li class="nav-item"><a class="nav-link px-3" href="#!"> <span class="me-2 text-900" data-feather="settings"></span>Settings &amp; Privacy </a></li>
                         <li class="nav-item"><a class="nav-link px-3" href="#!"> <span class="me-2 text-900" data-feather="help-circle"></span>Help Center</a></li>
@@ -2026,7 +2044,7 @@
                         </div>
                         <h6 class="mt-2 text-black">Jerry Seinfield</h6>
                       </div>
-                      <div class="mb-3 mx-3"><input class="form-control form-control-sm" id="statusUpdateInput" type="text" placeholder=" Change Password  your status" /></div>
+                      <div class="mb-3 mx-3"><input class="form-control form-control-sm" id="statusUpdateInput" type="text" placeholder="Update your status" /></div>
                     </div>
                     <div class="overflow-auto scrollbar" style="height: 10rem;">
                       <ul class="nav d-flex flex-column mb-2 pb-1">
@@ -2689,7 +2707,7 @@
                       </div>
                       <h6 class="mt-2 text-black">Jerry Seinfield</h6>
                     </div>
-                    <div class="mb-3 mx-3"><input class="form-control form-control-sm" id="statusUpdateInput" type="text" placeholder=" Change Password  your status" /></div>
+                    <div class="mb-3 mx-3"><input class="form-control form-control-sm" id="statusUpdateInput" type="text" placeholder="Update your status" /></div>
                   </div>
                   <div class="overflow-auto scrollbar" style="height: 10rem;">
                     <ul class="nav d-flex flex-column mb-2 pb-1">
@@ -3341,7 +3359,7 @@
                       </div>
                       <h6 class="mt-2 text-black">Jerry Seinfield</h6>
                     </div>
-                    <div class="mb-3 mx-3"><input class="form-control form-control-sm" id="statusUpdateInput" type="text" placeholder=" Change Password  your status" /></div>
+                    <div class="mb-3 mx-3"><input class="form-control form-control-sm" id="statusUpdateInput" type="text" placeholder="Update your status" /></div>
                   </div>
                   <div class="overflow-auto scrollbar" style="height: 10rem;">
                     <ul class="nav d-flex flex-column mb-2 pb-1">
@@ -3378,7 +3396,7 @@
             </a>
           </div>
           <div class="collapse navbar-collapse navbar-top-collapse order-1 order-lg-0 justify-content-center" id="navbarTopCollapse">
-            <ul class="navbar-nav navbar-'nav-top'" data-dropdown-on-hovar="data-dropdown-on-hovar">
+            <ul class="navbar-nav navbar-nav-top" data-dropdown-on-hovar="data-dropdown-on-hovar">
               <li class="nav-item dropdown"><a class="nav-link dropdown-toggle lh-1" href="#!" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false"><span class="uil fs-0 me-2 uil-chart-pie"></span>Home</a>
                 <ul class="dropdown-menu navbar-dropdown-caret">
                   <li><a class="dropdown-item" href="index-2.html">
@@ -4003,7 +4021,7 @@
                       </div>
                       <h6 class="mt-2 text-black">Jerry Seinfield</h6>
                     </div>
-                    <div class="mb-3 mx-3"><input class="form-control form-control-sm" id="statusUpdateInput" type="text" placeholder=" Change Password  your status" /></div>
+                    <div class="mb-3 mx-3"><input class="form-control form-control-sm" id="statusUpdateInput" type="text" placeholder="Update your status" /></div>
                   </div>
                   <div class="overflow-auto scrollbar" style="height: 10rem;">
                     <ul class="nav d-flex flex-column mb-2 pb-1">
@@ -4592,7 +4610,7 @@
                       </div>
                       <h6 class="mt-2 text-black">Jerry Seinfield</h6>
                     </div>
-                    <div class="mb-3 mx-3"><input class="form-control form-control-sm" id="statusUpdateInput" type="text" placeholder=" Change Password  your status" /></div>
+                    <div class="mb-3 mx-3"><input class="form-control form-control-sm" id="statusUpdateInput" type="text" placeholder="Update your status" /></div>
                   </div>
                   <div class="overflow-auto scrollbar" style="height: 10rem;">
                     <ul class="nav d-flex flex-column mb-2 pb-1">
@@ -4853,28 +4871,28 @@
                                 <!-- <form class="position-relative" data-bs-toggle="search" data-bs-display="static"><input class="form-control search-input fuzzy-search rounded-pill form-control-sm" type="search" placeholder="Search here..." aria-label="Search" />
                                 </form> -->
                                 <div class="row">
-                                  <div class="col-md-12 col-lg-12" style="">
+                                  <div class="col-md-12 col-lg-12" style="font-size: 0.8rem;">
                                     Data Type:&nbsp;&nbsp;
-                                    <span style="margin-right: 12px;">
-                                      <input type="checkbox" checked>
+                                    <span style="margin-right: 5px;">
+                                      <input type="checkbox">
                                       <label>All</label>
                                     </span>
-                                    <span style="margin-right: 12px;">
+                                    <span style="margin-right: 5px;">
                                       <input type="checkbox">
                                       <label>Processed</label>
                                     </span>
-                                    <span style="margin-right: 12px;">
+                                    <span style="margin-right: 5px;">
                                       <input type="checkbox">
                                       <label>Structured</label>
                                     </span>
-                                    <span style="margin-right: 12px;">
+                                    <span style="margin-right: 5px;">
                                       <input type="checkbox">
                                       <label>Unstructured</label>
                                     </span>
                                   </div>
                                   <div class="col-md-12 col-lg-12">
                                     <div class="input-group mb-3">
-                                      <select class="form-select" aria-label="Default select example" style="max-width: 130px !important">
+                                      <select class="form-select" aria-label="Default select example" style="max-width: 125px !important">
                                         <option selected>All</option>
                                         <option value="">Name</option>
                                         <option value="">Location</option>
@@ -4934,29 +4952,35 @@
 
                     </div>
                   </nav>
-                  <!-- Modal -->
+                  <!-- Modal Start -->
                   <div class="modal fade" id="filterSaveModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
                       <div class="modal-content">
                         <div class="modal-header">
                           <h5 class="modal-title" id="exampleModalLongTitle">Save Search</h5>
-                          <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                          </button> -->
                         </div>
                         <div class="modal-body">
                           <p>Save this search as</p>
-                          <form class="position-relative mb-4" data-bs-toggle="search" data-bs-display="static"><input class="form-control search-input fuzzy-search rounded-pill form-control-sm" type="text" placeholder="e.g. => Tomar Search" aria-label="Search" /></form>
-                          <!-- <input type="text" placeholder="e.g. => Tomar Search" /> -->
-                          <input type="checkbox" /> <label> Send profile alert</label>
+                          <form class="position-relative mb-4" data-bs-toggle="search" data-bs-display="static">
+                            <label>Filter Title</label>
+                            <input class="form-control search-input fuzzy-search rounded-pill form-control-sm" type="text" placeholder="e.g. => Tomar Search" aria-label="Search" />
+                            <div class="my-2">
+                              <select class="form-select" aria-label="Default select example">
+                                <option selected>Public</option>
+                                <option value="">Private</option>
+                              </select>
+                            </div>
+                            <textarea class="textarea-save-search-cls" placeholder="Description...."></textarea>
+                          </form>
                         </div>
                         <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                          <button type="button" class="btn" data-dismiss="modal">Cancel</button>
                           <button type="button" class="btn btn-primary">Save</button>
                         </div>
                       </div>
                     </div>
                   </div>
+                  <!-- Modal End -->
                 <div class="col-md-2 position-relative ">   
                     <div>
                         <aside class="sidebar sidebar-menu-filters">
@@ -4965,7 +4989,7 @@
                                 <!-- <div class="text-left mt-2" style="margin-left: 0.6rem;">
                                   <button type="button" class="save-filter-btn" data-toggle="modal" data-target="#filterSaveModal">Save Filter</button>
                                 </div> -->
-                                <h4 class="p-3">Selected Filters :-</h4>
+                                <!-- <h4 class="p-3">Selected Filters :-</h4> -->
                                 <div class="container container-of-all-filter-list" id="filter-submenu">
                                     <ul class="hidden-menu clearfix ul-of-all-filter-list" id="results">
                                         
@@ -4976,10 +5000,10 @@
                               <div class="container d-flex">
                                 <div class="menu">
                                   <!-- working checkbox select filter with search is "displayed none" here -->
-                                  <div class="accordion-item mt-2 mb-3" style="display:none;">
+                                  <div class="accordion-item mt-2 mb-3" >
                                     <h2 class="accordion-header" id="headingThree" >
                                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" >
-                                        Location Search
+                                        Location
                                       </button>
                                     </h2>
                                     <div class="accordion-collapse collapse" id="collapseFive" aria-labelledby="headingFive" data-bs-parent="#accordionExample" style="margin-top: 15px;">
@@ -4995,39 +5019,39 @@
                                             <!-- <a href="javascript:void(0)" class="mode-sec dropdown-toggle">Learning Modes</a> -->
                                             <div id="myNameSearchFunction1">
                                               <input type="text" placeholder="Search.." class="myInput" id="myInput1" onkeyup="filterFunction1()">
-                                              <a href="#about">
+                                              <a href="#">
                                                 <div>
                                                     <input type="checkbox" class="mainlist" value="Palwal" data-set="leaningModes" data-ref="1"> Palwal<span class="checkmark"></span>
                                                 </div>
                                               </a>
-                                              <a href="#base">
+                                              <a href="#">
                                                 <div>
-                                                    <input type="checkbox" class="mainlist" value="delhi" data-set="leaningModes" data-ref="1"> Delhi<span class="checkmark"></span>
+                                                    <input type="checkbox" class="mainlist" value="Delhi" data-set="leaningModes" data-ref="1"> Delhi<span class="checkmark"></span>
                                                 </div>
                                               </a>
-                                              <a href="#blog">
+                                              <a href="#">
                                                 <div>
-                                                    <input type="checkbox" class="mainlist" value="delhi" data-set="leaningModes" data-ref="1"> Wellingston<span class="checkmark"></span>
+                                                    <input type="checkbox" class="mainlist" value="Noida" data-set="leaningModes" data-ref="1"> Noida<span class="checkmark"></span>
                                                 </div>
                                               </a>
-                                              <a href="#contact">
+                                              <a href="#">
                                                 <div>
-                                                    <input type="checkbox" class="mainlist" value="delhi" data-set="leaningModes" data-ref="1"> Berlin<span class="checkmark"></span>
+                                                    <input type="checkbox" class="mainlist" value="Berlin" data-set="leaningModes" data-ref="1"> Berlin<span class="checkmark"></span>
                                                 </div>
                                               </a>
-                                              <a href="#custom">
+                                              <a href="#">
                                                 <div>
-                                                    <input type="checkbox" class="mainlist" value="delhi" data-set="leaningModes" data-ref="1"> Moscow<span class="checkmark"></span>
+                                                    <input type="checkbox" class="mainlist" value="Moscow" data-set="leaningModes" data-ref="1"> Moscow<span class="checkmark"></span>
                                                 </div>
                                               </a>
-                                              <a href="#support">
+                                              <a href="#">
                                                 <div>
-                                                    <input type="checkbox" class="mainlist" value="delhi" data-set="leaningModes" data-ref="1"> Gurugram<span class="checkmark"></span>
+                                                    <input type="checkbox" class="mainlist" value="Gurugram" data-set="leaningModes" data-ref="1"> Gurugram<span class="checkmark"></span>
                                                 </div>
                                               </a>
-                                              <a href="#tools">
+                                              <a href="#">
                                                 <div>
-                                                    <input type="checkbox" class="mainlist" value="delhi" data-set="leaningModes" data-ref="1"> Florida<span class="checkmark"></span>
+                                                    <input type="checkbox" class="mainlist" value="Florida" data-set="leaningModes" data-ref="1"> Florida<span class="checkmark"></span>
                                                 </div>
                                               </a>
                                               <div class="apply-button-of-filter-dropdown text-center">
@@ -5040,10 +5064,10 @@
                                     </div>
                                   </div>
 
-                                  <div class="accordion-item mt-2 mb-3">
+                                  <div class="accordion-item mt-2 mb-3" style="display: none;">
                                     <h2 class="accordion-header" id="headingThree" >
                                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" >
-                                        Location
+                                        Location old
                                       </button>
                                     </h2>
                                     <div class="accordion-collapse collapse" id="collapseThree" aria-labelledby="headingThree" data-bs-parent="#accordionExample" style="margin-top: 15px;">
@@ -5089,6 +5113,7 @@
                                       </div>
                                     </div>
                                   </div>
+
                                   <div class="accordion-item mt-2 mb-3">
                                     <h2 class="accordion-header" id="headingThree" >
                                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" >
@@ -5102,27 +5127,33 @@
                                             <ul class="hidden-menu clearfix ul-of-all-filter-list" id="results2">
                                                 
                                             </ul>
-                                            <!-- <a id="clear-all-btn" class=" btn clear-all">ClearAll</a> -->
                                           </div>
-                                          <!-- <li class="button-dropdown"> -->
-                                            <!-- <a href="javascript:void(0)" class="mode-sec dropdown-toggle">Testing Modes</a> -->
-                                            <!-- <div class="dropdown-menu filter-menu-list-select"> -->
-                                              <div>
+                                              <div class="row col-lg-12 col-md-12 min-max-filter">
+                                                <div class="row col-lg-6 col-md-6">
+                                                  <label>Min</label>
+                                                  <input type="number" min="0" max="100"/>
+                                                </div>
+                                                <div class="row col-lg-6 col-md-6">
+                                                  <label>Max</label>
+                                                  <input type="number" min="0" max="100"/>
+                                                </div>
+                                              </div>
+                                              <div class="experience-filter-data-values">
                                                   <label><input type="checkbox" class="mainlist" value="1+" data-set="testingModes" data-ref="7"> 1+<span class="checkmark"></span></label>
                                               </div>
-                                              <div>
+                                              <div class="experience-filter-data-values">
                                                   <label><input type="checkbox" class="mainlist" value="3+" data-set="testingModes" data-ref="8"> 3+<span class="checkmark"></span></label>
                                               </div>
-                                              <div>
+                                              <div class="experience-filter-data-values">
                                                   <label><input type="checkbox" class="mainlist" value="5+" data-set="testingModes" data-ref="9"> 5+<span class="checkmark"></span></label>
                                               </div>
-                                              <div>
+                                              <div class="experience-filter-data-values">
                                                   <label><input type="checkbox" class="mainlist" value="7+" data-set="testingModes" data-ref="10"> 7+<span class="checkmark"></span></label>
                                               </div>
-                                              <div>
+                                              <div class="experience-filter-data-values">
                                                   <label><input type="checkbox" class="mainlist" value="10+" data-set="testingModes" data-ref="11"> 10+<span class="checkmark"></span></label>
                                               </div>
-                                              <div>
+                                              <div class="experience-filter-data-values">
                                                   <label><input type="checkbox" class="mainlist" value="15+" data-set="testingModes" data-ref="12"> 15+<span class="checkmark"></span></label>
                                               </div>
                                               <div class="apply-button-of-filter-dropdown text-center">
@@ -5147,27 +5178,23 @@
                                             <ul class="hidden-menu clearfix ul-of-all-filter-list" id="results3">
                                                 
                                             </ul>
-                                            <!-- <a id="clear-all-btn" class=" btn clear-all">ClearAll</a> -->
                                           </div>
-                                          <!-- <li class="button-dropdown"> -->
-                                            <!-- <a href="javascript:void(0)" class="mode-sec dropdown-toggle">Creating Modes</a> -->
-                                            <!-- <div class="dropdown-menu filter-menu-list-select"> -->
-                                              <div>
+                                              <div class="salary-filter-data-values">
                                                   <label><input type="checkbox" class="mainlist" value="100000" data-set="creatingModes" data-ref="13"> 100,000+<span class="checkmark"></span></label>
                                               </div>
-                                              <div>
+                                              <div class="salary-filter-data-values">
                                                   <label><input type="checkbox" class="mainlist" value="200000" data-set="creatingModes" data-ref="14"> 200,000+<span class="checkmark"></span></label>
                                               </div>
-                                              <div>
+                                              <div class="salary-filter-data-values">
                                                   <label><input type="checkbox" class="mainlist" value="300000" data-set="creatingModes" data-ref="15"> 300,000+<span class="checkmark"></span></label>
                                               </div>
-                                              <div>
+                                              <div class="salary-filter-data-values">
                                                   <label><input type="checkbox" class="mainlist" value="400000" data-set="creatingModes" data-ref="16"> 400,000+<span class="checkmark"></span></label>
                                               </div>
-                                              <div>
+                                              <div class="salary-filter-data-values">
                                                   <label><input type="checkbox" class="mainlist" value="500000" data-set="creatingModes" data-ref="17"> 500,000+<span class="checkmark"></span></label>
                                               </div>
-                                              <div>
+                                              <div class="salary-filter-data-values">
                                                   <label><input type="checkbox" class="mainlist" value="700000" data-set="creatingModes" data-ref="18"> 700,000+<span class="checkmark"></span></label>
                                               </div>
                                               <div class="apply-button-of-filter-dropdown text-center">
@@ -5198,25 +5225,22 @@
                                             <form class="position-relative" data-bs-toggle="search" data-bs-display="static"><input class="form-control search-input fuzzy-search rounded-pill form-control-sm" type="search" placeholder="Search here..." aria-label="Search" />
                                             </form>
                                           </div>
-                                          <!-- <li class="button-dropdown"> -->
-                                            <!-- <a href="javascript:void(0)" class="mode-sec dropdown-toggle">Creating Modes</a> -->
-                                            <!-- <div class="dropdown-menu filter-menu-list-select"> -->
-                                              <div>
+                                              <div class="qualification-filter-data-values">
                                                   <label><input type="checkbox" class="mainlist" value="test19" data-set="implementingModes" data-ref="19"> B.Sc(C.S.)<span class="checkmark"></span></label>
                                               </div>
-                                              <div>
+                                              <div class="qualification-filter-data-values">
                                                   <label><input type="checkbox" class="mainlist" value="test20" data-set="implementingModes" data-ref="20"> B.com(Math)<span class="checkmark"></span></label>
                                               </div>
-                                              <div>
+                                              <div class="qualification-filter-data-values">
                                                   <label><input type="checkbox" class="mainlist" value="test21" data-set="implementingModes" data-ref="21"> MCA<span class="checkmark"></span></label>
                                               </div>
-                                              <div>
+                                              <div class="qualification-filter-data-values">
                                                   <label><input type="checkbox" class="mainlist" value="test22" data-set="implementingModes" data-ref="22"> M.Ba(Geo)<span class="checkmark"></span></label>
                                               </div>
-                                              <div>
+                                              <div class="qualification-filter-data-values">
                                                   <label><input type="checkbox" class="mainlist" value="test23" data-set="implementingModes" data-ref="23"> M.com(Math)<span class="checkmark"></span></label>
                                               </div>
-                                              <div>
+                                              <div class="qualification-filter-data-values">
                                                   <label><input type="checkbox" class="mainlist" value="test24" data-set="implementingModes" data-ref="24"> M.Sc(Chem)<span class="checkmark"></span></label>
                                               </div>
                                               <div class="apply-button-of-filter-dropdown text-center">
@@ -5234,6 +5258,156 @@
                           </aside>
                     </div>
                 </div>
+                <!-- Modal Start -->
+                <div class="modal fade" id="filterMoreModal">
+                  <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">List Job</h4>
+                        <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                      </div>
+                      <div class="modal-body">
+                        <form class="position-relative mb-4" data-bs-toggle="search" data-bs-display="static">
+                          <div class="row col-md-12 col-lg-12">
+                            <div class="col-md-3 col-lg-3">
+                              <select class="form-select" aria-label="Default select example">
+                                <option selected>--Client--</option>
+                                <option value="">Manoj</option>
+                                <option value="">Gaurav</option>
+                                <option value="">Abhinav</option>
+                                <option value="">David</option>
+                                <option value="">Jatin</option>
+                                <option value="">Aashish</option>
+                              </select>
+                            </div>
+                            <div class="col-md-3 col-lg-3">
+                              <select class="form-select" aria-label="Default select example">
+                                <option selected>--Project--</option>
+                                <option value="">Engineer</option>
+                                <option value="">Machine</option>
+                                <option value="">Automobile</option>
+                                <option value="">A.I.</option>
+                                <option value="">Construction</option>
+                              </select>
+                            </div>
+                            <div class="col-md-3 col-lg-3">
+                              <select class="form-select" aria-label="Default select example">
+                                <option selected>--Expertise--</option>
+                                <option value="">Desigining</option>
+                                <option value="">Analysing</option>
+                                <option value="">Consulting</option>
+                              </select>
+                            </div>
+                            <div class="col-md-3 col-lg-3">
+                              <select class="form-select" aria-label="Default select example">
+                                <option selected>--Specialization--</option>
+                                <option value="">Auditor</option>
+                                <option value="">Electrical</option>
+                                <option value="">Geophysics</option>
+                                <option value="">Pipeline</option>
+                              </select>
+                            </div>
+                            <div class="col-md-3 col-lg-3 mt-2">
+                              <select class="form-select" aria-label="Default select example">
+                                <option selected>--Category--</option>
+                                <option value="">Website</option>
+                                <option value="">Medical</option>
+                                <option value="">Health</option>
+                                <option value="">Automobile</option>
+                              </select>
+                            </div>
+                            <div class="col-md-3 col-lg-3 mt-2">
+                              <select class="form-select" aria-label="Default select example">
+                                <option selected>--City--</option>
+                                <option value="">Delhi</option>
+                                <option value="">Noida</option>
+                                <option value="">GuruGram</option>
+                                <option value="">Badarpur</option>
+                              </select>
+                            </div>
+                            <div class="col-md-6 col-lg-6 mt-2">
+                              <form class="position-relative" data-bs-toggle="search" data-bs-display="static"><input style="border-radius:5px !important" class="form-control search-input fuzzy-search rounded-pill form-control-sm" type="search" placeholder="Search here..." aria-label="Search" />
+                                <!-- <span class="fas fa-search search-box-icon"></span> -->
+                              </form>
+                            </div>
+                            <!-- Table Start -->
+                            <div class="mt-3">
+                              <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Action</th>
+                                    <th scope="col">Client</th>
+                                    <th scope="col">Project</th>
+                                    <th scope="col">Number</th>
+                                    <th scope="col">Expertise</th>
+                                    <th scope="col">Specialization</th>
+                                    <th scope="col">Discipline</th>
+                                    <th scope="col">Sub Discipline</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row"><button type="button" class="fnt-size card-action-buttons" data-toggle="modal" data-target="#popup-list-action-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button></th>
+                                    <td>Manoj</td>
+                                    <td>Engineer</td>
+                                    <td>G-6789</td>
+                                    <td>Desigining</td>
+                                    <td>Auditor</td>
+                                    <td>Production</td>
+                                    <td>Well Testing</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row"><button type="button" class="fnt-size card-action-buttons" data-toggle="modal" data-target="#popup-list-action-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button></th>
+                                    <td>Jatin</td>
+                                    <td>Automobile</td>
+                                    <td>G-1234</td>
+                                    <td>Consulting</td>
+                                    <td>Geophysics</td>
+                                    <td>QA</td>
+                                    <td>Mud Engineer</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row"><button type="button" class="fnt-size card-action-buttons" data-toggle="modal" data-target="#popup-list-action-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button></th>
+                                    <td>Abhinav</td>
+                                    <td>A.I.</td>
+                                    <td>G-4567</td>
+                                    <td>Desigining</td>
+                                    <td>Analysing</td>
+                                    <td>Cementing</td>
+                                    <td>Soil Special</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                            <!-- Table End -->
+                          </div>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-primary">Save</button>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal End -->
+                <div class="modal fade" id="popup-list-action-btn" style="background-color: rgb(69 69 69 / 50%);">
+                  <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title">Modal Heading</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                      <div class="modal-body">
+                        Modal body..
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <!-- Card Start -->
                 <div class="col-md-10 position-relative scroll-on-cards">
                     <div class="row">
@@ -5249,13 +5423,13 @@
                                           
                                         <div class="text-left row" style="width: 95%;">
                                           <div class="row col-md-3">
-                                            <p class="card-title" style="color: #124B82;font-size:22px; font-weight: bolder;">Aashish Kumar Yadav</p>
+                                            <p class="card-title" style="color: #124B82;font-size:22px; font-weight: bolder;">Aashish Kumar</p>
                                           </div>   
                                           <div class="row col-md-3">
                                               <div class="text-left row" style="width: auto;">
                                                   <label><i class="fa fa-map-marker" aria-hidden="true"></i></label>
                                               </div>
-                                              <div class="text-left row" style="width: auto;">
+                                              <div class="text-left row" style="width: auto;padding: 0;">
                                                   <p class="card-title">Rajiv Chowk, New Delhi</p>
                                               </div>
                                           </div>
@@ -5263,7 +5437,7 @@
                                               <div class="text-left row" style="width: auto;">
                                                   <label><i class="fa fa-phone" aria-hidden="true"></i></label>
                                               </div>
-                                              <div class="text-left row" style="width: auto;">
+                                              <div class="text-left row" style="width: auto;padding: 0;">
                                                   <p class="card-title">+91-9876543210</p>
                                               </div>
                                           </div>
@@ -5271,84 +5445,97 @@
                                             <div class="text-left row" style="width: auto;">
                                                 <label><i class="fa fa-envelope" aria-hidden="true"></i></label>
                                             </div>
-                                            <div class="text-left row" style="width: auto;">
+                                            <div class="text-left row" style="width: auto;padding: 0;">
                                                 <p class="card-title">aashish@theglove.in</p>
                                             </div>
                                           </div>
-                                            </div>
-                                            <div class="text-right row" style="width: 5%;">
-                                                  <div class="input-group-prepend">
-                                                    <button class="card-menu-option" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-ellipsis-vertical"></i></button>
-                                                    <div class="dropdown-menu">
-                                                      <a class="dropdown-item" href="#">Tag Jobs</a>
-                                                    </div>
-                                                  </div>
-                                                  <br><input type="checkbox">
-                                                  </div>
-                                            </div>
+                                        </div>
+                                        <div class="text-right row" style="width: 5%;">
+                                          <input type="checkbox">
+                                          <br>
+                                          <div class="input-group-prepend">
+                                              <button class="card-menu-option" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                                              <div class="dropdown-menu">
+                                                    <a class="dropdown-item" href="#">Tag Jobs</a>
+                                              </div>
+                                          </div>
+                                        </div>
+                                        </div>
                                         </div>
                                         <div class="row col-md-12 card-second-line reserve-card-content">
-                                            <div class="row col-md-4">
-                                                <div class="text-left row" style="width: auto;">
-                                                    <label>Qualification :</label>
-                                                </div>
-                                                <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">M.Sc(Maths)</p>
-                                                </div>
-                                            </div>
-                                            <div class="row col-md-2">
-                                                <div class="text-left row" style="width: auto;">
-                                                    <label>Skills :</label>
-                                                </div>
-                                                <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">Problem Solver</p>
-                                                </div>
-                                            </div>
-                                            <div class="row col-md-4">
-                                                <div class="text-left row" style="width: auto;">
-                                                    <label>Label :</label>
-                                                </div>
-                                                <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">SaleForce, Techincal Support</p>
-                                                </div>
-                                            </div>
-                                            <div class="row col-md-4">
-                                                <div class="text-left row" style="width: auto;">
-                                                    <label>Exp. :</label>
-                                                </div>
-                                                <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">16Y, 12M</p>
-                                                </div>
-                                            </div>
-                                            <div class="row col-md-4">
-                                                <div class="text-left row" style="width: auto;">
-                                                    <label>Current Company :</label>
-                                                </div>
-                                                <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">Lorem LTD.</p>
-                                                </div>
-                                            </div>
-                                            <div class="row col-md-4">
-                                                <div class="text-left row" style="width: auto;">
-                                                    <label>CTC :</label>
-                                                </div>
-                                                <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">Inr 250,000</p>
-                                                </div>
-                                            </div>
+                                            <div class="row" style="width: 95%;">
+                                              <div class="row col-md-4">
+                                                  <div class="text-left row" style="width: auto;">
+                                                      <label>Qualification :</label>
+                                                  </div>
+                                                  <div class="text-left row" style="width: auto;">
+                                                      <p class="card-title">M.Sc(Maths)</p>
+                                                  </div>
+                                              </div>
+                                              <div class="row col-md-4">
+                                                  <div class="text-left row" style="width: auto;">
+                                                      <label>Skills :</label>
+                                                  </div>
+                                                  <div class="text-left row" style="width: auto;">
+                                                      <p class="card-title">Problem Solver</p>
+                                                  </div>
+                                              </div>
+                                              <div class="row col-md-4">
+                                                  <div class="text-left row" style="width: auto;">
+                                                      <label>Label :</label>
+                                                  </div>
+                                                  <div class="text-left row" style="width: auto;">
+                                                      <p class="card-title">SaleForce, Techincal Support</p>
+                                                  </div>
+                                              </div>
+                                              <div class="row col-md-4">
+                                                  <div class="text-left row" style="width: auto;">
+                                                      <label>Exp. :</label>
+                                                  </div>
+                                                  <div class="text-left row" style="width: auto;">
+                                                      <p class="card-title">16Y, 12M</p>
+                                                  </div>
+                                              </div>
+                                              <div class="row col-md-4">
+                                                  <div class="text-left row" style="width: auto;">
+                                                      <label>Current Company :</label>
+                                                  </div>
+                                                  <div class="text-left row" style="width: auto;">
+                                                      <p class="card-title">Lorem LTD.</p>
+                                                  </div>
+                                              </div>
+                                              <div class="row col-md-4">
+                                                  <div class="text-left row" style="width: auto;">
+                                                      <label>CTC :</label>
+                                                  </div>
+                                                  <div class="text-left row" style="width: auto;">
+                                                      <p class="card-title">Inr 250,000</p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="row" style="width: 5%;">
+                                            <button type="button" class="fnt-size card-action-buttons" data-toggle="modal" data-target="#filterMoreModal"><i class="fa-solid fa-tag"></i></button>
+                                            <button type="button" class="fnt-size card-action-buttons" data-toggle="modal" data-target="#filterSaveModal"><i class="fa-solid fa-user"></i></button>
+                                            <button type="button" class="fnt-size card-action-buttons" data-toggle="modal" data-target="#filterSaveModal"><i class="fa-solid fa-star"></i></button>
+                                          </div>
                                         </div>
+                                        
                                     </div>
                                 </div>
                             </div>
-                          </div>
+                          <!-- </div> -->
                         </div>
-                        
                         <div class="col-sm-12 mb-3">
                           <div class="card card-of-candidate-section">
                             <div class="card-body">
                                 <div class="row">
+                                    <!-- <div class="col-md-2">
+                                        <img class="" width="100%" src="https://new-dm1-recruiter.getglobalgroup.com/assets/images/avatars/profile.jpg" style="border-radius: 35%;"> 
+                                    </div> -->
                                     <div class="col-md-12">
                                         <div class="row card-first-line">
+                                          
+                                        <div class="text-left row" style="width: 95%;">
                                           <div class="row col-md-3">
                                             <p class="card-title" style="color: #124B82;font-size:22px; font-weight: bolder;">Gaurav Kumar</p>
                                           </div>   
@@ -5356,88 +5543,113 @@
                                               <div class="text-left row" style="width: auto;">
                                                   <label><i class="fa fa-map-marker" aria-hidden="true"></i></label>
                                               </div>
-                                              <div class="text-left row" style="width: auto;">
-                                                  <p class="card-title">Sector-7, Gurugram</p>
+                                              <div class="text-left row" style="width: auto;padding: 0;">
+                                                  <p class="card-title">Sector-7, Gurgaon</p>
                                               </div>
                                           </div>
                                           <div class="row col-md-3">
                                               <div class="text-left row" style="width: auto;">
                                                   <label><i class="fa fa-phone" aria-hidden="true"></i></label>
                                               </div>
-                                              <div class="text-left row" style="width: auto;">
-                                                  <p class="card-title">+91-9123543210</p>
+                                              <div class="text-left row" style="width: auto;padding: 0;">
+                                                  <p class="card-title">+91-9876598750</p>
                                               </div>
                                           </div>
                                           <div class="row col-md-3">
                                             <div class="text-left row" style="width: auto;">
                                                 <label><i class="fa fa-envelope" aria-hidden="true"></i></label>
                                             </div>
-                                            <div class="text-left row" style="width: auto;">
+                                            <div class="text-left row" style="width: auto;padding: 0;">
                                                 <p class="card-title">gaurav@theglove.in</p>
                                             </div>
                                           </div>
                                         </div>
-                                        <div class="row col-md-12 card-second-line reserve-card-content">
-                                            <div class="row col-md-4">
-                                                <div class="text-left row" style="width: auto;">
-                                                    <label>Qualification :</label>
-                                                </div>
-                                                <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">B.Tech(C.S.)</p>
-                                                </div>
-                                            </div>
-                                            <div class="row col-md-2">
-                                                <div class="text-left row" style="width: auto;">
-                                                    <label><i class="fa-sharp fa-solid fa-bag-shopping"></i></label>
-                                                </div>
-                                                <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">4Y, 8M</p>
-                                                </div>
-                                            </div>
-                                            <div class="row col-md-4">
-                                                <div class="text-left row" style="width: auto;">
-                                                    <label>Current Company :</label>
-                                                </div>
-                                                <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">KsTech LTD.</p>
-                                                </div>
-                                            </div>
-                                            <div class="row col-md-2">
-                                                <div class="text-left row" style="width: auto; padding:0;">
-                                                    <label><i class="fa-solid fa-wallet"></i></label>
-                                                </div>
-                                                <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">Inr 360,000</p>
-                                                </div>
-                                            </div>
-                                            <div class="row col-md-4">
-                                                <div class="text-left row" style="width: auto;">
-                                                    <label>Skills :</label>
-                                                </div>
-                                                <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">Php, JS</p>
-                                                </div>
-                                            </div>
-                                            <div class="row col-md-4">
-                                                <div class="text-left row" style="width: auto;">
-                                                    <label>Label :</label>
-                                                </div>
-                                                <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">Web Developer</p>
-                                                </div>
-                                            </div>
+                                        <div class="text-right row" style="width: 5%;">
+                                          <input type="checkbox">
+                                          <br>
+                                          <div class="input-group-prepend">
+                                              <button class="card-menu-option" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                                              <div class="dropdown-menu">
+                                                    <a class="dropdown-item" href="#">Tag Jobs</a>
+                                              </div>
+                                          </div>
                                         </div>
+                                        </div>
+                                        </div>
+                                        <div class="row col-md-12 card-second-line reserve-card-content">
+                                            <div class="row" style="width: 95%;">
+                                              <div class="row col-md-4">
+                                                  <div class="text-left row" style="width: auto;">
+                                                      <label>Qualification :</label>
+                                                  </div>
+                                                  <div class="text-left row" style="width: auto;">
+                                                      <p class="card-title">B.Tech(C.S.)</p>
+                                                  </div>
+                                              </div>
+                                              <div class="row col-md-4">
+                                                  <div class="text-left row" style="width: auto;">
+                                                      <label>Skills :</label>
+                                                  </div>
+                                                  <div class="text-left row" style="width: auto;">
+                                                      <p class="card-title">Php,JS</p>
+                                                  </div>
+                                              </div>
+                                              <div class="row col-md-4">
+                                                  <div class="text-left row" style="width: auto;">
+                                                      <label>Label :</label>
+                                                  </div>
+                                                  <div class="text-left row" style="width: auto;">
+                                                      <p class="card-title">Web Developer</p>
+                                                  </div>
+                                              </div>
+                                              <div class="row col-md-4">
+                                                  <div class="text-left row" style="width: auto;">
+                                                      <label>Exp. :</label>
+                                                  </div>
+                                                  <div class="text-left row" style="width: auto;">
+                                                      <p class="card-title">4Y, 8M</p>
+                                                  </div>
+                                              </div>
+                                              <div class="row col-md-4">
+                                                  <div class="text-left row" style="width: auto;">
+                                                      <label>Current Company :</label>
+                                                  </div>
+                                                  <div class="text-left row" style="width: auto;">
+                                                      <p class="card-title">KsTech LTD.</p>
+                                                  </div>
+                                              </div>
+                                              <div class="row col-md-4">
+                                                  <div class="text-left row" style="width: auto;">
+                                                      <label>CTC :</label>
+                                                  </div>
+                                                  <div class="text-left row" style="width: auto;">
+                                                      <p class="card-title">Inr 480,000</p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="row" style="width: 5%;">
+                                            <button type="button" class="fnt-size card-action-buttons" data-toggle="modal" data-target="#filterSaveModal"><i class="fa-solid fa-tag"></i></button>
+                                            <button type="button" class="fnt-size card-action-buttons" data-toggle="modal" data-target="#filterSaveModal"><i class="fa-solid fa-user"></i></button>
+                                            <button type="button" class="fnt-size card-action-buttons" data-toggle="modal" data-target="#filterSaveModal"><i class="fa-solid fa-star"></i></button>
+                                          </div>
+                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>
-                          </div>
+                          <!-- </div> -->
                         </div>
                         <div class="col-sm-12 mb-3">
                           <div class="card card-of-candidate-section">
                             <div class="card-body">
                                 <div class="row">
+                                    <!-- <div class="col-md-2">
+                                        <img class="" width="100%" src="https://new-dm1-recruiter.getglobalgroup.com/assets/images/avatars/profile.jpg" style="border-radius: 35%;"> 
+                                    </div> -->
                                     <div class="col-md-12">
                                         <div class="row card-first-line">
+                                          
+                                        <div class="text-left row" style="width: 95%;">
                                           <div class="row col-md-3">
                                             <p class="card-title" style="color: #124B82;font-size:22px; font-weight: bolder;">Jatin Chauhan</p>
                                           </div>   
@@ -5445,7 +5657,7 @@
                                               <div class="text-left row" style="width: auto;">
                                                   <label><i class="fa fa-map-marker" aria-hidden="true"></i></label>
                                               </div>
-                                              <div class="text-left row" style="width: auto;">
+                                              <div class="text-left row" style="width: auto;padding: 0;">
                                                   <p class="card-title">Faridabad</p>
                                               </div>
                                           </div>
@@ -5453,80 +5665,105 @@
                                               <div class="text-left row" style="width: auto;">
                                                   <label><i class="fa fa-phone" aria-hidden="true"></i></label>
                                               </div>
-                                              <div class="text-left row" style="width: auto;">
-                                                  <p class="card-title">+91-9877353210</p>
+                                              <div class="text-left row" style="width: auto;padding: 0;">
+                                                  <p class="card-title">+91-9835698750</p>
                                               </div>
                                           </div>
                                           <div class="row col-md-3">
                                             <div class="text-left row" style="width: auto;">
                                                 <label><i class="fa fa-envelope" aria-hidden="true"></i></label>
                                             </div>
-                                            <div class="text-left row" style="width: auto;">
-                                                <p class="card-title">jatin67@theglove.in</p>
+                                            <div class="text-left row" style="width: auto;padding: 0;">
+                                                <p class="card-title">jatin@theglove.in</p>
                                             </div>
                                           </div>
                                         </div>
-                                        <div class="row col-md-12 card-second-line reserve-card-content">
-                                            <div class="row col-md-4">
-                                                <div class="text-left row" style="width: auto;">
-                                                    <label>Qualification :</label>
-                                                </div>
-                                                <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">B.Sc(C.S.)</p>
-                                                </div>
-                                            </div>
-                                            <div class="row col-md-2">
-                                                <div class="text-left row" style="width: auto;">
-                                                    <label><i class="fa-sharp fa-solid fa-bag-shopping"></i></label>
-                                                </div>
-                                                <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">6Y, 2M</p>
-                                                </div>
-                                            </div>
-                                            <div class="row col-md-4">
-                                                <div class="text-left row" style="width: auto;">
-                                                    <label>Current Company :</label>
-                                                </div>
-                                                <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">Ipsum LTD.</p>
-                                                </div>
-                                            </div>
-                                            <div class="row col-md-2">
-                                                <div class="text-left row" style="width: auto; padding:0;">
-                                                    <label><i class="fa-solid fa-wallet"></i></label>
-                                                </div>
-                                                <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">Inr 500,000</p>
-                                                </div>
-                                            </div>
-                                            <div class="row col-md-4">
-                                                <div class="text-left row" style="width: auto;">
-                                                    <label>Skills :</label>
-                                                </div>
-                                                <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">Php core</p>
-                                                </div>
-                                            </div>
-                                            <div class="row col-md-4">
-                                                <div class="text-left row" style="width: auto;">
-                                                    <label>Label :</label>
-                                                </div>
-                                                <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">Web Designer</p>
-                                                </div>
-                                            </div>
+                                        <div class="text-right row" style="width: 5%;">
+                                          <input type="checkbox">
+                                          <br>
+                                          <div class="input-group-prepend">
+                                              <button class="card-menu-option" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                                              <div class="dropdown-menu">
+                                                    <a class="dropdown-item" href="#">Tag Jobs</a>
+                                              </div>
+                                          </div>
                                         </div>
+                                        </div>
+                                        </div>
+                                        <div class="row col-md-12 card-second-line reserve-card-content">
+                                            <div class="row" style="width: 95%;">
+                                              <div class="row col-md-4">
+                                                  <div class="text-left row" style="width: auto;">
+                                                      <label>Qualification :</label>
+                                                  </div>
+                                                  <div class="text-left row" style="width: auto;">
+                                                      <p class="card-title">B.Sc(C.S.)</p>
+                                                  </div>
+                                              </div>
+                                              <div class="row col-md-4">
+                                                  <div class="text-left row" style="width: auto;">
+                                                      <label>Skills :</label>
+                                                  </div>
+                                                  <div class="text-left row" style="width: auto;">
+                                                      <p class="card-title">Php core</p>
+                                                  </div>
+                                              </div>
+                                              <div class="row col-md-4">
+                                                  <div class="text-left row" style="width: auto;">
+                                                      <label>Label :</label>
+                                                  </div>
+                                                  <div class="text-left row" style="width: auto;">
+                                                      <p class="card-title">Web Developer</p>
+                                                  </div>
+                                              </div>
+                                              <div class="row col-md-4">
+                                                  <div class="text-left row" style="width: auto;">
+                                                      <label>Exp. :</label>
+                                                  </div>
+                                                  <div class="text-left row" style="width: auto;">
+                                                      <p class="card-title">6Y, 2M</p>
+                                                  </div>
+                                              </div>
+                                              <div class="row col-md-4">
+                                                  <div class="text-left row" style="width: auto;">
+                                                      <label>Current Company :</label>
+                                                  </div>
+                                                  <div class="text-left row" style="width: auto;">
+                                                      <p class="card-title">Ipsum LTD.</p>
+                                                  </div>
+                                              </div>
+                                              <div class="row col-md-4">
+                                                  <div class="text-left row" style="width: auto;">
+                                                      <label>CTC :</label>
+                                                  </div>
+                                                  <div class="text-left row" style="width: auto;">
+                                                      <p class="card-title">Inr 520,000</p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="row" style="width: 5%;">
+                                            <button type="button" class="fnt-size card-action-buttons" data-toggle="modal" data-target="#filterSaveModal"><i class="fa-solid fa-tag"></i></button>
+                                            <button type="button" class="fnt-size card-action-buttons" data-toggle="modal" data-target="#filterSaveModal"><i class="fa-solid fa-user"></i></button>
+                                            <button type="button" class="fnt-size card-action-buttons" data-toggle="modal" data-target="#filterSaveModal"><i class="fa-solid fa-star"></i></button>
+                                          </div>
+                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>
-                          </div>
+                          <!-- </div> -->
                         </div>
                         <div class="col-sm-12 mb-3">
                           <div class="card card-of-candidate-section">
                             <div class="card-body">
                                 <div class="row">
+                                    <!-- <div class="col-md-2">
+                                        <img class="" width="100%" src="https://new-dm1-recruiter.getglobalgroup.com/assets/images/avatars/profile.jpg" style="border-radius: 35%;"> 
+                                    </div> -->
                                     <div class="col-md-12">
                                         <div class="row card-first-line">
+                                          
+                                        <div class="text-left row" style="width: 95%;">
                                           <div class="row col-md-3">
                                             <p class="card-title" style="color: #124B82;font-size:22px; font-weight: bolder;">David Tomar</p>
                                           </div>   
@@ -5534,96 +5771,113 @@
                                               <div class="text-left row" style="width: auto;">
                                                   <label><i class="fa fa-map-marker" aria-hidden="true"></i></label>
                                               </div>
-                                              <div class="text-left row" style="width: auto;">
-                                                  <p class="card-title">Krishna Colony, Palwal</p>
+                                              <div class="text-left row" style="width: auto;padding: 0;">
+                                                  <p class="card-title">Palwal</p>
                                               </div>
                                           </div>
                                           <div class="row col-md-3">
                                               <div class="text-left row" style="width: auto;">
                                                   <label><i class="fa fa-phone" aria-hidden="true"></i></label>
                                               </div>
-                                              <div class="text-left row" style="width: auto;">
-                                                  <p class="card-title">+91-8701410807</p>
+                                              <div class="text-left row" style="width: auto;padding: 0;">
+                                                  <p class="card-title">+91-8705698750</p>
                                               </div>
                                           </div>
                                           <div class="row col-md-3">
                                             <div class="text-left row" style="width: auto;">
                                                 <label><i class="fa fa-envelope" aria-hidden="true"></i></label>
                                             </div>
-                                            <div class="text-left row" style="width: auto;">
+                                            <div class="text-left row" style="width: auto;padding: 0;">
                                                 <p class="card-title">dtomar@theglove.in</p>
                                             </div>
                                           </div>
-                                            <!-- <div class="text-left row" style="width: 55%; color: #124B82;">
-                                            </div> -->
-                                            <!-- <div class="text-center row" style="width: 45%;">
-                                                <div class="col-md-3 card-top"></div>
-                                                <div class="col-md-3 card-top"><span class="resrv-crd-optn1">11</span><br><span>Subjects</span></div>
-                                                <div class="col-md-3 card-top"><span class="resrv-crd-optn2">51</span><br><span>Total Marks</span></div>
-                                                <div class="col-md-3 card-top"><span class="resrv-crd-optn3">95</span><br><span>Percentage</span></div>
-                                            </div> -->
+                                        </div>
+                                        <div class="text-right row" style="width: 5%;">
+                                          <input type="checkbox">
+                                          <br>
+                                          <div class="input-group-prepend">
+                                              <button class="card-menu-option" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                                              <div class="dropdown-menu">
+                                                    <a class="dropdown-item" href="#">Tag Jobs</a>
+                                              </div>
+                                          </div>
+                                        </div>
+                                        </div>
                                         </div>
                                         <div class="row col-md-12 card-second-line reserve-card-content">
-                                            <div class="row col-md-4">
-                                                <div class="text-left row" style="width: auto;">
-                                                    <label>Qualification :</label>
-                                                </div>
-                                                <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">MCA</p>
-                                                </div>
-                                            </div>
-                                            <div class="row col-md-2">
-                                                <div class="text-left row" style="width: auto;">
-                                                    <label><i class="fa-sharp fa-solid fa-bag-shopping"></i></label>
-                                                </div>
-                                                <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">3Y, 02M</p>
-                                                </div>
-                                            </div>
-                                            <div class="row col-md-4">
-                                                <div class="text-left row" style="width: auto;">
-                                                    <label>Current Company :</label>
-                                                </div>
-                                                <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">Lorem LTD.</p>
-                                                </div>
-                                            </div>
-                                            <div class="row col-md-2">
-                                                <div class="text-left row" style="width: auto; padding:0;">
-                                                    <label><i class="fa-solid fa-wallet"></i></label>
-                                                </div>
-                                                <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">Inr 200,000</p>
-                                                </div>
-                                            </div>
-                                            <div class="row col-md-4">
-                                                <div class="text-left row" style="width: auto;">
-                                                    <label>Skills :</label>
-                                                </div>
-                                                <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">Angular, Php</p>
-                                                </div>
-                                            </div>
-                                            <div class="row col-md-4">
-                                                <div class="text-left row" style="width: auto;">
-                                                    <label>Label :</label>
-                                                </div>
-                                                <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">Web Developer</p>
-                                                </div>
-                                            </div>
+                                            <div class="row" style="width: 95%;">
+                                              <div class="row col-md-4">
+                                                  <div class="text-left row" style="width: auto;">
+                                                      <label>Qualification :</label>
+                                                  </div>
+                                                  <div class="text-left row" style="width: auto;">
+                                                      <p class="card-title">MCA</p>
+                                                  </div>
+                                              </div>
+                                              <div class="row col-md-4">
+                                                  <div class="text-left row" style="width: auto;">
+                                                      <label>Skills :</label>
+                                                  </div>
+                                                  <div class="text-left row" style="width: auto;">
+                                                      <p class="card-title">Angular, Php</p>
+                                                  </div>
+                                              </div>
+                                              <div class="row col-md-4">
+                                                  <div class="text-left row" style="width: auto;">
+                                                      <label>Label :</label>
+                                                  </div>
+                                                  <div class="text-left row" style="width: auto;">
+                                                      <p class="card-title">Web Developer</p>
+                                                  </div>
+                                              </div>
+                                              <div class="row col-md-4">
+                                                  <div class="text-left row" style="width: auto;">
+                                                      <label>Exp. :</label>
+                                                  </div>
+                                                  <div class="text-left row" style="width: auto;">
+                                                      <p class="card-title">3Y, 4M</p>
+                                                  </div>
+                                              </div>
+                                              <div class="row col-md-4">
+                                                  <div class="text-left row" style="width: auto;">
+                                                      <label>Current Company :</label>
+                                                  </div>
+                                                  <div class="text-left row" style="width: auto;">
+                                                      <p class="card-title">Lorem LTD.</p>
+                                                  </div>
+                                              </div>
+                                              <div class="row col-md-4">
+                                                  <div class="text-left row" style="width: auto;">
+                                                      <label>CTC :</label>
+                                                  </div>
+                                                  <div class="text-left row" style="width: auto;">
+                                                      <p class="card-title">Inr 320,000</p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="row" style="width: 5%;">
+                                            <button type="button" class="fnt-size card-action-buttons" data-toggle="modal" data-target="#filterSaveModal"><i class="fa-solid fa-tag"></i></button>
+                                            <button type="button" class="fnt-size card-action-buttons" data-toggle="modal" data-target="#filterSaveModal"><i class="fa-solid fa-user"></i></button>
+                                            <button type="button" class="fnt-size card-action-buttons" data-toggle="modal" data-target="#filterSaveModal"><i class="fa-solid fa-star"></i></button>
+                                          </div>
                                         </div>
+                                        
                                     </div>
                                 </div>
                             </div>
-                          </div>
+                          <!-- </div> -->
                         </div>
                         <div class="col-sm-12 mb-3">
                           <div class="card card-of-candidate-section">
                             <div class="card-body">
                                 <div class="row">
+                                    <!-- <div class="col-md-2">
+                                        <img class="" width="100%" src="https://new-dm1-recruiter.getglobalgroup.com/assets/images/avatars/profile.jpg" style="border-radius: 35%;"> 
+                                    </div> -->
                                     <div class="col-md-12">
                                         <div class="row card-first-line">
+                                          
+                                        <div class="text-left row" style="width: 95%;">
                                           <div class="row col-md-3">
                                             <p class="card-title" style="color: #124B82;font-size:22px; font-weight: bolder;">Manoj Sharma</p>
                                           </div>   
@@ -5631,82 +5885,103 @@
                                               <div class="text-left row" style="width: auto;">
                                                   <label><i class="fa fa-map-marker" aria-hidden="true"></i></label>
                                               </div>
-                                              <div class="text-left row" style="width: auto;">
-                                                  <p class="card-title">Badarpur, Delhi</p>
+                                              <div class="text-left row" style="width: auto;padding: 0;">
+                                                  <p class="card-title">Badarpur</p>
                                               </div>
                                           </div>
                                           <div class="row col-md-3">
                                               <div class="text-left row" style="width: auto;">
                                                   <label><i class="fa fa-phone" aria-hidden="true"></i></label>
                                               </div>
-                                              <div class="text-left row" style="width: auto;">
-                                                  <p class="card-title">+91-7891236546</p>
+                                              <div class="text-left row" style="width: auto;padding: 0;">
+                                                  <p class="card-title">+91-8798542650</p>
                                               </div>
                                           </div>
                                           <div class="row col-md-3">
                                             <div class="text-left row" style="width: auto;">
                                                 <label><i class="fa fa-envelope" aria-hidden="true"></i></label>
                                             </div>
-                                            <div class="text-left row" style="width: auto;">
+                                            <div class="text-left row" style="width: auto;padding: 0;">
                                                 <p class="card-title">sharmaM@theglove.in</p>
                                             </div>
                                           </div>
                                         </div>
-                                        <div class="row col-md-12 card-second-line reserve-card-content">
-                                            <div class="row col-md-4">
-                                                <div class="text-left row" style="width: auto;">
-                                                    <label>Qualification :</label>
-                                                </div>
-                                                <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">M.Sc(Maths)</p>
-                                                </div>
-                                            </div>
-                                            <div class="row col-md-2">
-                                                <div class="text-left row" style="width: auto;">
-                                                    <label><i class="fa-sharp fa-solid fa-bag-shopping"></i></label>
-                                                </div>
-                                                <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">6Y, 11M</p>
-                                                </div>
-                                            </div>
-                                            <div class="row col-md-4">
-                                                <div class="text-left row" style="width: auto;">
-                                                    <label>Current Company :</label>
-                                                </div>
-                                                <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">HCL LTD.</p>
-                                                </div>
-                                            </div>
-                                            <div class="row col-md-2">
-                                                <div class="text-left row" style="width: auto; padding:0;">
-                                                    <label><i class="fa-solid fa-wallet"></i></label>
-                                                </div>
-                                                <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">Inr 360,000</p>
-                                                </div>
-                                            </div>
-                                            <div class="row col-md-4">
-                                                <div class="text-left row" style="width: auto;">
-                                                    <label>Skills :</label>
-                                                </div>
-                                                <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">Andriod Swift</p>
-                                                </div>
-                                            </div>
-                                            <div class="row col-md-4">
-                                                <div class="text-left row" style="width: auto;">
-                                                    <label>Label :</label>
-                                                </div>
-                                                <div class="text-left row" style="width: auto;">
-                                                    <p class="card-title">Mobile apps</p>
-                                                </div>
-                                            </div>
+                                        <div class="text-right row" style="width: 5%;">
+                                          <input type="checkbox">
+                                          <br>
+                                          <div class="input-group-prepend">
+                                              <button class="card-menu-option" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                                              <div class="dropdown-menu">
+                                                    <a class="dropdown-item" href="#">Tag Jobs</a>
+                                              </div>
+                                          </div>
                                         </div>
+                                        </div>
+                                        </div>
+                                        <div class="row col-md-12 card-second-line reserve-card-content">
+                                            <div class="row" style="width: 95%;">
+                                              <div class="row col-md-4">
+                                                  <div class="text-left row" style="width: auto;">
+                                                      <label>Qualification :</label>
+                                                  </div>
+                                                  <div class="text-left row" style="width: auto;">
+                                                      <p class="card-title">M.Sc(C.S.)</p>
+                                                  </div>
+                                              </div>
+                                              <div class="row col-md-4">
+                                                  <div class="text-left row" style="width: auto;">
+                                                      <label>Skills :</label>
+                                                  </div>
+                                                  <div class="text-left row" style="width: auto;">
+                                                      <p class="card-title">Android, Swift</p>
+                                                  </div>
+                                              </div>
+                                              <div class="row col-md-4">
+                                                  <div class="text-left row" style="width: auto;">
+                                                      <label>Label :</label>
+                                                  </div>
+                                                  <div class="text-left row" style="width: auto;">
+                                                      <p class="card-title">Mobile Apps</p>
+                                                  </div>
+                                              </div>
+                                              <div class="row col-md-4">
+                                                  <div class="text-left row" style="width: auto;">
+                                                      <label>Exp. :</label>
+                                                  </div>
+                                                  <div class="text-left row" style="width: auto;">
+                                                      <p class="card-title">6Y, 11M</p>
+                                                  </div>
+                                              </div>
+                                              <div class="row col-md-4">
+                                                  <div class="text-left row" style="width: auto;">
+                                                      <label>Current Company :</label>
+                                                  </div>
+                                                  <div class="text-left row" style="width: auto;">
+                                                      <p class="card-title">HCL LTD.</p>
+                                                  </div>
+                                              </div>
+                                              <div class="row col-md-4">
+                                                  <div class="text-left row" style="width: auto;">
+                                                      <label>CTC :</label>
+                                                  </div>
+                                                  <div class="text-left row" style="width: auto;">
+                                                      <p class="card-title">Inr 720,000</p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="row" style="width: 5%;">
+                                            <button type="button" class="fnt-size card-action-buttons" data-toggle="modal" data-target="#filterSaveModal"><i class="fa-solid fa-tag"></i></button>
+                                            <button type="button" class="fnt-size card-action-buttons" data-toggle="modal" data-target="#filterSaveModal"><i class="fa-solid fa-user"></i></button>
+                                            <button type="button" class="fnt-size card-action-buttons" data-toggle="modal" data-target="#filterSaveModal"><i class="fa-solid fa-star"></i></button>
+                                          </div>
+                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>
-                          </div>
+                          <!-- </div> -->
                         </div>
+
                       </div>
                     </div>
                   </div>
@@ -5727,7 +6002,7 @@
           <footer class="footer position-absolute">
             <div class="row g-0 justify-content-between align-items-center h-100">
               <div class="col-12 col-sm-auto text-center">
-                <p class="mb-0 mt-2 mt-sm-0 text-900">Thank you for The Glove<span class="d-none d-sm-inline-block"></span><span class="d-none d-sm-inline-block mx-1">|</span><br class="d-sm-none" />2023 &copy;<a class="mx-1" href="#" target="_blank"><img src="../assets/img/icons/clogo.png" style="height: 21px;" alt="The Glove"></a></p>
+                <p class="mb-0 mt-2 mt-sm-0 text-900">Thank you for The Glove<span class="d-none d-sm-inline-block"></span><span class="d-none d-sm-inline-block mx-1">|</span><br class="d-sm-none" />2023 &copy;<a class="mx-1" href="https://ksquaretech.co.in/ks/" target="_blank"><img src="../assets/img/icons/clogo.png" style="height: 21px;" alt="The Glove"></a></p>
               </div>
               <div class="col-12 col-sm-auto text-center">
                 <p class="mb-0 text-600">v1.0.0</p>
