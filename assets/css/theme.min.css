@@ -37888,3 +37888,9 @@ html:not(.navbar-vertical-collapsed) .navbar-vertical .firefox .navbar-vibrant .
         max-width: 25rem
     }
 }
+.link-page{
+    margin-left: 10px;
+}
+.dispay-flex{
+    display: flex;
+}
