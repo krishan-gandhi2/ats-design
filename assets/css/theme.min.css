@@ -49,7 +49,7 @@
     --phoenix-sass: #c55589;
     --phoenix-gulp: #d54049;
     --phoenix-w3c: #255997;
-    --phoenix-primary: #4599BB;
+    --phoenix-primary: #141824 !important;
     --phoenix-secondary: #31374a;
     --phoenix-success: #25b003;
     --phoenix-info: #0097eb;
@@ -37889,8 +37889,8 @@ html:not(.navbar-vertical-collapsed) .navbar-vertical .firefox .navbar-vibrant .
     }
 }
 .link-page{
-    margin-left: 10px;
+    margin-left: 10px !important;
 }
 .dispay-flex{
-    display: flex;
+    display: flex !important;
 }
