@@ -215,7 +215,7 @@
                               </div>
                             </a>
                           </div>
-                          <div class="nav-item-wrapper"><a class="nav-link label-1" href="../pages/blank-page.html" role="button" data-bs-toggle="" aria-expanded="false">
+                          <!-- <div class="nav-item-wrapper"><a class="nav-link label-1" href="../pages/blank-page.html" role="button" data-bs-toggle="" aria-expanded="false">
                             <div class="d-flex align-items-center">
                               <span class="nav-link-icon">
                                 <span data-feather="user-check"></span>
@@ -236,7 +236,7 @@
                               </span>
                             </div>
                           </a>
-                        </div>
+                        </div> -->
                         <div class="nav-item-wrapper"><a class="nav-link label-1" href="../pages/blank-page.html" role="button" data-bs-toggle="" aria-expanded="false">
                           <div class="d-flex align-items-center">
                             <span class="nav-link-icon">
@@ -4707,7 +4707,9 @@
                           </select></div>
                       </div>
                       <div class="col-sm-2 col-md-2">
-                        <div class="form-floating"><input class="form-control" id="floatingInputStreet" type="text" placeholder="street" /><label for="floatingInputStreet">Fulfill By</label></div>
+                        <div class="form-icon-container">
+                          <div class="form-floating"><input  class="form-control datetimepicker form-icon-input" id="FulfillBy" type="text" placeholder="Fulfill By" /><label class="text-700 form-icon-label" for="FulfillBy">Fulfill By</label></div><span class="fa-solid fa-calendar-alt text-900 fs--1 form-icon"></span>
+                        </div>
                       </div>
                       <div class="col-sm-2 col-md-2">
                         <div class="form-floating"><input class="form-control" id="floatingInputStreet" type="text" placeholder="street" /><label for="floatingInputStreet">Salary</label></div>
@@ -4730,12 +4732,15 @@
                             <option value="2">C</option>
                           </select></div>
                       </div>
-                      <div class="col-sm-2 col-md-2">
+                      <!-- <div class="col-sm-2 col-md-2">
                         <div class="form-floating"><input class="form-control" id="floatingInputStreet" type="text" placeholder="street" /><label for="floatingInputStreet">Unique ID</label></div>
-                      </div>
+                      </div> -->
                       <div class="col-sm-2 col-md-2">
                         <div class="form-floating"><input class="form-control" id="floatingInputStreet" type="text" placeholder="street" /><label for="floatingInputStreet">Remark</label></div>
                       </div>
+                      
+                      <hr>
+                      <h4 class="mb-3" style="margin: 0px !important;">Status and Assign</h4>
                       <div class="col-sm-2 col-md-2">
                         <div class="form-floating">
                             <select class="form-select" id="floatingSelectCity">
@@ -4743,6 +4748,19 @@
                             <option value="1">A</option>
                             <option value="2">B</option>
                             <option value="2">C</option>
+                          </select></div>
+                      </div>
+                      <div class="col-sm-2 col-md-2">
+                        <div class="form-floating">
+                            <select class="form-select" id="floatingSelectCity">
+                            <option selected="selected">--Select Status--</option>
+                            <option value="1">Active</option>
+                            <option value="1">Deactivate</option>
+                            <option value="1">Closed</option>
+                            <option value="1">Drop</option>
+                            <option value="1">Hold</option>
+                            <option value="1">Fulfilled</option>
+                            <option value="1">Profile Submitted </option>
                           </select></div>
                       </div>
                       <hr>

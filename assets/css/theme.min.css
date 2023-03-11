@@ -7080,7 +7080,7 @@ textarea.form-control.is-invalid {
     height: var(--phoenix-accordion-btn-icon-width);
     margin-left: auto;
     content: "";
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzDEG5aKSx9COQ9fS44qgUgpzfBew8lKrzMg&usqp=CAU");
+    /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzDEG5aKSx9COQ9fS44qgUgpzfBew8lKrzMg&usqp=CAU"); */
     background-repeat: no-repeat;
     background-size: var(--phoenix-accordion-btn-icon-width);
     -webkit-transition: var(--phoenix-accordion-btn-icon-transition);
