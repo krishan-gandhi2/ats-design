@@ -142,7 +142,7 @@
                           </div>
                           
                               <!-- parent pages-->
-                              <div class="nav-item-wrapper"><a class="nav-link label-1" href="../pages/jobopening.html" role="button" data-bs-toggle="" aria-expanded="false">
+                              <div class="nav-item-wrapper"><a class="nav-link label-1"href="../pages/requirement.html" role="button" data-bs-toggle="" aria-expanded="false">
                                 <div class="d-flex align-items-center">
                                   <span class="nav-link-icon">
                                     <span data-feather="plus-square"></span>
@@ -4601,23 +4601,23 @@
                         <hr style="margin: 0px;"> 
                        
                         <div class="col-md-2 position-relative  ">
-                          <div class="form-floating"><select class="form-select" id="floatingSelectCity">
-                              <option selected="selected">Client</option>
-                              <option value="1">Apple</option>
-                              <option value="2">HP</option>
-                              <option value="2">Netflix</option>
-                              <option value="3">Other</option>
+                          <div class="form-floating"><select class="form-select" id="ClientValues">
+                              <option selected="selected">--Select Client--</option>
+                              <option value="AP0001">Apple</option>
+                              <option value="HP0002">HP</option>
+                              <option value="NF0003">Netflix</option>
+                              <option value="XYZ0010">Other</option>
                             </select>
                           </div>
                         </div>
                           <div class="col-sm-2 col-md-2 ">
-                            <div class="form-floating"><input class="form-control" id="floatingInputStreet" type="text" placeholder="street" /><label for="floatingInputStreet">Code</label></div>
+                            <div class="form-floating"><input disabled class="form-control" id="codeValue" type="text" placeholder="street" /><label for="floatingInputStreet">Code</label></div>
                           </div>
                          
                          
                           <div class="col-md-2 position-relative  ">
                             <div class="form-floating"><select class="form-select" id="floatingSelectCity">
-                                <option selected="selected">Department </option>
+                                <option selected="selected">--Select Department--</option>
                                 <option value="1">Tech</option>
                                 <option value="1">Non-Tech</option>
                             </select>
@@ -4625,7 +4625,7 @@
                           </div>
                           <div class="col-md-2 position-relative  ">
                             <div class="form-floating"><select class="form-select" id="floatingSelectCity">
-                                <option selected="selected">Org Spoc</option>
+                                <option selected="selected">--Select Org Spoc--</option>
                                 <option value="1">A</option>
                                 <option value="2">B</option>
                                 <option value="3">Other</option>
@@ -4684,7 +4684,7 @@
                       <div class="col-sm-2 col-md-2">
                         <div class="form-floating">
                             <select class="form-select" id="floatingSelectCity">
-                            <option selected="selected">Interview Type </option>
+                            <option selected="selected">--Select Interview Type--</option>
                             <option value="1">Virtual </option>
                             <option value="2">Face to Face </option>
                             <option value="2">Bot </option>
@@ -4700,7 +4700,7 @@
                       <div class="col-sm-2 col-md-2">
                         <div class="form-floating">
                             <select class="form-select" id="floatingSelectCity">
-                            <option selected="selected">Diversity </option>
+                            <option selected="selected">--Select Diversity--</option>
                             <option value="1">Male </option>
                             <option value="2">Female</option>
                             <option value="2">Both</option>
@@ -4715,7 +4715,7 @@
                       <div class="col-sm-2 col-md-2">
                         <div class="form-floating">
                             <select class="form-select" id="floatingSelectCity">
-                            <option selected="selected">The Glove (Lead)</option>
+                            <option selected="selected">--Select The Glove (Lead)--</option>
                             <option value="1">Employee A</option>
                             <option value="2">Employee B</option>
                             <option value="2">Employee C</option>
@@ -4724,7 +4724,7 @@
                       <div class="col-sm-2 col-md-2">
                         <div class="form-floating">
                             <select class="form-select" id="floatingSelectCity">
-                            <option selected="selected">Labels</option>
+                            <option selected="selected">--Select Labels--</option>
                             <option value="1">A</option>
                             <option value="2">B</option>
                             <option value="2">C</option>
@@ -4739,7 +4739,7 @@
                       <div class="col-sm-2 col-md-2">
                         <div class="form-floating">
                             <select class="form-select" id="floatingSelectCity">
-                            <option selected="selected">Assigned To</option>
+                            <option selected="selected">--Select Assigned To--</option>
                             <option value="1">A</option>
                             <option value="2">B</option>
                             <option value="2">C</option>
@@ -4780,6 +4780,7 @@
         </div>
       </div>
     </main>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
     <script>
       var coll = document.getElementsByClassName("collapsible1");
       var i;
@@ -4795,6 +4796,11 @@
           }
         });
       }
+      $("#ClientValues").change(function(){
+        var event =  $("#ClientValues").val()
+        console.log('event >> ',event)
+            $('#codeValue').val(event);
+        });
       </script>
     <!-- ===============================================-->
     <!--    End of Main Content-->
