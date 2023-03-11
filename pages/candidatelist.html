@@ -98,7 +98,8 @@
     .scroll-on-cards i{font-size: 10px !important;}
     .card-menu-option{background-color: white;border: none;margin-left: 5px;}
     .card-action-buttons{padding: 0;margin: 0;background-color: white;border: none;}
-    .fnt-size{font-size: 0.7rem !important; margin-left: 13px;}
+    .fnt-size{font-size: 0.9rem !important; margin-left: 13px;}
+    .icon-color{color:grey;}
     .experience-filter-data-values{margin-top: 0;}
     .experience-filter-data-values label{font-size: 0.8rem;}
     .salary-filter-data-values{margin-top: 0;}
@@ -112,9 +113,16 @@
     .textarea-save-search-cls{width: 100%; height: 100px; border: 1px solid lightgrey; border-radius:6px;}
     .textarea-save-search-cls:focus{outline: 2px solid lightgrey; border: 1px solid lightgrey;}
     .textarea-save-search-cls::placeholder{font-size: 12px;padding: 10px 0px 0px 10px;}
+    .header-search-checkbox{font-size: 0.8rem; display: inline-flex;}
+    .header-search-checkbox span{margin-right: 10px; display:inline-flex;}
+    .header-search-checkbox label{margin-top:4px;}
+    .header-search-checkbox div{margin-top:3px;}
     .category-drpdwn-of-search{
       border: 1px solid lightgrey;
       border-radius: 7px 0px 0px 7px;
+    }
+    .accordion-button.collapsed {
+        color: #124b82;
     }
     .category-drpdwn-of-search:hover, .category-drpdwn-of-search:focus{
       border: 1px solid lightgrey;
@@ -184,7 +192,7 @@
         box-shadow: 5px 5px 10px #979797 !important;
     }
     .card-of-candidate-section .card-body{
-      padding: 15px 10px 0px 30px;
+      padding: 10px 10px 8px 30px;
     }
 
     .dropbtn {
@@ -246,8 +254,6 @@
     }
     .dropdown a:hover {background-color: #ddd;}
     .show {display: block;}
-   
-        
         .sidebar-toggle {
         margin-left: -240px;
         }
@@ -327,7 +333,7 @@
             display: inline-block;
             padding: 10px;
         }
-      </style>
+    </style>
       
   </head>
 
@@ -4830,30 +4836,32 @@
                   
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <div class="row text-left col-md-12 col-lg-12">
-                            <!-- <div class="col-md-2 col-lg-2">
-                              <div class="input-group-prepend">
-                                <button class="dropbtn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Data Type</button>
-                                <div class="dropdown-menu" style="padding: 10px 15px;line-height: 2.5rem;margin-left: 1rem;">
-                                  <div>
-                                      <label><input type="checkbox" class="mainlist"> Processed<span class="checkmark"></span></label>
-                                  </div>
-                                  <div>
-                                      <label><input type="checkbox" class="mainlist"> Structured<span class="checkmark"></span></label>
-                                  </div>
-                                  <div>
-                                      <label><input type="checkbox" class="mainlist"> Unstructured<span class="checkmark"></span></label>
-                                  </div>
-                                  <div>
-                                      <label><input type="checkbox" class="mainlist"> All<span class="checkmark"></span></label>
-                                  </div>
-                                </div>
+                          <div class="col-md-12 col-lg-12">
+                            <div class="col-md-12 col-lg-12 mb-2 header-search-checkbox">
+                              <div>
+                                Data Type:&nbsp;&nbsp;
                               </div>
-                            </div> -->
+                              <span>
+                                <input type="checkbox">
+                                <label>&nbsp;All</label>
+                              </span>
+                              <span>
+                                <input type="checkbox">
+                                <label>&nbsp;Processed</label>
+                              </span>
+                              <span>
+                                <input type="checkbox">
+                                <label>&nbsp;Structured</label>
+                              </span>
+                              <span>
+                                <input type="checkbox">
+                                <label>&nbsp;Unstructured</label>
+                              </span>
+                            </div>
+                          </div>
                             <div class="col-md-4 col-lg-4">
-                                <!-- <form class="position-relative" data-bs-toggle="search" data-bs-display="static"><input class="form-control search-input fuzzy-search rounded-pill form-control-sm" type="search" placeholder="Search here..." aria-label="Search" />
-                                </form> -->
                                 <div class="row">
-                                  <div class="col-md-12 col-lg-12 mb-2" style="font-size: 0.8rem;">
+                                  <!-- <div class="col-md-12 col-lg-12 mb-2" style="font-size: 0.8rem;">
                                     Data Type:&nbsp;&nbsp;
                                     <span style="margin-right: 5px;">
                                       <input type="checkbox">
@@ -4871,7 +4879,7 @@
                                       <input type="checkbox">
                                       <label>Unstructured</label>
                                     </span>
-                                  </div>
+                                  </div> -->
                                   <div class="col-md-12 col-lg-12">
                                     <div class="input-group mb-3">
                                       <select class="form-select" aria-label="Default select example" style="max-width: 125px !important">
@@ -4883,31 +4891,17 @@
                                         <option value="">Skills</option>
                                         <option value="">Label</option>
                                       </select>
-                                      <!-- <div class="input-group-prepend">
-                                        <button class="btn dropdown-toggle category-drpdwn-of-search" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All</button>
-                                        <div class="dropdown-menu">
-                                          <a class="dropdown-item" href="#">All</a>
-                                          <a class="dropdown-item" href="#">Name</a>
-                                          <a class="dropdown-item" href="#">CTC</a>
-                                          <a class="dropdown-item" href="#">Location</a>
-                                          <div role="separator" class="dropdown-divider"></div>
-                                          <a class="dropdown-item" href="#">Qualification</a>
-                                          <a class="dropdown-item" href="#">Company</a>
-                                          <a class="dropdown-item" href="#">Skills</a>
-                                          <a class="dropdown-item" href="#">Label</a>
-                                        </div>
-                                      </div> -->
                                       <input type="text" class="form-control" aria-label="Text input with dropdown button">
                                     </div>
                                   </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 col-lg-3 mt-3" style="margin-top:27px !important;">
+                            <div class="col-md-3 col-lg-3">
                                 <button class="dropbtn" type="submit">Search</button>
                                 <button type="button" class="dropbtn" data-toggle="modal" data-target="#filterSaveModal">Save Filter</button>
                             </div>
                             <div class="col-md-2 col-lg-2"></div>
-                            <div class="col-md-2 col-lg-2 mt-3" style="margin-top:27px !important;">
+                            <div class="col-md-2 col-lg-2">
                               <select class="form-select" aria-label="Default select example">
                                 <option selected>Freshness</option>
                                 <option value="">CTC: High to Low</option>
@@ -4917,7 +4911,7 @@
                                 <!-- <option value="">Last Active Date</option> -->
                               </select>
                             </div>
-                            <div class="col-md-1 col-lg-1 mt-3" style="margin-top:27px !important;">
+                            <div class="col-md-1 col-lg-1">
                               <select class="form-select" aria-label="Default select example">
                                 <option selected>10</option>
                                 <option value="">20</option>
@@ -5250,7 +5244,7 @@
                   <div class="modal-dialog modal-xl">
                     <div class="modal-content">
                     <div class="modal-header">
-                        <h4 class="modal-title">List Job</h4>
+                        <h4 class="modal-title">Requirement</h4>
                         <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
                       </div>
                       <div class="modal-body">
@@ -5258,18 +5252,21 @@
                           <div class="row col-md-12 col-lg-12">
                             <div class="col-md-3 col-lg-3">
                               <select class="form-select" aria-label="Default select example">
-                                <option selected>--Client--</option>
-                                <option value="">Manoj</option>
-                                <option value="">Gaurav</option>
-                                <option value="">Abhinav</option>
-                                <option value="">David</option>
-                                <option value="">Jatin</option>
-                                <option value="">Aashish</option>
+                                <option selected>-Client-</option>
+                                <option value="">Apple</option>
+                                <option value="">HP</option>
+                                <option value="">Netflix</option>
+                                <option value="">Upwork</option>
+                                <option value="">Intel</option>
+                                <option value="">Dell</option>
+                                <option value="">FaceBook</option>
+                                <option value="">Honda</option>
+                                <option value="">Asus</option>
                               </select>
                             </div>
                             <div class="col-md-3 col-lg-3">
                               <select class="form-select" aria-label="Default select example">
-                                <option selected>--Project--</option>
+                                <option selected>-Label-</option>
                                 <option value="">Engineer</option>
                                 <option value="">Machine</option>
                                 <option value="">Automobile</option>
@@ -5279,15 +5276,17 @@
                             </div>
                             <div class="col-md-3 col-lg-3">
                               <select class="form-select" aria-label="Default select example">
-                                <option selected>--Expertise--</option>
+                                <option selected>-Job Title-</option>
                                 <option value="">Desigining</option>
                                 <option value="">Analysing</option>
                                 <option value="">Consulting</option>
+                                <option value="">Software</option>
                               </select>
                             </div>
                             <div class="col-md-3 col-lg-3">
                               <select class="form-select" aria-label="Default select example">
-                                <option selected>--Specialization--</option>
+                                <option selected>-Department-</option>
+                                <option value="">Technical</option>
                                 <option value="">Auditor</option>
                                 <option value="">Electrical</option>
                                 <option value="">Geophysics</option>
@@ -5296,20 +5295,20 @@
                             </div>
                             <div class="col-md-3 col-lg-3 mt-2">
                               <select class="form-select" aria-label="Default select example">
-                                <option selected>--Category--</option>
-                                <option value="">Website</option>
-                                <option value="">Medical</option>
-                                <option value="">Health</option>
-                                <option value="">Automobile</option>
+                                <option selected>-Role-</option>
+                                <option value="">Frontend</option>
+                                <option value="">Backend</option>
+                                <option value="">UI/UX</option>
+                                <option value="">Manager</option>
                               </select>
                             </div>
                             <div class="col-md-3 col-lg-3 mt-2">
                               <select class="form-select" aria-label="Default select example">
-                                <option selected>--City--</option>
-                                <option value="">Delhi</option>
-                                <option value="">Noida</option>
-                                <option value="">GuruGram</option>
-                                <option value="">Badarpur</option>
+                                <option selected>-Industry-</option>
+                                <option value="">IT Industry</option>
+                                <option value="">Manufacturing</option>
+                                <option value="">Automotive</option>
+                                <option value="">Chemicals</option>
                               </select>
                             </div>
                             <div class="col-md-6 col-lg-6 mt-2">
@@ -5323,44 +5322,54 @@
                                   <tr>
                                     <th scope="col">Action</th>
                                     <th scope="col">Client</th>
-                                    <th scope="col">Project</th>
-                                    <th scope="col">Number</th>
-                                    <th scope="col">Expertise</th>
-                                    <th scope="col">Specialization</th>
-                                    <th scope="col">Discipline</th>
-                                    <th scope="col">Sub Discipline</th>
+                                    <th scope="col">Label</th>
+                                    <!-- <th scope="col">Number</th> -->
+                                    <th scope="col">Job Title</th>
+                                    <th scope="col">Department</th>
+                                    <th scope="col">Role</th>
+                                    <th scope="col">Industry</th>
                                   </tr>
                                 </thead>
                                 <tbody>
                                   <tr>
                                     <th scope="row"><input type="checkbox"/></th>
-                                    <td>Manoj</td>
+                                    <td>HCL</td>
                                     <td>Engineer</td>
-                                    <td>G-6789</td>
+                                    <!-- <td>G-6789</td> -->
                                     <td>Desigining</td>
                                     <td>Auditor</td>
-                                    <td>Production</td>
-                                    <td>Well Testing</td>
+                                    <td>Developer</td>
+                                    <td>Delhi</td>
                                   </tr>
                                   <tr>
                                     <th scope="row"><input type="checkbox"/></th>
-                                    <td>Jatin</td>
+                                    <td>Apple</td>
                                     <td>Automobile</td>
-                                    <td>G-1234</td>
+                                    <!-- <td>G-1234</td> -->
                                     <td>Consulting</td>
                                     <td>Geophysics</td>
-                                    <td>QA</td>
-                                    <td>Mud Engineer</td>
+                                    <td>Medical</td>
+                                    <td>Noida</td>
                                   </tr>
                                   <tr>
                                     <th scope="row"><input type="checkbox"/></th>
-                                    <td>Abhinav</td>
+                                    <td>Asus</td>
                                     <td>A.I.</td>
-                                    <td>G-4567</td>
-                                    <td>Desigining</td>
+                                    <!-- <td>G-4567</td> -->
+                                    <td>Software</td>
                                     <td>Analysing</td>
-                                    <td>Cementing</td>
-                                    <td>Soil Special</td>
+                                    <td>Health</td>
+                                    <td>Gurugram</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row"><input type="checkbox"/></th>
+                                    <td>Honda</td>
+                                    <td>Construction</td>
+                                    <!-- <td>G-4567</td> -->
+                                    <td>Software</td>
+                                    <td>Analysing</td>
+                                    <td>Health</td>
+                                    <td>Gurugram</td>
                                   </tr>
                                 </tbody>
                               </table>
@@ -5382,14 +5391,14 @@
                   <div class="modal-dialog">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h4 class="modal-title">List</h4>
+                        <h4 class="modal-title">Apple - Ashish</h4>
                         <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
                       </div>
                       <div class="modal-body">
                         <div class="row col-md-12 col-lg-12">
                           <div class="col-md-6 col-lg-6 mt-2">
                             <select class="form-select" aria-label="Default select example">
-                              <option selected>--Evaluation form--</option>
+                              <option selected>-Evaluation form-</option>
                               <option value="">Yes</option>
                               <option value="">No</option>
                             </select>
@@ -5405,7 +5414,7 @@
                         </div>
                       </div>
                       <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Okay</button>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#popup-list-action-btn">Okay</button>
                       </div>
                     </div>
                   </div>
@@ -5425,46 +5434,56 @@
                                           
                                         <div class="text-left row" style="width: 95%;">
                                           <div class="row col-md-3">
-                                            <p class="card-title" style="color: #124B82;font-size:22px; font-weight: bolder;">Aashish Kumar</p>
-                                          </div>   
-                                          <div class="row col-md-3">
+                                            <p class="card-title" style="color: #124B82;font-size:22px; font-weight: bolder;">Ashish Saini</p>
+                                          </div>
+                                          <div class="row col-md-7 mt-2">
+                                            <div style="display:inline-flex">
                                               <div class="text-left row" style="width: auto;">
-                                                  <label><i class="fa fa-map-marker" aria-hidden="true"></i></label>
+                                                  <label><i class="fa fa-map-marker icon-color" aria-hidden="true"></i></label>
                                               </div>
                                               <div class="text-left row" style="width: auto;padding: 0;">
-                                                  <p class="card-title">Rajiv Chowk, New Delhi</p>
+                                                  <p class="card-title">&nbsp;Rajiv Chowk, Delhi</p>
                                               </div>
-                                          </div>
-                                          <div class="row col-md-3">
-                                              <div class="text-left row" style="width: auto;">
-                                                  <label><i class="fa fa-phone" aria-hidden="true"></i></label>
+                                              
+                                              <div class="text-left row" style="width: auto; margin-left:1rem;">
+                                                  <label><i class="fa fa-phone icon-color" aria-hidden="true"></i></label>
                                               </div>
                                               <div class="text-left row" style="width: auto;padding: 0;">
-                                                  <p class="card-title">+91-9876543210</p>
+                                                  <p class="card-title">&nbsp;+91-9876543210</p>
                                               </div>
-                                          </div>
-                                          <div class="row col-md-3">
-                                            <div class="text-left row" style="width: auto;">
-                                                <label><i class="fa fa-envelope" aria-hidden="true"></i></label>
-                                            </div>
-                                            <div class="text-left row" style="width: auto;padding: 0;">
-                                                <p class="card-title">aashish@theglove.in</p>
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="text-right row" style="width: 5%;">
-                                          <input type="checkbox">
-                                          <br>
-                                          <div class="input-group-prepend">
-                                              <button class="card-menu-option" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-ellipsis-vertical"></i></button>
-                                              <div class="dropdown-menu">
-                                                    <a class="dropdown-item" href="#">Tag Jobs</a>
+
+                                              <div class="text-left row" style="width: auto; margin-left:1rem;">
+                                                  <label><i class="fa fa-envelope icon-color" aria-hidden="true"></i></label>
                                               </div>
+                                              <div class="text-left row" style="width: auto;padding: 0;">
+                                                  <p class="card-title">&nbsp;ashish@theglove.in</p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="row col-md-2 mt-2">
+                                            <div style="display:inline-flex">
+                                              <div class="text-left row" style="width: auto;">
+                                                  <label>Score:</label>
+                                              </div>
+                                              <div class="text-left row" style="width: auto;padding: 0;">
+                                                  <p class="card-title">&nbsp;50%</p>
+                                              </div>
+                                              
+                                              <div class="text-left row" style="width: auto; margin-left:1rem;">
+                                                  <label title="Tag Count">Tag:</label>
+                                              </div>
+                                              <div class="text-left row" style="width: auto;padding: 0;">
+                                                  <p class="card-title">&nbsp;48</p>
+                                              </div>
+                                            </div>
                                           </div>
                                         </div>
+                                        <div class="" style="width: 5%;display: grid;place-content: center;padding-left: 0;margin-top: -12px;">
+                                          <input type="checkbox" style="width:35px;">
                                         </div>
                                         </div>
-                                        <div class="row col-md-12 card-second-line reserve-card-content">
+                                        </div>
+                                        <div class="row col-md-12 card-second-line" style="padding-right:0;">
                                             <div class="row" style="width: 95%;">
                                               <div class="row col-md-4">
                                                   <div class="text-left row" style="width: auto;">
@@ -5515,10 +5534,10 @@
                                                   </div>
                                               </div>
                                           </div>
-                                          <div class="row" style="width: 5%;">
-                                            <button type="button" class="fnt-size card-action-buttons" data-toggle="modal" data-target="#filterMoreModal"><i class="fa-solid fa-tag"></i></button>
-                                            <button type="button" class="fnt-size card-action-buttons" data-toggle="modal" data-target="#filterSaveModal"><i class="fa-solid fa-user"></i></button>
-                                            <button type="button" class="fnt-size card-action-buttons" data-toggle="modal" data-target="#filterSaveModal"><i class="fa-solid fa-star"></i></button>
+                                          <div class="text-right row" style="width: 5%; margin-top: -16px;">
+                                            <button type="button" class="fnt-size icon-color card-action-buttons" data-toggle="modal" data-target="#filterMoreModal"><i class="fa-solid fa-tag"></i></button>
+                                            <button type="button" class="fnt-size icon-color card-action-buttons" data-toggle="modal" data-target="#filterSaveModal"><i class="fa-solid fa-user"></i></button>
+                                            <button type="button" class="fnt-size icon-color card-action-buttons" data-toggle="modal" data-target="#filterSaveModal"><i class="fa-solid fa-star"></i></button>
                                           </div>
                                         </div>
                                         
@@ -5539,46 +5558,56 @@
                                           
                                         <div class="text-left row" style="width: 95%;">
                                           <div class="row col-md-3">
-                                            <p class="card-title" style="color: #124B82;font-size:22px; font-weight: bolder;">Gaurav Kumar</p>
-                                          </div>   
-                                          <div class="row col-md-3">
+                                            <p class="card-title" style="color: #124B82;font-size:22px; font-weight: bolder;">Raghu</p>
+                                          </div>
+                                          <div class="row col-md-7 mt-2">
+                                            <div style="display:inline-flex">
                                               <div class="text-left row" style="width: auto;">
-                                                  <label><i class="fa fa-map-marker" aria-hidden="true"></i></label>
+                                                  <label><i class="fa fa-map-marker icon-color" aria-hidden="true"></i></label>
                                               </div>
                                               <div class="text-left row" style="width: auto;padding: 0;">
-                                                  <p class="card-title">Sector-7, Gurgaon</p>
+                                                  <p class="card-title">&nbsp;Sector-7, Gurugram</p>
                                               </div>
-                                          </div>
-                                          <div class="row col-md-3">
-                                              <div class="text-left row" style="width: auto;">
-                                                  <label><i class="fa fa-phone" aria-hidden="true"></i></label>
+                                              
+                                              <div class="text-left row" style="width: auto; margin-left:1rem;">
+                                                  <label><i class="fa fa-phone icon-color" aria-hidden="true"></i></label>
                                               </div>
                                               <div class="text-left row" style="width: auto;padding: 0;">
-                                                  <p class="card-title">+91-9876598750</p>
+                                                  <p class="card-title">&nbsp;+91-9876248610</p>
                                               </div>
-                                          </div>
-                                          <div class="row col-md-3">
-                                            <div class="text-left row" style="width: auto;">
-                                                <label><i class="fa fa-envelope" aria-hidden="true"></i></label>
-                                            </div>
-                                            <div class="text-left row" style="width: auto;padding: 0;">
-                                                <p class="card-title">gaurav@theglove.in</p>
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="text-right row" style="width: 5%;">
-                                          <input type="checkbox">
-                                          <br>
-                                          <div class="input-group-prepend">
-                                              <button class="card-menu-option" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-ellipsis-vertical"></i></button>
-                                              <div class="dropdown-menu">
-                                                    <a class="dropdown-item" href="#">Tag Jobs</a>
+
+                                              <div class="text-left row" style="width: auto; margin-left:1rem;">
+                                                  <label><i class="fa fa-envelope icon-color" aria-hidden="true"></i></label>
                                               </div>
+                                              <div class="text-left row" style="width: auto;padding: 0;">
+                                                  <p class="card-title">&nbsp;raghu@theglove.in</p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="row col-md-2 mt-2">
+                                            <div style="display:inline-flex">
+                                              <div class="text-left row" style="width: auto;">
+                                                  <label>Score:</label>
+                                              </div>
+                                              <div class="text-left row" style="width: auto;padding: 0;">
+                                                  <p class="card-title">&nbsp;59%</p>
+                                              </div>
+                                              
+                                              <div class="text-left row" style="width: auto; margin-left:1rem;">
+                                                  <label title="Tag Count">Tag:</label>
+                                              </div>
+                                              <div class="text-left row" style="width: auto;padding: 0;">
+                                                  <p class="card-title">&nbsp;18</p>
+                                              </div>
+                                            </div>
                                           </div>
                                         </div>
+                                        <div class="" style="width: 5%;display: grid;place-content: center;padding-left: 0;margin-top: -12px;">
+                                          <input type="checkbox" style="width:35px;">
                                         </div>
                                         </div>
-                                        <div class="row col-md-12 card-second-line reserve-card-content">
+                                        </div>
+                                        <div class="row col-md-12 card-second-line" style="padding-right:0;">
                                             <div class="row" style="width: 95%;">
                                               <div class="row col-md-4">
                                                   <div class="text-left row" style="width: auto;">
@@ -5593,7 +5622,7 @@
                                                       <label>Skills :</label>
                                                   </div>
                                                   <div class="text-left row" style="width: auto;">
-                                                      <p class="card-title">Php,JS</p>
+                                                      <p class="card-title">Php, JS</p>
                                                   </div>
                                               </div>
                                               <div class="row col-md-4">
@@ -5625,14 +5654,14 @@
                                                       <label>CTC :</label>
                                                   </div>
                                                   <div class="text-left row" style="width: auto;">
-                                                      <p class="card-title">Inr 480,000</p>
+                                                      <p class="card-title">Inr 485,000</p>
                                                   </div>
                                               </div>
                                           </div>
-                                          <div class="row" style="width: 5%;">
-                                            <button type="button" class="fnt-size card-action-buttons" data-toggle="modal" data-target="#filterSaveModal"><i class="fa-solid fa-tag"></i></button>
-                                            <button type="button" class="fnt-size card-action-buttons" data-toggle="modal" data-target="#filterSaveModal"><i class="fa-solid fa-user"></i></button>
-                                            <button type="button" class="fnt-size card-action-buttons" data-toggle="modal" data-target="#filterSaveModal"><i class="fa-solid fa-star"></i></button>
+                                          <div class="text-right row" style="width: 5%; margin-top: -16px;">
+                                            <button type="button" class="fnt-size icon-color card-action-buttons" data-toggle="modal" data-target="#filterMoreModal"><i class="fa-solid fa-tag"></i></button>
+                                            <button type="button" class="fnt-size icon-color card-action-buttons" data-toggle="modal" data-target="#filterSaveModal"><i class="fa-solid fa-user"></i></button>
+                                            <button type="button" class="fnt-size icon-color card-action-buttons" data-toggle="modal" data-target="#filterSaveModal"><i class="fa-solid fa-star"></i></button>
                                           </div>
                                         </div>
                                         
@@ -5653,46 +5682,56 @@
                                           
                                         <div class="text-left row" style="width: 95%;">
                                           <div class="row col-md-3">
-                                            <p class="card-title" style="color: #124B82;font-size:22px; font-weight: bolder;">Jatin Chauhan</p>
-                                          </div>   
-                                          <div class="row col-md-3">
+                                            <p class="card-title" style="color: #124B82;font-size:22px; font-weight: bolder;">Dheeraj</p>
+                                          </div>
+                                          <div class="row col-md-7 mt-2">
+                                            <div style="display:inline-flex">
                                               <div class="text-left row" style="width: auto;">
-                                                  <label><i class="fa fa-map-marker" aria-hidden="true"></i></label>
+                                                  <label><i class="fa fa-map-marker icon-color" aria-hidden="true"></i></label>
                                               </div>
                                               <div class="text-left row" style="width: auto;padding: 0;">
-                                                  <p class="card-title">Faridabad</p>
+                                                  <p class="card-title">&nbsp;100Ft road, Faridabad</p>
                                               </div>
-                                          </div>
-                                          <div class="row col-md-3">
-                                              <div class="text-left row" style="width: auto;">
-                                                  <label><i class="fa fa-phone" aria-hidden="true"></i></label>
+                                              
+                                              <div class="text-left row" style="width: auto; margin-left:1rem;">
+                                                  <label><i class="fa fa-phone icon-color" aria-hidden="true"></i></label>
                                               </div>
                                               <div class="text-left row" style="width: auto;padding: 0;">
-                                                  <p class="card-title">+91-9835698750</p>
+                                                  <p class="card-title">&nbsp;+91-9812343210</p>
                                               </div>
-                                          </div>
-                                          <div class="row col-md-3">
-                                            <div class="text-left row" style="width: auto;">
-                                                <label><i class="fa fa-envelope" aria-hidden="true"></i></label>
-                                            </div>
-                                            <div class="text-left row" style="width: auto;padding: 0;">
-                                                <p class="card-title">jatin@theglove.in</p>
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="text-right row" style="width: 5%;">
-                                          <input type="checkbox">
-                                          <br>
-                                          <div class="input-group-prepend">
-                                              <button class="card-menu-option" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-ellipsis-vertical"></i></button>
-                                              <div class="dropdown-menu">
-                                                    <a class="dropdown-item" href="#">Tag Jobs</a>
+
+                                              <div class="text-left row" style="width: auto; margin-left:1rem;">
+                                                  <label><i class="fa fa-envelope icon-color" aria-hidden="true"></i></label>
                                               </div>
+                                              <div class="text-left row" style="width: auto;padding: 0;">
+                                                  <p class="card-title">&nbsp;dheeraj@theglove.in</p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="row col-md-2 mt-2">
+                                            <div style="display:inline-flex">
+                                              <div class="text-left row" style="width: auto;">
+                                                  <label>Score:</label>
+                                              </div>
+                                              <div class="text-left row" style="width: auto;padding: 0;">
+                                                  <p class="card-title">&nbsp;70%</p>
+                                              </div>
+                                              
+                                              <div class="text-left row" style="width: auto; margin-left:1rem;">
+                                                  <label title="Tag Count">Tag:</label>
+                                              </div>
+                                              <div class="text-left row" style="width: auto;padding: 0;">
+                                                  <p class="card-title">&nbsp;28</p>
+                                              </div>
+                                            </div>
                                           </div>
                                         </div>
+                                        <div class="" style="width: 5%;display: grid;place-content: center;padding-left: 0;margin-top: -12px;">
+                                          <input type="checkbox" style="width:35px;">
                                         </div>
                                         </div>
-                                        <div class="row col-md-12 card-second-line reserve-card-content">
+                                        </div>
+                                        <div class="row col-md-12 card-second-line" style="padding-right:0;">
                                             <div class="row" style="width: 95%;">
                                               <div class="row col-md-4">
                                                   <div class="text-left row" style="width: auto;">
@@ -5707,7 +5746,7 @@
                                                       <label>Skills :</label>
                                                   </div>
                                                   <div class="text-left row" style="width: auto;">
-                                                      <p class="card-title">Php core</p>
+                                                      <p class="card-title">Php Core</p>
                                                   </div>
                                               </div>
                                               <div class="row col-md-4">
@@ -5739,14 +5778,14 @@
                                                       <label>CTC :</label>
                                                   </div>
                                                   <div class="text-left row" style="width: auto;">
-                                                      <p class="card-title">Inr 520,000</p>
+                                                      <p class="card-title">Inr 620,000</p>
                                                   </div>
                                               </div>
                                           </div>
-                                          <div class="row" style="width: 5%;">
-                                            <button type="button" class="fnt-size card-action-buttons" data-toggle="modal" data-target="#filterSaveModal"><i class="fa-solid fa-tag"></i></button>
-                                            <button type="button" class="fnt-size card-action-buttons" data-toggle="modal" data-target="#filterSaveModal"><i class="fa-solid fa-user"></i></button>
-                                            <button type="button" class="fnt-size card-action-buttons" data-toggle="modal" data-target="#filterSaveModal"><i class="fa-solid fa-star"></i></button>
+                                          <div class="text-right row" style="width: 5%; margin-top: -16px;">
+                                            <button type="button" class="fnt-size icon-color card-action-buttons" data-toggle="modal" data-target="#filterMoreModal"><i class="fa-solid fa-tag"></i></button>
+                                            <button type="button" class="fnt-size icon-color card-action-buttons" data-toggle="modal" data-target="#filterSaveModal"><i class="fa-solid fa-user"></i></button>
+                                            <button type="button" class="fnt-size icon-color card-action-buttons" data-toggle="modal" data-target="#filterSaveModal"><i class="fa-solid fa-star"></i></button>
                                           </div>
                                         </div>
                                         
@@ -5767,46 +5806,56 @@
                                           
                                         <div class="text-left row" style="width: 95%;">
                                           <div class="row col-md-3">
-                                            <p class="card-title" style="color: #124B82;font-size:22px; font-weight: bolder;">David Tomar</p>
-                                          </div>   
-                                          <div class="row col-md-3">
+                                            <p class="card-title" style="color: #124B82;font-size:22px; font-weight: bolder;">Rahul</p>
+                                          </div>
+                                          <div class="row col-md-7 mt-2">
+                                            <div style="display:inline-flex">
                                               <div class="text-left row" style="width: auto;">
-                                                  <label><i class="fa fa-map-marker" aria-hidden="true"></i></label>
+                                                  <label><i class="fa fa-map-marker icon-color" aria-hidden="true"></i></label>
                                               </div>
                                               <div class="text-left row" style="width: auto;padding: 0;">
-                                                  <p class="card-title">Palwal</p>
+                                                  <p class="card-title">&nbsp;Camp, Palwal</p>
                                               </div>
-                                          </div>
-                                          <div class="row col-md-3">
-                                              <div class="text-left row" style="width: auto;">
-                                                  <label><i class="fa fa-phone" aria-hidden="true"></i></label>
+
+                                              <div class="text-left row" style="width: auto; margin-left:1rem;">
+                                                  <label><i class="fa fa-phone icon-color" aria-hidden="true"></i></label>
                                               </div>
                                               <div class="text-left row" style="width: auto;padding: 0;">
-                                                  <p class="card-title">+91-8705698750</p>
+                                                  <p class="card-title">&nbsp;+91-8706543210</p>
                                               </div>
-                                          </div>
-                                          <div class="row col-md-3">
-                                            <div class="text-left row" style="width: auto;">
-                                                <label><i class="fa fa-envelope" aria-hidden="true"></i></label>
-                                            </div>
-                                            <div class="text-left row" style="width: auto;padding: 0;">
-                                                <p class="card-title">dtomar@theglove.in</p>
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="text-right row" style="width: 5%;">
-                                          <input type="checkbox">
-                                          <br>
-                                          <div class="input-group-prepend">
-                                              <button class="card-menu-option" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-ellipsis-vertical"></i></button>
-                                              <div class="dropdown-menu">
-                                                    <a class="dropdown-item" href="#">Tag Jobs</a>
+
+                                              <div class="text-left row" style="width: auto; margin-left:1rem;">
+                                                  <label><i class="fa fa-envelope icon-color" aria-hidden="true"></i></label>
                                               </div>
+                                              <div class="text-left row" style="width: auto;padding: 0;">
+                                                  <p class="card-title">&nbsp;rahul@theglove.in</p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="row col-md-2 mt-2">
+                                            <div style="display:inline-flex">
+                                              <div class="text-left row" style="width: auto;">
+                                                  <label>Score:</label>
+                                              </div>
+                                              <div class="text-left row" style="width: auto;padding: 0;">
+                                                  <p class="card-title">&nbsp;60%</p>
+                                              </div>
+                                              
+                                              <div class="text-left row" style="width: auto; margin-left:1rem;">
+                                                  <label title="Tag Count">Tag:</label>
+                                              </div>
+                                              <div class="text-left row" style="width: auto;padding: 0;">
+                                                  <p class="card-title">&nbsp;58</p>
+                                              </div>
+                                            </div>
                                           </div>
                                         </div>
+                                        <div class="" style="width: 5%;display: grid;place-content: center;padding-left: 0;margin-top: -12px;">
+                                          <input type="checkbox" style="width:35px;">
                                         </div>
                                         </div>
-                                        <div class="row col-md-12 card-second-line reserve-card-content">
+                                        </div>
+                                        <div class="row col-md-12 card-second-line" style="padding-right:0;">
                                             <div class="row" style="width: 95%;">
                                               <div class="row col-md-4">
                                                   <div class="text-left row" style="width: auto;">
@@ -5837,7 +5886,7 @@
                                                       <label>Exp. :</label>
                                                   </div>
                                                   <div class="text-left row" style="width: auto;">
-                                                      <p class="card-title">3Y, 4M</p>
+                                                      <p class="card-title">4Y, 2M</p>
                                                   </div>
                                               </div>
                                               <div class="row col-md-4">
@@ -5853,14 +5902,14 @@
                                                       <label>CTC :</label>
                                                   </div>
                                                   <div class="text-left row" style="width: auto;">
-                                                      <p class="card-title">Inr 320,000</p>
+                                                      <p class="card-title">Inr 250,000</p>
                                                   </div>
                                               </div>
                                           </div>
-                                          <div class="row" style="width: 5%;">
-                                            <button type="button" class="fnt-size card-action-buttons" data-toggle="modal" data-target="#filterSaveModal"><i class="fa-solid fa-tag"></i></button>
-                                            <button type="button" class="fnt-size card-action-buttons" data-toggle="modal" data-target="#filterSaveModal"><i class="fa-solid fa-user"></i></button>
-                                            <button type="button" class="fnt-size card-action-buttons" data-toggle="modal" data-target="#filterSaveModal"><i class="fa-solid fa-star"></i></button>
+                                          <div class="text-right row" style="width: 5%; margin-top: -16px;">
+                                            <button type="button" class="fnt-size icon-color card-action-buttons" data-toggle="modal" data-target="#filterMoreModal"><i class="fa-solid fa-tag"></i></button>
+                                            <button type="button" class="fnt-size icon-color card-action-buttons" data-toggle="modal" data-target="#filterSaveModal"><i class="fa-solid fa-user"></i></button>
+                                            <button type="button" class="fnt-size icon-color card-action-buttons" data-toggle="modal" data-target="#filterSaveModal"><i class="fa-solid fa-star"></i></button>
                                           </div>
                                         </div>
                                         
@@ -5881,53 +5930,63 @@
                                           
                                         <div class="text-left row" style="width: 95%;">
                                           <div class="row col-md-3">
-                                            <p class="card-title" style="color: #124B82;font-size:22px; font-weight: bolder;">Manoj Sharma</p>
-                                          </div>   
-                                          <div class="row col-md-3">
+                                            <p class="card-title" style="color: #124B82;font-size:22px; font-weight: bolder;">Abhinav</p>
+                                          </div>
+                                          <div class="row col-md-7 mt-2">
+                                            <div style="display:inline-flex">
                                               <div class="text-left row" style="width: auto;">
-                                                  <label><i class="fa fa-map-marker" aria-hidden="true"></i></label>
+                                                  <label><i class="fa fa-map-marker icon-color" aria-hidden="true"></i></label>
                                               </div>
                                               <div class="text-left row" style="width: auto;padding: 0;">
-                                                  <p class="card-title">Badarpur</p>
+                                                  <p class="card-title">&nbsp;Badarpur Ext.</p>
                                               </div>
-                                          </div>
-                                          <div class="row col-md-3">
-                                              <div class="text-left row" style="width: auto;">
-                                                  <label><i class="fa fa-phone" aria-hidden="true"></i></label>
+                                              
+                                              <div class="text-left row" style="width: auto; margin-left:1rem;">
+                                                  <label><i class="fa fa-phone icon-color" aria-hidden="true"></i></label>
                                               </div>
                                               <div class="text-left row" style="width: auto;padding: 0;">
-                                                  <p class="card-title">+91-8798542650</p>
+                                                  <p class="card-title">&nbsp;+91-7896543210</p>
                                               </div>
-                                          </div>
-                                          <div class="row col-md-3">
-                                            <div class="text-left row" style="width: auto;">
-                                                <label><i class="fa fa-envelope" aria-hidden="true"></i></label>
-                                            </div>
-                                            <div class="text-left row" style="width: auto;padding: 0;">
-                                                <p class="card-title">sharmaM@theglove.in</p>
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="text-right row" style="width: 5%;">
-                                          <input type="checkbox">
-                                          <br>
-                                          <div class="input-group-prepend">
-                                              <button class="card-menu-option" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-ellipsis-vertical"></i></button>
-                                              <div class="dropdown-menu">
-                                                    <a class="dropdown-item" href="#">Tag Jobs</a>
+
+                                              <div class="text-left row" style="width: auto; margin-left:1rem;">
+                                                  <label><i class="fa fa-envelope icon-color" aria-hidden="true"></i></label>
                                               </div>
+                                              <div class="text-left row" style="width: auto;padding: 0;">
+                                                  <p class="card-title">&nbsp;abhinav@theglove.in</p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="row col-md-2 mt-2">
+                                            <div style="display:inline-flex">
+                                              <div class="text-left row" style="width: auto;">
+                                                  <label>Score:</label>
+                                              </div>
+                                              <div class="text-left row" style="width: auto;padding: 0;">
+                                                  <p class="card-title">&nbsp;20%</p>
+                                              </div>
+                                              
+                                              <div class="text-left row" style="width: auto; margin-left:1rem;">
+                                                  <label title="Tag Count">Tag:</label>
+                                              </div>
+                                              <div class="text-left row" style="width: auto;padding: 0;">
+                                                  <p class="card-title">&nbsp;58</p>
+                                              </div>
+                                            </div>
                                           </div>
                                         </div>
+                                        <div class="" style="width: 5%;display: grid;place-content: center;padding-left: 0;margin-top: -12px;">
+                                          <input type="checkbox" style="width:35px;">
                                         </div>
                                         </div>
-                                        <div class="row col-md-12 card-second-line reserve-card-content">
+                                        </div>
+                                        <div class="row col-md-12 card-second-line" style="padding-right:0;">
                                             <div class="row" style="width: 95%;">
                                               <div class="row col-md-4">
                                                   <div class="text-left row" style="width: auto;">
                                                       <label>Qualification :</label>
                                                   </div>
                                                   <div class="text-left row" style="width: auto;">
-                                                      <p class="card-title">M.Sc(C.S.)</p>
+                                                      <p class="card-title">M.Sc(Maths)</p>
                                                   </div>
                                               </div>
                                               <div class="row col-md-4">
@@ -5951,7 +6010,7 @@
                                                       <label>Exp. :</label>
                                                   </div>
                                                   <div class="text-left row" style="width: auto;">
-                                                      <p class="card-title">6Y, 11M</p>
+                                                      <p class="card-title">6Y, 2M</p>
                                                   </div>
                                               </div>
                                               <div class="row col-md-4">
@@ -5967,14 +6026,14 @@
                                                       <label>CTC :</label>
                                                   </div>
                                                   <div class="text-left row" style="width: auto;">
-                                                      <p class="card-title">Inr 720,000</p>
+                                                      <p class="card-title">Inr 650,000</p>
                                                   </div>
                                               </div>
                                           </div>
-                                          <div class="row" style="width: 5%;">
-                                            <button type="button" class="fnt-size card-action-buttons" data-toggle="modal" data-target="#filterSaveModal"><i class="fa-solid fa-tag"></i></button>
-                                            <button type="button" class="fnt-size card-action-buttons" data-toggle="modal" data-target="#filterSaveModal"><i class="fa-solid fa-user"></i></button>
-                                            <button type="button" class="fnt-size card-action-buttons" data-toggle="modal" data-target="#filterSaveModal"><i class="fa-solid fa-star"></i></button>
+                                          <div class="text-right row" style="width: 5%; margin-top: -16px;">
+                                            <button type="button" class="fnt-size icon-color card-action-buttons" data-toggle="modal" data-target="#filterMoreModal"><i class="fa-solid fa-tag"></i></button>
+                                            <button type="button" class="fnt-size icon-color card-action-buttons" data-toggle="modal" data-target="#filterSaveModal"><i class="fa-solid fa-user"></i></button>
+                                            <button type="button" class="fnt-size icon-color card-action-buttons" data-toggle="modal" data-target="#filterSaveModal"><i class="fa-solid fa-star"></i></button>
                                           </div>
                                         </div>
                                         
