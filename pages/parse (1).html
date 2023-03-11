@@ -4640,57 +4640,55 @@
                 </button>
               
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <div class="row">
+                    <div class="row text-left col-md-12 col-lg-12">
                       <form class="position-relative" data-bs-toggle="search" data-bs-display="static"></form>
-                        <div class="col-10" style="display: flex;">
-                            <div  style="width:20% ; margin-right:25px ;">
-                                <input class="form-control search-input search" type="search" placeholder="Search Client" aria-label="Search" />
-                                  <!-- <span class="fas fa-search search-box-icon"></span> -->
+                        <div class="col-md-2 col-lg-2">
+                              <input class="form-control search-input search" type="search" placeholder="Search Client" aria-label="Search" />
+                                <!-- <span class="fas fa-search search-box-icon"></span> -->
+                        </div>
+                        <div class="col-md-2 col-lg-2">
+                            <select class="form-select " aria-label="Default select example">
+                                <option selected>All</option>
+                                <option value="">Created</option>
+                                <option value="">Error</option>
+                                <option value="">Duplicate</option>
+                                <option value="">Success</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2 col-lg-2">
+                            <select class="form-select" aria-label="Default select example">
+                              <option selected>-- Email --</option>
+                                <option >All</option>
+                                <option value="">Manoj@theglove.in</option>
+                                <option value="">Harish@theglove.in</option>
+                                <option value="">Bansal@theglove.in</option>
+                                <option value="">Vikash@theglove.in</option>
+                            </select>
+                          </div>
+                          <div  style="width:15% ; margin-right:5px ;">
+                            <select class="form-select" aria-label="Default select example">
+                              <option selected>-- Source --</option>
+                                <option >All</option>
+                                <option value="">Email</option>
+                                <option value="">Candidate Profile</option>
+                                <option value="">Candidate From</option>
+                            </select>
                             </div>
-                            <div  style="width:15% ; margin-right:25px ;">
-                              <select class="form-select " aria-label="Default select example">
-                                  <option selected>All</option>
-                                  <option value="">Created</option>
-                                  <option value="">Error</option>
-                                  <option value="">Duplicate</option>
-                                  <option value="">Success</option>
-                              </select>
-                            </div>
-                            <div style="width:15% ; margin-right:25px ;">
-                              <select class="form-select" aria-label="Default select example">
-                                <option selected>-- Email --</option>
-                                  <option >All</option>
-                                  <option value="">Manoj@theglove.in</option>
-                                  <option value="">Harish@theglove.in</option>
-                                  <option value="">Bansal@theglove.in</option>
-                                  <option value="">Vikash@theglove.in</option>
-                              </select>
-                            </div>
-                            <div  style="width:15% ; margin-right:25px ;">
-                              <select class="form-select" aria-label="Default select example">
-                                <option selected>-- Source --</option>
-                                  <option >All</option>
-                                  <option value="">Email</option>
-                                  <option value="">Candidate Profile</option>
-                                  <option value="">Candidate From</option>
-                              </select>
-                            </div>
-                            <div  style="width:15% ; margin-right:25px ;">
+                            <div  style="width:15% ; margin-right:5px ;">
                               <div class="flatpickr-input-container">
                                 <div class="form-floating"><input class="form-control datetimepicker" id="floatingInputStartDate" type="text" placeholder="end date" data-options='{"disableMobile":true}' /><label class="ps-6" style="padding-left:10px !important;" for="floatingInputStartDate">From</label><span class="uil uil-calendar-alt flatpickr-icon text-700"></span></div>
-                              </div>
                             </div>
-                            <div style="width:15% ; margin-right:25px ;">
-                                <div class="flatpickr-input-container">
-                                    <div class="form-floating"><input class="form-control datetimepicker" id="floatingInputStartDate" type="text" placeholder="end date" data-options='{"disableMobile":true}' /><label class="ps-6" style="padding-left:10px !important;" for="floatingInputStartDate">To</label><span class="uil uil-calendar-alt flatpickr-icon text-700"></span></div>
-                                </div>
+                        </div>
+                        <div class="col-md-2 col-lg-2">
+                            <!-- <div class="form-floating"><input class="form-control" id="floatingInputStreet" type="date" placeholder="street" /><label for="floatingInputStreet">To</label></div> -->
+                            <div class="flatpickr-input-container">
+                                <div class="form-floating"><input class="form-control datetimepicker" id="floatingInputStartDate" type="text" placeholder="end date" data-options='{"disableMobile":true}' /><label class="ps-6" style="padding-left:10px !important;" for="floatingInputStartDate">To</label><span class="uil uil-calendar-alt flatpickr-icon text-700"></span></div>
                             </div>
-                          </div>
-
-                        <div class="col-md-1 col-lg-1 col-1 p-0">
+                        </div>
+                        <div class="col-md-1 col-lg-1 p-0">
                             <button type="button" class="btn btn-primary btn-sm" onclick=""><i class="afas f-plus-circle"></i> Upload</button>
                         </div>
-                        <div class="col-md-1 col-lg-1 col-1 p-0">
+                        <div class="col-md-1 col-lg-1 p-0">
                             <button type="button" class="btn btn-primary btn-sm" onclick=""><i class="fas fa-undo"></i> Refresh</button>
                         </div>
                       </form>
