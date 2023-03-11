@@ -32,6 +32,8 @@
     <!--    Stylesheets-->
     <!-- ===============================================-->
     <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link href="../vendors/choices/choices.min.css" rel="stylesheet">
+    <link href="../vendors/flatpickr/flatpickr.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&amp;display=swap" rel="stylesheet">
     <link href="../vendors/simplebar/simplebar.min.css" rel="stylesheet">
@@ -59,6 +61,19 @@
       .content{
         padding-bottom: 2.5rem !important;
       }
+      .parsing-btn {
+        color: #5aa3c0;
+        padding: 5px 14px;
+        font-size: 16px;
+        font-weight: 800;
+        border: 1px solid #5aa3c0;
+        border-radius: 5px;
+        background-color: white;
+    }
+    .parsing-btn:hover, .parsing-btn:focus {
+        background-color: #5aa3c0;
+        color: white;
+    }
     </style>
   </head>
 
@@ -395,19 +410,19 @@
                           <div class="d-flex align-items-center"><span class="nav-link-text">Labels</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../pages/country.html" data-bs-toggle="" aria-expanded="false">
+                      <li class="nav-item"><a class="nav-link" href="../pages/blank-page.html" data-bs-toggle="" aria-expanded="false">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Country</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../pages/state.html" data-bs-toggle="" aria-expanded="false">
+                      <li class="nav-item"><a class="nav-link" href="../pages/blank-page.html" data-bs-toggle="" aria-expanded="false">
                           <div class="d-flex align-items-center"><span class="nav-link-text">State</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../pages/cities.html" data-bs-toggle="" aria-expanded="false" >
+                      <li class="nav-item"><a class="nav-link" href="../pages/blank-page.html" data-bs-toggle="" aria-expanded="false" >
                           <div class="d-flex align-items-center"><span class="nav-link-text">City</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../pages/Industries.html" data-bs-toggle="" aria-expanded="false" >
+                      <li class="nav-item"><a class="nav-link" href="../pages/blank-page.html" data-bs-toggle="" aria-expanded="false" >
                         <div class="d-flex align-items-center"><span class="nav-link-text">Industries</span></div>
                       </a><!-- more inner pages-->
                       </li>
@@ -4618,405 +4633,456 @@
             navbarVertical.classList.add('navbar-darker');
           }
         </script>
-        <div class="content">
-          <!-- <nav class="mb-2" aria-label="breadcrumb">
-            <ol class="breadcrumb mb-0">
-              <li class="breadcrumb-item"><a href="#!">Pages</a></li>
-              <li class="breadcrumb-item active">Clients</li>
-            </ol>
-          </nav> -->
-          <div class="row col-md-12">
-            <div class="col-md-4 col-lg-4 col-sm-4 dispay-flex">
-              <h2 class="text-bold text-1100 mb-5">Clients</h2>
-              <nav class="mt-2 ml-0 link-page" aria-label="breadcrumb">
-                <ol class="breadcrumb mb-0">
-                  <li class="breadcrumb-item"><a href="#!">Pages</a></li>
-                  <li class="breadcrumb-item active">Clients</li>
-                </ol>
+        <div class="content" style="padding:5rem 1.5rem 3rem 1.5rem !important;">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #fff;">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="row text-left col-md-12 col-lg-12">
+                      <form class="position-relative" data-bs-toggle="search" data-bs-display="static"></form>
+                        <div class="col-md-2 col-lg-2">
+                              <input class="form-control search-input search" type="search" placeholder="Search Client" aria-label="Search" />
+                                <!-- <span class="fas fa-search search-box-icon"></span> -->
+                        </div>
+                        <div class="col-md-2 col-lg-2">
+                            <select class="form-select " aria-label="Default select example">
+                                <option selected>All</option>
+                                <option value="">Created</option>
+                                <option value="">Error</option>
+                                <option value="">Duplicate</option>
+                                <option value="">Success</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2 col-lg-2">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>All</option>
+                                <option value="">Manoj</option>
+                                <option value="">Harish</option>
+                                <option value="">Bansal</option>
+                                <option value="">Vikash</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2 col-lg-2">
+                            <!-- <div class="form-floating"><input class="form-control" id="floatingInputStreet" type="date" placeholder="street" /><label for="floatingInputStreet">From</label></div> -->
+                            <div class="flatpickr-input-container">
+                                <div class="form-floating"><input class="form-control datetimepicker" id="floatingInputStartDate" type="text" placeholder="end date" data-options='{"disableMobile":true}' /><label class="ps-6" style="padding-left:10px !important;" for="floatingInputStartDate">From</label><span class="uil uil-calendar-alt flatpickr-icon text-700"></span></div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-lg-2">
+                            <!-- <div class="form-floating"><input class="form-control" id="floatingInputStreet" type="date" placeholder="street" /><label for="floatingInputStreet">To</label></div> -->
+                            <div class="flatpickr-input-container">
+                                <div class="form-floating"><input class="form-control datetimepicker" id="floatingInputStartDate" type="text" placeholder="end date" data-options='{"disableMobile":true}' /><label class="ps-6" style="padding-left:10px !important;" for="floatingInputStartDate">To</label><span class="uil uil-calendar-alt flatpickr-icon text-700"></span></div>
+                            </div>
+                        </div>
+                        <div class="col-md-1 col-lg-1 p-0">
+                            <button type="button" class="btn btn-primary btn-sm" onclick=""><i class="fas fa-plus-circle"></i> Upload</button>
+                        </div>
+                        <div class="col-md-1 col-lg-1 p-0">
+                            <button type="button" class="btn btn-primary btn-sm" onclick=""><i class="fas fa-undo"></i> Refresh</button>
+                        </div>
+                      </form>
+                    </div>
+
+                </div>
               </nav>
+            <div class="">
+                <div id="members" data-list='{"valueNames":["customer","email","mobile_number","city","last_active","joined"],"page":10,"pagination":true}'>
+                    <div class="px-lg-6 mb-9 bg-white border-y border-300 mt-2 position-relative top-1">
+                      <div class="table-responsive scrollbar ms-n1 ps-1">
+                        <table class="table table-sm fs--1 mb-0">
+                          <thead>
+                            <tr>
+                              <!-- <th class="white-space-nowrap fs--1 align-middle ps-0">
+                                <div class="form-check mb-0 fs-0"><input class="form-check-input" id="checkbox-bulk-members-select" type="checkbox" data-bulk-select='{"body":"members-table-body"}' /></div>
+                              </th> -->
+                              <th class="customer align-middle white-space-nowrap" scope="col" data-sort="joined" style="width:5% !important;  min-width:10px;">Action</th>
+                              <!-- <th class="customer align-middle white-space-nowrap" scope="col" data-sort="joined" style="width:5% !important;  min-width:10px;">Logo</th> -->
+                              <th class="sort align-middle" scope="col" data-sort="customer" style="width:15%; min-width:100px;">File Name</th>
+                              <th class="sort align-middle" scope="col" data-sort="customer" style="width:15%; min-width:100px;">Date</th>
+                              <th class="sort align-middle" scope="col" data-sort="email" style="width:15%; min-width:100px;">Created By</th>
+                              <th class="sort align-middle pe-3" scope="col" data-sort="mobile_number" style="width:10%; min-width:100px;">Status</th>
+                              <th class="sort align-middle" scope="col" data-sort="city" style="width:15%; text-align: center !important; min-width:100px;">Candidate</th>
+                              <th class="sort align-middle text-end" scope="col" data-sort="last_active" style="width:15%;  min-width:100px; text-align: center !important;">Subject</th>
+                              <th class="sort align-middle text-end pe-0" scope="col" data-sort="joined" style="width:15%;  min-width:100px; text-align: center !important;">Email Form</th>
+                              <th class="sort align-middle text-end pe-0" scope="col" data-sort="joined" style="width:15%;  min-width:100px; text-align: center !important;">Moved</th>
+                            </tr>
+                          </thead>
+                          <tbody class="list" id="members-table-body">
+                            <tr class="hover-actions-trigger btn-reveal-trigger position-static">
+                              <!-- <td class="fs--1 align-middle ps-0 py-3">
+                                <div class="form-check mb-0 fs-0"><input class="form-check-input" type="checkbox" data-bulk-select-row='{"customer":{"avatar":"/team/32.webp","name":"Carry Anna"},"email":"annac34@gmail.com","mobile":"+912346578","city":"Budapest","lastActive":"34 min ago","joined":"Dec 12, 12:56 PM"}' /></div>
+                              </td> -->
+                              <td class="customer align-middle white-space-nowrap" >
+                                <div class="font-sans-serif btn-reveal-trigger position-static" ><button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs--2"></span></button>
+                                  <div class="dropdown-menu dropdown-end py-2"><a class="dropdown-item" href="#">Contact</a><a class="dropdown-item" href="#!">Contract</a><a class="dropdown-item" href="#">Location</a>
+                                    <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="#!">Remove</a>
+                                  </div>
+                                </div>
+                              </td>
+                              <!-- <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:annac34@gmail.com">
+                                    <div class="avatar avatar-m"><img class="rounded-circle" src="../assets/img/brand2/apple-2.png" alt="" /></div>
+                                </a>
+                              </td> -->
+                              <td class="email align-middle white-space-nowrap">karthik ST2.pdf</td>
+                              <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:annac34@gmail.com">09-Feb-2023</a></td>
+                              <!-- <td class="customer align-middle white-space-nowrap"><a class="d-flex align-items-center text-900 text-hover-1000" href="#!">
+                                  <h6 class="mb-0 ms-3 fw-semi-bold">Ashish Saini</h6>
+                                </a></td> -->
+                              <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:annac34@gmail.com">Priyanka Daniel</a></td>
+                              <td class="mobile_number align-middle white-space-nowrap"><a class="fw-bold text-1100" href="tel:+912346578">Pending</a></td>
+                              <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">Aashish</td>
+                              <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Parsing</td>
+                              <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">
+                                <a class="fw-semi-bold" href="mailto:annac34@gmail.com">aashish@theglove.com</a>
+                              </td>                     
+                              <td class="joined align-middle white-space-nowrap text-700 text-end" style="text-align: center !important;">Yes</td>
+                            </tr>
+                            <tr class="hover-actions-trigger btn-reveal-trigger position-static">
+                                <!-- <td class="fs--1 align-middle ps-0 py-3">
+                                  <div class="form-check mb-0 fs-0"><input class="form-check-input" type="checkbox" data-bulk-select-row='{"customer":{"avatar":"/team/32.webp","name":"Carry Anna"},"email":"annac34@gmail.com","mobile":"+912346578","city":"Budapest","lastActive":"34 min ago","joined":"Dec 12, 12:56 PM"}' /></div>
+                                </td> -->
+                                <td class="customer align-middle white-space-nowrap" >
+                                  <div class="font-sans-serif btn-reveal-trigger position-static" ><button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs--2"></span></button>
+                                    <div class="dropdown-menu dropdown-end py-2"><a class="dropdown-item" href="#">Contact</a><a class="dropdown-item" href="#!">Contract</a><a class="dropdown-item" href="#">Location</a>
+                                      <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="#!">Remove</a>
+                                    </div>
+                                  </div>
+                                </td>
+                                <!-- <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:annac34@gmail.com">
+                                      <div class="avatar avatar-m"><img class="rounded-circle" src="../assets/img/brand2/apple-2.png" alt="" /></div>
+                                  </a>
+                                </td> -->
+                                <td class="email align-middle white-space-nowrap">karthik ST2.pdf</td>
+                                <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:annac34@gmail.com">09-Feb-2023</a></td>
+                                <!-- <td class="customer align-middle white-space-nowrap"><a class="d-flex align-items-center text-900 text-hover-1000" href="#!">
+                                    <h6 class="mb-0 ms-3 fw-semi-bold">Ashish Saini</h6>
+                                  </a></td> -->
+                                <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:annac34@gmail.com">Priyanka Daniel</a></td>
+                                <td class="mobile_number align-middle white-space-nowrap"><a class="fw-bold text-1100" href="tel:+912346578">Pending</a></td>
+                                <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">Aashish</td>
+                                <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Parsing</td>
+                                <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">
+                                  <a class="fw-semi-bold" href="mailto:annac34@gmail.com">aashish@theglove.com</a>
+                                </td>                     
+                                <td class="joined align-middle white-space-nowrap text-700 text-end" style="text-align: center !important;">Yes</td>
+                              </tr>
+                              <tr class="hover-actions-trigger btn-reveal-trigger position-static">
+                                <!-- <td class="fs--1 align-middle ps-0 py-3">
+                                  <div class="form-check mb-0 fs-0"><input class="form-check-input" type="checkbox" data-bulk-select-row='{"customer":{"avatar":"/team/32.webp","name":"Carry Anna"},"email":"annac34@gmail.com","mobile":"+912346578","city":"Budapest","lastActive":"34 min ago","joined":"Dec 12, 12:56 PM"}' /></div>
+                                </td> -->
+                                <td class="customer align-middle white-space-nowrap" >
+                                  <div class="font-sans-serif btn-reveal-trigger position-static" ><button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs--2"></span></button>
+                                    <div class="dropdown-menu dropdown-end py-2"><a class="dropdown-item" href="#">Contact</a><a class="dropdown-item" href="#!">Contract</a><a class="dropdown-item" href="#">Location</a>
+                                      <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="#!">Remove</a>
+                                    </div>
+                                  </div>
+                                </td>
+                                <!-- <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:annac34@gmail.com">
+                                      <div class="avatar avatar-m"><img class="rounded-circle" src="../assets/img/brand2/apple-2.png" alt="" /></div>
+                                  </a>
+                                </td> -->
+                                <td class="email align-middle white-space-nowrap">karthik ST2.pdf</td>
+                                <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:annac34@gmail.com">09-Feb-2023</a></td>
+                                <!-- <td class="customer align-middle white-space-nowrap"><a class="d-flex align-items-center text-900 text-hover-1000" href="#!">
+                                    <h6 class="mb-0 ms-3 fw-semi-bold">Ashish Saini</h6>
+                                  </a></td> -->
+                                <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:annac34@gmail.com">Priyanka Daniel</a></td>
+                                <td class="mobile_number align-middle white-space-nowrap"><a class="fw-bold text-1100" href="tel:+912346578">Pending</a></td>
+                                <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">Aashish</td>
+                                <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Parsing</td>
+                                <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">
+                                  <a class="fw-semi-bold" href="mailto:annac34@gmail.com">aashish@theglove.com</a>
+                                </td>                     
+                                <td class="joined align-middle white-space-nowrap text-700 text-end" style="text-align: center !important;">Yes</td>
+                              </tr>
+                              <tr class="hover-actions-trigger btn-reveal-trigger position-static">
+                                <!-- <td class="fs--1 align-middle ps-0 py-3">
+                                  <div class="form-check mb-0 fs-0"><input class="form-check-input" type="checkbox" data-bulk-select-row='{"customer":{"avatar":"/team/32.webp","name":"Carry Anna"},"email":"annac34@gmail.com","mobile":"+912346578","city":"Budapest","lastActive":"34 min ago","joined":"Dec 12, 12:56 PM"}' /></div>
+                                </td> -->
+                                <td class="customer align-middle white-space-nowrap" >
+                                  <div class="font-sans-serif btn-reveal-trigger position-static" ><button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs--2"></span></button>
+                                    <div class="dropdown-menu dropdown-end py-2"><a class="dropdown-item" href="#">Contact</a><a class="dropdown-item" href="#!">Contract</a><a class="dropdown-item" href="#">Location</a>
+                                      <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="#!">Remove</a>
+                                    </div>
+                                  </div>
+                                </td>
+                                <!-- <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:annac34@gmail.com">
+                                      <div class="avatar avatar-m"><img class="rounded-circle" src="../assets/img/brand2/apple-2.png" alt="" /></div>
+                                  </a>
+                                </td> -->
+                                <td class="email align-middle white-space-nowrap">karthik ST2.pdf</td>
+                                <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:annac34@gmail.com">09-Feb-2023</a></td>
+                                <!-- <td class="customer align-middle white-space-nowrap"><a class="d-flex align-items-center text-900 text-hover-1000" href="#!">
+                                    <h6 class="mb-0 ms-3 fw-semi-bold">Ashish Saini</h6>
+                                  </a></td> -->
+                                <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:annac34@gmail.com">Priyanka Daniel</a></td>
+                                <td class="mobile_number align-middle white-space-nowrap"><a class="fw-bold text-1100" href="tel:+912346578">Pending</a></td>
+                                <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">Aashish</td>
+                                <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Parsing</td>
+                                <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">
+                                  <a class="fw-semi-bold" href="mailto:annac34@gmail.com">aashish@theglove.com</a>
+                                </td>                     
+                                <td class="joined align-middle white-space-nowrap text-700 text-end" style="text-align: center !important;">Yes</td>
+                              </tr>
+                              <tr class="hover-actions-trigger btn-reveal-trigger position-static">
+                                <!-- <td class="fs--1 align-middle ps-0 py-3">
+                                  <div class="form-check mb-0 fs-0"><input class="form-check-input" type="checkbox" data-bulk-select-row='{"customer":{"avatar":"/team/32.webp","name":"Carry Anna"},"email":"annac34@gmail.com","mobile":"+912346578","city":"Budapest","lastActive":"34 min ago","joined":"Dec 12, 12:56 PM"}' /></div>
+                                </td> -->
+                                <td class="customer align-middle white-space-nowrap" >
+                                  <div class="font-sans-serif btn-reveal-trigger position-static" ><button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs--2"></span></button>
+                                    <div class="dropdown-menu dropdown-end py-2"><a class="dropdown-item" href="#">Contact</a><a class="dropdown-item" href="#!">Contract</a><a class="dropdown-item" href="#">Location</a>
+                                      <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="#!">Remove</a>
+                                    </div>
+                                  </div>
+                                </td>
+                                <!-- <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:annac34@gmail.com">
+                                      <div class="avatar avatar-m"><img class="rounded-circle" src="../assets/img/brand2/apple-2.png" alt="" /></div>
+                                  </a>
+                                </td> -->
+                                <td class="email align-middle white-space-nowrap">karthik ST2.pdf</td>
+                                <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:annac34@gmail.com">09-Feb-2023</a></td>
+                                <!-- <td class="customer align-middle white-space-nowrap"><a class="d-flex align-items-center text-900 text-hover-1000" href="#!">
+                                    <h6 class="mb-0 ms-3 fw-semi-bold">Ashish Saini</h6>
+                                  </a></td> -->
+                                <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:annac34@gmail.com">Priyanka Daniel</a></td>
+                                <td class="mobile_number align-middle white-space-nowrap"><a class="fw-bold text-1100" href="tel:+912346578">Pending</a></td>
+                                <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">Aashish</td>
+                                <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Parsing</td>
+                                <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">
+                                  <a class="fw-semi-bold" href="mailto:annac34@gmail.com">aashish@theglove.com</a>
+                                </td>                     
+                                <td class="joined align-middle white-space-nowrap text-700 text-end" style="text-align: center !important;">Yes</td>
+                              </tr>
+                              <tr class="hover-actions-trigger btn-reveal-trigger position-static">
+                                <!-- <td class="fs--1 align-middle ps-0 py-3">
+                                  <div class="form-check mb-0 fs-0"><input class="form-check-input" type="checkbox" data-bulk-select-row='{"customer":{"avatar":"/team/32.webp","name":"Carry Anna"},"email":"annac34@gmail.com","mobile":"+912346578","city":"Budapest","lastActive":"34 min ago","joined":"Dec 12, 12:56 PM"}' /></div>
+                                </td> -->
+                                <td class="customer align-middle white-space-nowrap" >
+                                  <div class="font-sans-serif btn-reveal-trigger position-static" ><button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs--2"></span></button>
+                                    <div class="dropdown-menu dropdown-end py-2"><a class="dropdown-item" href="#">Contact</a><a class="dropdown-item" href="#!">Contract</a><a class="dropdown-item" href="#">Location</a>
+                                      <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="#!">Remove</a>
+                                    </div>
+                                  </div>
+                                </td>
+                                <!-- <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:annac34@gmail.com">
+                                      <div class="avatar avatar-m"><img class="rounded-circle" src="../assets/img/brand2/apple-2.png" alt="" /></div>
+                                  </a>
+                                </td> -->
+                                <td class="email align-middle white-space-nowrap">karthik ST2.pdf</td>
+                                <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:annac34@gmail.com">09-Feb-2023</a></td>
+                                <!-- <td class="customer align-middle white-space-nowrap"><a class="d-flex align-items-center text-900 text-hover-1000" href="#!">
+                                    <h6 class="mb-0 ms-3 fw-semi-bold">Ashish Saini</h6>
+                                  </a></td> -->
+                                <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:annac34@gmail.com">Priyanka Daniel</a></td>
+                                <td class="mobile_number align-middle white-space-nowrap"><a class="fw-bold text-1100" href="tel:+912346578">Pending</a></td>
+                                <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">Aashish</td>
+                                <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Parsing</td>
+                                <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">
+                                  <a class="fw-semi-bold" href="mailto:annac34@gmail.com">aashish@theglove.com</a>
+                                </td>                     
+                                <td class="joined align-middle white-space-nowrap text-700 text-end" style="text-align: center !important;">Yes</td>
+                              </tr>
+                              <tr class="hover-actions-trigger btn-reveal-trigger position-static">
+                                <!-- <td class="fs--1 align-middle ps-0 py-3">
+                                  <div class="form-check mb-0 fs-0"><input class="form-check-input" type="checkbox" data-bulk-select-row='{"customer":{"avatar":"/team/32.webp","name":"Carry Anna"},"email":"annac34@gmail.com","mobile":"+912346578","city":"Budapest","lastActive":"34 min ago","joined":"Dec 12, 12:56 PM"}' /></div>
+                                </td> -->
+                                <td class="customer align-middle white-space-nowrap" >
+                                  <div class="font-sans-serif btn-reveal-trigger position-static" ><button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs--2"></span></button>
+                                    <div class="dropdown-menu dropdown-end py-2"><a class="dropdown-item" href="#">Contact</a><a class="dropdown-item" href="#!">Contract</a><a class="dropdown-item" href="#">Location</a>
+                                      <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="#!">Remove</a>
+                                    </div>
+                                  </div>
+                                </td>
+                                <!-- <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:annac34@gmail.com">
+                                      <div class="avatar avatar-m"><img class="rounded-circle" src="../assets/img/brand2/apple-2.png" alt="" /></div>
+                                  </a>
+                                </td> -->
+                                <td class="email align-middle white-space-nowrap">karthik ST2.pdf</td>
+                                <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:annac34@gmail.com">09-Feb-2023</a></td>
+                                <!-- <td class="customer align-middle white-space-nowrap"><a class="d-flex align-items-center text-900 text-hover-1000" href="#!">
+                                    <h6 class="mb-0 ms-3 fw-semi-bold">Ashish Saini</h6>
+                                  </a></td> -->
+                                <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:annac34@gmail.com">Priyanka Daniel</a></td>
+                                <td class="mobile_number align-middle white-space-nowrap"><a class="fw-bold text-1100" href="tel:+912346578">Pending</a></td>
+                                <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">Aashish</td>
+                                <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Parsing</td>
+                                <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">
+                                  <a class="fw-semi-bold" href="mailto:annac34@gmail.com">aashish@theglove.com</a>
+                                </td>                     
+                                <td class="joined align-middle white-space-nowrap text-700 text-end" style="text-align: center !important;">Yes</td>
+                              </tr>
+                              <tr class="hover-actions-trigger btn-reveal-trigger position-static">
+                                <!-- <td class="fs--1 align-middle ps-0 py-3">
+                                  <div class="form-check mb-0 fs-0"><input class="form-check-input" type="checkbox" data-bulk-select-row='{"customer":{"avatar":"/team/32.webp","name":"Carry Anna"},"email":"annac34@gmail.com","mobile":"+912346578","city":"Budapest","lastActive":"34 min ago","joined":"Dec 12, 12:56 PM"}' /></div>
+                                </td> -->
+                                <td class="customer align-middle white-space-nowrap" >
+                                  <div class="font-sans-serif btn-reveal-trigger position-static" ><button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs--2"></span></button>
+                                    <div class="dropdown-menu dropdown-end py-2"><a class="dropdown-item" href="#">Contact</a><a class="dropdown-item" href="#!">Contract</a><a class="dropdown-item" href="#">Location</a>
+                                      <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="#!">Remove</a>
+                                    </div>
+                                  </div>
+                                </td>
+                                <!-- <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:annac34@gmail.com">
+                                      <div class="avatar avatar-m"><img class="rounded-circle" src="../assets/img/brand2/apple-2.png" alt="" /></div>
+                                  </a>
+                                </td> -->
+                                <td class="email align-middle white-space-nowrap">karthik ST2.pdf</td>
+                                <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:annac34@gmail.com">09-Feb-2023</a></td>
+                                <!-- <td class="customer align-middle white-space-nowrap"><a class="d-flex align-items-center text-900 text-hover-1000" href="#!">
+                                    <h6 class="mb-0 ms-3 fw-semi-bold">Ashish Saini</h6>
+                                  </a></td> -->
+                                <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:annac34@gmail.com">Priyanka Daniel</a></td>
+                                <td class="mobile_number align-middle white-space-nowrap"><a class="fw-bold text-1100" href="tel:+912346578">Pending</a></td>
+                                <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">Aashish</td>
+                                <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Parsing</td>
+                                <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">
+                                  <a class="fw-semi-bold" href="mailto:annac34@gmail.com">aashish@theglove.com</a>
+                                </td>                     
+                                <td class="joined align-middle white-space-nowrap text-700 text-end" style="text-align: center !important;">Yes</td>
+                              </tr>
+                              <tr class="hover-actions-trigger btn-reveal-trigger position-static">
+                                <!-- <td class="fs--1 align-middle ps-0 py-3">
+                                  <div class="form-check mb-0 fs-0"><input class="form-check-input" type="checkbox" data-bulk-select-row='{"customer":{"avatar":"/team/32.webp","name":"Carry Anna"},"email":"annac34@gmail.com","mobile":"+912346578","city":"Budapest","lastActive":"34 min ago","joined":"Dec 12, 12:56 PM"}' /></div>
+                                </td> -->
+                                <td class="customer align-middle white-space-nowrap" >
+                                  <div class="font-sans-serif btn-reveal-trigger position-static" ><button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs--2"></span></button>
+                                    <div class="dropdown-menu dropdown-end py-2"><a class="dropdown-item" href="#">Contact</a><a class="dropdown-item" href="#!">Contract</a><a class="dropdown-item" href="#">Location</a>
+                                      <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="#!">Remove</a>
+                                    </div>
+                                  </div>
+                                </td>
+                                <!-- <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:annac34@gmail.com">
+                                      <div class="avatar avatar-m"><img class="rounded-circle" src="../assets/img/brand2/apple-2.png" alt="" /></div>
+                                  </a>
+                                </td> -->
+                                <td class="email align-middle white-space-nowrap">karthik ST2.pdf</td>
+                                <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:annac34@gmail.com">09-Feb-2023</a></td>
+                                <!-- <td class="customer align-middle white-space-nowrap"><a class="d-flex align-items-center text-900 text-hover-1000" href="#!">
+                                    <h6 class="mb-0 ms-3 fw-semi-bold">Ashish Saini</h6>
+                                  </a></td> -->
+                                <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:annac34@gmail.com">Priyanka Daniel</a></td>
+                                <td class="mobile_number align-middle white-space-nowrap"><a class="fw-bold text-1100" href="tel:+912346578">Pending</a></td>
+                                <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">Aashish</td>
+                                <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Parsing</td>
+                                <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">
+                                  <a class="fw-semi-bold" href="mailto:annac34@gmail.com">aashish@theglove.com</a>
+                                </td>                     
+                                <td class="joined align-middle white-space-nowrap text-700 text-end" style="text-align: center !important;">Yes</td>
+                              </tr>
+                              <tr class="hover-actions-trigger btn-reveal-trigger position-static">
+                                <!-- <td class="fs--1 align-middle ps-0 py-3">
+                                  <div class="form-check mb-0 fs-0"><input class="form-check-input" type="checkbox" data-bulk-select-row='{"customer":{"avatar":"/team/32.webp","name":"Carry Anna"},"email":"annac34@gmail.com","mobile":"+912346578","city":"Budapest","lastActive":"34 min ago","joined":"Dec 12, 12:56 PM"}' /></div>
+                                </td> -->
+                                <td class="customer align-middle white-space-nowrap" >
+                                  <div class="font-sans-serif btn-reveal-trigger position-static" ><button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs--2"></span></button>
+                                    <div class="dropdown-menu dropdown-end py-2"><a class="dropdown-item" href="#">Contact</a><a class="dropdown-item" href="#!">Contract</a><a class="dropdown-item" href="#">Location</a>
+                                      <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="#!">Remove</a>
+                                    </div>
+                                  </div>
+                                </td>
+                                <!-- <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:annac34@gmail.com">
+                                      <div class="avatar avatar-m"><img class="rounded-circle" src="../assets/img/brand2/apple-2.png" alt="" /></div>
+                                  </a>
+                                </td> -->
+                                <td class="email align-middle white-space-nowrap">karthik ST2.pdf</td>
+                                <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:annac34@gmail.com">09-Feb-2023</a></td>
+                                <!-- <td class="customer align-middle white-space-nowrap"><a class="d-flex align-items-center text-900 text-hover-1000" href="#!">
+                                    <h6 class="mb-0 ms-3 fw-semi-bold">Ashish Saini</h6>
+                                  </a></td> -->
+                                <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:annac34@gmail.com">Priyanka Daniel</a></td>
+                                <td class="mobile_number align-middle white-space-nowrap"><a class="fw-bold text-1100" href="tel:+912346578">Pending</a></td>
+                                <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">Aashish</td>
+                                <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Parsing</td>
+                                <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">
+                                  <a class="fw-semi-bold" href="mailto:annac34@gmail.com">aashish@theglove.com</a>
+                                </td>                     
+                                <td class="joined align-middle white-space-nowrap text-700 text-end" style="text-align: center !important;">Yes</td>
+                              </tr>
+                              <tr class="hover-actions-trigger btn-reveal-trigger position-static">
+                                <!-- <td class="fs--1 align-middle ps-0 py-3">
+                                  <div class="form-check mb-0 fs-0"><input class="form-check-input" type="checkbox" data-bulk-select-row='{"customer":{"avatar":"/team/32.webp","name":"Carry Anna"},"email":"annac34@gmail.com","mobile":"+912346578","city":"Budapest","lastActive":"34 min ago","joined":"Dec 12, 12:56 PM"}' /></div>
+                                </td> -->
+                                <td class="customer align-middle white-space-nowrap" >
+                                  <div class="font-sans-serif btn-reveal-trigger position-static" ><button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs--2"></span></button>
+                                    <div class="dropdown-menu dropdown-end py-2"><a class="dropdown-item" href="#">Contact</a><a class="dropdown-item" href="#!">Contract</a><a class="dropdown-item" href="#">Location</a>
+                                      <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="#!">Remove</a>
+                                    </div>
+                                  </div>
+                                </td>
+                                <!-- <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:annac34@gmail.com">
+                                      <div class="avatar avatar-m"><img class="rounded-circle" src="../assets/img/brand2/apple-2.png" alt="" /></div>
+                                  </a>
+                                </td> -->
+                                <td class="email align-middle white-space-nowrap">karthik ST2.pdf</td>
+                                <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:annac34@gmail.com">09-Feb-2023</a></td>
+                                <!-- <td class="customer align-middle white-space-nowrap"><a class="d-flex align-items-center text-900 text-hover-1000" href="#!">
+                                    <h6 class="mb-0 ms-3 fw-semi-bold">Ashish Saini</h6>
+                                  </a></td> -->
+                                <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:annac34@gmail.com">Priyanka Daniel</a></td>
+                                <td class="mobile_number align-middle white-space-nowrap"><a class="fw-bold text-1100" href="tel:+912346578">Pending</a></td>
+                                <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">Aashish</td>
+                                <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Parsing</td>
+                                <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">
+                                  <a class="fw-semi-bold" href="mailto:annac34@gmail.com">aashish@theglove.com</a>
+                                </td>                     
+                                <td class="joined align-middle white-space-nowrap text-700 text-end" style="text-align: center !important;">Yes</td>
+                              </tr>
+                              <tr class="hover-actions-trigger btn-reveal-trigger position-static">
+                                <!-- <td class="fs--1 align-middle ps-0 py-3">
+                                  <div class="form-check mb-0 fs-0"><input class="form-check-input" type="checkbox" data-bulk-select-row='{"customer":{"avatar":"/team/32.webp","name":"Carry Anna"},"email":"annac34@gmail.com","mobile":"+912346578","city":"Budapest","lastActive":"34 min ago","joined":"Dec 12, 12:56 PM"}' /></div>
+                                </td> -->
+                                <td class="customer align-middle white-space-nowrap" >
+                                  <div class="font-sans-serif btn-reveal-trigger position-static" ><button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs--2"></span></button>
+                                    <div class="dropdown-menu dropdown-end py-2"><a class="dropdown-item" href="#">Contact</a><a class="dropdown-item" href="#!">Contract</a><a class="dropdown-item" href="#">Location</a>
+                                      <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="#!">Remove</a>
+                                    </div>
+                                  </div>
+                                </td>
+                                <!-- <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:annac34@gmail.com">
+                                      <div class="avatar avatar-m"><img class="rounded-circle" src="../assets/img/brand2/apple-2.png" alt="" /></div>
+                                  </a>
+                                </td> -->
+                                <td class="email align-middle white-space-nowrap">karthik ST2.pdf</td>
+                                <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:annac34@gmail.com">09-Feb-2023</a></td>
+                                <!-- <td class="customer align-middle white-space-nowrap"><a class="d-flex align-items-center text-900 text-hover-1000" href="#!">
+                                    <h6 class="mb-0 ms-3 fw-semi-bold">Ashish Saini</h6>
+                                  </a></td> -->
+                                <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:annac34@gmail.com">Priyanka Daniel</a></td>
+                                <td class="mobile_number align-middle white-space-nowrap"><a class="fw-bold text-1100" href="tel:+912346578">Pending</a></td>
+                                <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">Aashish</td>
+                                <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Parsing</td>
+                                <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">
+                                  <a class="fw-semi-bold" href="mailto:annac34@gmail.com">aashish@theglove.com</a>
+                                </td>                     
+                                <td class="joined align-middle white-space-nowrap text-700 text-end" style="text-align: center !important;">Yes</td>
+                              </tr>
+        
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="row align-items-center justify-content-between py-2 pe-0 fs--1">
+                        <div class="col-auto d-flex">
+                          <p class="mb-0 d-none d-sm-block me-3 fw-semi-bold text-900" data-list-info="data-list-info"></p><a class="fw-semi-bold" href="#!" data-list-view="*">View all<span class="fas fa-angle-right ms-1" data-fa-transform="down-1"></span></a><a class="fw-semi-bold d-none" href="#!" data-list-view="less">View Less<span class="fas fa-angle-right ms-1" data-fa-transform="down-1"></span></a>
+                        </div>
+                        <div class="col-auto d-flex"><button class="page-link" data-list-pagination="prev"><span class="fas fa-chevron-left"></span></button>
+                          <ul class="mb-0 pagination"></ul><button class="page-link pe-0" data-list-pagination="next"><span class="fas fa-chevron-right"></span></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
             </div>
-            <div class="col-md-2 col-lg-2 col-sm-2">
-            </div>
-            <div class="col-md-6 col-lg-6 col-sm-6">
-              <div class="row align-items-center justify-content-between g-3 mb-3" style="float: right;">
-                <div class="col col-auto ml-15">
-                  <div class="search-box">
-                    <form class="position-relative" data-bs-toggle="search" data-bs-display="static"><input class="form-control search-input search" type="search" placeholder="Search Client" aria-label="Search" />
-                      <span class="fas fa-search search-box-icon"></span>
-                    </form>
+            <footer class="footer position-absolute">
+                <div class="row g-0 justify-content-between align-items-center h-100">
+                  <div class="col-12 col-sm-auto text-center">
+                   <button class="btn navbar-vertical-toggle border-0 fw-semi-bold w-100 white-space-nowrap d-flex align-items-center" style="padding: 0px;"><span class="navbar-vertical-footer-text" style="font-weight: 600;color: #757474;">Thank you for The Glove<span class="d-none d-sm-inline-block"></span><span class="d-none d-sm-inline-block mx-1">|</span><br class="d-sm-none" />2023 &copy;<a class="mx-1" href="#" target="_blank"><img src="../assets/img/icons/clogo.png" style="height: 21px;" alt="The Glove"></a></span></button>
+                  </div>
+                  <div class="col-12 col-sm-auto text-center">
+                    <p class="mb-0 text-600" style="font-size: 13px; font-weight: 620;">v1.0.0</p>
                   </div>
                 </div>
-                <div class="col-auto">
-                  <div class="d-flex align-items-center"> <a href="add-client.html"  rel="noopener noreferrer"><button class="btn btn-primary">Add Client</button></a></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="members" data-list='{"valueNames":["customer","email","mobile_number","city","last_active","joined"],"page":10,"pagination":true}'>
-           
-            <div class="px-lg-6 mb-9 bg-white border-y border-300 mt-2 position-relative top-1">
-              <div class="table-responsive scrollbar ms-n1 ps-1">
-                <table class="table table-sm fs--1 mb-0">
-                  <thead>
-                    <tr>
-                      <!-- <th class="white-space-nowrap fs--1 align-middle ps-0">
-                        <div class="form-check mb-0 fs-0"><input class="form-check-input" id="checkbox-bulk-members-select" type="checkbox" data-bulk-select='{"body":"members-table-body"}' /></div>
-                      </th> -->
-                      <th class="customer align-middle white-space-nowrap" scope="col" data-sort="joined" style="width:5% !important;  min-width:10px;">Action</th>
-                      <th class="customer align-middle white-space-nowrap" scope="col" data-sort="joined" style="width:5% !important;  min-width:10px;">Logo</th>
-                      <th class="sort align-middle" scope="col" data-sort="customer" style="width:15%; min-width:100px;">Company</th>
-                      <th class="sort align-middle" scope="col" data-sort="customer" style="width:15%; min-width:100px;">Name</th>
-                      <th class="sort align-middle" scope="col" data-sort="email" style="width:15%; min-width:100px;">Email</th>
-                      <th class="sort align-middle pe-3" scope="col" data-sort="mobile_number" style="width:10%; min-width:100px;">Mobile</th>
-                      <th class="sort align-middle" scope="col" data-sort="city" style="width:15%; text-align: center !important; min-width:100px;">Location</th>
-                      <th class="sort align-middle text-end" scope="col" data-sort="last_active" style="width:15%;  min-width:100px; text-align: center !important;">Industry</th>
-                      <th class="sort align-middle text-end pe-0" scope="col" data-sort="joined" style="width:15%;  min-width:100px; text-align: center !important;">Website</th>
-                      <th class="sort align-middle text-end pe-0" scope="col" data-sort="joined" style="width:15%;  min-width:100px; text-align: center !important;">Type</th>
-                    </tr>
-                  </thead>
-                  <tbody class="list" id="members-table-body">
-                    <tr class="hover-actions-trigger btn-reveal-trigger position-static">
-                      <!-- <td class="fs--1 align-middle ps-0 py-3">
-                        <div class="form-check mb-0 fs-0"><input class="form-check-input" type="checkbox" data-bulk-select-row='{"customer":{"avatar":"/team/32.webp","name":"Carry Anna"},"email":"annac34@gmail.com","mobile":"+912346578","city":"Budapest","lastActive":"34 min ago","joined":"Dec 12, 12:56 PM"}' /></div>
-                      </td> -->
-                      <td class="customer align-middle white-space-nowrap" >
-                        <div class="font-sans-serif btn-reveal-trigger position-static" ><button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs--2"></span></button>
-                          <div class="dropdown-menu dropdown-end py-2"><a class="dropdown-item" href="#">Contact</a><a class="dropdown-item" href="#!">Contract</a><a class="dropdown-item" href="#">Location</a>
-                            <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="#!">Remove</a>
-                          </div>
-                        </div>
-                      </td>
-                      <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:annac34@gmail.com">
-                        <div class="avatar avatar-m"><img class="rounded-circle" src="../assets/img/brand2/apple-2.png" alt="" /></div>
-                      </a></td>
-                      <td class="email align-middle white-space-nowrap">Apple</td>
-                      <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:annac34@gmail.com">Ashish Saini</a></td>
-                      <!-- <td class="customer align-middle white-space-nowrap"><a class="d-flex align-items-center text-900 text-hover-1000" href="#!">
-                          <h6 class="mb-0 ms-3 fw-semi-bold">Ashish Saini</h6>
-                        </a></td> -->
-                      <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:annac34@gmail.com">ashi34@gmail.com</a></td>
-                      <td class="mobile_number align-middle white-space-nowrap"><a class="fw-bold text-1100" href="tel:+912346578">+918823426578</a></td>
-                      <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">Gurgaon,Haryana,India</td>
-                      <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">IT Industry</td>
-                      <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">
-                        <a class="fw-semi-bold" href="mailto:annac34@gmail.com">www.xyz.com</a>
-                      </td>                     
-                      <td class="joined align-middle white-space-nowrap text-700 text-end" style="text-align: center !important;">Tech</td>
-                    </tr>
-                    <tr class="hover-actions-trigger btn-reveal-trigger position-static">
-                      <!-- <td class="fs--1 align-middle ps-0 py-3">
-                        <div class="form-check mb-0 fs-0"><input class="form-check-input" type="checkbox" data-bulk-select-row='{"customer":{"avatar":"/team/avatar.webp","name":"Milind Mikuja","placeholder":true},"email":"mimiku@yahoo.com","mobile":"+8801564768976","city":"Manchester","lastActive":"6 hours ago","joined":"Dec 9, 2:28 PM"}' /></div>
-                      </td> -->
-                      <td class="customer align-middle white-space-nowrap" >
-                        <div class="font-sans-serif btn-reveal-trigger position-static" ><button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs--2"></span></button>
-                          <div class="dropdown-menu dropdown-end py-2"><a class="dropdown-item" href="#">Contact</a><a class="dropdown-item" href="#!">Contract</a><a class="dropdown-item" href="#">Location</a>
-                            <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="#!">Remove</a>
-                          </div>
-                        </div>
-                      </td>
-                      <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:annac34@gmail.com">
-                        <div class="avatar avatar-m"><img class="rounded-circle avatar-placeholder" src="../assets/img/brand2/hp.png" alt="" /></div>
-                      </a></td>
-                      <td class="email align-middle white-space-nowrap">HP</td>
-                      <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:annac34@gmail.com">Krishan Gandhi</a></td>
-
-                      <!-- <td class="customer align-middle white-space-nowrap"><a class="d-flex align-items-center text-900 text-hover-1000" href="#!">
-                          <h6 class="mb-0 ms-3 fw-semi-bold">Krishan Gandhi</h6>
-                        </a></td> -->
-                      <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:mimiku@yahoo.com">krishan@yahoo.com</a></td>
-                      <td class="mobile_number align-middle white-space-nowrap"><a class="fw-bold text-1100" href="tel:+8801564768976">+918801525976</a></td>
-                      <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">Budapest</td>
-                      <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">IT Industry</td>
-                      <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">
-                        <a class="fw-semi-bold" href="mailto:annac34@gmail.com">www.hp.com</a>
-                      </td>                     
-                      <td class="joined align-middle white-space-nowrap text-700 text-end" style="text-align: center !important;">Tech</td>
-                    </tr>
-                    <tr class="hover-actions-trigger btn-reveal-trigger position-static">
-                      <!-- <td class="fs--1 align-middle ps-0 py-3">
-                        <div class="form-check mb-0 fs-0"><input class="form-check-input" type="checkbox" data-bulk-select-row='{"customer":{"avatar":"/team/avatar.webp","name":"Milind Mikuja","placeholder":true},"email":"mimiku@yahoo.com","mobile":"+8801564768976","city":"Manchester","lastActive":"6 hours ago","joined":"Dec 9, 2:28 PM"}' /></div>
-                      </td> -->
-                      <td class="customer align-middle white-space-nowrap" >
-                        <div class="font-sans-serif btn-reveal-trigger position-static" ><button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs--2"></span></button>
-                          <div class="dropdown-menu dropdown-end py-2"><a class="dropdown-item" href="#">Contact</a><a class="dropdown-item" href="#!">Contract</a><a class="dropdown-item" href="#">Location</a>
-                          <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="#!">Remove</a>
-                          </div>
-                        </div>
-                      </td>
-                      <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:annac34@gmail.com">
-                        <div class="avatar avatar-m"><img class="rounded-circle avatar-placeholder" src="../assets/img/brand2/netflix-n.png" alt="" /></div>
-                      </a></td>
-                      <td class="email align-middle white-space-nowrap">Netflix</td>
-                      <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:annac34@gmail.com">Dheeraj</a></td>
-
-                      <!-- <td class="customer align-middle white-space-nowrap"><a class="d-flex align-items-center text-900 text-hover-1000" href="#!">
-                          <h6 class="mb-0 ms-3 fw-semi-bold">Krishan Gandhi</h6>
-                        </a></td> -->
-                      <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:mimiku@yahoo.com">Dheeraj@yahoo.com</a></td>
-                      <td class="mobile_number align-middle white-space-nowrap"><a class="fw-bold text-1100" href="tel:+8801564768976">+918801525976</a></td>
-                      <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">Melbourne,Australia</td>
-                      <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">IT Industry</td>
-                      <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">
-                        <a class="fw-semi-bold" href="mailto:annac34@gmail.com"> www.netflix.com</a>
-                      </td>                     
-                      <td class="joined align-middle white-space-nowrap text-700 text-end" style="text-align: center !important;">Non-Tech</td>
-                    </tr>
-                    <tr class="hover-actions-trigger btn-reveal-trigger position-static">
-                      <!-- <td class="fs--1 align-middle ps-0 py-3">
-                        <div class="form-check mb-0 fs-0"><input class="form-check-input" type="checkbox" data-bulk-select-row='{"customer":{"avatar":"/team/avatar.webp","name":"Milind Mikuja","placeholder":true},"email":"mimiku@yahoo.com","mobile":"+8801564768976","city":"Manchester","lastActive":"6 hours ago","joined":"Dec 9, 2:28 PM"}' /></div>
-                      </td> -->
-                      <td class="customer align-middle white-space-nowrap" >
-                        <div class="font-sans-serif btn-reveal-trigger position-static" ><button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs--2"></span></button>
-                            <div class="dropdown-menu dropdown-end py-2"><a class="dropdown-item" href="#">Contact</a><a class="dropdown-item" href="#!">Contract</a><a class="dropdown-item" href="#">Location</a>
-                            <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="#!">Remove</a>
-                          </div>
-                        </div>
-                      </td>
-                      <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:annac34@gmail.com">
-                        <div class="avatar avatar-m"><img class="rounded-circle avatar-placeholder" src="../assets/img/brand2/upwork.png" alt="" /></div>
-                      </a></td>
-                      <td class="email align-middle white-space-nowrap">Upwork</td>
-                      <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:annac34@gmail.com">Ankit</a></td>
-
-                      <!-- <td class="customer align-middle white-space-nowrap"><a class="d-flex align-items-center text-900 text-hover-1000" href="#!">
-                          <h6 class="mb-0 ms-3 fw-semi-bold">Krishan Gandhi</h6>
-                        </a></td> -->
-                      <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:mimiku@yahoo.com">Ankit@yahoo.com</a></td>
-                      <td class="mobile_number align-middle white-space-nowrap"><a class="fw-bold text-1100" href="tel:+8801564768976">+918801525976</a></td>
-                      <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">Sydney,Australia</td>
-                      <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">IT Industry</td>
-                      <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">
-                        <a class="fw-semi-bold" href="mailto:annac34@gmail.com">www.upwork.com</a>
-                      </td>                     
-                      <td class="joined align-middle white-space-nowrap text-700 text-end" style="text-align: center !important;">Non-Tech</td>
-                    </tr>
-                    <tr class="hover-actions-trigger btn-reveal-trigger position-static">
-                      <!-- <td class="fs--1 align-middle ps-0 py-3">
-                        <div class="form-check mb-0 fs-0"><input class="form-check-input" type="checkbox" data-bulk-select-row='{"customer":{"avatar":"/team/avatar.webp","name":"Milind Mikuja","placeholder":true},"email":"mimiku@yahoo.com","mobile":"+8801564768976","city":"Manchester","lastActive":"6 hours ago","joined":"Dec 9, 2:28 PM"}' /></div>
-                      </td> -->
-                      <td class="customer align-middle white-space-nowrap" >
-                        <div class="font-sans-serif btn-reveal-trigger position-static" ><button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs--2"></span></button>
-                          <div class="dropdown-menu dropdown-end py-2"><a class="dropdown-item" href="#">Contact</a><a class="dropdown-item" href="#!">Contract</a><a class="dropdown-item" href="#">Location</a>
-                            <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="#!">Remove</a>
-                          </div>
-                        </div>
-                      </td>
-                      <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:annac34@gmail.com">
-                        <div class="avatar avatar-m"><img class="rounded-circle avatar-placeholder" src="../assets/img/brand2/intel-2.png" alt="" /></div>
-                      </a></td>
-                      <td class="email align-middle white-space-nowrap">Intel</td>
-                      <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:annac34@gmail.com">David</a></td>
-
-                      <!-- <td class="customer align-middle white-space-nowrap"><a class="d-flex align-items-center text-900 text-hover-1000" href="#!">
-                          <h6 class="mb-0 ms-3 fw-semi-bold">Krishan Gandhi</h6>
-                        </a></td> -->
-                      <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:mimiku@yahoo.com">David@yahoo.com</a></td>
-                      <td class="mobile_number align-middle white-space-nowrap"><a class="fw-bold text-1100" href="tel:+8801564768976">+918801525976</a></td>
-                      <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">Budapest</td>
-                      <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">IT Industry</td>
-                      <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">
-                        <a class="fw-semi-bold" href="mailto:annac34@gmail.com">www.intel.com</a>
-                      </td>                     
-                      <td class="joined align-middle white-space-nowrap text-700 text-end" style="text-align: center !important;">Tech</td>
-                    </tr>
-                    <tr class="hover-actions-trigger btn-reveal-trigger position-static">
-                      <!-- <td class="fs--1 align-middle ps-0 py-3">
-                        <div class="form-check mb-0 fs-0"><input class="form-check-input" type="checkbox" data-bulk-select-row='{"customer":{"avatar":"/team/avatar.webp","name":"Milind Mikuja","placeholder":true},"email":"mimiku@yahoo.com","mobile":"+8801564768976","city":"Manchester","lastActive":"6 hours ago","joined":"Dec 9, 2:28 PM"}' /></div>
-                      </td> -->
-                      <td class="customer align-middle white-space-nowrap" >
-                        <div class="font-sans-serif btn-reveal-trigger position-static" ><button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs--2"></span></button>
-                          <div class="dropdown-menu dropdown-end py-2"><a class="dropdown-item" href="#">Contact</a><a class="dropdown-item" href="#!">Contract</a><a class="dropdown-item" href="#">Location</a>
-                            <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="#!">Remove</a>
-                          </div>
-                        </div>
-                      </td>
-                      <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:annac34@gmail.com">
-                        <div class="avatar avatar-m"><img class="rounded-circle avatar-placeholder" src="../assets/img/brand2/dell.png" alt="" /></div>
-                      </a></td>
-                      <td class="email align-middle white-space-nowrap">Dell</td>
-                      <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:annac34@gmail.com">Abhinav</a></td>
-
-                      <!-- <td class="customer align-middle white-space-nowrap"><a class="d-flex align-items-center text-900 text-hover-1000" href="#!">
-                          <h6 class="mb-0 ms-3 fw-semi-bold">Krishan Gandhi</h6>
-                        </a></td> -->
-                      <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:mimiku@yahoo.com">Abhinav@yahoo.com</a></td>
-                      <td class="mobile_number align-middle white-space-nowrap"><a class="fw-bold text-1100" href="tel:+8801564768976">+918801525976</a></td>
-                      <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">Budapest</td>
-                      <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">IT Industry</td>
-                      <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">
-                        <a class="fw-semi-bold" href="mailto:annac34@gmail.com">www.dell.com</a>
-                      </td>                     
-                      <td class="joined align-middle white-space-nowrap text-700 text-end" style="text-align: center !important;">Tech</td>
-                    </tr>
-                    <tr class="hover-actions-trigger btn-reveal-trigger position-static">
-                      <!-- <td class="fs--1 align-middle ps-0 py-3">
-                        <div class="form-check mb-0 fs-0"><input class="form-check-input" type="checkbox" data-bulk-select-row='{"customer":{"avatar":"/team/avatar.webp","name":"Milind Mikuja","placeholder":true},"email":"mimiku@yahoo.com","mobile":"+8801564768976","city":"Manchester","lastActive":"6 hours ago","joined":"Dec 9, 2:28 PM"}' /></div>
-                      </td> -->
-                      <td class="customer align-middle white-space-nowrap" >
-                        <div class="font-sans-serif btn-reveal-trigger position-static" ><button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs--2"></span></button>
-                          <div class="dropdown-menu dropdown-end py-2"><a class="dropdown-item" href="#">Contact</a><a class="dropdown-item" href="#!">Contract</a><a class="dropdown-item" href="#">Location</a>
-                            <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="#!">Remove</a>
-                          </div>
-                        </div>
-                      </td>
-                      <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:annac34@gmail.com">
-                        <div class="avatar avatar-m"><img class="rounded-circle avatar-placeholder" src="../assets/img/brand2/facebook-f.png" alt="" /></div>
-                      </a></td>
-                      <td class="email align-middle white-space-nowrap">Facebook</td>
-                      <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:annac34@gmail.com">Gaurav</a></td>
-
-                      <!-- <td class="customer align-middle white-space-nowrap"><a class="d-flex align-items-center text-900 text-hover-1000" href="#!">
-                          <h6 class="mb-0 ms-3 fw-semi-bold">Krishan Gandhi</h6>
-                        </a></td> -->
-                      <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:mimiku@yahoo.com">gaurav@yahoo.com</a></td>
-                      <td class="mobile_number align-middle white-space-nowrap"><a class="fw-bold text-1100" href="tel:+8801564768976">+918801525976</a></td>
-                      <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">New York,USA</td>
-                      <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">IT Industry</td>
-                      <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">
-                        <a class="fw-semi-bold" href="mailto:annac34@gmail.com">www.facebook.com</a>
-                      </td>                     
-                      <td class="joined align-middle white-space-nowrap text-700 text-end" style="text-align: center !important;">Non-Tech</td>
-                    </tr>
-                    <tr class="hover-actions-trigger btn-reveal-trigger position-static">
-                      <!-- <td class="fs--1 align-middle ps-0 py-3">
-                        <div class="form-check mb-0 fs-0"><input class="form-check-input" type="checkbox" data-bulk-select-row='{"customer":{"avatar":"/team/avatar.webp","name":"Milind Mikuja","placeholder":true},"email":"mimiku@yahoo.com","mobile":"+8801564768976","city":"Manchester","lastActive":"6 hours ago","joined":"Dec 9, 2:28 PM"}' /></div>
-                      </td> -->
-                      <td class="customer align-middle white-space-nowrap" >
-                        <div class="font-sans-serif btn-reveal-trigger position-static" ><button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs--2"></span></button>
-                          <div class="dropdown-menu dropdown-end py-2"><a class="dropdown-item" href="#">Contact</a><a class="dropdown-item" href="#!">Contract</a><a class="dropdown-item" href="#">Location</a>
-                            <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="#!">Remove</a>
-                          </div>
-                        </div>
-                      </td>
-                      <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:annac34@gmail.com">
-                        <div class="avatar avatar-m"><img class="rounded-circle avatar-placeholder" src="../assets/img/brand2/honda.png" alt="" /></div>
-                      </a></td>
-                      <td class="email align-middle white-space-nowrap">Honda</td>
-                      <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:annac34@gmail.com">Rahul Gandhi</a></td>
-
-                      <!-- <td class="customer align-middle white-space-nowrap"><a class="d-flex align-items-center text-900 text-hover-1000" href="#!">
-                          <h6 class="mb-0 ms-3 fw-semi-bold">Krishan Gandhi</h6>
-                        </a></td> -->
-                      <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:mimiku@yahoo.com">Rahul@yahoo.com</a></td>
-                      <td class="mobile_number align-middle white-space-nowrap"><a class="fw-bold text-1100" href="tel:+8801564768976">+918801525976</a></td>
-                      <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">Budapest</td>
-                      <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">IT Industry</td>
-                      <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">
-                        <a class="fw-semi-bold" href="mailto:annac34@gmail.com">www.honda.com</a>
-                      </td>                     
-                      <td class="joined align-middle white-space-nowrap text-700 text-end" style="text-align: center !important;">Tech</td>
-                    </tr>
-                    <tr class="hover-actions-trigger btn-reveal-trigger position-static">
-                      <!-- <td class="fs--1 align-middle ps-0 py-3">
-                        <div class="form-check mb-0 fs-0"><input class="form-check-input" type="checkbox" data-bulk-select-row='{"customer":{"avatar":"/team/avatar.webp","name":"Milind Mikuja","placeholder":true},"email":"mimiku@yahoo.com","mobile":"+8801564768976","city":"Manchester","lastActive":"6 hours ago","joined":"Dec 9, 2:28 PM"}' /></div>
-                      </td> -->
-                      <td class="customer align-middle white-space-nowrap" >
-                        <div class="font-sans-serif btn-reveal-trigger position-static" ><button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs--2"></span></button>
-                          <div class="dropdown-menu dropdown-end py-2"><a class="dropdown-item" href="#">Contact</a><a class="dropdown-item" href="#!">Contract</a><a class="dropdown-item" href="#">Location</a>
-                            <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="#!">Remove</a>
-                          </div>
-                        </div>
-                      </td>
-                      <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:annac34@gmail.com">
-                        <div class="avatar avatar-m"><img class="rounded-circle avatar-placeholder" src="../assets/img/brand2/asus-rog.png" alt="" /></div>
-                      </a></td>
-                      <td class="email align-middle white-space-nowrap">Asus</td>
-                      <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:annac34@gmail.com">Rahul Kumar</a></td>
-
-                      <!-- <td class="customer align-middle white-space-nowrap"><a class="d-flex align-items-center text-900 text-hover-1000" href="#!">
-                          <h6 class="mb-0 ms-3 fw-semi-bold">Krishan Gandhi</h6>
-                        </a></td> -->
-                      <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:mimiku@yahoo.com">rahul@yahoo.com</a></td>
-                      <td class="mobile_number align-middle white-space-nowrap"><a class="fw-bold text-1100" href="tel:+8801564768976">+918801525976</a></td>
-                      <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">Hyderabad,India</td>
-                      <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">IT Industry</td>
-                      <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">
-                        <a class="fw-semi-bold" href="mailto:annac34@gmail.com">www.asus.com</a>
-                      </td>                     
-                      <td class="joined align-middle white-space-nowrap text-700 text-end" style="text-align: center !important;">Non-Tech</td>
-                    </tr>
-                    <tr class="hover-actions-trigger btn-reveal-trigger position-static">
-                      <!-- <td class="fs--1 align-middle ps-0 py-3">
-                        <div class="form-check mb-0 fs-0"><input class="form-check-input" type="checkbox" data-bulk-select-row='{"customer":{"avatar":"/team/avatar.webp","name":"Milind Mikuja","placeholder":true},"email":"mimiku@yahoo.com","mobile":"+8801564768976","city":"Manchester","lastActive":"6 hours ago","joined":"Dec 9, 2:28 PM"}' /></div>
-                      </td> -->
-                      <td class="customer align-middle white-space-nowrap" >
-                        <div class="font-sans-serif btn-reveal-trigger position-static" ><button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs--2"></span></button>
-                          <div class="dropdown-menu dropdown-end py-2"><a class="dropdown-item" href="#">Contact</a><a class="dropdown-item" href="#!">Contract</a><a class="dropdown-item" href="#">Location</a>
-                            <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="#!">Remove</a>
-                          </div>
-                        </div>
-                      </td>
-                      <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:annac34@gmail.com">
-                        <div class="avatar avatar-m"><img class="rounded-circle avatar-placeholder" src="../assets/img/brand2/b.png" alt="" /></div>
-                      </a></td>
-                      <td class="email align-middle white-space-nowrap">B</td>
-                      <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:annac34@gmail.com">Raghu</a></td>
-
-                      <!-- <td class="customer align-middle white-space-nowrap"><a class="d-flex align-items-center text-900 text-hover-1000" href="#!">
-                          <h6 class="mb-0 ms-3 fw-semi-bold">Krishan Gandhi</h6>
-                        </a></td> -->
-                      <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:mimiku@yahoo.com">raghu@yahoo.com</a></td>
-                      <td class="mobile_number align-middle white-space-nowrap"><a class="fw-bold text-1100" href="tel:+8801564768976">+918801525976</a></td>
-                      <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">Budapest</td>
-                      <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">IT Industry</td>
-                      <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">
-                        <a class="fw-semi-bold" href="mailto:annac34@gmail.com">www.bbc.com</a>
-                      </td>                     
-                      <td class="joined align-middle white-space-nowrap text-700 text-end" style="text-align: center !important;">Non-Tech</td>
-                    </tr>
-                    <tr class="hover-actions-trigger btn-reveal-trigger position-static">
-                      <!-- <td class="fs--1 align-middle ps-0 py-3">
-                        <div class="form-check mb-0 fs-0"><input class="form-check-input" type="checkbox" data-bulk-select-row='{"customer":{"avatar":"/team/avatar.webp","name":"Milind Mikuja","placeholder":true},"email":"mimiku@yahoo.com","mobile":"+8801564768976","city":"Manchester","lastActive":"6 hours ago","joined":"Dec 9, 2:28 PM"}' /></div>
-                      </td> -->
-                      <td class="customer align-middle white-space-nowrap" >
-                        <div class="font-sans-serif btn-reveal-trigger position-static" ><button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs--2"></span></button>
-                          <div class="dropdown-menu dropdown-end py-2"><a class="dropdown-item" href="#">Contact</a><a class="dropdown-item" href="#!">Contract</a><a class="dropdown-item" href="#">Location</a>
-                            <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="#!">Remove</a>
-                          </div>
-                        </div>
-                      </td>
-                      <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:annac34@gmail.com">
-                        <div class="avatar avatar-m"><img class="rounded-circle avatar-placeholder" src="../assets/img/brand2/ibm.png" alt="" /></div>
-                      </a></td>
-                      <td class="email align-middle white-space-nowrap">IBM</td>
-                      <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:annac34@gmail.com">Amit</a></td>
-
-                      <!-- <td class="customer align-middle white-space-nowrap"><a class="d-flex align-items-center text-900 text-hover-1000" href="#!">
-                          <h6 class="mb-0 ms-3 fw-semi-bold">Krishan Gandhi</h6>
-                        </a></td> -->
-                      <td class="email align-middle white-space-nowrap"><a class="fw-semi-bold" href="mailto:mimiku@yahoo.com">atys@yahoo.com</a></td>
-                      <td class="mobile_number align-middle white-space-nowrap"><a class="fw-bold text-1100" href="tel:+8801564768976">+918801525976</a></td>
-                      <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">Bangalore,India</td>
-                      <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">IT Industry</td>
-                      <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">
-                        <a class="fw-semi-bold" href="mailto:annac34@gmail.com">www.ibm.com</a>
-                      </td>                     
-                      <td class="joined align-middle white-space-nowrap text-700 text-end" style="text-align: center !important;">Tech</td>
-                    </tr>
-
-                  </tbody>
-                </table>
-              </div>
-              <div class="row align-items-center justify-content-between py-2 pe-0 fs--1">
-                <div class="col-auto d-flex">
-                  <p class="mb-0 d-none d-sm-block me-3 fw-semi-bold text-900" data-list-info="data-list-info"></p><a class="fw-semi-bold" href="#!" data-list-view="*">View all<span class="fas fa-angle-right ms-1" data-fa-transform="down-1"></span></a><a class="fw-semi-bold d-none" href="#!" data-list-view="less">View Less<span class="fas fa-angle-right ms-1" data-fa-transform="down-1"></span></a>
-                </div>
-                <div class="col-auto d-flex"><button class="page-link" data-list-pagination="prev"><span class="fas fa-chevron-left"></span></button>
-                  <ul class="mb-0 pagination"></ul><button class="page-link pe-0" data-list-pagination="next"><span class="fas fa-chevron-right"></span></button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <footer class="footer position-absolute">
-            <div class="row g-0 justify-content-between align-items-center h-100">
-              <div class="col-12 col-sm-auto text-center">
-               <button class="btn navbar-vertical-toggle border-0 fw-semi-bold w-100 white-space-nowrap d-flex align-items-center" style="padding: 0px;"><span class="navbar-vertical-footer-text" style="font-weight: 600;color: #757474;">Thank you for The Glove<span class="d-none d-sm-inline-block"></span><span class="d-none d-sm-inline-block mx-1">|</span><br class="d-sm-none" />2023 &copy;<a class="mx-1" href="#" target="_blank"><img src="../assets/img/icons/clogo.png" style="height: 21px;" alt="The Glove"></a></span></button>
-              </div>
-              <div class="col-12 col-sm-auto text-center">
-                <p class="mb-0 text-600" style="font-size: 13px; font-weight: 620;">v1.0.0</p>
-              </div>
-            </div>
-          </footer>
+              </footer>
         </div>
       </div>
     </main><!-- ===============================================-->

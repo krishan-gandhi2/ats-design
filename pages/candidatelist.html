@@ -109,8 +109,9 @@
     .min-max-filter label{font-size: 0.7rem;}
     .min-max-filter input{padding-right: 0;font-size: 0.6rem;}
     .min-max-filter input:focus{border: none !important;outline: 1px solid grey;font-size: 0.6rem;}
-    .textarea-save-search-cls{width: 100%; height: 100px; border: 1px solid lightgrey;}
-    .textarea-save-search-cls:focus{outline: 2px solid lightgrey; border: 2px solid lightgrey;}
+    .textarea-save-search-cls{width: 100%; height: 100px; border: 1px solid lightgrey; border-radius:6px;}
+    .textarea-save-search-cls:focus{outline: 2px solid lightgrey; border: 1px solid lightgrey;}
+    .textarea-save-search-cls::placeholder{font-size: 12px;padding: 10px 0px 0px 10px;}
     .category-drpdwn-of-search{
       border: 1px solid lightgrey;
       border-radius: 7px 0px 0px 7px;
@@ -612,7 +613,7 @@
             </div>
           </a>
         </div>
-        <div class="nav-item-wrapper"><a class="nav-link label-1" href="../pages/blank-page.html" role="button" data-bs-toggle="" aria-expanded="false">
+        <div class="nav-item-wrapper"><a class="nav-link label-1" href="../pages/parse.html" role="button" data-bs-toggle="" aria-expanded="false">
           <div class="d-flex align-items-center">
             <span class="nav-link-icon">
               <span data-feather="clipboard"></span>
@@ -662,19 +663,19 @@
                             <div class="d-flex align-items-center"><span class="nav-link-text">Labels</span></div>
                           </a><!-- more inner pages-->
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="../pages/country.html" data-bs-toggle="" aria-expanded="false">
+                        <li class="nav-item"><a class="nav-link" href="../pages/blank-page.html" data-bs-toggle="" aria-expanded="false">
                             <div class="d-flex align-items-center"><span class="nav-link-text">Country</span></div>
                           </a><!-- more inner pages-->
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="../pages/state.html" data-bs-toggle="" aria-expanded="false">
+                        <li class="nav-item"><a class="nav-link" href="../pages/blank-page.html" data-bs-toggle="" aria-expanded="false">
                             <div class="d-flex align-items-center"><span class="nav-link-text">State</span></div>
                           </a><!-- more inner pages-->
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="../pages/cities.html" data-bs-toggle="" aria-expanded="false" >
+                        <li class="nav-item"><a class="nav-link" href="../pages/blank-page.html" data-bs-toggle="" aria-expanded="false" >
                             <div class="d-flex align-items-center"><span class="nav-link-text">City</span></div>
                           </a><!-- more inner pages-->
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="../pages/Industries.html" data-bs-toggle="" aria-expanded="false" >
+                        <li class="nav-item"><a class="nav-link" href="../pages/blank-page.html" data-bs-toggle="" aria-expanded="false" >
                           <div class="d-flex align-items-center"><span class="nav-link-text">Industries</span></div>
                         </a><!-- more inner pages-->
                         </li>
@@ -4855,7 +4856,7 @@
                                 <!-- <form class="position-relative" data-bs-toggle="search" data-bs-display="static"><input class="form-control search-input fuzzy-search rounded-pill form-control-sm" type="search" placeholder="Search here..." aria-label="Search" />
                                 </form> -->
                                 <div class="row">
-                                  <div class="col-md-12 col-lg-12" style="font-size: 0.8rem;">
+                                  <div class="col-md-12 col-lg-12 mb-2" style="font-size: 0.8rem;">
                                     Data Type:&nbsp;&nbsp;
                                     <span style="margin-right: 5px;">
                                       <input type="checkbox">
@@ -4901,18 +4902,15 @@
                                       </div> -->
                                       <input type="text" class="form-control" aria-label="Text input with dropdown button">
                                     </div>
-
                                   </div>
                                 </div>
-                                
-                                
                             </div>
-                            <div class="col-md-3 col-lg-3 mt-3">
+                            <div class="col-md-3 col-lg-3 mt-3" style="margin-top:27px !important;">
                                 <button class="dropbtn" type="submit">Search</button>
                                 <button type="button" class="dropbtn" data-toggle="modal" data-target="#filterSaveModal">Save Filter</button>
                             </div>
                             <div class="col-md-2 col-lg-2"></div>
-                            <div class="col-md-2 col-lg-2 mt-3">
+                            <div class="col-md-2 col-lg-2 mt-3" style="margin-top:27px !important;">
                               <select class="form-select" aria-label="Default select example">
                                 <option selected>Freshness</option>
                                 <option value="">CTC: High to Low</option>
@@ -4922,7 +4920,7 @@
                                 <!-- <option value="">Last Active Date</option> -->
                               </select>
                             </div>
-                            <div class="col-md-1 col-lg-1 mt-3">
+                            <div class="col-md-1 col-lg-1 mt-3" style="margin-top:27px !important;">
                               <select class="form-select" aria-label="Default select example">
                                 <option selected>10</option>
                                 <option value="">20</option>
@@ -4946,8 +4944,8 @@
                         <div class="modal-body">
                           <p>Save this search as</p>
                           <form class="position-relative mb-4" data-bs-toggle="search" data-bs-display="static">
-                            <label>Filter Title</label>
-                            <input class="form-control search-input fuzzy-search rounded-pill form-control-sm" type="text" placeholder="e.g. => Tomar Search" aria-label="Search" />
+                            <label style="font-size:0.8rem;">Filter Title</label>
+                            <input class="form-control search-input fuzzy-search form-control-sm" type="text" placeholder="" aria-label="Search" />
                             <div class="my-2">
                               <select class="form-select" aria-label="Default select example">
                                 <option selected>Public</option>
@@ -5122,7 +5120,7 @@
                                                   <input type="number" min="0" max="100"/>
                                                 </div>
                                               </div>
-                                              <div class="experience-filter-data-values">
+                                              <!-- <div class="experience-filter-data-values">
                                                   <label><input type="checkbox" class="mainlist" value="1+" data-set="testingModes" data-ref="7"> 1+<span class="checkmark"></span></label>
                                               </div>
                                               <div class="experience-filter-data-values">
@@ -5139,7 +5137,7 @@
                                               </div>
                                               <div class="experience-filter-data-values">
                                                   <label><input type="checkbox" class="mainlist" value="15+" data-set="testingModes" data-ref="12"> 15+<span class="checkmark"></span></label>
-                                              </div>
+                                              </div> -->
                                               <div class="apply-button-of-filter-dropdown text-center">
                                                   <button class="applybtn" id="show-hidden-menu1">Apply</button>
                                               </div>
@@ -5163,7 +5161,17 @@
                                                 
                                             </ul>
                                           </div>
-                                              <div class="salary-filter-data-values">
+                                          <div class="row col-lg-12 col-md-12 min-max-filter">
+                                            <div class="row col-lg-6 col-md-6">
+                                              <label>Min</label>
+                                              <input type="number" min="0" max="100"/>
+                                            </div>
+                                            <div class="row col-lg-6 col-md-6">
+                                              <label>Max</label>
+                                              <input type="number" min="0" max="100"/>
+                                            </div>
+                                          </div>
+                                              <!-- <div class="salary-filter-data-values">
                                                   <label><input type="checkbox" class="mainlist" value="100000" data-set="creatingModes" data-ref="13"> 100,000+<span class="checkmark"></span></label>
                                               </div>
                                               <div class="salary-filter-data-values">
@@ -5180,12 +5188,10 @@
                                               </div>
                                               <div class="salary-filter-data-values">
                                                   <label><input type="checkbox" class="mainlist" value="700000" data-set="creatingModes" data-ref="18"> 700,000+<span class="checkmark"></span></label>
-                                              </div>
+                                              </div> -->
                                               <div class="apply-button-of-filter-dropdown text-center">
                                                   <button class="applybtn" id="show-hidden-menu2">Apply</button>
                                               </div>
-                                            <!-- </div> -->
-                                        <!-- </li> -->
                                         </div>
                                       </div>
                                     </div>
@@ -5311,7 +5317,6 @@
                             </div>
                             <div class="col-md-6 col-lg-6 mt-2">
                               <form class="position-relative" data-bs-toggle="search" data-bs-display="static"><input style="border-radius:5px !important" class="form-control search-input fuzzy-search rounded-pill form-control-sm" type="search" placeholder="Search here..." aria-label="Search" />
-                                <!-- <span class="fas fa-search search-box-icon"></span> -->
                               </form>
                             </div>
                             <!-- Table Start -->
@@ -5377,43 +5382,30 @@
                 </div>
                 <!-- Modal End -->
                 <div class="modal fade" id="popup-list-action-btn" style="background-color: rgb(69 69 69 / 50%);">
-                  <div class="modal-dialog modal-lg">
+                  <div class="modal-dialog">
                     <div class="modal-content">
                       <div class="modal-header">
                         <h4 class="modal-title">List</h4>
                         <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
                       </div>
                       <div class="modal-body">
-                        <table class="table">
-                          <thead>
-                            <tr>
-                              <th scope="col">Job Title</th>
-                              <th scope="col">Candidate</th>
-                              <th scope="col">Status</th>
-                              <th scope="col">Message</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>Engineer</td>
-                              <td>Manoj</td>
-                              <td>Success</td>
-                              <td>"No extra text"</td>
-                            </tr>
-                            <tr>
-                              <td>Architect</td>
-                              <td>Sanjay</td>
-                              <td>Failed</td>
-                              <td>"test text"</td>
-                            </tr>
-                            <tr>
-                              <td>Developer</td>
-                              <td>Aashish</td>
-                              <td>Success</td>
-                              <td>"Lorem ipsum dolor sit"</td>
-                            </tr>
-                          </tbody>
-                        </table>
+                        <div class="row col-md-12 col-lg-12">
+                          <div class="col-md-6 col-lg-6 mt-2">
+                            <select class="form-select" aria-label="Default select example">
+                              <option selected>--Evaluation form--</option>
+                              <option value="">Yes</option>
+                              <option value="">No</option>
+                            </select>
+                          </div>
+                          <div class="col-md-6 col-lg-6 mt-2">
+                            <!-- <div class="col-sm-2 col-md-2"> -->
+                              <div class="form-floating"><input class="form-control" id="floatingInputStreet" type="text" placeholder="street" /><label for="floatingInputStreet">Notice Period</label></div>
+                            <!-- </div> -->
+                          </div>
+                          <div class="col-md-12 col-lg-12 mt-2">
+                            <textarea class="textarea-save-search-cls" placeholder="Comment..."></textarea>
+                          </div>
+                        </div>
                       </div>
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Okay</button>
@@ -5498,7 +5490,7 @@
                                                       <label>Label :</label>
                                                   </div>
                                                   <div class="text-left row" style="width: auto;">
-                                                      <p class="card-title">SaleForce, Techincal Support</p>
+                                                      <p class="card-title">SaleForce Support</p>
                                                   </div>
                                               </div>
                                               <div class="row col-md-4">

@@ -4100,7 +4100,7 @@ progress {
     padding: .5rem 1rem;
     font-size: 0.8rem;
     font-weight: 600;
-    line-height: 1.49;
+    line-height: 1.307 !important;
     color: var(--phoenix-gray-900);
     background-color: var(--phoenix-input-bg);
     background-clip: padding-box;
