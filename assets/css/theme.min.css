@@ -37894,3 +37894,6 @@ html:not(.navbar-vertical-collapsed) .navbar-vertical .firefox .navbar-vibrant .
 .dispay-flex{
     display: flex !important;
 }
+.card-first-line .text-left .card-title {
+    margin-top: 0px !important;
+}
