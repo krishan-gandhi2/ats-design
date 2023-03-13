@@ -121,6 +121,7 @@
           <!-- scrollbar removed-->
           <div class="navbar-vertical-content">
             <ul class="navbar-nav flex-column" id="navbarVerticalNav">
+
               <li class="nav-item">
                 <!-- label-->
                 <!-- <p class="navbar-vertical-label">Dashboard</p> -->
@@ -5006,7 +5007,7 @@
                 <div class="card-header p-4 border-bottom border-300 bg-soft">
                   <div class="row g-3 justify-content-between align-items-center">
                     <div class="col-11 col-md">
-                      <h4 class="text-900 mb-0" style="color: #124B82  !important;">View City</h4>
+                      <h4 class="text-900 mb-0" style="color: #124B82  !important;">View Label</h4>
                     </div>
                     <!-- <div class="col col-md-auto">
                         <nav class="nav nav-underline justify-content-end doc-tab-nav align-items-center" role="tablist"><button class="btn btn-link px-2 text-900 copy-code-btn" type="button"><span class="fas fa-copy me-1"></span>Copy Code</button><a class="btn btn-sm btn-phoenix-primary code-btn ms-2" data-bs-toggle="collapse" href="#tooltips-code" role="button" aria-controls="tooltips-code" aria-expanded="false"> <span class="me-2" data-feather="code"></span>View code</a><a class="btn btn-sm btn-phoenix-primary preview-btn ms-2"><span class="me-2" data-feather="eye"></span>Preview</a></nav>
@@ -5015,7 +5016,7 @@
                 </div>
                 <div class="text-right" style="padding-right: 28px; padding-top: 30px;z-index: 9999;">  
                     <a style="float:right;font-size: 15px !important;" href="#" ><button class="btn btn-primary btn-sm"><i class="fas fa-edit" style="color:white !important;"></i></button></a>
-                  </div>
+                </div>
                 <div class="card-body p-0">
                   <div class="collapse code-collapse" id="tooltips-code">
                     <pre class="scrollbar" style="max-height:420px"><code class="language-html">&lt;form class=&quot;row g-3 needs-validation&quot; novalidate=&quot;&quot;&gt;
@@ -5064,72 +5065,23 @@
                   </div>
                   <div class="p-4 code-to-copy">
                     <form class="row g-3 needs-validation" novalidate="">
-                        <div class="col-sm-6 col-md-4">
-                            <div class="form-floating">
-                              <select class="form-select" disabled id="floatingSelectCountry">
-                                <option value="">Select Country</option>
-                                <option value="Afghanistan">Afghanistan</option>
-                                <option value="Albania">Albania</option>
-                                <option value="Algeria">Algeria</option>
-                                <option value="American Samoa">American Samoa</option>
-                                <option value="Andorra">Andorra</option>
-                                <option value="Angola">Angola</option>
-                                <option value="Anguilla">Anguilla</option>
-                                <option value="Antarctica">Antarctica</option>
-                                <option value="Antigua and Barbuda">Antigua and Barbuda</option>
-                                <option value="Argentina">Argentina</option>
-                                <option value="Armenia">Armenia</option>
-                                <option value="Aruba">Aruba</option>
-                                <option value="Australia">Australia</option>
-                                <option value="Austria">Austria</option>
-                                <option value="Azerbaijan">Azerbaijan</option>
-                                <option value="Bahamas">Bahamas</option>
-                                <option value="Bahrain">Bahrain</option>
-                                <option value="Bangladesh">Bangladesh</option>
-                                <option value="Barbados">Barbados</option>
-                                <option value="Belarus">Belarus</option>
-                                <option value="Belgium">Belgium</option>
-                                <option value="Belize">Belize</option>
-                                <option value="Benin">Benin</option>
-                                <option value="Bermuda">Bermuda</option>
-                                <option value="Bhutan">Bhutan</option>
-                                <option selected value="India">India</option>
-                              </select>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6  col-md-4">
-                            <div class="form-floating">
-                              <select class="form-select" disabled id="floatingSelectCountry">
-                                <option value="">Select State</option>
-                                <option value="Afghanistan">Assam</option>
-                                <option value="Albania">Bihar</option>
-                                <option value="Algeria">Chandigarh</option>
-                                <option value="American Samoa">Chhattisgarh</option>
-                                <option value="Andorra">Dadra and Nagar Haveli</option>
-                                <option value="Angola">Daman and Diu</option>
-                                <option value="Anguilla">Delhi</option>
-                                <option value="Antarctica">Goa</option>
-                                <option value="Antigua and Barbuda">Gujarat</option>
-                                <option selected value="Argentina">Haryana</option>
-                                <option value="Armenia">Himachal Pradesh</option>
-                                <option value="Aruba">Jammu and Kashmir</option>
-                                <option value="Australia">Jharkhand</option>
-                                <option value="Austria">Karnataka</option>
-                                <option value="Azerbaijan">Kerala</option>
-                              </select>
-                            </div>
-                        </div>
-                                
-                      <div class="col-4 position-relative">
+                      <div class="col-6 position-relative">
                         <div class="form-icon-container">
-                          <div class="form-floating"><input disabled value="Gurgaon" class="form-control form-icon-input" id="hqaddress"
+                          <div class="form-floating"><input disabled value="Merchandiser"  class="form-control form-icon-input" id="hqaddress"
                               type="text" placeholder="H.Q Address" /><label class="text-700 form-icon-label"
-                              for="hqaddress">City Name</label></div><span
+                              for="hqaddress">Labels</label></div><span
                             class="fa-solid fa-location-pin text-900 fs--1 form-icon"></span>
                         </div>
                       </div>
-
+                      <div class="col-12 position-relative">
+                        <div class="row g-1">
+                            <div class="mb-0 col-6">
+                                <label class="form-label" for="exampleTextarea">Description</label>
+                                <textarea class="form-control" disabled value="A merchandiser is responsible for shipping records and other product..." id="exampleTextarea" rows="3">A merchandiser is responsible for shipping records and other products from musical artists to stores for the purpose of sales</textarea>
+                            </div> 
+                         </div>
+                      </div>
+                      
                           </div>
                         </div>
                       </div>
