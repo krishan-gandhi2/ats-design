@@ -3702,19 +3702,219 @@
           }
         </script>
         <div class="content">
-            <div class="container-fluid text-center" style="margin-top: 200px; ">
-                <p > <h2 style="color: grey;">Under Development...</h2></p>
+          <div class="row col-md-12">
+            <div class="col-md-4 col-lg-4 col-sm-4 dispay-flex">
+              <h2 class="text-bold text-1100 mb-5"  style="color: #124B82 !important;">Role</h2>
             </div>
-            <footer class="footer position-absolute">
-                <div class="row g-0 justify-content-between align-items-center h-100">
-                  <div class="col-12 col-sm-auto text-center">
-                   <button class="btn navbar-vertical-toggle border-0 fw-semi-bold w-100 white-space-nowrap d-flex align-items-center" style="padding: 0px;"><span class="navbar-vertical-footer-text" style="font-weight: 600;color: #757474;">Thank you for The Glove<span class="d-none d-sm-inline-block"></span><span class="d-none d-sm-inline-block mx-1">|</span><br class="d-sm-none" />2023 &copy;<a class="mx-1" href="#" target="_blank"><img src="../assets/img/icons/clogo.png" style="height: 21px;" alt="The Glove"></a></span></button>
-                  </div>
-                  <div class="col-12 col-sm-auto text-center">
-                    <p class="mb-0 text-600" style="font-size: 13px; font-weight: 620;">v1.0.0</p>
+            <div class="col-md-2 col-lg-2 col-sm-2">
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-6">
+              <div class="row align-items-center justify-content-between g-3 mb-3" style="float: right;">
+                <div class="col col-auto ml-15">
+                  <div class="search-box">
+                    <form class="position-relative" data-bs-toggle="search" data-bs-display="static"><input class="form-control search-input search" type="search" placeholder="Search " aria-label="Search" />
+                      <span class="fas fa-search search-box-icon"></span>
+                    </form>
                   </div>
                 </div>
-              </footer>
+                <div class="col-auto">
+                  <div class="d-flex align-items-center"> <a href="#"  rel="noopener noreferrer"><button class="btn btn-primary">Search</button></a></div>
+                </div>
+                <div class="col-auto">
+                  <div class="d-flex align-items-center"> <a href="create-role.html"  rel="noopener noreferrer"><button class="btn btn-primary">Create Role</button></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="members" data-list='{"valueNames":["customer","email","mobile_number","city","last_active","joined"],"page":10,"pagination":true}'>
+            <div class="px-lg-6 mb-9 bg-white border-y border-300 mt-2 position-relative top-1">
+              <div class="table-responsive scrollbar ms-n1 ps-1">
+                <table class="table table-sm fs--1 mb-0">
+                  <thead>
+                    <tr>
+                      <th class="customer align-middle white-space-nowrap" scope="col" data-sort="joined" style="width:10% !important;  min-width:10px;">Action</th>
+                      <th class="sort align-middle ps-4" scope="col"  style="width:15%; min-width:100px;">Role</th>
+                      <!-- <th class="sort align-middle" scope="col"  style="width:15%; min-width:100px;">Permission</th> -->
+                      <th class="sort align-middle" scope="col"  style="width:15%; min-width:100px;">Created On</th>
+                      <th class="sort align-middle pe-3" scope="col"  style="width:10%; min-width:100px;">Status</th>
+                    </tr>
+                  </thead>
+                  <tbody class="list" id="members-table-body">
+                    <tr class="hover-actions-trigger btn-reveal-trigger position-static">
+                      <td class="customer align-middle white-space-nowrap" >
+                        <div class="font-sans-serif btn-reveal-trigger position-static" ><button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs--2"></span></button>
+                          <div class="dropdown-menu dropdown-end py-2"><a class="dropdown-item" href="view-role.html">View</a><a class="dropdown-item" href="#!">Edit</a>
+                            <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="#!">Delete</a>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="email align-middle white-space-nowrap ps-4">Super Admin</td>
+                      <!-- <td class="email align-middle white-space-nowrap">Requirement: <span class="badge badge-phoenix fs--2 badge-phoenix-primary">All</span></td> -->
+                      <td class="email align-middle white-space-nowrap">12-Mar-23</td>
+                      <td class="mobile_number align-middle white-space-nowrap">
+                        <div class="form-check form-switch">
+                          <input class="form-check-input" id="flexSwitchCheckChecked" type="checkbox" checked="">
+                        </div>
+                      </td>
+                      </td>                     
+                    </tr>
+                    <tr class="hover-actions-trigger btn-reveal-trigger position-static">
+                      <td class="customer align-middle white-space-nowrap" >
+                        <div class="font-sans-serif btn-reveal-trigger position-static" ><button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs--2"></span></button>
+                          <div class="dropdown-menu dropdown-end py-2"><a class="dropdown-item" href="view-role.html">View</a><a class="dropdown-item" href="#!">Edit</a>
+                            <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="#!">Delete</a>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="email align-middle white-space-nowrap ps-4">Manager</td>
+                      <!-- <td class="email align-middle white-space-nowrap">Master: <span class="badge badge-phoenix fs--2 badge-phoenix-success">Created</span></td> -->
+                      <td class="email align-middle white-space-nowrap">12-Mar-23</td>
+                      <td class="mobile_number align-middle white-space-nowrap">
+                        <div class="form-check form-switch">
+                          <input class="form-check-input" id="flexSwitchCheckChecked" type="checkbox" checked="">
+                        </div>
+                      </td>
+                      </td>                     
+                    </tr>
+                    <tr class="hover-actions-trigger btn-reveal-trigger position-static">
+                      <td class="customer align-middle white-space-nowrap" >
+                        <div class="font-sans-serif btn-reveal-trigger position-static" ><button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs--2"></span></button>
+                          <div class="dropdown-menu dropdown-end py-2"><a class="dropdown-item" href="view-role.html">View</a><a class="dropdown-item" href="#!">Edit</a>
+                            <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="#!">Delete</a>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="email align-middle white-space-nowrap ps-4">Editor</td>
+                      <!-- <td class="email align-middle white-space-nowrap">Candidate: <span class="badge badge-phoenix fs--2 badge-phoenix-info">View</span></td> -->
+                      <td class="email align-middle white-space-nowrap">12-Mar-23</td>
+                      <td class="mobile_number align-middle white-space-nowrap">
+                        <div class="form-check form-switch">
+                          <input class="form-check-input" id="flexSwitchCheckChecked" type="checkbox" checked="">
+                        </div>
+                      </td>
+                      </td>                     
+                    </tr>
+                    <tr class="hover-actions-trigger btn-reveal-trigger position-static">
+                      <td class="customer align-middle white-space-nowrap" >
+                        <div class="font-sans-serif btn-reveal-trigger position-static" ><button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs--2"></span></button>
+                          <div class="dropdown-menu dropdown-end py-2"><a class="dropdown-item" href="view-role.html">View</a><a class="dropdown-item" href="#!">Edit</a>
+                            <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="#!">Delete</a>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="email align-middle white-space-nowrap ps-4">Author</td>
+                      <!-- <td class="email align-middle white-space-nowrap">Parser: <span class="badge badge-phoenix fs--2 badge-phoenix-success">Created</span> <span class="badge badge-phoenix fs--2 badge-phoenix-info">View</span></td> -->
+                      <td class="email align-middle white-space-nowrap">14-Mar-23</td>
+                      <td class="mobile_number align-middle white-space-nowrap">
+                        <div class="form-check form-switch">
+                          <input class="form-check-input" id="flexSwitchCheckChecked" type="checkbox" >
+                        </div>
+                      </td>
+                      </td>                     
+                    </tr>
+                    <tr class="hover-actions-trigger btn-reveal-trigger position-static">
+                      <td class="customer align-middle white-space-nowrap" >
+                        <div class="font-sans-serif btn-reveal-trigger position-static" ><button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs--2"></span></button>
+                          <div class="dropdown-menu dropdown-end py-2"><a class="dropdown-item" href="view-role.html">View</a><a class="dropdown-item" href="#!">Edit</a>
+                            <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="#!">Delete</a>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="email align-middle white-space-nowrap ps-4">Contributors</td>
+                      <!-- <td class="email align-middle white-space-nowrap">Master Data: <span class="badge badge-phoenix fs--2 badge-phoenix-info">View</span></td> -->
+                      <td class="email align-middle white-space-nowrap">15-Mar-23</td>
+                      <td class="mobile_number align-middle white-space-nowrap">
+                        <div class="form-check form-switch">
+                          <input class="form-check-input" id="flexSwitchCheckChecked" type="checkbox" >
+                        </div>
+                      </td>
+                      </td>                     
+                    </tr>
+                    <tr class="hover-actions-trigger btn-reveal-trigger position-static">
+                      <td class="customer align-middle white-space-nowrap" >
+                        <div class="font-sans-serif btn-reveal-trigger position-static" ><button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs--2"></span></button>
+                          <div class="dropdown-menu dropdown-end py-2"><a class="dropdown-item" href="view-role.html">View</a><a class="dropdown-item" href="#!">Edit</a>
+                            <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="#!">Delete</a>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="email align-middle white-space-nowrap ps-4">Moderator</td>
+                      <!-- <td class="email align-middle white-space-nowrap">Client: <span class="badge badge-phoenix fs--2 badge-phoenix-success">Created</span><span class="badge badge-phoenix fs--2 badge-phoenix-warning">Edit</span></td> -->
+                      <td class="email align-middle white-space-nowrap">15-Mar-23</td>
+                      <td class="mobile_number align-middle white-space-nowrap">
+                        <div class="form-check form-switch">
+                          <input class="form-check-input" id="flexSwitchCheckChecked" type="checkbox" >
+                        </div>
+                      </td>
+                      </td>                     
+                    </tr>
+                    <tr class="hover-actions-trigger btn-reveal-trigger position-static">
+                      <td class="customer align-middle white-space-nowrap" >
+                        <div class="font-sans-serif btn-reveal-trigger position-static" ><button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs--2"></span></button>
+                          <div class="dropdown-menu dropdown-end py-2"><a class="dropdown-item" href="view-role.html">View</a><a class="dropdown-item" href="#!">Edit</a>
+                            <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="#!">Delete</a>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="email align-middle white-space-nowrap ps-4">Member</td>
+                      <!-- <td class="email align-middle white-space-nowrap">Candidate: <span class="badge badge-phoenix fs--2 badge-phoenix-info">View</span></td> -->
+                      <td class="email align-middle white-space-nowrap">15-Mar-23</td>
+                      <td class="mobile_number align-middle white-space-nowrap">
+                        <div class="form-check form-switch">
+                          <input class="form-check-input" id="flexSwitchCheckChecked" type="checkbox" checked="">
+                        </div>
+                      </td>
+                      </td>                     
+                    </tr>
+                    <tr class="hover-actions-trigger btn-reveal-trigger position-static">
+                      <td class="customer align-middle white-space-nowrap" >
+                        <div class="font-sans-serif btn-reveal-trigger position-static" ><button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs--2"></span></button>
+                          <div class="dropdown-menu dropdown-end py-2"><a class="dropdown-item" href="view-role.html">View</a><a class="dropdown-item" href="#!">Edit</a>
+                            <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="#!">Delete</a>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="email align-middle white-space-nowrap ps-4">User</td>
+                      <!-- <td class="email align-middle white-space-nowrap">Parsing: <span class="badge badge-phoenix fs--2 badge-phoenix-danger">Delete</span></td> -->
+                      <td class="email align-middle white-space-nowrap">15-Mar-23</td>
+                      <td class="mobile_number align-middle white-space-nowrap">
+                        <div class="form-check form-switch">
+                          <input class="form-check-input" id="flexSwitchCheckChecked" type="checkbox" checked="">
+                        </div>
+                      </td>
+                      </td>                     
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="row align-items-center justify-content-between py-2 pe-0 fs--1" style="justify-content: end !important;">
+                <div class="col-auto d-flex">
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>10</option>
+                    <option value="">20</option>
+                    <option value="">50</option>
+                    <option value="">70</option>
+                    <option value="">100</option>
+                    <option value="">200</option>
+                  </select>
+                  <!-- <p class="mb-0 d-none d-sm-block me-3 fw-semi-bold text-900" data-list-info="data-list-info"></p><a class="fw-semi-bold" href="#!" data-list-view="*">View all<span class="fas fa-angle-right ms-1" data-fa-transform="down-1"></span></a><a class="fw-semi-bold d-none" href="#!" data-list-view="less">View Less<span class="fas fa-angle-right ms-1" data-fa-transform="down-1"></span></a> -->
+                </div>
+                <div class="col-auto d-flex"><button class="page-link" data-list-pagination="prev"><span class="fas fa-chevron-left"></span></button>
+                  <ul class="mb-0 pagination"></ul><button class="page-link pe-0" data-list-pagination="next"><span class="fas fa-chevron-right"></span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <footer class="footer position-absolute">
+            <div class="row g-0 justify-content-between align-items-center h-100">
+              <div class="col-12 col-sm-auto text-center">
+               <button class="btn navbar-vertical-toggle border-0 fw-semi-bold w-100 white-space-nowrap d-flex align-items-center" style="padding: 0px;"><span class="navbar-vertical-footer-text" style="font-weight: 600;color: #757474;">Thank you for The Glove<span class="d-none d-sm-inline-block"></span><span class="d-none d-sm-inline-block mx-1">|</span><br class="d-sm-none" />2023 &copy;<a class="mx-1" href="#" target="_blank"><img src="../assets/img/icons/clogo.png" style="height: 21px;" alt="The Glove"></a></span></button>
+              </div>
+              <div class="col-12 col-sm-auto text-center">
+                <p class="mb-0 text-600" style="font-size: 13px; font-weight: 620;">v1.0.0</p>
+              </div>
+            </div>
+          </footer>
         </div>
       </div>
     </main><!-- ===============================================-->

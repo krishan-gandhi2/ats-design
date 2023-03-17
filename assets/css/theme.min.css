@@ -7080,7 +7080,7 @@ textarea.form-control.is-invalid {
     height: var(--phoenix-accordion-btn-icon-width);
     margin-left: auto;
     content: "";
-    /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzDEG5aKSx9COQ9fS44qgUgpzfBew8lKrzMg&usqp=CAU"); */
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzDEG5aKSx9COQ9fS44qgUgpzfBew8lKrzMg&usqp=CAU") !important;
     background-repeat: no-repeat;
     background-size: var(--phoenix-accordion-btn-icon-width);
     -webkit-transition: var(--phoenix-accordion-btn-icon-transition);
@@ -37897,3 +37897,24 @@ html:not(.navbar-vertical-collapsed) .navbar-vertical .firefox .navbar-vibrant .
 .card-first-line .text-left .card-title {
     margin-top: 0px !important;
 }
+.button2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+    
+  }
+
+.button2:hover {
+     border: 2px solid #008CBA;
+     background-color: #008CBA;
+     color: white;
+  }
+.color-blue{
+    color: blue !important;
+  }
+  .ps-25{
+    padding-left: 15px !important;
+  }
+  .mr-5{
+    margin-right: 5px !important;
+  }
