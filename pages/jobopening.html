@@ -99,12 +99,16 @@
       .tab button {
         background-color: inherit;
         float: left;
-        border: none;
         outline: none;
         cursor: pointer;
-        padding: 10px 20px;
+        padding: 4px 15px;
         transition: 0.3s;
         font-size: 17px;
+        color: black;
+        border: 1px solid #459abc;
+        border-bottom: none;
+        border-radius: 8px 8px 0px 0px;
+        margin-right: 20px;
       }
       .tab button:hover {
         color: #459abc;
@@ -115,8 +119,8 @@
       }
       .tabcontent {
         display: none;
-        padding: 6px 12px;
-        border: 1px solid #ccc;
+        padding: 10px 12px;
+        /* border: 1px solid #ccc; */
         border-top: none;
       }
       hr{
@@ -160,6 +164,17 @@
       }
       .lowpaddingbtm{
         padding: 1.5rem 1.5rem 1rem 1.5rem;
+      }
+      .w-90{
+        width: 209px !important;
+      }
+      .m-16{
+        margin-top: 16px;
+      }
+      .only-bdr-btm{
+        border-top: none;
+        border-left: none;
+        border-right: none;
       }
       </style>
       
@@ -3868,13 +3883,13 @@
                       </pre>
                      </div>
                     <div class="p-4 code-to-copy">
-                      <div class="tab">
+                      <div class="tab only-bdr-btm">
                         <button class="tablinks" id="defaultOpen" onclick="openCity(event, 'requirement')">Requirement</button>
                         <button class="tablinks" onclick="openCity(event, 'evaluation')">Evaluation</button>
                         <button class="tablinks" onclick="openCity(event, 'assign')">Assign</button>
                       </div>
                       <div id="requirement" class="tabcontent">
-                        <form class="row g-3 needs-validation" novalidate="">
+                        <form class="row g-3 needs-validation mb-2" novalidate="">
                           <h4 class="mb-3">Client</h4>
                             <hr style="margin: 0px;"> 
                           
@@ -3910,71 +3925,78 @@
                           
                           <hr > 
 
-                          <h4 class="mb-3" style="margin: 0px !important;">Requirement </h4>
-                        
-                          <div class="col-sm-2 col-md-2">
-                            <div class="form-floating"><input class="form-control" id="floatingInputStreet" type="text" placeholder="street" maxlength="100" /><label for="floatingInputStreet">Job Title</label></div>
-                          </div>
-                          <div class="col-sm-2 col-md-2">
-                            <div class="form-floating"><input class="form-control" id="floatingInputStreet" type="text" placeholder="street" maxlength="20" /><label for="floatingInputStreet">Functional</label></div>
-                          </div>
-                          <div class="col-sm-2 col-md-2">
-                            <div class="form-floating">
-                                <select class="form-select" id="floatingSelectCity">
-                                <option selected="selected">Job Type</option>
-                                <option value="1">Permanent </option>
-                                <option value="2">Contract </option>
-                              </select></div>
-                          </div>
-                          <div class="col-sm-2 col-md-2">
-                            <div class="form-floating"><input class="form-control" id="floatingInputStreet" type="text" placeholder="street" /><label for="floatingInputStreet">Functional Area</label></div>
-                          </div>
-                          <div class="col-sm-2 col-md-2">
-                            <div class="form-floating"><input class="form-control" id="floatingInputStreet" type="text" placeholder="street" /><label for="floatingInputStreet">Industry</label></div>
-                          </div>
-                          <div class="col-sm-2 col-md-2">
-                            <div class="form-floating"><input class="form-control" id="floatingInputStreet" type="text" placeholder="street" /><label for="floatingInputStreet">Role</label></div>
-                          </div>
-                          <div class="col-sm-2 col-md-2">
-                            <div class="form-floating">
-                                <select class="form-select" id="floatingSelectCity">
-                                <option selected="selected">--Select Qualification--</option>
-                                <option value="1">M.Sc (Physics) </option>
-                                <option value="2">BBA </option>
-                                <option value="3">MCA </option>
-                                <option value="4">B.Tech (C.S.) </option>
-                                <option value="5">PHD (Physics) </option>
-                              </select>
+                          <h4 class="mb-0" style="margin: 0px !important;">Requirement </h4>
+                          <div class="row col-sm-12 col-md-12 col-lg-12" style="width: 100%; margin-right: 0px; padding-right: 0px;">
+                            <div class=" row col-sm-6 col-md-6 form-floating" style="width: 55%;">
+                              <div class="col-sm-4 col-md-4 position-relative g-3 w-90" >
+                                <div class="form-floating"><input class="form-control" id="floatingInputStreet" type="text" placeholder="street" maxlength="100" /><label for="floatingInputStreet">Job Title</label></div>
+                              </div>
+                              <div class="col-sm-4 col-md-4 position-relative g-3 w-90">
+                                <div class="form-floating"><input class="form-control" id="floatingInputStreet" type="text" placeholder="street" maxlength="20" /><label for="floatingInputStreet">Functional</label></div>
+                              </div>
+                              <div class="col-sm-4 col-md-4 position-relative g-3 w-90">
+                                <div class="form-floating">
+                                    <select class="form-select" id="floatingSelectCity">
+                                    <option selected="selected">Job Type</option>
+                                    <option value="1">Permanent </option>
+                                    <option value="2">Contract </option>
+                                  </select></div>
+                              </div>
+                              <div class="col-sm-4 col-md-4 position-relative g-3 w-90">
+                                <div class="form-floating"><input class="form-control" id="floatingInputStreet" type="text" placeholder="street" /><label for="floatingInputStreet">Functional Area</label></div>
+                              </div>
+                              <div class="col-sm-4 col-md-4 position-relative g-3 w-90">
+                                <div class="form-floating"><input class="form-control" id="floatingInputStreet" type="text" placeholder="street" /><label for="floatingInputStreet">Industry</label></div>
+                              </div>
+                              <div class="col-sm-4 col-md-4 position-relative g-3 w-90">
+                                <div class="form-floating"><input class="form-control" id="floatingInputStreet" type="text" placeholder="street" /><label for="floatingInputStreet">Role</label></div>
+                              </div>
+                              <div class="col-sm-4 col-md-4 position-relative g-3 w-90">
+                                <div class="form-floating">
+                                    <select class="form-select" id="floatingSelectCity">
+                                    <option selected="selected">--Select Qualification--</option>
+                                    <option value="1">M.Sc (Physics) </option>
+                                    <option value="2">BBA </option>
+                                    <option value="3">MCA </option>
+                                    <option value="4">B.Tech (C.S.) </option>
+                                    <option value="5">PHD (Physics) </option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="col-sm-4 col-md-4 position-relative g-3 w-90">
+                                <div class="form-floating"><input class="form-control" id="floatingInputStreet" type="text" placeholder="street" /><label for="floatingInputStreet">Certification </label></div>
+                              </div>
+                              <div class="col-sm-4 col-md-4 position-relative g-3 w-90">
+                                <div class="form-floating"><input class="form-control" id="floatingInputStreet" type="text" placeholder="street" /><label for="floatingInputStreet">Exp Min</label></div>
+                              </div>
+                              <div class="col-sm-4 col-md-4 position-relative g-3 w-90">
+                                <div class="form-floating"><input class="form-control" id="floatingInputStreet" type="text" placeholder="street" /><label for="floatingInputStreet">Exp Max</label></div>
+                              </div>
+                              <div class="col-sm-4 col-md-4 position-relative g-3 w-90">
+                                <div class="form-floating"><input class="form-control" id="floatingInputStreet" type="text" placeholder="street" /><label for="floatingInputStreet">Technologies/Skill</label></div>
+                              </div>
+                              <div class="col-sm-4 col-md-4 position-relative g-3 w-90">
+                                <div class="form-floating"><input class="form-control" id="floatingInputStreet" type="text" placeholder="street" /><label for="floatingInputStreet">Offer Designation</label></div>
+                              </div>
+                              <div class="col-sm-4 col-md-4 position-relative g-3 w-90">
+                                <div class="form-floating">
+                                    <select class="form-select" id="floatingSelectCity">
+                                    <option selected="selected">--Select Interview Type--</option>
+                                    <option value="1">Virtual </option>
+                                    <option value="2">Face to Face </option>
+                                    <option value="2">Bot </option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 position-relative m-16 " style="margin-left: 0px !important; width:588px; padding-left:0px !important; margin-right:0px !important; padding-right:0px;">
+                              <div class="form-floating">
+                                <textarea class="form-control" id="floatingInputStreet" type="text" placeholder="street" style="height: 184px;" ></textarea>
+                                <label for="floatingInputStreet">Description</label>
+                              </div>
                             </div>
                           </div>
-                          <div class="col-sm-2 col-md-2">
-                            <div class="form-floating"><input class="form-control" id="floatingInputStreet" type="text" placeholder="street" /><label for="floatingInputStreet">Certification </label></div>
-                          </div>
-                          <div class="col-sm-2 col-md-2">
-                            <div class="form-floating"><input class="form-control" id="floatingInputStreet" type="text" placeholder="street" /><label for="floatingInputStreet">Exp Min</label></div>
-                          </div>
-                          <div class="col-sm-2 col-md-2">
-                            <div class="form-floating"><input class="form-control" id="floatingInputStreet" type="text" placeholder="street" /><label for="floatingInputStreet">Exp Max</label></div>
-                          </div>
-                          <div class="col-sm-2 col-md-2">
-                            <div class="form-floating"><input class="form-control" id="floatingInputStreet" type="text" placeholder="street" /><label for="floatingInputStreet">Technologies/Skill</label></div>
-                          </div>
-                          <div class="col-sm-2 col-md-2">
-                            <div class="form-floating"><input class="form-control" id="floatingInputStreet" type="text" placeholder="street" /><label for="floatingInputStreet">Offer Designation</label></div>
-                          </div>
-                          <div class="col-sm-2 col-md-2">
-                            <div class="form-floating">
-                                <select class="form-select" id="floatingSelectCity">
-                                <option selected="selected">--Select Interview Type--</option>
-                                <option value="1">Virtual </option>
-                                <option value="2">Face to Face </option>
-                                <option value="2">Bot </option>
-                              </select>
-                            </div>
-                          </div>
-                          <div class="col-sm-4 col-md-4">
-                            <div class="form-floating"><textarea class="form-control" id="floatingInputStreet" type="text" placeholder="street" ></textarea><label for="floatingInputStreet">Description</label></div>
-                          </div>
+
                           <hr> 
 
                           <h4 class="mb-3" style="margin: 0px !important;">Hiring detail </h4>
@@ -4026,7 +4048,7 @@
                         </form>
                       </div>
                       <div id="evaluation" class="tabcontent">
-                        <div class="row text-center container col-md-12 col-lg-12" style="background-color: #f0ebf869;">
+                        <div class="row text-center col-md-12 col-lg-12" style="padding-right: 0px; width: 102%; background-color: #f0ebf869;">
                           <div class="row col-md-12 col-lg-12">
                             <div class="col-md-3 col-lg-3"><p> </p></div>
                             <div class="col-md-7 col-lg-7">
@@ -4035,9 +4057,16 @@
                                     <div class="col-12 col-xl-12 col-lg-12">
                                         <div class="card h-100">
     
-                                            <div class="card-body">
-                                                <input class="eva-sht-inpt-head" type="text" placeholder="Untitled form" value="Untitled form" style="font-size:2rem;" /><br>
-                                                <input class="eva-sht-inpt-head" type="text" placeholder="Form description" />
+                                            <div class="card-body" style="margin:-13px 0px -13px 0px;">
+                                              <div class="row col-12">
+                                                  <div class="col-md-6"> <p style="text-align: initial; margin-bottom: 0px; margin-top: 4px;">001 Evaluation</p></div>
+                                                  <div class="col-md-5"></div>
+                                                  <div class="col-md-1">
+                                                    <button class="btn btn-primary btn-sm">
+                                                      <i class="fas fa-plus" style="color:white !important; align-items: end;"></i>
+                                                    </button>
+                                                  </div>
+                                              </div>
                                             </div>
     
                                         </div>
@@ -4045,9 +4074,18 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="col-md-2 col-lg-2">
-                              <div class="text-right" style="padding-right: 28px; padding-top: 30px;z-index: 9999;">  
-                                <a style="float:right;font-size: 15px !important;" href="jobopeningformview.html" ><button class="btn btn-primary btn-sm"><i class="fas fa-eye" style="color:white !important;"></i> View</button></a>
+                            <div class="col-md-1 col-lg-1">
+                              <div class="text-right" style="margin-left: 86px; padding-right: 0px; padding-top: 12px;z-index: 9999;">  
+                                <a style="float:right;font-size: 15px !important;" href="jobopeningformview.html" >
+                                  <button class="btn btn-primary btn-sm" style="width:100px;"><i class="fas fa-eye" style="color:white !important;"></i> Preview</button>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col-md-1 col-lg-1">
+                              <div class="text-right" style=" width:92px; padding-right: 0px; padding-top: 12px;z-index: 9999;">  
+                                <a style="float:right;font-size: 15px !important;" href="jobopeningformview.html" >
+                                  <button class="btn btn-primary btn-sm" style="width: 95px;"><i class="far fa-save" style="color:white !important;"></i> Save</button>
+                                </a>
                               </div>
                             </div>
                           </div>
@@ -4061,27 +4099,27 @@
                                         <div class="card h-100">
                                             <div class="card-body lowpaddingbtm">
                                                 <div class="d-flex align-items-center mb-1">
-                                                    <input class="eva-sht-inpt-head" type="text" placeholder="Question" value="Highest education and marks obtained?" />
+                                                    <input class="eva-sht-inpt-head " type="text" placeholder="Question" value="Highest education and marks obtained?" />
                                                     <select class="form-select w-50" id="floatingSelectCity">
                                                       <option selected="selected" value="sa">Short Answer</option>
                                                       <option value="pr">Paragraph</option>
                                                       <option value="mc">Multiple choice</option>
-                                                      <option value="cb">Checkbox</option>
-                                                      <option value="dd">Dropdown</option>
+                                                      <option value="cb">Option</option>
                                                     </select>
                                                 </div>
-                                                <div class="form-floating">
-                                                    <input class="eva-sht-inpt-an" type="text" placeholder="Short answer text" disabled />
-                                                </div>
+                                                <div class="d-flex align-items-center mb-1">
+                                                  <input class="form-control form-icon-input" type="text" placeholder="Short answer text" disabled />
+                                                  <select class="form-select" id="floatingSelectCity" style="margin-left: 202px;">
+                                                    <option value="tx">Text</option>
+                                                    <option selected="selected" value="nm">Numeric</option>
+                                                  </select>
+                                              </div>
+                                                
 
                                                 <div class="row g-1 g-sm-3 lh-1">
                                                   <div class="col-12 col-sm-auto flex-1 text-truncate"><a class="fw-semi-bold fs--1" href="#!"></a>
                                                   </div>
-                                                  <div class="col-12 col-sm-auto">
-                                                    <div class="d-flex align-items-center">
-                                                      <span class="me-2 mt-2" data-feather="copy" style="stroke-width:2; "></span>
-                                                    </div>
-                                                  </div>
+                                                  
                                                   <div class="col-12 col-sm-auto" style="border-right: 1px solid #dadce0; height: 32px;">
                                                       <div class="d-flex align-items-center">
                                                         <span class="me-2  mt-2" data-feather="trash" style="stroke-width:2; "></span>
@@ -4089,7 +4127,7 @@
                                                   </div>
                                                   <div class="col-12 col-sm-auto">
                                                       <div class="d-flex align-items-center">
-                                                        <span class="me-2 mt-2" data-feather="plus-circle" style="stroke-width:2;margin-left:4px; "></span>
+                                                        <span class="me-2 mt-2" style="padding:0px 3px; margin:0px; border:1px solid #459abc; border-radius:50%;">1</span>
                                                       </div>
                                                   </div>
                                                 </div>
@@ -4118,22 +4156,20 @@
                                                       <option value="sa">Long Answer</option>
                                                       <option selected="selected" value="pr">Paragraph</option>
                                                       <option value="mc">Multiple choice</option>
-                                                      <option value="cb">Checkbox</option>
-                                                      <option value="dd">Dropdown</option>
+                                                      <option value="cb">Option</option>
                                                     </select>
                                                 </div>
-                                                <div class="form-floating">
-                                                    <input class="eva-sht-inpt-an" type="text" placeholder="Long answer text" disabled />
+                                                <div class="d-flex align-items-center mb-1">
+                                                  <input class="form-control form-icon-input" style="width:100%; margin-right:4px;" type="text" placeholder="Long answer text"  disabled  />
+                                                  <select class="form-select" id="floatingSelectCity" style="    width: 51%;">
+                                                    <option value="tx">Text</option>
+                                                    <option selected="selected" value="nm">Numeric</option>
+                                                  </select>
                                                 </div>
-                                                
                                                 <div class="row g-1 g-sm-3 lh-1">
                                                   <div class="col-12 col-sm-auto flex-1 text-truncate"><a class="fw-semi-bold fs--1" href="#!"></a>
                                                   </div>
-                                                  <div class="col-12 col-sm-auto">
-                                                    <div class="d-flex align-items-center">
-                                                      <span class="me-2 mt-2" data-feather="copy" style="stroke-width:2; "></span>
-                                                    </div>
-                                                  </div>
+                                                  
                                                   <div class="col-12 col-sm-auto" style="border-right: 1px solid #dadce0; height: 32px;">
                                                       <div class="d-flex align-items-center">
                                                         <span class="me-2  mt-2" data-feather="trash" style="stroke-width:2; "></span>
@@ -4141,7 +4177,7 @@
                                                   </div>
                                                   <div class="col-12 col-sm-auto">
                                                       <div class="d-flex align-items-center">
-                                                        <span class="me-2 mt-2" data-feather="plus-circle" style="stroke-width:2;margin-left:4px; "></span>
+                                                        <span class="me-2 mt-2" style="padding:0px 3px; margin:0px; border:1px solid #459abc; border-radius:50%;">2</span>
                                                       </div>
                                                   </div>
                                                 </div>
@@ -4167,9 +4203,8 @@
                                                     <select class="form-select w-50" id="floatingSelectCity">
                                                       <option value="sa">Short Answer</option>
                                                       <option value="pr">Paragraph</option>
-                                                      <option selected="selected" value="mc">Multiple choice</option>
-                                                      <option value="cb">Checkbox</option>
-                                                      <option value="dd">Dropdown</option>
+                                                      <option selected="selected" value="10pxmc">Option</option>
+                                                      <option value="cb">Multiple choice</option>
                                                     </select>
                                                 </div>
                                                 <div class="form-floating" style="text-align: left;">
@@ -4190,11 +4225,7 @@
                                                 <div class="row g-1 g-sm-3 lh-1">
                                                   <div class="col-12 col-sm-auto flex-1 text-truncate"><a class="fw-semi-bold fs--1" href="#!"></a>
                                                   </div>
-                                                  <div class="col-12 col-sm-auto">
-                                                    <div class="d-flex align-items-center">
-                                                      <span class="me-2 mt-2" data-feather="copy" style="stroke-width:2; "></span>
-                                                    </div>
-                                                  </div>
+                                                  
                                                   <div class="col-12 col-sm-auto" style="border-right: 1px solid #dadce0; height: 32px;">
                                                       <div class="d-flex align-items-center">
                                                         <span class="me-2  mt-2" data-feather="trash" style="stroke-width:2; "></span>
@@ -4202,7 +4233,7 @@
                                                   </div>
                                                   <div class="col-12 col-sm-auto">
                                                       <div class="d-flex align-items-center">
-                                                        <span class="me-2 mt-2" data-feather="plus-circle" style="stroke-width:2;margin-left:4px; "></span>
+                                                        <span class="me-2 mt-2" style="padding:0px 3px; margin:0px; border:1px solid #459abc; border-radius:50%;">3</span>
                                                       </div>
                                                   </div>
                                                 </div>
@@ -4228,11 +4259,11 @@
                                                     <select class="form-select w-50" id="floatingSelectCity">
                                                       <option value="sa">Short Answer</option>
                                                       <option value="pr">Paragraph</option>
-                                                      <option value="mc">Multiple choice</option>
-                                                      <option selected="selected" value="cb">Checkbox</option>
-                                                      <option value="dd">Dropdown</option>
+                                                      <option  selected="selected" value="mc">Multiple choice</option>
+                                                      <option value="cb">Option</option>
                                                     </select>
                                                 </div>
+                                                
                                                 <div class="form-floating" style="text-align: left;">
                                                   <div class="form-check">
                                                       <input class="form-check-input" id="invalidCheck" type="checkbox" value="" required="" />
@@ -4255,11 +4286,7 @@
                                                 <div class="row g-1 g-sm-3 lh-1">
                                                   <div class="col-12 col-sm-auto flex-1 text-truncate"><a class="fw-semi-bold fs--1" href="#!"></a>
                                                   </div>
-                                                  <div class="col-12 col-sm-auto">
-                                                    <div class="d-flex align-items-center">
-                                                      <span class="me-2 mt-2" data-feather="copy" style="stroke-width:2; "></span>
-                                                    </div>
-                                                  </div>
+                                                  
                                                   <div class="col-12 col-sm-auto" style="border-right: 1px solid #dadce0; height: 32px;">
                                                       <div class="d-flex align-items-center">
                                                         <span class="me-2  mt-2" data-feather="trash" style="stroke-width:2; "></span>
@@ -4267,7 +4294,7 @@
                                                   </div>
                                                   <div class="col-12 col-sm-auto">
                                                       <div class="d-flex align-items-center">
-                                                        <span class="me-2 mt-2" data-feather="plus-circle" style="stroke-width:2;margin-left:4px; "></span>
+                                                        <span class="me-2 mt-2" style="padding:0px 3px; margin:0px; border:1px solid #459abc; border-radius:50%;">4</span>
                                                       </div>
                                                   </div>
                                                 </div>
@@ -4286,10 +4313,10 @@
                           <div class="col-md-3 col-lg-3"></div>
                         </div>
                       </div>
-                      <div id="assign" class="tabcontent">
+                      <div id="assign" class="tabcontent mb-2">
                         <form class="row g-3 needs-validation" novalidate="">
-                          <h4 class="mb-3">Status and Assign</h4>
-                          <div class="col-sm-2 col-md-2">
+                          <!-- <h4 class="mb-3">Status and Assign</h4> -->
+                          <div class="col-sm-2 col-md-2" style="margin-left: 10px;">
                             <div class="form-floating">
                               <select class="form-select" id="floatingSelectCity">
                                 <option selected="selected">--Select Assigned To--</option>
