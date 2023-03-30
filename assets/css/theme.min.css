@@ -4310,7 +4310,7 @@ textarea.form-control-lg {
     padding: .5rem 2.5rem .5rem 1rem;
     -moz-padding-start: calc(1rem - 3px);
     font-size: 0.7rem;
-    font-weight: 600;
+    font-weight: 700 !important;
     line-height: 1.49;
     color: var(--phoenix-900);
     background-color: var(--phoenix-input-bg);

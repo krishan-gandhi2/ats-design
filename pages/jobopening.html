@@ -60,6 +60,8 @@
  
       
     <style>
+      @import url(https://fonts.googleapis.com/css?family=Roboto:700);
+
       .collapsible1 {
         background-color: #4599BB;
         color: white;
@@ -176,6 +178,73 @@
         border-left: none;
         border-right: none;
       }
+
+
+
+
+.container {
+  z-index: 1;
+  width: 106%;
+  color: white;
+  background: #2979FF;
+  font-family: 'Roboto', sans-serif;
+  /* margin-top: 20%; */
+}
+
+#progressbar {
+  counter-reset: step;
+}
+
+#progressbar li {
+  position: relative;
+  list-style: none;
+  float: left;
+  width: 33.33%;
+  text-align: center;
+}
+
+/* Circles */
+#progressbar li:before {
+  content: counter(step);
+  counter-increment: step;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #459ABC;
+  display: block;
+  text-align: center;
+  margin: 0 auto 7px auto;
+  border-radius: 50%;
+  background-color: #f7fbfc;
+  color: black;
+   
+  /* Center # in circle */
+  line-height: 30px;
+  margin-top: 6px;
+}
+
+#progressbar li:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #459ABC !important;
+  top: 20px; /*half of height Parent (li) */
+  left: -50%;
+  z-index: -1;
+}
+
+#progressbar li:first-child:after {
+  content: none;
+}
+
+#progressbar li.active:before {
+  background: #459ABC;
+  content: "✔";  
+}
+
+#progressbar li.active + li:after {
+  background: #459ABC;
+}
       </style>
       
   </head>
@@ -3829,8 +3898,18 @@
                 <div class="card shadow-none border border-300 my-4" data-component-card="data-component-card">
                   <div class="card-header p-4 border-bottom border-300 bg-soft">
                     <div class="row g-3 justify-content-between align-items-center">
-                      <div class="col-11 col-md">
+                      <div class="col-3 col-md">
                         <h4 class="text-900 mb-0" style="color: #124B82 !important;">Create Requirement</h4>
+                        </div>
+                      <div class="col-9 col-md" style="height: 30px; margin-top: -23px;">
+                        <div class="container">
+                          <ul id="progressbar">
+                            <li class="active"></li>
+                            <div style="border-top: 2px black;"></div>
+                            <li></li>
+                            <li></li>
+                          </ul>
+                        </div>
                       </div>
                       <!-- <div class="col col-md-auto">
                         <nav class="nav nav-underline justify-content-end doc-tab-nav align-items-center" role="tablist"><button class="btn btn-link px-2 text-900 copy-code-btn" type="button"><span class="fas fa-copy me-1"></span>Copy Code</button><a class="btn btn-sm btn-phoenix-primary code-btn ms-2" data-bs-toggle="collapse" href="#tooltips-code" role="button" aria-controls="tooltips-code" aria-expanded="false"> <span class="me-2" data-feather="code"></span>View code</a><a class="btn btn-sm btn-phoenix-primary preview-btn ms-2"><span class="me-2" data-feather="eye"></span>Preview</a></nav>
@@ -3954,6 +4033,18 @@
                               <div class="col-sm-4 col-md-4 position-relative g-3 w-90">
                                 <div class="form-floating">
                                     <select class="form-select" id="floatingSelectCity">
+                                    <option selected="selected">--Job Location--</option>
+                                    <option value="1">Delhi</option>
+                                    <option value="2">Gurugram</option>
+                                    <option value="3">Noida</option>
+                                    <option value="4">Rohini</option>
+                                    <option value="5">Badarpur</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="col-sm-4 col-md-4 position-relative g-3 w-90">
+                                <div class="form-floating">
+                                    <select class="form-select" id="floatingSelectCity">
                                     <option selected="selected">--Select Qualification--</option>
                                     <option value="1">M.Sc (Physics) </option>
                                     <option value="2">BBA </option>
@@ -4038,6 +4129,25 @@
                                 <option value="2">B</option>
                                 <option value="2">C</option>
                               </select></div>
+                          </div>
+                          <div class="col-sm-4 col-md-4 position-relative g-3 w-90" >
+                            <div class="form-floating"><input class="form-control" id="floatingInputStreet" type="" placeholder="street" maxlength="100" style="color: white;" /><label for="floatingInputStreet">JD Upload</label></div>
+                          </div>
+                          <div class="col-sm-4 col-md-4 position-relative g-3 w-90" >
+                            <div class="form-floating"><input class="form-control" id="floatingInputStreet" type="number" placeholder="0001" value="0001" maxlength="100" disabled /><label for="floatingInputStreet">Id</label></div>
+                          </div>
+                          <div class="col-sm-4 col-md-4 position-relative g-3 w-90" >
+                            <div class="form-floating">
+                              <select class="form-select" id="floatingSelectCity">
+                                <option selected="selected">--Select Assigned to--</option>
+                                <option value="1">Ashish Saini</option>
+                                <option value="2">Dheeraj</option>
+                                <option value="2">Abhinav</option>
+                                <option value="2">Gaurav</option>
+                                <option value="2">Rahul Gandhi</option>
+                                <option value="2">Raghu</option>
+                              </select>
+                            </div>
                           </div>
                           <!-- <div class="col-sm-2 col-md-2">
                             <div class="form-floating"><input class="form-control" id="floatingInputStreet" type="text" placeholder="street" /><label for="floatingInputStreet">Unique ID</label></div>
@@ -4319,25 +4429,32 @@
                           <div class="col-sm-2 col-md-2" style="margin-left: 10px;">
                             <div class="form-floating">
                               <select class="form-select" id="floatingSelectCity">
-                                <option selected="selected">--Select Assigned To--</option>
-                                <option value="1">A</option>
-                                <option value="2">B</option>
-                                <option value="2">C</option>
+                                <option selected="selected">--Select Assignee--</option>
+                                <option value="1">Ashish Saini</option>
+                                <option value="2">Dheeraj</option>
+                                <option value="2">Abhinav</option>
+                                <option value="2">Gaurav</option>
+                                <option value="2">Rahul Gandhi</option>
+                                <option value="2">Raghu</option>
                               </select>
                             </div>
                           </div>
-                          <div class="col-sm-2 col-md-2">
+                          <div class="col-sm-2 col-md-2" style="margin-left: 10px;">
                             <div class="form-floating">
-                                <select class="form-select" id="floatingSelectCity">
-                                <option selected="selected">--Select Status--</option>
-                                <option value="1">Active</option>
-                                <option value="1">Deactivate</option>
-                                <option value="1">Closed</option>
-                                <option value="1">Drop</option>
-                                <option value="1">Hold</option>
-                                <option value="1">Fulfilled</option>
-                                <option value="1">Profile Submitted </option>
-                              </select></div>
+                              <div class="form-icon-container">
+                                <div class="form-floating"><input  class="form-control datetimepicker form-icon-input" id="FulfillBy" type="text" placeholder="Start Date" /><label class="text-700 form-icon-label" for="FulfillBy">Start Date</label></div><span class="fa-solid fa-calendar-alt text-900 fs--1 form-icon"></span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-2 col-md-2" style="margin-left: 10px;">
+                            <div class="form-floating">
+                              <div class="form-icon-container">
+                                <div class="form-floating"><input  class="form-control datetimepicker form-icon-input" id="FulfillBy" type="text" placeholder="End Date" /><label class="text-700 form-icon-label" for="FulfillBy">End Date</label></div><span class="fa-solid fa-calendar-alt text-900 fs--1 form-icon"></span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4 col-md-4 position-relative g-3 w-90" >
+                            <div class="form-floating"><input class="form-control" id="floatingInputStreet" type="number" placeholder="No. of cv's (per day)" maxlength="100" /><label for="floatingInputStreet">No. of CV</label></div>
                           </div>
                         </form>
                       </div>
