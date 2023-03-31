@@ -4156,10 +4156,16 @@
                             <div class="form-floating"><input class="form-control" id="floatingInputStreet" type="text" placeholder="street" /><label for="floatingInputStreet">Remark</label></div>
                           </div>
                         </form>
+                        <div class="col-12 gy-6">
+                          <div class="row g-1 p-2 justify-content-end">
+                            <div class="col-auto"><button data-bs-dismiss="modal" class="btn btn-primary btn-sm" style="margin-right: 3px;">Save</button></div>
+                            <div class="col-auto"><button type="submit" class="btn btn-primary btn-sm" onclick="openCity(event, 'evaluation')">Save & Next</button></div>
+                          </div>
+                        </div>
                       </div>
                       <div id="evaluation" class="tabcontent">
                         <div class="row text-center col-md-12 col-lg-12" style="padding-right: 0px; width: 102%; background-color: #f0ebf869;">
-                          <div class="row col-md-12 col-lg-12">
+                          <!-- <div class="row col-md-12 col-lg-12">
                             <div class="col-md-3 col-lg-3"><p> </p></div>
                             <div class="col-md-7 col-lg-7">
                               <div id="card-center">
@@ -4185,20 +4191,20 @@
                               </div>
                             </div>
                             <div class="col-md-1 col-lg-1">
-                              <div class="text-right" style="margin-left: 86px; padding-right: 0px; padding-top: 12px;z-index: 9999;">  
+                              <div class="text-right" style="margin-left: 53px; padding-right: 0px; padding-top: 12px;z-index: 9999;">  
                                 <a style="float:right;font-size: 15px !important;" href="jobopeningformview.html" >
-                                  <button class="btn btn-primary btn-sm" style="width:100px;"><i class="fas fa-eye" style="color:white !important;"></i> Preview</button>
+                                  <button class="btn btn-primary btn-sm" style="width:48px;"><i class="fas fa-plus" style="color:white !important;"></i></button>
                                 </a>
                               </div>
                             </div>
                             <div class="col-md-1 col-lg-1">
-                              <div class="text-right" style=" width:92px; padding-right: 0px; padding-top: 12px;z-index: 9999;">  
+                              <div class="text-right" style=" width:76px; padding-right: 0px; padding-top: 12px;z-index: 9999;">  
                                 <a style="float:right;font-size: 15px !important;" href="jobopeningformview.html" >
-                                  <button class="btn btn-primary btn-sm" style="width: 95px;"><i class="far fa-save" style="color:white !important;"></i> Save</button>
+                                  <button class="btn btn-primary btn-sm" style="width: 100px;"><i class="far fa-eye" style="color:white !important;"></i> Preview</button>
                                 </a>
                               </div>
                             </div>
-                          </div>
+                          </div> -->
 
                           <div class="row col-md-12 col-lg-12 mt-2">
                             <div class="col-md-3 col-lg-3"><p> </p></div>
@@ -4248,6 +4254,20 @@
                                     </div>
                                     
                                 </div>
+                              </div>
+                            </div>
+                            <div class="col-md-1 col-lg-1">
+                              <div class="text-right" style="margin-left: 53px; padding-right: 0px; padding-top: 12px;z-index: 9999;">  
+                                <a style="float:right;font-size: 15px !important;" href="" >
+                                  <button class="btn btn-primary btn-sm" style="width:48px;"><i class="fas fa-plus" style="color:white !important;"></i></button>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col-md-1 col-lg-1">
+                              <div class="text-right" style=" width:76px; padding-right: 0px; padding-top: 12px;z-index: 9999;">  
+                                <a style="float:right;font-size: 15px !important;" href="jobopeningformview.html" >
+                                  <button class="btn btn-primary btn-sm" style="width: 100px;"><i class="far fa-eye" style="color:white !important;"></i> Preview</button>
+                                </a>
                               </div>
                             </div>
                             <div class="col-md-2 col-lg-2"></div>
@@ -4421,7 +4441,17 @@
                           </div>
 
                           <div class="col-md-3 col-lg-3"></div>
+                          <div class="row g-1 justify-content-end">
+                            <div class="col-12 mt-0">
+                             <div class="col-auto" style="text-align: end;">
+                              <a style="float:right;font-size: 15px !important;" href="jobopeningformview.html" >
+                              <button data-bs-dismiss="modal" class="btn btn-primary btn-sm" style="margin-right: 28px; width: 70px;">Save</button>
+                              </a>
+                            </div>
+                            </div>
+                          </div>
                         </div>
+                       
                       </div>
                       <div id="assign" class="tabcontent mb-2">
                         <form class="row g-3 needs-validation" novalidate="">
@@ -4430,12 +4460,12 @@
                             <div class="form-floating">
                               <select class="form-select" id="floatingSelectCity">
                                 <option selected="selected">--Select Assignee--</option>
-                                <option value="1">Ashish Saini</option>
-                                <option value="2">Dheeraj</option>
-                                <option value="2">Abhinav</option>
-                                <option value="2">Gaurav</option>
-                                <option value="2">Rahul Gandhi</option>
-                                <option value="2">Raghu</option>
+                                <option value="1">Raghav</option>
+                                <option value="2">Pankaj</option>
+                                <option value="2">Jitender</option>
+                                <option value="2">Sidharth</option>
+                                <option value="2">Parmish</option>
+                                <option value="2">Rajvinder</option>
                               </select>
                             </div>
                           </div>
@@ -4457,6 +4487,15 @@
                             <div class="form-floating"><input class="form-control" id="floatingInputStreet" type="number" placeholder="No. of cv's (per day)" maxlength="100" /><label for="floatingInputStreet">No. of CV</label></div>
                           </div>
                         </form>
+                        <div class="row g-1 p-2 justify-content-end">
+                          <div class="col-12 gy-6 mt-0">
+                           
+                           <div class="col-auto" style="text-align: end;">
+                            <button data-bs-dismiss="modal" class="btn btn-primary btn-sm" style="margin-right: 3px;">Save</button>
+                            <button type="submit" class="btn btn-primary btn-sm">Submit</button>
+                          </div>
+                          </div>
+                        </div>
                       </div>
                       </div>
                     </div>
