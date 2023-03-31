@@ -3900,9 +3900,11 @@
                     <div class="row g-3 justify-content-between align-items-center">
                       <div class="col-3 col-md">
                         <h4 class="text-900 mb-0" style="color: #124B82 !important;">Create Requirement</h4>
+                        <span id="textShow" style="display:none; margin-left: 24rem; margin-top: -23px;"> 001 Java Developer</span>
                         </div>
                       <div class="col-9 col-md" style="height: 30px; margin-top: -23px;">
                         <div class="container">
+                          
                           <ul id="progressbar">
                             <li class="active"></li>
                             <div style="border-top: 2px black;"></div>
@@ -3964,7 +3966,7 @@
                     <div class="p-4 code-to-copy">
                       <div class="tab only-bdr-btm">
                         <button class="tablinks" id="defaultOpen" onclick="openCity(event, 'requirement')">Requirement</button>
-                        <button class="tablinks" onclick="openCity(event, 'evaluation')">Evaluation</button>
+                        <button class="tablinks" value="open" id="evaluationTextShow" onclick="openCity(event, 'evaluation')">Evaluation</button>
                         <button class="tablinks" onclick="openCity(event, 'assign')">Assign</button>
                       </div>
                       <div id="requirement" class="tabcontent">
@@ -4437,9 +4439,7 @@
                             </div>
                             <div class="col-md-2 col-lg-2"></div>
                           </div>
-                            
                           </div>
-
                           <div class="col-md-3 col-lg-3"></div>
                           <div class="row g-1 justify-content-end">
                             <div class="col-12 mt-2">
@@ -4523,8 +4523,22 @@
     </main>
     <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
     <script>
+      $('.tablinks').click(function(){
+        if ($(this).val() == 'open') {
+          $('#textShow').css('display','block');
+        }else{
+          $('#textShow').css('display','none');
+        }
+      })
+    </script>
+    <script>
+      // $("#evaluationTextShow").click(function(){
+      // $('#textShow').css('display','block');
+      // });
+
       function openCity(evt, cityName) {
         var i, tabcontent, tablinks;
+       
         tabcontent = document.getElementsByClassName("tabcontent");
         for (i = 0; i < tabcontent.length; i++) {
           tabcontent[i].style.display = "none";
