@@ -26172,13 +26172,13 @@ pre[class*=language-] {
 .choices .choices__list--dropdown .choices__item--selectable {
     padding: 2px 1rem;
     padding-right: 20px;
-    font-size: 1rem !important;
-    background-color: var(--phoenix-gray-200);
+    font-size: 0.8rem !important;
+    background-color:var(--phoenix-white);
     color: var(--phoenix-body-color)
 }
 
 .choices .choices__list--dropdown .choices__item--selectable.is-highlighted {
-    background-color: var(--phoenix-primary);
+    background-color: rgb(173, 225, 245);
     color: var(--phoenix-white)
 }
 
