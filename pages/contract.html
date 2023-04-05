@@ -175,7 +175,7 @@
                   <span data-feather="user-check"></span>
                 </span>
                 <span class="nav-link-text-wrapper">
-                  <span class="nav-link-text">Assigned</span>
+                  <span class="nav-link-text">View</span>
                 </span>
               </div>
             </a>
@@ -3704,7 +3704,7 @@
         <div class="content">
             <div class="row col-md-12">
                 <div class="col-md-4 col-lg-4 col-sm-4 dispay-flex">
-                  <h2 class="text-bold text-1100 mb-5"  style="color: #124B82 !important;">Assignment</h2>
+                  <h2 class="text-bold text-1100 mb-5"  style="color: #124B82 !important;">Contract</h2>
                  
                 </div>
                 <div class="col-md-2 col-lg-2 col-sm-2">
@@ -3735,13 +3735,14 @@
                       <thead>
                         <tr>
                           <th class="customer align-middle white-space-nowrap" scope="col" data-sort="joined" style="width:5% !important;  min-width:10px;">Action</th>
-                          <th class="sort align-middle" scope="col" data-sort="customer" style="width:15%; min-width:100px;">Job Code</th>
+                          <th class="sort align-middle" scope="col" data-sort="customer" style="width:5%; min-width:100px;">#id</th>
                           <th class="sort align-middle" scope="col" data-sort="customer" style="width:15%; min-width:100px;">Client Name</th>
+                          <th class="sort align-middle" scope="col" data-sort="customer" style="width:15%; min-width:100px;">Client Code</th>
                           <!-- <th class="sort align-middle" scope="col" data-sort="email" style="width:15%; min-width:100px;">Department</th> -->
-                          <th class="sort align-middle pe-3" scope="col" data-sort="mobile_number" style="width:10%; min-width:100px;">Job Title</th>
-                          <th class="sort align-middle" scope="col" data-sort="city" style="width:15%; text-align: center !important; min-width:100px;">Fulfilled By</th>
-                          <th class="sort align-middle text-end" scope="col" data-sort="last_active" style="width:15%;  min-width:100px; text-align: center !important;">Assigned</th>
-                          <th class="sort align-middle text-end pe-0" scope="col" data-sort="joined" style="width:15%;  min-width:100px; text-align: center !important;">Status</th>
+                          <th class="sort align-middle" scope="col" data-sort="city" style="width:15%; text-align: center !important; min-width:100px;">Start Date</th>
+                          <th class="sort align-middle" scope="col" data-sort="city" style="width:15%; text-align: center !important; min-width:100px;">End Date</th>
+                          <th class="sort align-middle text-end" scope="col" data-sort="last_active" style="width:15%;  min-width:100px; text-align: center !important;">Rates Slab</th>
+                          <th class="sort align-middle text-end pe-0" scope="col" data-sort="joined" style="width:15%;  min-width:100px; text-align: center !important;">Flat rate</th>
                         </tr>
                       </thead>
                       <tbody class="list" id="members-table-body">
@@ -3749,18 +3750,19 @@
                           <td class="customer align-middle white-space-nowrap" >
                             <div class="font-sans-serif btn-reveal-trigger position-static" ><button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs--2"></span></button>
                               <div class="dropdown-menu dropdown-end py-2">
-                                <a class="dropdown-item" href="#">Assigned</a>
-                                <a class="dropdown-item" href="#!">Status</a>
+                                <a class="dropdown-item" href="#">View</a>
+                                <a class="dropdown-item" href="#!">Edit</a>
                                 <!-- <a class="dropdown-item" href="#">Location</a> -->
                                 <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="#!">Remove</a>
                               </div>
                             </div>
                           </td>
-                          <td class="email align-middle white-space-nowrap"><a href="#">ABC001</a></td>
+                          <td class="email align-middle white-space-nowrap"><a href="#">01</a></td>
                           <td class="email align-middle white-space-nowrap">Apple</td>
+                          <td class="email align-middle white-space-nowrap"><a href="#">ABC001</a></td>
                           <!-- <td class="email align-middle white-space-nowrap">Tech</td> -->
-                          <td class="mobile_number align-middle white-space-nowrap">Software Developer</td>
                           <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">08-Mar-2023</td>
+                          <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">13-Jun-2023</td>
                           <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Ankit</td>
                           <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Active</td>                     
                         </tr>
@@ -3768,18 +3770,19 @@
                             <td class="customer align-middle white-space-nowrap" >
                               <div class="font-sans-serif btn-reveal-trigger position-static" ><button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs--2"></span></button>
                                 <div class="dropdown-menu dropdown-end py-2">
-                                  <a class="dropdown-item" href="#">Assigned</a>
-                                  <a class="dropdown-item" href="#!">Status</a>
+                                  <a class="dropdown-item" href="#">View</a>
+                                  <a class="dropdown-item" href="#!">Edit</a>
                                   <!-- <a class="dropdown-item" href="#">Location</a> -->
                                   <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="#!">Remove</a>
                                 </div>
                               </div>
                             </td>
+                          <td class="email align-middle white-space-nowrap"><a href="#">02</a></td>
+                          <td class="email align-middle white-space-nowrap">HP</td>
                             <td class="email align-middle white-space-nowrap"><a href="#">ABC002</a></td>
-                            <td class="email align-middle white-space-nowrap">HP</td>
                             <!-- <td class="email align-middle white-space-nowrap">Tech</td> -->
-                            <td class="mobile_number align-middle white-space-nowrap">Web Developer</td>
                             <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">09-Mar-2023</td>
+                            <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">01-Jun-2023</td>
                             <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Krishan</td>
                             <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Hold</td>                     
                           </tr>
@@ -3787,18 +3790,19 @@
                             <td class="customer align-middle white-space-nowrap" >
                               <div class="font-sans-serif btn-reveal-trigger position-static" ><button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs--2"></span></button>
                                 <div class="dropdown-menu dropdown-end py-2">
-                                  <a class="dropdown-item" href="#">Assigned</a>
-                                  <a class="dropdown-item" href="#!">Status</a>
+                                  <a class="dropdown-item" href="#">View</a>
+                                  <a class="dropdown-item" href="#!">Edit</a>
                                   <!-- <a class="dropdown-item" href="#">Location</a> -->
                                   <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="#!">Remove</a>
                                 </div>
                               </div>
                             </td>
+                          <td class="email align-middle white-space-nowrap"><a href="#">03</a></td>
+                          <td class="email align-middle white-space-nowrap">	Netflix</td>
                             <td class="email align-middle white-space-nowrap"><a href="#">ABC003</a></td>
-                            <td class="email align-middle white-space-nowrap">	Netflix</td>
                             <!-- <td class="email align-middle white-space-nowrap">Tech</td> -->
-                            <td class="mobile_number align-middle white-space-nowrap">Software Developer</td>
                             <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">09-Mar-2023</td>
+                            <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">15-May-2023</td>
                             <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Gaurav</td>
                             <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Fulfilled</td>                     
                           </tr>
@@ -3806,18 +3810,19 @@
                             <td class="customer align-middle white-space-nowrap" >
                               <div class="font-sans-serif btn-reveal-trigger position-static" ><button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs--2"></span></button>
                                 <div class="dropdown-menu dropdown-end py-2">
-                                  <a class="dropdown-item" href="#">Assigned</a>
-                                  <a class="dropdown-item" href="#!">Status</a>
+                                  <a class="dropdown-item" href="#">View</a>
+                                  <a class="dropdown-item" href="#!">Edit</a>
                                   <!-- <a class="dropdown-item" href="#">Location</a> -->
                                   <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="#!">Remove</a>
                                 </div>
                               </div>
                             </td>
+                          <td class="email align-middle white-space-nowrap"><a href="#">04</a></td>
+                          <td class="email align-middle white-space-nowrap">Upwork</td>
                             <td class="email align-middle white-space-nowrap"><a href="#">ABC004</a></td>
-                            <td class="email align-middle white-space-nowrap">Upwork</td>
                             <!-- <td class="email align-middle white-space-nowrap">Tech</td> -->
-                            <td class="mobile_number align-middle white-space-nowrap">Web Developer</td>
                             <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">10-Mar-2023</td>
+                            <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">10-May-2023</td>
                             <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Amit</td>
                             <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Profile Submitted</td>                     
                           </tr>
@@ -3825,18 +3830,19 @@
                             <td class="customer align-middle white-space-nowrap" >
                               <div class="font-sans-serif btn-reveal-trigger position-static" ><button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs--2"></span></button>
                                 <div class="dropdown-menu dropdown-end py-2">
-                                  <a class="dropdown-item" href="#">Assigned</a>
-                                  <a class="dropdown-item" href="#!">Status</a>
+                                  <a class="dropdown-item" href="#">View</a>
+                                  <a class="dropdown-item" href="#!">Edit</a>
                                   <!-- <a class="dropdown-item" href="#">Location</a> -->
                                   <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="#!">Remove</a>
                                 </div>
                               </div>
                             </td>
+                          <td class="email align-middle white-space-nowrap"><a href="#">05</a></td>
+                          <td class="email align-middle white-space-nowrap">Intel</td>
                             <td class="email align-middle white-space-nowrap"><a href="#">ABC005</a></td>
-                            <td class="email align-middle white-space-nowrap">Intel</td>
                             <!-- <td class="email align-middle white-space-nowrap">Tech</td> -->
-                            <td class="mobile_number align-middle white-space-nowrap">Software Developer</td>
                             <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">10-Mar-2023</td>
+                            <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">20-May-2023</td>
                             <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Amit</td>
                             <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Active</td>                     
                           </tr>
@@ -3844,18 +3850,19 @@
                             <td class="customer align-middle white-space-nowrap" >
                               <div class="font-sans-serif btn-reveal-trigger position-static" ><button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs--2"></span></button>
                                 <div class="dropdown-menu dropdown-end py-2">
-                                  <a class="dropdown-item" href="#">Assigned</a>
-                                  <a class="dropdown-item" href="#!">Status</a>
+                                  <a class="dropdown-item" href="#">View</a>
+                                  <a class="dropdown-item" href="#!">Edit</a>
                                   <!-- <a class="dropdown-item" href="#">Location</a> -->
                                   <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="#!">Remove</a>
                                 </div>
                               </div>
                             </td>
+                          <td class="email align-middle white-space-nowrap"><a href="#">06</a></td>
+                          <td class="email align-middle white-space-nowrap">	Dell</td>
                             <td class="email align-middle white-space-nowrap"><a href="#">ABC006</a></td>
-                            <td class="email align-middle white-space-nowrap">	Dell</td>
                             <!-- <td class="email align-middle white-space-nowrap">Tech</td> -->
-                            <td class="mobile_number align-middle white-space-nowrap">Web Developer</td>
                             <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">11-Mar-2023</td>
+                            <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">30-Apr-2023</td>
                             <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Krishan</td>
                             <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Deactivate</td>                     
                           </tr>
@@ -3863,18 +3870,19 @@
                             <td class="customer align-middle white-space-nowrap" >
                               <div class="font-sans-serif btn-reveal-trigger position-static" ><button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs--2"></span></button>
                                 <div class="dropdown-menu dropdown-end py-2">
-                                  <a class="dropdown-item" href="#">Assigned</a>
-                                  <a class="dropdown-item" href="#!">Status</a>
+                                  <a class="dropdown-item" href="#">View</a>
+                                  <a class="dropdown-item" href="#!">Edit</a>
                                   <!-- <a class="dropdown-item" href="#">Location</a> -->
                                   <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="#!">Remove</a>
                                 </div>
                               </div>
                             </td>
+                          <td class="email align-middle white-space-nowrap"><a href="#">07</a></td>
+                          <td class="email align-middle white-space-nowrap">Facebook</td>
                             <td class="email align-middle white-space-nowrap"><a href="#">ABC007</a></td>
-                            <td class="email align-middle white-space-nowrap">Facebook</td>
                             <!-- <td class="email align-middle white-space-nowrap">Tech</td> -->
-                            <td class="mobile_number align-middle white-space-nowrap">Software Developer</td>
                             <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">12-Mar-2023</td>
+                            <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">18-May-2023</td>
                             <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Ankit</td>
                             <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Closed</td>                     
                           </tr>
@@ -3882,18 +3890,19 @@
                             <td class="customer align-middle white-space-nowrap" >
                               <div class="font-sans-serif btn-reveal-trigger position-static" ><button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs--2"></span></button>
                                 <div class="dropdown-menu dropdown-end py-2">
-                                  <a class="dropdown-item" href="#">Assigned</a>
-                                  <a class="dropdown-item" href="#!">Status</a>
+                                  <a class="dropdown-item" href="#">View</a>
+                                  <a class="dropdown-item" href="#!">Edit</a>
                                   <!-- <a class="dropdown-item" href="#">Location</a> -->
                                   <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="#!">Remove</a>
                                 </div>
                               </div>
                             </td>
+                          <td class="email align-middle white-space-nowrap"><a href="#">08</a></td>
+                          <td class="email align-middle white-space-nowrap">Honda</td>
                             <td class="email align-middle white-space-nowrap"><a href="#">ABC008</a></td>
-                            <td class="email align-middle white-space-nowrap">Honda</td>
                             <!-- <td class="email align-middle white-space-nowrap">Tech</td> -->
-                            <td class="mobile_number align-middle white-space-nowrap">Web Developer</td>
                             <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">12-Mar-2023</td>
+                            <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">22-Jul-2023</td>
                             <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Ankit</td>
                             <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Drop</td>                     
                           </tr>
@@ -3901,18 +3910,19 @@
                             <td class="customer align-middle white-space-nowrap" >
                               <div class="font-sans-serif btn-reveal-trigger position-static" ><button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs--2"></span></button>
                                 <div class="dropdown-menu dropdown-end py-2">
-                                  <a class="dropdown-item" href="#">Assigned</a>
-                                  <a class="dropdown-item" href="#!">Status</a>
+                                  <a class="dropdown-item" href="#">View</a>
+                                  <a class="dropdown-item" href="#!">Edit</a>
                                   <!-- <a class="dropdown-item" href="#">Location</a> -->
                                   <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="#!">Remove</a>
                                 </div>
                               </div>
                             </td>
+                          <td class="email align-middle white-space-nowrap"><a href="#">09</a></td>
+                          <td class="email align-middle white-space-nowrap">Asus</td>
                             <td class="email align-middle white-space-nowrap"><a href="#">ABC009</a></td>
-                            <td class="email align-middle white-space-nowrap">Asus</td>
                             <!-- <td class="email align-middle white-space-nowrap">Tech</td> -->
-                            <td class="mobile_number align-middle white-space-nowrap">Software Developer</td>
                             <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">12-Mar-2023</td>
+                            <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">23-Jul-2023</td>
                             <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Amit</td>
                             <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Hold</td>                     
                           </tr>
@@ -3920,18 +3930,19 @@
                             <td class="customer align-middle white-space-nowrap" >
                               <div class="font-sans-serif btn-reveal-trigger position-static" ><button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs--2"></span></button>
                                 <div class="dropdown-menu dropdown-end py-2">
-                                  <a class="dropdown-item" href="#">Assigned</a>
-                                  <a class="dropdown-item" href="#!">Status</a>
+                                  <a class="dropdown-item" href="#">View</a>
+                                  <a class="dropdown-item" href="#!">Edit</a>
                                   <!-- <a class="dropdown-item" href="#">Location</a> -->
                                   <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="#!">Remove</a>
                                 </div>
                               </div>
                             </td>
+                          <td class="email align-middle white-space-nowrap"><a href="#">10</a></td>
+                          <td class="email align-middle white-space-nowrap">B</td>
                             <td class="email align-middle white-space-nowrap"><a href="#">ABC010</a></td>
-                            <td class="email align-middle white-space-nowrap">B</td>
                             <!-- <td class="email align-middle white-space-nowrap">Tech</td> -->
-                            <td class="mobile_number align-middle white-space-nowrap">Web Developer</td>
                             <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">12-Mar-2023</td>
+                            <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">02-Aug-2023</td>
                             <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Ankit</td>
                             <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Fulfilled</td>                     
                           </tr>
@@ -3939,20 +3950,20 @@
                             <td class="customer align-middle white-space-nowrap" >
                               <div class="font-sans-serif btn-reveal-trigger position-static" ><button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs--2"></span></button>
                                 <div class="dropdown-menu dropdown-end py-2">
-                                  <a class="dropdown-item" href="#">Assigned</a>
-                                  <a class="dropdown-item" href="#">Status</a>
+                                  <a class="dropdown-item" href="#">View</a>
+                                  <a class="dropdown-item" href="#">Edit</a>
                                   <!-- <a class="dropdown-item" href="#">Location</a> -->
                                   <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="#">Remove</a>
                                 </div>
                               </div>
                             </td>
+                          <td class="email align-middle white-space-nowrap"><a href="#">11</a></td>
+                          <td class="email align-middle white-space-nowrap">	IBM</td>
                             <td class="email align-middle white-space-nowrap"><a href="#">ABC011</a></td>
-                            <td class="email align-middle white-space-nowrap">	IBM</td>
-                            <!-- <td class="email align-middle white-space-nowrap">Tech</td> -->
-                            <td class="mobile_number align-middle white-space-nowrap">Software Developer</td>
+                            <td class="email align-middle white-space-nowrap">Tech</td>
                             <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">12-Mar-2023</td>
+                            <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">13-May-2023</td>
                             <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Krishan</td>
-                            <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Profile Submitted</td>                     
                           </tr>
                           
                       </tbody>
