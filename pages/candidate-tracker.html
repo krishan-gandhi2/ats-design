@@ -3716,42 +3716,254 @@
           }
         </script>
         <div class="content">
-          <!-- <nav class="mb-2" aria-label="breadcrumb">
-            <ol class="breadcrumb mb-0">
-              <li class="breadcrumb-item"><a href="#!">Pages</a></li>
-              <li class="breadcrumb-item active">Clients</li>
-            </ol>
-          </nav> -->
-          <div class="row col-md-12">
-            <div class="col-md-4 col-lg-4 col-sm-4 dispay-flex">
-              <h2 class="text-bold text-1100 mb-5"  style="color: #124B82 !important;">Candidate Tracker</h2>
-              <!-- <nav class="mt-2 ml-0 link-page" aria-label="breadcrumb">
-                <ol class="breadcrumb mb-0">
-                  <li class="breadcrumb-item"><a href="#!">Pages</a></li>
-                  <li class="breadcrumb-item active">Clients</li>
-                </ol>
-              </nav> -->
-            </div>
-            <div class="col-md-2 col-lg-2 col-sm-2">
-            </div>
-            <div class="col-md-6 col-lg-6 col-sm-6">
-              <div class="row align-items-center justify-content-between g-3 mb-3" style="float: right;">
-                <div class="col col-auto ml-15">
-                  <div class="search-box">
-                    <form class="position-relative" data-bs-toggle="search" data-bs-display="static"><input class="form-control search-input search" type="search" placeholder="Search Client" aria-label="Search" />
-                      <span class="fas fa-search search-box-icon"></span>
-                    </form>
-                  </div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #fff; margin-top: -39px;">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse mt-0" id="navbarSupportedContent">
+                    <div class="row"  style="width:100%;">
+                      <form class="position-relative" data-bs-toggle="search" data-bs-display="static"></form>
+                        <div class="col-10" style="display: flex;">
+                            
+                            <div class="code-to-copy"  >
+                                <div class="accordion" id="accordionExample" style="width:66rem;">
+                                  <div class="accordion-item border-top border-300">
+                                    <h2 class="accordion-header" id="headingOne">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Candidate Filter
+                                      </button>
+                                    </h2>
+                                    <div class="accordion-collapse collapse mt-2 mb-3" id="collapseOne" aria-labelledby="headingOne"
+                                      data-bs-parent="#accordionExample" style="margin-top: 0px;">
+                                      <div class="accordion-body pt-0">
+                                        <div class="row g-3 needs-validation">
+                                          <!-- <div class="col-md-2 position-relative ">
+                                            <div class="form-icon-container">
+                                              <div class="form-floating">
+                                                <input class="form-control form-icon-input" id="firstName" type="text" placeholder="First Name" />
+                                                <label class="text-700 form-icon-label" for="firstName">First Name</label>
+                                              </div>
+                                              <span class="fa-solid fa-user text-900 fs--1 form-icon"></span>
+                                            </div>
+                                          </div> -->
+                                          <div class="col-sm-1 col-md-1">
+                                            <h4 class="fs--1 mt-2" style="margin-left: 40px;">Name:</h4>
+                                          </div>
+                                          <div class="col-sm-6 col-md-2">
+                                            <div class="">
+                                              <input class="form-control" type="text" placeholder="">
+                                            </div>
+                                          </div>
+          
+                                          <div class="col-sm-1 col-md-1">
+                                            <h4 class="fs--1 mt-2" style="margin-left:  10px;">Email Id:</h4>
+                                          </div>
+                                          <div class="col-sm-6 col-md-2">
+                                            <div class="">
+                                              <input class="form-control" type="text" placeholder="">
+                                            </div>
+                                          </div>
+                                          <div class="col-sm-1 col-md-1">
+                                            <h4 class="fs--1 mt-2" style="margin-left: 20px;">Number:</h4>
+                                          </div>
+                                          <div class="col-sm-6 col-md-2">
+                                            <div class="">
+                                              <input class="form-control" type="text" placeholder="">
+                                            </div>
+                                          </div>
+                                          <div class="col-sm-1 col-md-1">
+                                            <h4 class="fs--1 mt-2" style="margin-left: 4px;">Experience:</h4>
+                                          </div>
+                                          <div class="col-sm-6 col-md-2">
+                                            <div class="">
+                                              <input class="form-control" type="text" placeholder="">
+                                            </div>
+                                          </div>
+                                         
+                                         
+                                          <div class="col-sm-1 col-md-1">
+                                            <h4 class="fs--1 mt-2" style="margin-left: 40px;">CTC:</h4>
+                                          </div>
+                                          <div class="col-sm-6 col-md-2">
+                                            <div class="">
+                                              <input class="form-control" type="text" placeholder="">
+                                            </div>
+                                          </div>
+                                          <div class="col-sm-1 col-md-1">
+                                            <h4 class="fs--1 mt-2" style="margin-left: 9px;">Designation:</h4>
+                                          </div>
+                                          <div class="col-sm-6 col-md-2">
+                                            <div class="">
+                                              <input class="form-control" type="text" placeholder="">
+                                            </div>
+                                          </div>
+                                          <div class="col-sm-1 col-md-1">
+                                            <h4 class="fs--1 mt-2" style="margin-left: 20px;">Location:</h4>
+                                          </div>
+                                          <div class="col-sm-6 col-md-2">
+                                            <div class="">
+                                              <input class="form-control" type="text" placeholder="">
+                                            </div>
+                                          </div>
+                                          <div class="col-sm-1 col-md-1">
+                                            <h4 class="fs--1 mt-2" style="margin-left: 3px;">Recruiter:</h4>
+                                          </div>
+                                          <div class="col-sm-6 col-md-2">
+                                            <div class="">
+                                              <input class="form-control" type="text" placeholder="">
+                                            </div>
+                                          </div>
+                                          <div class="row mt-3" style="width:100%;">
+                                            <form class="position-relative" data-bs-toggle="search" data-bs-display="static"></form>
+                                              <div class="col-12" style="display: flex;">
+                                                  
+                                                  <div  style="width:8% ; margin-top:6px ;">
+                                                      <label class="ps-3" style="margin-left: 16px; font-weight: 700; font-size: 13px;" for="floatingInputStartDate">DOE:</label>
+                                                  </div>
+                                                
+                                                  <div  style="width:178px ; margin-right:20px ;">
+                                                    <div class="er">
+                                                      <div class="form-floating">
+                                                          <input class="form-control " id="" type="text" placeholder="end date" data-options='{"disableMobile":true}' />
+                                                          <label class="ps-6" style="padding-left:10px !important;" for="floatingInputStartDate">From</label>
+                                                          <span class="uil uil-calendar-alt flatpickr-icon text-700"></span>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <div style="width:17% ; ">
+                                                      <div class="-input-container">
+                                                          <div class="form-floating">
+                                                              <input class="form-control " id="" type="text" placeholder="end date" data-options='{"disableMobile":true}' />
+                                                              <label class="ps-6" style="padding-left:10px !important;" for="floatingInputStartDate">To</label>
+                                                              <span class="uil uil-calendar-alt flatpickr-icon text-700"></span>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                                  <div  style="width:204px ; margin-top:6px ;">
+                                                      <label class="ps-3" style="margin-right: 29px; font-weight: 700; font-size: 13px; margin-left: 83px;" for="floatingInputStartDate">DOF:</label>
+                                                  </div>
+                                                
+                                                  <div  style="width:16%; margin-left: -35px; margin-right:20px ;">
+                                                    <div class="flatpickr-input-container">
+                                                      <div class="form-floating">
+                                                          <input class="form-control " id="" type="text" placeholder="end date" data-options='{"disableMobile":true}' />
+                                                          <label class="ps-6" style="padding-left:10px !important;" for="floatingInputStartDate">From</label>
+                                                          <span class="uil uil-calendar-alt flatpickr-icon text-700"></span>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <div style="width:17% ; ">
+                                                      <div class="flatpickr-input-container">
+                                                          <div class="form-floating">
+                                                              <input class="form-control " id="" type="text" placeholder="end date" data-options='{"disableMobile":true}' />
+                                                              <label class="ps-6" style="padding-left:10px !important;" for="floatingInputStartDate">To</label>
+                                                              <span class="uil uil-calendar-alt flatpickr-icon text-700"></span>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                                </div>
+                      
+                                              
+                                            </form>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                              
+                                  <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFour">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                        Requirement
+                                      </button>
+                                    </h2>
+                                    <div class="accordion-collapse collapse mt-2 mb-3  " id="collapseFour" aria-labelledby="headingFour"
+                                      data-bs-parent="#accordionExample" style="margin-top: 0px;">
+                                      <div class="accordion-body pt-0">
+                                        <div class="row g-3 needs-validation">
+          
+                                          <div class="col-sm-1 col-md-1">
+                                            <h4 class="fs--1 mt-2" style="margin-left: 15px;">Job Code:</h4>
+                                          </div>
+                                          <div class="col-sm-6 col-md-2">
+                                            <div class="">
+                                              <input class="form-control" type="text" placeholder="">
+                                            </div>
+                                          </div>
+                                          
+                                          <div class="col-sm-1 col-md-1">
+                                            <h4 class="fs--1 mt-2" style="margin-left: 2px;">Department:</h4>
+                                          </div>
+                                          <div class="col-sm-6 col-md-2">
+                                            <div class="">
+                                              <input class="form-control" type="text" placeholder="">
+                                            </div>
+                                          </div>
+          
+                                          <div class="col-sm-1 col-md-1">
+                                            <h4 class="fs--1 mt-2" style="margin-left: -3px;">Client:</h4>
+                                          </div>
+                                          <div class="col-sm-6 col-md-2">
+                                            <div class="">
+                                              <input class="form-control" type="text" placeholder="">
+                                            </div>
+                                          </div>
+          
+                                          <div class="col-sm-1 col-md-1">
+                                            <h4 class="fs--1 mt-2" style="margin-left: -4px;">Job Location:</h4>
+                                          </div>
+                                          <div class="col-sm-6 col-md-2">
+                                            <div class="">
+                                              <input class="form-control" type="text" placeholder="">
+                                            </div>
+                                          </div>
+                                           <div class="col-sm-1 col-md-1">
+                                            <h4 class="fs--1 mt-2" style="margin-left: 12px;">Skill:</h4>
+                                          </div>
+                                          <div class="col-sm-6 col-md-2">
+                                            <div class="">
+                                              <input class="form-control" type="text" placeholder="">
+                                            </div>
+                                          </div> 
+                                          <div class="col-sm-1 col-md-1">
+                                            <h4 class="fs--1 mt-2" style="margin-left: 2px;">Client Spoc:</h4>
+                                          </div>
+                                          <div class="col-sm-6 col-md-2">
+                                            <div class="">
+                                              <input class="form-control" type="text" placeholder="">
+                                            </div>
+                                          </div>
+                                           <div class="col-sm-1 col-md-1" style="    padding: 0px; margin-left: 17px;">
+                                            <h4 class="fs--1 mt-2" style="margin-left: -12px;">Org/Req Spoc:</h4>
+                                          </div>
+                                          <div class="col-sm-6 col-md-2">
+                                            <div class="" style="margin-left: -15px; width: 162px;">
+                                              <input class="form-control" type="text" placeholder="">
+                                            </div>
+                                          </div>
+          
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+
+                        <div class="col-md-1 col-lg-1 col-1 p-0" style="text-align: end;">
+                            <button type="button" class="btn btn-primary btn-sm" onclick="" style="margin-top: 21px;"><i class="fas fa-undo-alt"></i> Rest</button>
+                        </div>
+                        <div class="col-md-1 col-lg-1 col-1 p-0" style="text-align: center;">
+                            <button type="button" class="btn btn-primary btn-sm" onclick=""style="margin-top: 21px;"><i class="fas fa-search"></i> Search</button>
+                        </div>
+                      </form>
+                    </div>
+
                 </div>
-                <div class="col-auto">
-                  <div class="d-flex align-items-center"> <a href="#"  rel="noopener noreferrer"><button class="btn btn-primary">Search</button></a></div>
-                </div>
-                <div class="col-auto">
-                  <div class="d-flex align-items-center"> <a href="add-tracker.html"  rel="noopener noreferrer"><button class="btn btn-primary">Add Detail</button></a></div>
-                </div>
-              </div>
-            </div>
-          </div>
+              </nav>
           <div id="members" data-list='{"valueNames":["customer","email","mobile_number","city","last_active","joined"],"page":10,"pagination":true}'>
            
             <div class="px-lg-6 mb-9 bg-white border-y border-300 mt-2 position-relative top-1">
