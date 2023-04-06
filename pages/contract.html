@@ -118,6 +118,17 @@
                   </div>
                 </a>
               </div>
+              <div class="nav-item-wrapper"><a class="nav-link label-1"href="../pages/contract.html" role="button" data-bs-toggle="" aria-expanded="false">
+                <div class="d-flex align-items-center">
+                  <span class="nav-link-icon">
+                    <span data-feather="file-text"></span>
+                  </span>
+                  <span class="nav-link-text-wrapper">
+                    <span class="nav-link-text">Contract</span>
+                  </span>
+                </div>
+              </a>
+            </div>
                 <div class="nav-item-wrapper"><a class="nav-link dropdown-indicator label-1" href="#project-management" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="project-management">
                     <div class="d-flex align-items-center">
                       <div class="dropdown-indicator-icon"><span class="fas fa-caret-right"></span></div><span class="nav-link-icon"><span data-feather="users"></span></span><span class="nav-link-text">Candidate</span>
@@ -131,9 +142,13 @@
                         </a><!-- more inner pages-->
                       </li>
                       <li class="nav-item"><a class="nav-link" href="../pages/candidatelist.html" data-bs-toggle="" aria-expanded="false">
-                          <div class="d-flex align-items-center"><span class="nav-link-text">Candidate-list</span></div>
+                          <div class="d-flex align-items-center"><span class="nav-link-text">Candidate List</span></div>
                         </a><!-- more inner pages-->
                       </li>
+                      <li class="nav-item"><a class="nav-link" href="../pages/candidate-tracker.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">Candidate Tracker</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
                       
                     <li class="nav-item"><a class="nav-link" href="../pages/parse.html" data-bs-toggle="" aria-expanded="false">
                       <div class="d-flex align-items-center"><span class="nav-link-text">Parsing Report</span></div>
@@ -147,7 +162,7 @@
                     </ul>
                   </div>
                 </div>
-                <div class="nav-item-wrapper"><a class="nav-link label-1" href="../pages/blank-page.html" role="button" data-bs-toggle="" aria-expanded="false">
+                <div class="nav-item-wrapper"><a class="nav-link label-1" href="../pages/clousre.html" role="button" data-bs-toggle="" aria-expanded="false">
                   <div class="d-flex align-items-center">
                     <span class="nav-link-icon">
                       <span data-feather="columns"></span>
@@ -3721,9 +3736,9 @@
                     <div class="col-auto">
                       <div class="d-flex align-items-center"> <a href="#"  rel="noopener noreferrer"><button class="btn btn-primary">Search</button></a></div>
                     </div>
-                    <!-- <div class="col-auto">
-                      <div class="d-flex align-items-center"> <a href="jobopening.html"  rel="noopener noreferrer"><button class="btn btn-primary">Add Requirement</button></a></div>
-                    </div> -->
+                    <div class="col-auto">
+                      <div class="d-flex align-items-center"> <a href="add-contract.html"  rel="noopener noreferrer"><button class="btn btn-primary">Add Contract</button></a></div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -3741,8 +3756,8 @@
                           <!-- <th class="sort align-middle" scope="col" data-sort="email" style="width:15%; min-width:100px;">Department</th> -->
                           <th class="sort align-middle" scope="col" data-sort="city" style="width:15%; text-align: center !important; min-width:100px;">Start Date</th>
                           <th class="sort align-middle" scope="col" data-sort="city" style="width:15%; text-align: center !important; min-width:100px;">End Date</th>
-                          <th class="sort align-middle text-end" scope="col" data-sort="last_active" style="width:15%;  min-width:100px; text-align: center !important;">Rates Slab</th>
-                          <th class="sort align-middle text-end pe-0" scope="col" data-sort="joined" style="width:15%;  min-width:100px; text-align: center !important;">Flat rate</th>
+                          <th class="sort align-middle text-end" scope="col" data-sort="last_active" style="width:15%;  min-width:100px; text-align: center !important;">Rates Type</th>
+                          <th class="sort align-middle text-end pe-0" scope="col" data-sort="joined" style="width:15%;  min-width:100px; text-align: center !important;">Rate</th>
                         </tr>
                       </thead>
                       <tbody class="list" id="members-table-body">
@@ -3763,8 +3778,8 @@
                           <!-- <td class="email align-middle white-space-nowrap">Tech</td> -->
                           <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">08-Mar-2023</td>
                           <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">13-Jun-2023</td>
-                          <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Ankit</td>
-                          <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Active</td>                     
+                          <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Flat</td>
+                          <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">20,000</td>                     
                         </tr>
                         <tr class="hover-actions-trigger btn-reveal-trigger position-static">
                             <td class="customer align-middle white-space-nowrap" >
@@ -3783,8 +3798,17 @@
                             <!-- <td class="email align-middle white-space-nowrap">Tech</td> -->
                             <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">09-Mar-2023</td>
                             <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">01-Jun-2023</td>
-                            <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Krishan</td>
-                            <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Hold</td>                     
+                            <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Various</td>
+                            <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">
+                                <div class="font-sans-serif btn-reveal-trigger position-static">
+                                    <button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2 show" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="true" data-bs-reference="parent" fdprocessedid="nnuyr"> <span class="fas fa-info-circle text-900 fs--1 form-icon"></span></button>
+                                    <div class="dropdown-menu dropdown-end py-2 " style="--phoenix-dropdown-min-width: 7rem; --phoenix-dropdown-bg: #eee; position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(40px, 69.6px, 0px);" data-popper-placement="bottom-start">
+                                        <p class="m-auto text-center" style="color: black; font-weight: 700;">1. 15,000 /-</p>
+                                      <!-- <div class="dropdown-divider"></div> -->
+                                        <p class="m-auto text-center "style="color: black; font-weight: 700;">2. 25,000 /-</p>
+                                    </div>
+                                  </div>
+                            </td>                     
                           </tr>
                           <tr class="hover-actions-trigger btn-reveal-trigger position-static">
                             <td class="customer align-middle white-space-nowrap" >
@@ -3803,8 +3827,8 @@
                             <!-- <td class="email align-middle white-space-nowrap">Tech</td> -->
                             <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">09-Mar-2023</td>
                             <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">15-May-2023</td>
-                            <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Gaurav</td>
-                            <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Fulfilled</td>                     
+                            <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Flat</td>
+                            <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">20,000</td>                     
                           </tr>
                           <tr class="hover-actions-trigger btn-reveal-trigger position-static">
                             <td class="customer align-middle white-space-nowrap" >
@@ -3823,8 +3847,17 @@
                             <!-- <td class="email align-middle white-space-nowrap">Tech</td> -->
                             <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">10-Mar-2023</td>
                             <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">10-May-2023</td>
-                            <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Amit</td>
-                            <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Profile Submitted</td>                     
+                            <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Various</td>
+                            <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">
+                                <div class="font-sans-serif btn-reveal-trigger position-static">
+                                    <button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2 show" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="true" data-bs-reference="parent" fdprocessedid="nnuyr"> <span class="fas fa-info-circle text-900 fs--1 form-icon"></span></button>
+                                    <div class="dropdown-menu dropdown-end py-2 " style="--phoenix-dropdown-min-width: 7rem; --phoenix-dropdown-bg: #eee; position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(40px, 69.6px, 0px);" data-popper-placement="bottom-start">
+                                        <p class="m-auto text-center" style="color: black; font-weight: 700;">1. 15,000 /-</p>
+                                      <!-- <div class="dropdown-divider"></div> -->
+                                        <p class="m-auto text-center "style="color: black; font-weight: 700;">2. 25,000 /-</p>
+                                    </div>
+                                  </div>
+                            </td>                     
                           </tr>
                           <tr class="hover-actions-trigger btn-reveal-trigger position-static">
                             <td class="customer align-middle white-space-nowrap" >
@@ -3843,8 +3876,8 @@
                             <!-- <td class="email align-middle white-space-nowrap">Tech</td> -->
                             <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">10-Mar-2023</td>
                             <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">20-May-2023</td>
-                            <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Amit</td>
-                            <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Active</td>                     
+                            <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Flat</td>
+                            <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">20,000</td>                     
                           </tr>
                           <tr class="hover-actions-trigger btn-reveal-trigger position-static">
                             <td class="customer align-middle white-space-nowrap" >
@@ -3863,8 +3896,8 @@
                             <!-- <td class="email align-middle white-space-nowrap">Tech</td> -->
                             <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">11-Mar-2023</td>
                             <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">30-Apr-2023</td>
-                            <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Krishan</td>
-                            <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Deactivate</td>                     
+                            <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Flat</td>
+                            <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">20,000</td>                     
                           </tr>
                           <tr class="hover-actions-trigger btn-reveal-trigger position-static">
                             <td class="customer align-middle white-space-nowrap" >
@@ -3883,8 +3916,8 @@
                             <!-- <td class="email align-middle white-space-nowrap">Tech</td> -->
                             <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">12-Mar-2023</td>
                             <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">18-May-2023</td>
-                            <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Ankit</td>
-                            <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Closed</td>                     
+                            <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Flat</td>
+                            <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">20,000</td>                     
                           </tr>
                           <tr class="hover-actions-trigger btn-reveal-trigger position-static">
                             <td class="customer align-middle white-space-nowrap" >
@@ -3903,8 +3936,17 @@
                             <!-- <td class="email align-middle white-space-nowrap">Tech</td> -->
                             <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">12-Mar-2023</td>
                             <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">22-Jul-2023</td>
-                            <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Ankit</td>
-                            <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Drop</td>                     
+                            <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Various</td>
+                            <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">
+                                <div class="font-sans-serif btn-reveal-trigger position-static">
+                                    <button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2 show" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="true" data-bs-reference="parent" fdprocessedid="nnuyr"> <span class="fas fa-info-circle text-900 fs--1 form-icon"></span></button>
+                                    <div class="dropdown-menu dropdown-end py-2 " style="--phoenix-dropdown-min-width: 7rem; --phoenix-dropdown-bg: #eee; position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(40px, 69.6px, 0px);" data-popper-placement="bottom-start">
+                                        <p class="m-auto text-center" style="color: black; font-weight: 700;">1. 15,000 /-</p>
+                                      <!-- <div class="dropdown-divider"></div> -->
+                                        <p class="m-auto text-center "style="color: black; font-weight: 700;">2. 25,000 /-</p>
+                                    </div>
+                                  </div>
+                            </td>                   
                           </tr>
                           <tr class="hover-actions-trigger btn-reveal-trigger position-static">
                             <td class="customer align-middle white-space-nowrap" >
@@ -3923,8 +3965,8 @@
                             <!-- <td class="email align-middle white-space-nowrap">Tech</td> -->
                             <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">12-Mar-2023</td>
                             <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">23-Jul-2023</td>
-                            <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Amit</td>
-                            <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Hold</td>                     
+                            <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Flat</td>
+                            <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">15,000</td>                   
                           </tr>
                           <tr class="hover-actions-trigger btn-reveal-trigger position-static">
                             <td class="customer align-middle white-space-nowrap" >
@@ -3943,8 +3985,8 @@
                             <!-- <td class="email align-middle white-space-nowrap">Tech</td> -->
                             <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">12-Mar-2023</td>
                             <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">02-Aug-2023</td>
-                            <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Ankit</td>
-                            <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Fulfilled</td>                     
+                            <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Flat</td>
+                            <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">15,000</td>
                           </tr>
                           <tr class="hover-actions-trigger btn-reveal-trigger position-static">
                             <td class="customer align-middle white-space-nowrap" >
@@ -3960,12 +4002,11 @@
                           <td class="email align-middle white-space-nowrap"><a href="#">11</a></td>
                           <td class="email align-middle white-space-nowrap">	IBM</td>
                             <td class="email align-middle white-space-nowrap"><a href="#">ABC011</a></td>
-                            <td class="email align-middle white-space-nowrap">Tech</td>
                             <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">12-Mar-2023</td>
                             <td class="city align-middle white-space-nowrap text-900" style="text-align: center !important;">13-May-2023</td>
-                            <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Krishan</td>
-                          </tr>
-                          
+                            <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">Flat</td>
+                            <td class="last_active align-middle text-end white-space-nowrap text-700" style="text-align: center !important;">20,000</td>
+                        </tr>
                       </tbody>
                     </table>
                   </div>
